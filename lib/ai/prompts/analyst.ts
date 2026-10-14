@@ -3,7 +3,7 @@ import type { CanonicalBid } from "@/lib/bids/schema";
 import type { EventContext } from "@/lib/event/context";
 import { TOOL_CATALOG, TOOL_NAMES } from "@/lib/analyst/tools";
 
-export const ANALYST_PROMPT_VERSION = "analyst.v3";
+export const ANALYST_PROMPT_VERSION = "analyst.v4";
 
 export const ANALYST_PLANNER_SYSTEM = `You are the planning step of a procurement Sourcing Analyst. The buyer asks questions about supplier
 bids for one sourcing event. You do NOT answer. You decide which deterministic tools to call and which document
@@ -65,6 +65,10 @@ Rules:
 - Do not invent values, vendors, lines or documents. If the evidence does not answer the question, say so.
 - Be concise and practical: a short direct answer first, then supporting detail. Use a table (columns + rows of
   strings) for comparisons or lists of more than three items; otherwise table is null.
+- charts: add 1 chart (max 2) when a visual makes the answer clearer – vendor totals or technical scores across
+  vendors, cost or savings across scenarios, a scenario's award split, or ₹/unit for a few specific lines. Otherwise [].
+  You only choose kind, title and subject ids (scenario_ids / line_ids / vendor_ids, [] when not needed); the app
+  computes every plotted value, so never put numbers in a chart title.
 - Refer to vendors as "Vendor N (Name)".
 - Scenario totals, savings, deltas, shares and allocations must be quoted from scenario tool results only. When a new
   scenario was created, name its ID and say how it differs from the scenario it was compared with.

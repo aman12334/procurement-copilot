@@ -10,12 +10,17 @@ import { deleteDraft, listDrafts, loadDraft, saveDraft, type KVStore, type Saved
 import { validateBusinessRules, validateSchema } from "@/lib/rfx/validate";
 import DraftView from "./DraftView";
 import ReleaseControl from "./ReleaseControl";
+import { loadRfqs, updateRfqs } from "@/lib/client/bid-store";
+import { registerDraft, type RfqEntry } from "@/lib/rfq/registry";
 
 interface Msg { role: "buyer" | "agent"; text: string; error?: boolean; meta?: string }
 type Target = "refine" | "new" | SectionId;
 
 interface ApiOk { ok: true; rfx: RfxDraft; issues: unknown[]; meta: { model: string; attempts: number; retried: boolean } }
 interface ApiErr { ok: false; error: { code: string; message: string; details: string[] } }
+
+/** The draft being worked on survives reloads, navigation and dev hot-reloads (separate from named saved drafts). */
+const WORKING_KEY = "stage2.working_draft.v1";
 
 function browserStore(): KVStore | null {
   try { return typeof window !== "undefined" ? window.localStorage : null; } catch { return null; }
@@ -40,13 +45,31 @@ export default function RfxWorkspace() {
     fetch("/api/health").then((r) => r.json()).then(setHealth).catch(() => setHealth({ configured: false, message: "Health check failed." }));
     const s = browserStore();
     if (s) setSaved(listDrafts(s));
+    try {
+      const w = JSON.parse(localStorage.getItem(WORKING_KEY) ?? "null") as { rfx: unknown; draft_id: string } | null;
+      const v = w ? validateSchema(w.rfx) : null;
+      if (w && v?.ok && v.data) { setRfx(v.data); setDraftId(w.draft_id); }
+    } catch { /* no working draft */ }
+    // Opened from the RFQ register: /?rfq=<id> loads that RFQ's latest snapshot.
+    const want = new URLSearchParams(window.location.search).get("rfq");
+    const entry = want ? loadRfqs().find((e) => e.id === want) : undefined;
+    const snap = entry ? validateSchema(entry.draft ?? entry.event?.rfx) : null;
+    if (entry && snap?.ok && snap.data) {
+      setRfx(snap.data);
+      setDraftId(entry.id);
+      setMessages((m) => [...m, { role: "agent", text: `Opened ${entry.rfx_id} from the RFQ register (${entry.status}).` }]);
+    }
   }, []);
+  useEffect(() => {
+    try { if (rfx) localStorage.setItem(WORKING_KEY, JSON.stringify({ rfx, draft_id: draftId })); } catch { /* storage full or blocked */ }
+    if (rfx) updateRfqs((l) => registerDraft(l, { id: draftId, rfx }, new Date(), { onlyIfExists: true }));
+  }, [rfx, draftId]);
   useEffect(() => { logRef.current?.scrollTo({ top: logRef.current.scrollHeight, behavior: "smooth" }); }, [messages]);
 
   const issues = useMemo(() => (rfx ? validateBusinessRules(rfx) : []), [rfx]);
   const say = (m: Msg) => setMessages((x) => [...x, m]);
 
-  async function call(body: Record<string, unknown>, label: string) {
+  async function call(body: Record<string, unknown>, label: string, register?: { id: string; source: RfqEntry["source"] }) {
     setBusy(label);
     try {
       const res = await fetch("/api/rfx", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) });
@@ -56,6 +79,7 @@ export default function RfxWorkspace() {
         return;
       }
       setRfx(data.rfx);
+      if (register) updateRfqs((l) => registerDraft(l, { id: register.id, rfx: data.rfx, source: register.source }));
       const errs = validateBusinessRules(data.rfx).filter((i) => i.severity === "error").length;
       say({
         role: "agent",
@@ -76,8 +100,9 @@ export default function RfxWorkspace() {
     say({ role: "buyer", text: rfx && target !== "refine" && target !== "new" ? `[${SECTIONS[target].label}] ${text}` : text });
     setInput("");
     if (!rfx || target === "new") {
-      setDraftId(`draft-${Date.now().toString(36)}`);
-      return call({ action: "generate", buyer_input: text }, "RFx generation");
+      const id = `draft-${Date.now().toString(36)}`;
+      setDraftId(id);
+      return call({ action: "generate", buyer_input: text }, "RFx generation", { id, source: "generated" });
     }
     if (target === "refine") return call({ action: "refine", rfx, instruction: text }, "Change");
     return call({ action: "regenerate_section", rfx, section: target, instruction: text }, `${SECTIONS[target].label} regeneration`);
@@ -129,8 +154,10 @@ export default function RfxWorkspace() {
     try {
       const r = validateSchema(JSON.parse(await f.text()));
       if (!r.ok || !r.data) { say({ role: "agent", error: true, text: `Not a valid RFx JSON:\n• ${r.errors.slice(0, 6).join("\n• ")}` }); return; }
+      const id = `draft-${Date.now().toString(36)}`;
       setRfx(r.data);
-      setDraftId(`draft-${Date.now().toString(36)}`);
+      setDraftId(id);
+      updateRfqs((l) => registerDraft(l, { id, rfx: r.data!, source: "imported" }));
       say({ role: "agent", text: `Imported ${f.name}.` });
     } catch (e) {
       say({ role: "agent", error: true, text: `Could not read JSON: ${(e as Error).message}` });
@@ -158,7 +185,7 @@ export default function RfxWorkspace() {
         </select>
         {saved.some((d) => d.draft_id === draftId) && <button className="btn small danger" onClick={() => remove(draftId)} title="Delete this saved draft">Delete saved</button>}
         <button className="btn" disabled={!rfx} onClick={exportJson}>Export JSON</button>
-        <ReleaseControl rfx={rfx} />
+        <ReleaseControl rfx={rfx} draftId={draftId} />
         <button className="btn" onClick={() => jsonFile.current?.click()}>Import JSON</button>
         <input ref={jsonFile} type="file" accept="application/json,.json" hidden onChange={(e) => { const f = e.target.files?.[0]; if (f) importJson(f); e.target.value = ""; }} />
       </div>

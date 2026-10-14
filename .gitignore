@@ -7,3 +7,6 @@ out/
 next-env.d.ts
 stage1/_build/__pycache__/
 .vercel
+
+# macOS
+.DS_Store

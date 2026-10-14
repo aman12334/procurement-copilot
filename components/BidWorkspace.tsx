@@ -30,7 +30,16 @@ export default function BidWorkspace() {
 
   useEffect(() => {
     setBids(loadBids());
-    setJobs(loadJobs());
+    // Nothing is in flight when the page opens: a job still marked "processing" lost its result when the page was
+    // left mid-request (the server is stateless). Mark it interrupted so it can be retried or ignored.
+    const now = new Date().toISOString();
+    const stored = loadJobs();
+    const restored = stored.map((j): IngestionJob => j.state !== "processing" ? j : {
+      ...j, state: "retrying", last_error: { code: "INTERRUPTED", kind: null, message: "Page was left while processing; no result was recorded." },
+      history: [...j.history, { at: now, state: "retrying", note: "Interrupted – the page was left before processing finished. Retry, or ignore if the bid is already done (retrying replaces the current bid)." }],
+    });
+    setJobs(restored);
+    if (stored.some((j) => j.state === "processing")) saveJobs(restored);
     postJson<EventInfo>("/api/event", {}).then(({ data: e }) => { setEvent(e); setSel((s) => s ?? e.vendors[0]?.vendor_id ?? null); });
   }, []);
   const persist = (next: Record<string, CanonicalBid>) => { setBids(next); saveBids(next); };

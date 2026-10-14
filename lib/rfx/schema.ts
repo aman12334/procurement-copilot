@@ -256,3 +256,25 @@ export function toModelJsonSchema(schema: z.ZodType): Record<string, unknown> {
   const js = z.toJSONSchema(schema, { target: "draft-7", unrepresentable: "any", io: "input" });
   return sanitize(js) as Record<string, unknown>;
 }
+
+// ---------------------------------------------------------------- parallel generation
+/**
+ * Parts drafted concurrently from the same buyer requirement (wall time ≈ slowest part instead of one long
+ * output). Keys that must agree closely stay in the same part; cross-part consistency is then checked by
+ * validateBusinessRules like any draft.
+ */
+export const GENERATION_PARTS = {
+  core: { label: "RFx header, scope, commercial terms and delivery", keys: ["rfx_id", "title", "category", "buyer", "response_deadline", "scope", "commercial_terms", "delivery_requirements"] },
+  items: { label: "line items and commercial requirements", keys: ["line_items", "commercial_requirements"] },
+  questionnaire: { label: "technical questionnaire and qualification", keys: ["technical_questionnaire", "qualification"] },
+  requirements: { label: "mandatory/preferred requirements and evaluation criteria", keys: ["mandatory_requirements", "preferred_requirements", "evaluation_criteria"] },
+} as const satisfies Record<string, { label: string; keys: readonly (keyof RfxDraft)[] }>;
+export type GenerationPart = keyof typeof GENERATION_PARTS;
+
+export function partResponseSchema(part: GenerationPart) {
+  const shape: Record<string, z.ZodType> = {};
+  for (const k of GENERATION_PARTS[part].keys) shape[k] = RfxDraftSchema.shape[k];
+  shape.new_assumptions = z.array(AssumptionSchema);
+  shape.new_unresolved_fields = z.array(UnresolvedFieldSchema);
+  return z.object(shape);
+}

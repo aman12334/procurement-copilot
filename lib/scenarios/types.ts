@@ -132,7 +132,7 @@ export interface Recommendation {
 }
 
 export const AUDIT_TYPES = ["scenarios_generated", "recommendation_generated", "scenario_created", "scenario_modified", "buyer_question",
-  "scenario_selected", "scenario_preferred", "recommendation_approved", "recommendation_rejected", "exported"] as const;
+  "scenario_selected", "scenario_preferred", "recommendation_approved", "recommendation_rejected", "exported", "order_allocated"] as const;
 
 export interface DecisionAuditEvent {
   at: string;

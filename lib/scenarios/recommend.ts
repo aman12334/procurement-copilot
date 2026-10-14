@@ -74,7 +74,9 @@ export function recommend(ctx: EventContext, bids: CanonicalBid[], scenarios: Sc
   const excludedQual = chosen.excluded_vendors.filter((v) => v.reasons.some((r) => r.includes("qualification") || r.includes("mandatory")));
   const reasons = [
     `${chosen.name}: total evaluated cost ${fmt(chosen.total_evaluated_cost)} across all ${chosen.covered_lines} lines with ${chosen.supplier_count} supplier(s) (${chosen.suppliers.map((s) => `${s.vendor} ${s.spend_pct}%`).join(", ")}).`,
-    `Saves ${fmt(chosen.savings_vs_historical)} (${chosen.savings_percent}%) versus the FY25-26 historical benchmark of ${fmt(chosen.historical_cost)}.`,
+    chosen.savings_vs_historical >= 0
+      ? `Saves ${fmt(chosen.savings_vs_historical)} (${chosen.savings_percent}%) versus the FY25-26 historical benchmark of ${fmt(chosen.historical_cost)}.`
+      : `Costs ${fmt(-chosen.savings_vs_historical)} (${Math.abs(chosen.savings_percent ?? 0)}%) MORE than the FY25-26 historical benchmark of ${fmt(chosen.historical_cost)} – no saving.`,
     `Only technically qualified vendors are awarded; spend-weighted technical score ${chosen.weighted_technical_score}.`,
     ...(excludedQual.length ? [`Excluded on qualification: ${excludedQual.map((v) => `${v.vendor} – ${v.reasons.join("; ")}`).join(" | ")}.`] : []),
   ];

@@ -2,7 +2,8 @@
  * RFx Creation Agent – prompts.
  * Kept in one file so they can be reviewed, versioned and evaluated independently of code.
  */
-export const RFX_PROMPT_VERSION = "rfx-system.v2";
+export const RFX_PROMPT_VERSION = "rfx-system.v2"; // single-call prompt (frozen for evals)
+export const RFX_PARALLEL_PROMPT_VERSION = "rfx-parallel.v1";
 
 export const RFX_SYSTEM_PROMPT = `You are an RFx drafting copilot for an experienced procurement buyer. You turn the buyer's
 natural-language sourcing requirement into a structured, practical RFx (RFQ/RFP) draft that the
@@ -163,4 +164,28 @@ Return an object with exactly these keys: ${responseKeys.join(", ")}.
 "new_assumptions" / "new_unresolved_fields" (when present) hold only NEW assumptions or unresolved items
 created by this regeneration (may be empty arrays). Do not repeat existing ones. Keep the section consistent with the rest of the draft,
 which will not change.`;
+}
+
+/**
+ * One part of a parallel draft. Every part sees the same requirement and shared conventions so the
+ * independently drafted parts line up (location codes, IDs, currency).
+ */
+export function buildPartPrompt(buyerInput: string, partLabel: string, keys: readonly string[], today?: Date): string {
+  return `${contextBlock(today)}
+
+Buyer requirement:
+"""
+${buyerInput.trim()}
+"""
+
+The RFx is drafted in parallel parts. Draft ONLY this part: ${partLabel}.
+Return an object with exactly these keys: ${[...keys, "new_assumptions", "new_unresolved_fields"].join(", ")}.
+- Apply every rule of the system prompt that concerns these keys; ignore self-check items about other parts.
+- "new_assumptions" / "new_unresolved_fields": entries only for fields in THIS part, using full RFx paths
+  (e.g. "commercial_terms.payment_terms", "line_items"). Assumption ids "A-01", "A-02", ...
+- Shared conventions so parts agree: buyer location codes are the 3-letter city code in capitals
+  (Bengaluru BLR, Pune PNQ, Hyderabad HYD, Mumbai BOM, Delhi DEL, Chennai MAA, Kolkata CCU, Ahmedabad AMD;
+  otherwise the first three letters); line_id prefix "CP-" for corrugated/packaging, otherwise a short category code;
+  currency INR for India unless stated; use the buyer's exact numbers, certifications and lead times.
+- Keep text concise: one short sentence per rationale or description.`;
 }

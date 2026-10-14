@@ -11,6 +11,7 @@ import type { EventContext } from "@/lib/event/context";
 import { log } from "@/lib/log";
 import { EvidenceIndex } from "./retrieval";
 import { AnalystTools, TOOL_NAMES, ToolArgsInputSchema, type ToolName } from "./tools";
+import { buildChart, ChartRequestSchema, type ChartData } from "./charts";
 import { emptyDecision, type DecisionState, type ScenarioSpec } from "@/lib/scenarios/types";
 
 export const PlanSchema = z.object({
@@ -24,6 +25,7 @@ export type Plan = z.infer<typeof PlanSchema>;
 export const AnswerSchema = z.object({
   answer_markdown: z.string(),
   table: z.object({ title: z.string(), columns: z.array(z.string()), rows: z.array(z.array(z.string())) }).nullable(),
+  charts: z.array(ChartRequestSchema).describe("0-2 charts when a visual helps; the app computes every value"),
   citations: z.array(z.string()).describe("Reference ids used, e.g. T1, D:VND-1002#9"),
   unresolved_issues: z.array(z.string()),
   cannot_compute: z.string().nullable(),
@@ -43,7 +45,7 @@ export interface ResolvedCitation {
 
 export type AnalystResult =
   | {
-      ok: true; answer: Answer; plan: Plan; citations: ResolvedCitation[]; invalid_citations: string[]; unsupported_numbers: string[];
+      ok: true; answer: Answer; charts: ChartData[]; chart_errors: string[]; plan: Plan; citations: ResolvedCitation[]; invalid_citations: string[]; unsupported_numbers: string[];
       tool_results: { ref: string; tool: ToolName; args: Record<string, unknown>; ok: boolean; result: unknown }[];
       retrieved: { ref: string; chunk: DocumentChunk; score: number }[];
       turn: HistoryTurn; new_scenarios: ScenarioSpec[]; meta: { model: string; promptVersion: string; calls: number; provider_switches: { at: string; from: string; to: string; kind: string; reason: string }[] };
@@ -98,6 +100,7 @@ export async function askAnalyst(
   const docBlocks = retrieved.map((r) => `[${r.ref}] ${vendorName(bids, r.chunk.vendor_id)} – ${r.chunk.source_file}, ${r.chunk.location} (${r.chunk.kind}):\n"${r.chunk.text}"`).join("\n\n");
   const ans = await runStructuredCall(client, {
     label: "analyst:answer", system: ANALYST_ANSWER_SYSTEM, prompt: buildAnswerPrompt(question, plan.data.resolved_question, toolBlocks, docBlocks), schema: AnswerSchema,
+    defaults: { charts: [] },
   });
   if (!ans.ok) return { ok: false, error: { code: ans.code, message: ans.message, details: ans.details } };
 
@@ -117,9 +120,17 @@ export async function askAnalyst(
   const unsupported = unsupportedNumbers(answerText, evidenceText);
   if (unsupported.length) log("warn", "analyst.unsupported_numbers", { unsupported });
 
+  // Charts: model picks kind/subject only; values are computed here from bids + scenario engine.
+  const charts: ChartData[] = [];
+  const chartErrors: string[] = [];
+  for (const c of ans.data.charts.slice(0, 3)) {
+    try { charts.push(buildChart(c, tools, { min_total_score: ctx.qualification.min_total_score })); }
+    catch (e) { chartErrors.push(`${c.kind}: ${(e as Error).message}`); }
+  }
+
   const turn: HistoryTurn = { question, resolved_question: plan.data.resolved_question, answer_summary: ans.data.answer_markdown.slice(0, 500), scenario_ids: [...tools.touchedScenarios] };
   return {
-    ok: true, answer: ans.data, plan: plan.data, citations, invalid_citations: invalid, unsupported_numbers: unsupported, tool_results: toolResults, retrieved, turn, new_scenarios: [...tools.created],
+    ok: true, answer: ans.data, charts, chart_errors: chartErrors, plan: plan.data, citations, invalid_citations: invalid, unsupported_numbers: unsupported, tool_results: toolResults, retrieved, turn, new_scenarios: [...tools.created],
     meta: { model: client.model, promptVersion: ANALYST_PROMPT_VERSION, calls: plan.attempts + ans.attempts, provider_switches: providerSwitches(client) },
   };
 }

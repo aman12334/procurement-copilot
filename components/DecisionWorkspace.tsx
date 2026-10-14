@@ -3,7 +3,8 @@
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import type { CanonicalBid } from "@/lib/bids/schema";
-import { bidEnvelope, loadActiveEvent, loadBids, loadDecision, postJson, saveDecision, withAudit } from "@/lib/client/bid-store";
+import { bidEnvelope, loadActiveEvent, loadBids, loadDecision, loadRfqs, postJson, saveDecision, updateRfqs, withAudit } from "@/lib/client/bid-store";
+import { AllocationError, awardFromScenario, recordAllocation, type RfqEntry } from "@/lib/rfq/registry";
 import { auditGenerated } from "@/lib/scenarios/audit";
 import type { SensitivityResult } from "@/lib/scenarios/sensitivity";
 import { emptyConstraints, type DecisionState, type Recommendation, type Scenario, type ScenarioConstraints } from "@/lib/scenarios/types";
@@ -22,7 +23,33 @@ export default function DecisionWorkspace() {
   const [focus, setFocus] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
 
-  useEffect(() => { setBids(Object.values(loadBids())); setDecision(loadDecision()); }, []);
+  const [eventInfo, setEventInfo] = useState<{ rfx_id: string; title: string } | null>(null);
+  const [allocated, setAllocated] = useState<RfqEntry | null>(null);
+  useEffect(() => {
+    setBids(Object.values(loadBids())); setDecision(loadDecision());
+    postJson<{ rfx_id: string; title: string }>("/api/event", {}).then(({ data: e }) => {
+      setEventInfo({ rfx_id: e.rfx_id, title: e.title });
+      setAllocated(loadRfqs().find((r) => r.rfx_id === e.rfx_id && r.status === "awarded") ?? null);
+    }).catch(() => {});
+  }, []);
+
+  /** After approval: record the order allocation for this RFQ in the register (no PO is sent to suppliers). */
+  function allocate() {
+    if (!decision || !eventInfo || decision.status !== "approved" || !decision.selected_scenario_id) return;
+    const s = byId.get(decision.selected_scenario_id);
+    if (!s) return;
+    const lines = s.suppliers.map((x) => `• ${x.vendor}: ${x.lines} line(s), ${inr(x.spend_inr)} (${x.spend_pct}%)`).join("\n");
+    if (!window.confirm(`Allocate ${eventInfo.rfx_id} to:\n${lines}\n\nTotal ${inr(s.total_evaluated_cost)} (${s.scenario_id} ${s.name}).\nThis records the award in the RFQ register; no PO or email is sent.`)) return;
+    const approvedAt = [...decision.audit].reverse().find((a) => a.type === "recommendation_approved")?.at ?? null;
+    try {
+      const list = updateRfqs((l) => recordAllocation(l, eventInfo, awardFromScenario(s, approvedAt)));
+      setAllocated(list.find((r) => r.rfx_id === eventInfo.rfx_id && r.status === "awarded") ?? null);
+      update(withAudit(decision, { type: "order_allocated", scenario_id: s.scenario_id, detail: `Order for ${eventInfo.rfx_id} allocated: ${s.suppliers.map((x) => `${x.vendor} ${x.spend_pct}%`).join(", ")}`,
+        data: { rfx_id: eventInfo.rfx_id, total_value_inr: s.total_evaluated_cost, suppliers: s.suppliers.map((x) => x.vendor_id) } }));
+    } catch (e) {
+      if (e instanceof AllocationError) setError(e.message); else throw e;
+    }
+  }
 
   const update = useCallback((d: DecisionState) => { setDecision(d); saveDecision(d); }, []);
 
@@ -87,6 +114,14 @@ export default function DecisionWorkspace() {
         <button className="btn small" onClick={() => exportAs("json")}>Export JSON</button>
         <button className="btn small primary" onClick={() => exportAs("pdf")}>Export PDF</button>
       </div>
+      {decision.status === "approved" && decision.selected_scenario_id && (
+        <div className="evidence" style={{ borderLeftColor: "var(--ok)", display: "flex", gap: 10, alignItems: "center", flexWrap: "wrap" }}>
+          <span>Approved: <strong>{decision.selected_scenario_id} {byId.get(decision.selected_scenario_id)?.name ?? ""}</strong>
+            {allocated?.award ? <> · allocated {new Date(allocated.award.allocated_at).toLocaleString()} to {allocated.award.suppliers.map((x) => x.vendor).join(", ")} ({inr(allocated.award.total_value_inr)})</> : " · order not allocated yet"}</span>
+          <button className="btn small primary" disabled={!eventInfo || !byId.get(decision.selected_scenario_id)} onClick={allocate}>{allocated?.award ? "Re-allocate order" : "Allocate order to vendor(s)"}</button>
+          <Link className="btn small" href="/rfqs">RFQ register →</Link>
+        </div>
+      )}
       {data && <p className="hint">Scenarios use {decision.include_unfinalized ? `all ${data.total_bids} processed bids (preview – includes unfinalized data)` : `${data.finalized_bids} of ${data.total_bids} bids that are finalized (trusted)`}. {data.finalized_bids === 0 && !decision.include_unfinalized && <strong style={{ color: "var(--err)" }}>No bids are finalized yet – finalize them in <Link href="/bids">Bid processing</Link> or enable the preview.</strong>}</p>}
       {error && <div className="issues has-err">{error}</div>}
 
@@ -98,7 +133,7 @@ export default function DecisionWorkspace() {
               <h2>{recommended.name}</h2>
               <div style={{ display: "flex", gap: 24, flexWrap: "wrap", margin: "6px 0" }}>
                 <div><div className="big">{cr(recommended.total_evaluated_cost)}</div><div className="hint">total evaluated cost</div></div>
-                <div><div className="big" style={{ color: recommended.savings_vs_historical >= 0 ? "var(--ok)" : "var(--err)" }}>{signed(recommended.savings_vs_historical)} ({recommended.savings_percent}%)</div><div className="hint">savings vs FY25-26 ({cr(recommended.historical_cost)})</div></div>
+                <div><div className="big" style={{ color: recommended.savings_vs_historical >= 0 ? "var(--ok)" : "var(--err)" }}>{signed(recommended.savings_vs_historical)} ({recommended.savings_percent}%)</div><div className="hint">{recommended.savings_vs_historical >= 0 ? "savings" : "cost increase"} vs FY25-26 ({cr(recommended.historical_cost)})</div></div>
                 <div><div className="big">{recommended.supplier_count}</div><div className="hint">suppliers · tech {recommended.weighted_technical_score}</div></div>
               </div>
               <div className="hint">{recommended.suppliers.map((s) => `${s.vendor}: ${s.lines} lines, ${s.spend_pct}% of spend`).join(" · ")}</div>
@@ -115,7 +150,7 @@ export default function DecisionWorkspace() {
                 <button className="btn primary" onClick={() => act("recommendation_approved", recommended.scenario_id)}>Approve recommendation</button>
                 <button className="btn danger" onClick={() => act("recommendation_rejected", null)}>Reject recommendation</button>
                 <Link className="btn" href="/analyst">Challenge it in the Sourcing Analyst →</Link>
-                <span className="hint">Approval records the buyer's choice only – no supplier award or PO is created.</span>
+                <span className="hint">Approve first, then allocate the order below. Allocation is recorded in the RFQ register – no PO or email is sent.</span>
               </div>
             </>
           ) : <div><h2>No viable scenario</h2><ul>{rec.key_reasons.map((r, i) => <li key={i}>{r}</li>)}</ul></div>}

@@ -139,3 +139,16 @@ pre.json { font-size: 11.5px; background: var(--bg); padding: 10px; border-radiu
 .nav-event { font-size: 11.5px; opacity: .8; margin-right: 10px; padding: 2px 8px; border: 1px solid rgba(127,127,127,.4); border-radius: 999px; }
 .release-panel { position: fixed; top: 90px; right: 16px; width: min(640px, calc(100vw - 32px)); max-height: 75vh; overflow-y: auto; z-index: 50;
   background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 14px; box-shadow: 0 10px 30px rgba(0,0,0,.18); font-size: 13px; }
+
+/* ---------- questionnaire matrix */
+.qmatrix td { vertical-align: top; min-width: 150px; }
+.qmatrix .qtext { font-size: 12px; margin-top: 4px; line-height: 1.35; }
+
+/* ---------- charts */
+.chart { margin: 10px 0; padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--panel); }
+.chart figcaption { font-size: 13px; margin-bottom: 4px; }
+.chart svg text { fill: var(--ink); font-size: 11px; }
+.chart .chart-group { font-weight: 600; font-size: 11.5px; }
+.chart .chart-value { fill: var(--muted); }
+.chart .chart-threshold { fill: var(--err); font-size: 10px; }
+.chart-notes { margin-top: 4px; }

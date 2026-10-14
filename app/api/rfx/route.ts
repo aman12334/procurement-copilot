@@ -6,7 +6,7 @@ import { NextResponse } from "next/server";
 import { z } from "zod";
 import { createLLMClient, type LLMClient } from "@/lib/ai/client";
 import { AIConfigError, describeAIConfig, getLLMSettings } from "@/lib/ai/model";
-import { generateRfx, refineRfx, regenerateSection } from "@/lib/rfx/agent";
+import { generateRfx, generateRfxParallel, refineRfx, regenerateSection } from "@/lib/rfx/agent";
 import { RfxDraftSchema, SECTION_IDS } from "@/lib/rfx/schema";
 import { log } from "@/lib/log";
 
@@ -48,7 +48,8 @@ export async function POST(req: Request) {
 
   const r = parsed.data;
   const result =
-    r.action === "generate" ? await generateRfx(client, r.buyer_input)
+    // Parallel parts by default (fast); RFX_GENERATION_MODE=single uses the one-call draft (the frozen eval path).
+    r.action === "generate" ? await (process.env.RFX_GENERATION_MODE?.trim() === "single" ? generateRfx : generateRfxParallel)(client, r.buyer_input)
     : r.action === "refine" ? await refineRfx(client, r.rfx, r.instruction)
     : await regenerateSection(client, r.rfx, r.section as (typeof SECTION_IDS)[number], r.instruction);
 

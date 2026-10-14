@@ -3,7 +3,9 @@
 import Link from "next/link";
 import { Fragment, useEffect, useMemo, useState } from "react";
 import type { CanonicalBid } from "@/lib/bids/schema";
-import { loadBids } from "@/lib/client/bid-store";
+import { loadBids, postJson } from "@/lib/client/bid-store";
+import { technicalScoreChart, vendorValueChart } from "@/lib/analyst/charts";
+import Chart from "./Chart";
 
 const inr = (n: number | null | undefined) => (n === null || n === undefined ? "—" : n.toLocaleString("en-IN", { maximumFractionDigits: 2 }));
 
@@ -20,7 +22,14 @@ function vendorStats(b: CanonicalBid) {
 export default function CompareWorkspace() {
   const [bids, setBids] = useState<CanonicalBid[]>([]);
   const [line, setLine] = useState<string | null>(null);
-  useEffect(() => { setBids(Object.values(loadBids()).sort((a, b) => (a.vendor.vendor_no ?? 0) - (b.vendor.vendor_no ?? 0))); }, []);
+  const [registered, setRegistered] = useState<Record<string, string[]>>({});
+  const [minScore, setMinScore] = useState<number | null>(null);
+  useEffect(() => {
+    setBids(Object.values(loadBids()).sort((a, b) => (a.vendor.vendor_no ?? 0) - (b.vendor.vendor_no ?? 0)));
+    // Which response files the server can open per vendor (uploads and email bodies stay text-only).
+    postJson<{ qualification: { min_total_score: number }; vendors: { vendor_id: string; response_files: string[]; alternate_files: string[] }[] }>("/api/event", {})
+      .then(({ data }) => (setMinScore(data.qualification?.min_total_score ?? null), setRegistered(Object.fromEntries(data.vendors.map((v) => [v.vendor_id, [...v.response_files, ...v.alternate_files]]))))).catch(() => {});
+  }, []);
 
   const lineIds = useMemo(() => [...new Set(bids.flatMap((b) => b.line_items.map((l) => l.rfx_line_id)).concat(bids.flatMap((b) => b.missing_rfx_lines)))].sort(), [bids]);
 
@@ -54,6 +63,13 @@ export default function CompareWorkspace() {
           })}</tbody>
         </table>
       </div>
+
+      <div className="cols2" style={{ marginTop: 14 }}>
+        <Chart c={vendorValueChart(bids, "Annual evaluated value by vendor")} />
+        <Chart c={technicalScoreChart(bids, "Technical score vs qualification threshold", minScore)} />
+      </div>
+
+      <QuestionnaireMatrix bids={bids} registered={registered} />
 
       <h3 style={{ fontSize: 15, marginTop: 20 }}>SKU-level comparison <span className="hint">(evaluated ₹/unit; lowest comparable price in green; click a line for detail)</span></h3>
       <div className="tbl-wrap">
@@ -91,5 +107,67 @@ export default function CompareWorkspace() {
         </table>
       </div>
     </div>
+  );
+}
+
+const COMPLIANCE_CLASS: Record<string, string> = { full: "finalized", partial: "processed_with_exceptions", none: "error", unanswered: "not_processed" };
+const fileHref = (vendorId: string, name: string) => `/api/event/file?vendor_id=${encodeURIComponent(vendorId)}&name=${encodeURIComponent(name)}`;
+
+/** Questionnaire answers and source documents side by side with the numbers (from the canonical bids; no model calls). */
+function QuestionnaireMatrix({ bids, registered }: { bids: CanonicalBid[]; registered: Record<string, string[]> }) {
+  const [showText, setShowText] = useState(true);
+  const [onlyMandatory, setOnlyMandatory] = useState(false);
+  const questions = useMemo(() => {
+    const m = new Map<string, { qid: string; topic: string; mandatory: boolean; max_points: number }>();
+    for (const b of bids) for (const q of b.questionnaire_answers) if (!m.has(q.qid)) m.set(q.qid, { qid: q.qid, topic: q.topic, mandatory: q.mandatory, max_points: q.max_points });
+    return [...m.values()].sort((a, b) => a.qid.localeCompare(b.qid, undefined, { numeric: true }));
+  }, [bids]);
+  const rows = onlyMandatory ? questions.filter((q) => q.mandatory) : questions;
+  return (
+    <>
+      <h3 style={{ fontSize: 15, marginTop: 20, display: "flex", gap: 12, alignItems: "center", flexWrap: "wrap" }}>
+        Questionnaire & documents <span className="hint">(each vendor's answer, compliance and points; hover for the source)</span>
+        <span style={{ flex: 1 }} />
+        <label className="hint"><input type="checkbox" checked={showText} onChange={(e) => setShowText(e.target.checked)} /> answer text</label>
+        <label className="hint"><input type="checkbox" checked={onlyMandatory} onChange={(e) => setOnlyMandatory(e.target.checked)} /> mandatory only</label>
+      </h3>
+      <div className="tbl-wrap">
+        <table className="tbl qmatrix">
+          <thead><tr><th>Question</th>{bids.map((b) => <th key={b.vendor.vendor_id}>V{b.vendor.vendor_no} <span className="hint">{b.processing_summary.technical_score}/{b.processing_summary.technical_max}</span></th>)}</tr></thead>
+          <tbody>
+            <tr>
+              <td><strong>Response documents</strong><div className="hint">what each vendor sent</div></td>
+              {bids.map((b) => (
+                <td key={b.vendor.vendor_id}>
+                  {b.response_metadata.source_files.map((f) => registered[b.vendor.vendor_id]?.includes(f)
+                    ? <div key={f}><a href={fileHref(b.vendor.vendor_id, f)} target="_blank" rel="noreferrer">{f}</a></div>
+                    : <div key={f} className="hint" title="Uploaded or email body – text was extracted; the original stays with the buyer">{f}</div>)}
+                  <div className="hint">{b.response_metadata.source_type.toUpperCase()}</div>
+                </td>
+              ))}
+            </tr>
+            {rows.map((q) => (
+              <tr key={q.qid}>
+                <td><strong>{q.qid}</strong> {q.topic}<div className="hint">{q.mandatory ? "mandatory · " : ""}{q.max_points} pts</div></td>
+                {bids.map((b) => {
+                  const a = b.questionnaire_answers.find((x) => x.qid === q.qid);
+                  if (!a) return <td key={b.vendor.vendor_id} className="hint">—</td>;
+                  const fail = a.mandatory && !a.mandatory_pass;
+                  return (
+                    <td key={b.vendor.vendor_id} title={a.evidence ? `${a.evidence.source_file} · ${a.evidence.location}: “${a.evidence.source_text}”` : a.rationale}
+                      style={fail ? { boxShadow: "inset 3px 0 0 var(--err)" } : undefined}>
+                      <span className={`chip ${COMPLIANCE_CLASS[a.compliance] ?? ""}`}>{a.compliance}</span> <strong>{a.points}</strong><span className="hint">/{a.max_points}</span>
+                      {fail && <div className="hint" style={{ color: "var(--err)" }}>mandatory not met</div>}
+                      {showText && a.answer_text && <div className="qtext">{a.answer_text.length > 160 ? `${a.answer_text.slice(0, 160)}…` : a.answer_text}</div>}
+                      {a.evidence && <div className="hint">{a.evidence.source_file}{a.evidence.location ? ` · ${a.evidence.location}` : ""}</div>}
+                    </td>
+                  );
+                })}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </>
   );
 }

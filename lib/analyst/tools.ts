@@ -121,6 +121,14 @@ export class AnalystTools {
     this.rec = recommend(this.ctx, this.bids, r.scenarios, this.decision.include_unfinalized);
   }
 
+  /** Full scenario objects + recommendation (used by the chart builder; same engine run as every tool). */
+  allScenarios(): { scenarios: Scenario[]; rec: Recommendation } {
+    this.ensureScenarios();
+    return { scenarios: this.scenarios, rec: this.rec! };
+  }
+
+  allBids(): CanonicalBid[] { return this.bids; }
+
   scenario(id: string | null): Scenario {
     this.ensureScenarios();
     const want = (id ?? this.rec?.recommended_scenario_id ?? "").trim().toUpperCase();

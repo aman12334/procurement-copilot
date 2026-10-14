@@ -5,12 +5,15 @@ import type { CanonicalBid } from "@/lib/bids/schema";
 import Link from "next/link";
 import { bidEnvelope, loadBids, loadChat, loadDecision, postJson, saveChat, saveDecision, withAudit } from "@/lib/client/bid-store";
 import type { ScenarioSpec } from "@/lib/scenarios/types";
+import type { ChartData } from "@/lib/analyst/charts";
+import Chart, { download, formatChartValue } from "./Chart";
 
 interface Citation { ref: string; kind: "tool" | "document"; label: string; source_file?: string; location?: string; text?: string }
 interface Turn {
   question: string;
   ok: boolean;
   answer?: { answer_markdown: string; table: { title: string; columns: string[]; rows: string[][] } | null; unresolved_issues: string[]; cannot_compute: string | null };
+  charts?: ChartData[];
   citations?: Citation[];
   invalid_citations?: string[];
   unsupported_numbers?: string[];
@@ -65,7 +68,7 @@ export default function AnalystWorkspace() {
     }
     saveDecision(decision);
     const t: Turn = data.ok
-      ? { question, ok: true, answer: data.answer, citations: data.citations, invalid_citations: data.invalid_citations, unsupported_numbers: (data as { unsupported_numbers?: string[] }).unsupported_numbers ?? [], tools: data.tool_results, resolved_question: data.turn.resolved_question,
+      ? { question, ok: true, answer: data.answer, charts: (data as { charts?: ChartData[] }).charts ?? [], citations: data.citations, invalid_citations: data.invalid_citations, unsupported_numbers: (data as { unsupported_numbers?: string[] }).unsupported_numbers ?? [], tools: data.tool_results, resolved_question: data.turn.resolved_question,
           scenario_ids: data.turn.scenario_ids ?? [], new_scenarios: data.new_scenarios.map((x) => ({ scenario_id: x.scenario_id, name: x.name })) }
       : { question, ok: false, error: data.error.message };
     const next = [...turns, t];
@@ -138,6 +141,11 @@ function AnswerView({ t }: { t: Turn }) {
             <tbody>{a.table.rows.map((r, i) => <tr key={i}>{r.map((c, j) => <td key={j}>{c}</td>)}</tr>)}</tbody></table>
         </div>
       )}
+      {t.charts?.map((c, i) => <Chart key={i} c={c} />)}
+      <div className="row" style={{ display: "flex", gap: 6, marginTop: 6 }}>
+        <button className="btn small" onClick={() => download(`analyst-answer-${Date.now()}.md`, answerMarkdown(t), "text/markdown")}>Export answer (.md)</button>
+        {a.table && <button className="btn small" onClick={() => download(`${slug(a.table!.title)}.csv`, tableCsv(a.table!))}>Table CSV</button>}
+      </div>
       {a.cannot_compute && <div className="evidence" style={{ borderLeftColor: "var(--warn)" }}>Cannot compute: {a.cannot_compute}</div>}
       {a.unresolved_issues.length > 0 && (
         <div className="evidence" style={{ borderLeftColor: "var(--warn)" }}><strong>Unresolved issues affecting this answer</strong><ul>{a.unresolved_issues.map((u, i) => <li key={i}>{u}</li>)}</ul></div>
@@ -182,4 +190,25 @@ function Markdown({ text }: { text: string }) {
       })}
     </>
   );
+}
+
+const slug = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") || "table";
+const csvCell = (s: string) => (/[",\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s);
+function tableCsv(t: { columns: string[]; rows: string[][] }) {
+  return [t.columns, ...t.rows].map((r) => r.map(csvCell).join(",")).join("\n");
+}
+
+/** The whole answer as Markdown: text, table, chart data (as tables), sources – for pasting into an email or memo. */
+function answerMarkdown(t: Turn): string {
+  const a = t.answer!;
+  const md = [`## ${t.question}`, "", a.answer_markdown, ""];
+  if (a.table) md.push(`**${a.table.title}**`, "", `| ${a.table.columns.join(" | ")} |`, `| ${a.table.columns.map(() => "---").join(" | ")} |`, ...a.table.rows.map((r) => `| ${r.join(" | ")} |`), "");
+  for (const c of t.charts ?? []) {
+    md.push(`**${c.title}** (computed from ${c.source})`, "", "| | | value | note |", "|---|---|---|---|");
+    for (const g of c.groups) for (const b of g.bars) md.push(`| ${g.label} | ${b.label} | ${formatChartValue(b.value, c.unit)} | ${b.note ?? ""} |`);
+    md.push("");
+  }
+  if (a.unresolved_issues.length) md.push("**Unresolved issues**", ...a.unresolved_issues.map((u) => `- ${u}`), "");
+  if (t.citations?.length) md.push("**Sources**", ...t.citations.map((c) => `- [${c.ref}] ${c.kind === "document" ? `${c.label} · ${c.source_file} · ${c.location}` : c.label}`));
+  return md.join("\n");
 }

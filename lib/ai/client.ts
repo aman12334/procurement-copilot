@@ -267,7 +267,42 @@ function toOpenAISchema(node: unknown): unknown {
     .map(([k, v]) => [k, k === "properties" ? Object.fromEntries(Object.entries(v as Record<string, unknown>).map(([pk, pv]) => [pk, toOpenAISchema(pv)])) : toOpenAISchema(v)]));
 }
 
+const STRICT_FORMATS = new Set(["date-time", "time", "date", "duration", "email", "hostname", "ipv4", "ipv6", "uuid"]);
+const STRICT_DROP = new Set(["prefixItems", "$id", "$anchor", "propertyOrdering"]);
+
+/**
+ * OpenAI strict structured output: every key is returned (no omitted fields → no schema retries).
+ * Only possible when every object lists all its properties as required (true for the RFx and bid schemas);
+ * returns null otherwise (e.g. analyst tool args with optional keys), and the caller uses non-strict mode.
+ */
+export function toOpenAIStrictSchema(node: unknown): unknown | null {
+  let ok = true;
+  const walk = (n: unknown): unknown => {
+    if (Array.isArray(n)) return n.map(walk);
+    if (!n || typeof n !== "object") return n;
+    const src = n as Record<string, unknown>;
+    const out: Record<string, unknown> = {};
+    for (const [k, v] of Object.entries(src)) {
+      if (STRICT_DROP.has(k)) continue;
+      if (k === "format" && !STRICT_FORMATS.has(String(v))) continue;
+      if (k === "properties" || k === "$defs" || k === "definitions") out[k] = Object.fromEntries(Object.entries(v as Record<string, unknown>).map(([pk, pv]) => [pk, walk(pv)]));
+      else out[k === "oneOf" ? "anyOf" : k] = walk(v);
+    }
+    if (out.properties) {
+      const keys = Object.keys(out.properties as object);
+      const req = new Set((out.required as string[] | undefined) ?? []);
+      if (keys.some((k) => !req.has(k))) ok = false;
+      out.additionalProperties = false;
+    }
+    return out;
+  };
+  const res = walk(node);
+  return ok && (res as Record<string, unknown>)?.type === "object" ? res : null;
+}
+
 export class OpenAIClient implements LLMClient {
+  /** Set if OpenAI rejected a strict schema; later calls use non-strict mode (tolerant parsing still applies). */
+  static strictRejected = false;
   private client: OpenAI;
   readonly model: string;
   calls = 0;
@@ -308,15 +343,28 @@ export class OpenAIClient implements LLMClient {
         ? { type: "file", file: { filename: a.name, file_data: `data:application/pdf;base64,${a.dataBase64}` } }
         : { type: "image_url", image_url: { url: `data:${a.mimeType};base64,${a.dataBase64}`, detail: "high" } },
     ]);
-    const res = await this.client.chat.completions.create({
+    const strictSchema = OpenAIClient.strictRejected ? null : toOpenAIStrictSchema(req.jsonSchema);
+    const create = (strict: boolean) => this.client.chat.completions.create({
       model: this.cfg.model,
       messages: [{ role: "system", content: req.system }, { role: "user", content: [...parts, { type: "text", text: req.prompt }] }],
-      response_format: { type: "json_schema", json_schema: { name: "structured_output", schema: toOpenAISchema(req.jsonSchema) as Record<string, unknown>, strict: false } },
+      response_format: { type: "json_schema", json_schema: { name: "structured_output",
+        schema: (strict ? strictSchema : toOpenAISchema(req.jsonSchema)) as Record<string, unknown>, strict } },
       max_completion_tokens: this.cfg.maxOutputTokens,
       ...(this.cfg.reasoningEffort ? { reasoning_effort: this.cfg.reasoningEffort } : {}),
     });
+    let res: Awaited<ReturnType<typeof create>>;
+    try {
+      res = await create(!!strictSchema);
+    } catch (e) {
+      // A schema OpenAI's strict mode cannot accept is a config problem, not an outage: fall back to non-strict once and remember it.
+      const status = (e as { status?: number }).status;
+      if (!strictSchema || status !== 400 || !/schema|response_format|strict/i.test((e as Error).message)) throw e;
+      OpenAIClient.strictRejected = true;
+      log("warn", "openai.strict_schema_rejected", { model: this.cfg.model, message: (e as Error).message.slice(0, 300) });
+      res = await create(false);
+    }
     const choice = res.choices[0];
-    log("info", "openai.call", { model: this.cfg.model, durationMs: Date.now() - started, promptTokens: res.usage?.prompt_tokens, outputTokens: res.usage?.completion_tokens, finishReason: choice?.finish_reason });
+    log("info", "openai.call", { model: this.cfg.model, strict: !!strictSchema && !OpenAIClient.strictRejected, durationMs: Date.now() - started, promptTokens: res.usage?.prompt_tokens, outputTokens: res.usage?.completion_tokens, finishReason: choice?.finish_reason });
     if (choice?.message?.refusal) throw new Error(`OpenAI declined the request: ${choice.message.refusal}`);
     if (choice?.finish_reason === "length") throw new Error(`OpenAI output hit the ${this.cfg.maxOutputTokens}-token limit (OPENAI_MAX_OUTPUT_TOKENS).`);
     const text = choice?.message?.content;

@@ -4,6 +4,7 @@ import { emptyDecision, type DecisionAuditEvent, type DecisionState } from "@/li
 import { commitOutcome, emptyVersions, type BidVersions, type ProcessingOutcome } from "@/lib/bids/versions";
 import type { IngestionJob } from "@/lib/ingestion/queue";
 import type { ReleasedEvent } from "@/lib/event/released";
+import type { RfqEntry } from "@/lib/rfq/registry";
 
 const BIDS_KEY = "stage3.bids.v1";
 const CHAT_KEY = "stage3.analyst.v1";
@@ -95,3 +96,14 @@ export function commitProcessing(vendorId: string, outcome: ProcessingOutcome, s
 }
 export const loadJobs = (): IngestionJob[] => read(ns(JOBS_KEY), []);
 export const saveJobs = (j: IngestionJob[]) => write(ns(JOBS_KEY), j.slice(-50));
+
+// ------------------------------------------------------------------ RFQ register (all events, not namespaced)
+const RFQ_KEY = "rfq.register.v1";
+export const loadRfqs = (): RfqEntry[] => read<RfqEntry[]>(RFQ_KEY, []);
+/** Applies a register transition and persists it; notifies open pages (nav count, register page). */
+export function updateRfqs(fn: (list: RfqEntry[]) => RfqEntry[]): RfqEntry[] {
+  const next = fn(loadRfqs());
+  write(RFQ_KEY, next);
+  if (typeof window !== "undefined") window.dispatchEvent(new Event("rfq-register-changed"));
+  return next;
+}

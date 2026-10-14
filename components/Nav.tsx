@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { loadActiveEvent } from "@/lib/client/bid-store";
+import { loadActiveEvent, loadRfqs } from "@/lib/client/bid-store";
 
 const LINKS = [
   { href: "/", label: "1 · RFx" },
@@ -15,16 +15,20 @@ const LINKS = [
 export default function Nav() {
   const path = usePathname();
   const [event, setEvent] = useState<string>("");
+  const [rfqCount, setRfqCount] = useState(0);
   useEffect(() => {
     const read = () => { const e = loadActiveEvent(); setEvent(e ? `Event: ${e.rfx.rfx_id} (released RFx · open)` : "Event: Stage 1 demo RFx"); };
-    read();
+    const readRfqs = () => setRfqCount(loadRfqs().length);
+    read(); readRfqs();
     window.addEventListener("rfx-event-changed", read);
-    return () => window.removeEventListener("rfx-event-changed", read);
+    window.addEventListener("rfq-register-changed", readRfqs);
+    return () => { window.removeEventListener("rfx-event-changed", read); window.removeEventListener("rfq-register-changed", readRfqs); };
   }, [path]);
   return (
     <nav className="nav">
       <strong>Procurement Copilot</strong>
       <span className="nav-event" title="All bid processing, comparison, analysis and decisions use this RFx">{event}</span>
+      <Link href="/rfqs" className={path === "/rfqs" ? "active" : ""} title="All RFQs generated, released and awarded">RFQ register ({rfqCount})</Link>
       {LINKS.map((l) => (
         <Link key={l.href} href={l.href} className={path === l.href ? "active" : ""}>{l.label}</Link>
       ))}
