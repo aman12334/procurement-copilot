@@ -65,3 +65,19 @@ describe("parallel RFx generation", () => {
     expect(r.error.message).toMatch(/line items/);
   });
 });
+
+describe("requirements are filed by their own type", () => {
+  it("an 'information' item in the mandatory list moves out; types are never changed", async () => {
+    const { placeRequirementsByType } = await import("@/lib/rfx/agent");
+    const { validateBusinessRules } = await import("@/lib/rfx/validate");
+    const r = completeRfx();
+    r.mandatory_requirements.push({ id: "BR-12", area: "Scope", requirement: "Partial bids are allowed.", type: "information", source: "explicit" });
+    r.preferred_requirements.push({ id: "BR-13", area: "Cert", requirement: "ISO 14001.", type: "mandatory", source: "explicit" });
+    expect(validateBusinessRules(r).filter((i) => i.code === "TYPE_MISMATCH")).toHaveLength(2);
+    const fixed = placeRequirementsByType(r);
+    expect(fixed.mandatory_requirements.map((x) => x.id)).toContain("BR-13");
+    expect(fixed.preferred_requirements.find((x) => x.id === "BR-12")?.type).toBe("information");
+    expect(validateBusinessRules(fixed).filter((i) => i.code === "TYPE_MISMATCH")).toEqual([]);
+    expect(placeRequirementsByType(completeRfx())).toEqual(completeRfx());
+  });
+});

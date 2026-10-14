@@ -55,9 +55,26 @@ function finish(client: LLMClient, label: string, out: StructuredOutcome<RfxDraf
     log("error", "rfx.failed", { label, ...meta, code: out.code, details: out.details });
     return { ok: false, error: { code: out.code, message: out.message, details: out.details }, meta };
   }
-  const issues = validateBusinessRules(out.data);
-  log("info", "rfx.final", { label, ...meta, issues: issues.length, rfx: out.data });
-  return { ok: true, rfx: out.data, issues, meta };
+  const rfx = placeRequirementsByType(out.data);
+  const issues = validateBusinessRules(rfx);
+  log("info", "rfx.final", { label, ...meta, issues: issues.length, rfx });
+  return { ok: true, rfx, issues, meta };
+}
+
+/**
+ * The model sometimes files a requirement in the wrong list (e.g. "Partial bids are allowed", typed "information",
+ * inside mandatory_requirements). Each item keeps its own type; only its list follows that type, so nothing is
+ * re-labelled: mandatory → mandatory list, everything else → preferred/information list.
+ */
+export function placeRequirementsByType(rfx: RfxDraft): RfxDraft {
+  const all = [...rfx.mandatory_requirements, ...rfx.preferred_requirements];
+  const mandatory = all.filter((r) => r.type === "mandatory");
+  const other = all.filter((r) => r.type !== "mandatory");
+  const moved = rfx.mandatory_requirements.length - mandatory.filter((r) => rfx.mandatory_requirements.includes(r)).length
+    + rfx.preferred_requirements.length - other.filter((r) => rfx.preferred_requirements.includes(r)).length;
+  if (!moved) return rfx;
+  log("info", "rfx.requirements_regrouped", { moved });
+  return { ...rfx, mandatory_requirements: mandatory, preferred_requirements: other };
 }
 
 export async function generateRfx(client: LLMClient, buyerInput: string, today?: Date): Promise<AgentResult> {

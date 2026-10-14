@@ -13,6 +13,8 @@ Vendor responses  ─▶ 2 Bid processing: ingest ▸ extract ▸ match ▸ inte
 
 **Principle:** the model reads, interprets and explains; code calculates and decides every number.
 
+For a short overview with screenshots of a full run, see [docs/PROJECT_OVERVIEW.md](docs/PROJECT_OVERVIEW.md).
+
 [`stage1/`](stage1/README.md) holds the synthetic dataset. At runtime the app reads only `stage1/buyer`, `stage1/vendors` and `stage1/images`, through the guard in `lib/event/files.ts`.
 - `stage1/ground_truth` and `stage1/_build` are used **only** by `eval/`.
 - A test enforces this.
@@ -22,13 +24,15 @@ Vendor responses  ─▶ 2 Bid processing: ingest ▸ extract ▸ match ▸ inte
 
 ```bash
 npm install
-cp .env.example .env.local      # set AI_PROVIDER and the matching key
+cp .env.example .env.local      # set LLM_PRIMARY_PROVIDER and the matching key
 npm run dev                     # http://localhost:3000
 ```
 
 | Variable | Notes |
 |---|---|
-| `AI_PROVIDER` | `gemini` or `anthropic` |
+| `LLM_PRIMARY_PROVIDER` | `openai` (default setup), `gemini` or `anthropic` (`AI_PROVIDER` still accepted) |
+| `OPENAI_API_KEY`, `OPENAI_MODEL` | Model is pinned explicitly; `OPENAI_TIMEOUT_MS`, `OPENAI_MAX_OUTPUT_TOKENS`, `OPENAI_REASONING_EFFORT` optional |
+| `LLM_FALLBACK_ENABLED`, `FREE_PROVIDER`, `FREE_MODEL` | Optional recorded fallback to a free Gemini tier on quota, rate-limit or outage |
 | `GEMINI_API_KEY`, `GEMINI_MODEL` | e.g. `gemini-3.8-flash`. Free tier allows 20 requests per day per model |
 | `GEMINI_THINKING_LEVEL`, `GEMINI_TIMEOUT_MS` | `LOW` (default) / `MEDIUM` / `HIGH`; default timeout 120000 |
 | `ANTHROPIC_API_KEY`, `ANTHROPIC_MODEL`, `ANTHROPIC_EFFORT` | `claude-haiku-5-5`, `low` |
@@ -78,3 +82,13 @@ data/event/        invited-supplier registry (identity only)
 - **Browser-held state:** bids and decisions live in each browser's `localStorage`, not a shared database.
 - **Freight:** where it is "extra / at actuals", the evaluation uses the RFx loading rule (5%) or a buyer assumption, and the scenario flags landed cost as incomplete.
 - **Recommendation rules:** the recommendation applies fixed, documented rules (`RECOMMENDATION_POLICY`), not an optimised score.
+
+## Demo data
+
+Everything in `stage1/` is a **fictional** sourcing event built for this demo. The buyer, vendors, people, emails (`*.example`), GSTINs and certificate numbers are invented; any resemblance to real companies is coincidental. Email sending and receiving is simulated, and working data is stored in the browser.
+
+## License
+
+- **Code:** [MIT](LICENSE) © 2026 Aman Tiwari.
+- **Demo dataset (`stage1/`) and documentation (`docs/`):** [CC BY 4.0](LICENSE-DATA). Reuse with credit.
+- **Dependencies:** each keeps its own license; see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).

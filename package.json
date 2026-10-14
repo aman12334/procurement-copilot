@@ -2,7 +2,8 @@
   "name": "procurement-platform",
   "version": "0.2.0",
   "private": true,
-  "description": "AI procurement prototype – Stage 2: RFx Creation Agent",
+  "license": "MIT",
+  "description": "AI procurement prototype \u2013 Stage 2: RFx Creation Agent",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
