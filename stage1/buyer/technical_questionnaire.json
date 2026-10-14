@@ -1,0 +1,156 @@
+{
+  "rfx_id": "SCPL/PKG/RFQ/2026-27/014",
+  "questions": [
+    {
+      "qid": "Q01",
+      "topic": "ISO 9001",
+      "question": "Is your manufacturing site(s) certified to ISO 9001:2015? Provide certificate number and validity.",
+      "mandatory": true,
+      "max_points": 10,
+      "partial_points": 0,
+      "full": "Valid ISO 9001:2015 certificate covering supplying plant(s)",
+      "partial": "Not applicable – applied / in process scores 0 and fails mandatory"
+    },
+    {
+      "qid": "Q02",
+      "topic": "FSC certification",
+      "question": "Do you hold FSC Chain-of-Custody certification?",
+      "mandatory": false,
+      "max_points": 6,
+      "partial_points": 3,
+      "full": "Valid FSC CoC certificate",
+      "partial": "Application in process with audit date"
+    },
+    {
+      "qid": "Q03",
+      "topic": "Recycled content",
+      "question": "Can you supply board meeting SCPL minimum recycled-content levels (70% domestic grades / 50% export & litho grades) with a supplier declaration per lot?",
+      "mandatory": false,
+      "max_points": 6,
+      "partial_points": 3,
+      "full": "Meets minimums on all grades with declaration",
+      "partial": "Meets on some grades only"
+    },
+    {
+      "qid": "Q04",
+      "topic": "Plant capacity",
+      "question": "State installed annual corrugation capacity (MT) and current utilisation. Minimum 6,000 MTPA installed required.",
+      "mandatory": true,
+      "max_points": 10,
+      "partial_points": 5,
+      "full": ">= 6,000 MTPA installed",
+      "partial": "4,000 – 5,999 MTPA (fails mandatory)"
+    },
+    {
+      "qid": "Q05",
+      "topic": "Quality inspection",
+      "question": "Describe in-house testing: do you test GSM, bursting strength, ECT/BCT, moisture and Cobb per lot and issue a COA with every delivery?",
+      "mandatory": true,
+      "max_points": 10,
+      "partial_points": 5,
+      "full": "In-house lab covering GSM, BS, ECT/BCT, moisture, Cobb + COA per lot",
+      "partial": "Partial test coverage or no COA (fails mandatory)"
+    },
+    {
+      "qid": "Q06",
+      "topic": "Traceability",
+      "question": "Is every carton/bundle marked with a batch/lot code traceable to paper reels and production date?",
+      "mandatory": true,
+      "max_points": 8,
+      "partial_points": 4,
+      "full": "Lot code on every carton, traceable to reels",
+      "partial": "Bundle-level marking only (fails mandatory)"
+    },
+    {
+      "qid": "Q07",
+      "topic": "Lead time",
+      "question": "Standard lead time from PO (repeat items) – SCPL target <= 14 days.",
+      "mandatory": false,
+      "max_points": 6,
+      "partial_points": 3,
+      "full": "<= 14 days",
+      "partial": "15 – 21 days"
+    },
+    {
+      "qid": "Q08",
+      "topic": "Complaint resolution SLA",
+      "question": "Complaint SLA: acknowledgement within 24 h and CAPA within 7 days?",
+      "mandatory": false,
+      "max_points": 6,
+      "partial_points": 3,
+      "full": "Ack <= 24 h and CAPA <= 7 days",
+      "partial": "Slower than one of the targets"
+    },
+    {
+      "qid": "Q09",
+      "topic": "Production locations",
+      "question": "List production plants and distance to each SCPL plant. Plants within 350 km preferred.",
+      "mandatory": false,
+      "max_points": 8,
+      "partial_points": null,
+      "full": "Plants within 350 km of all 3 SCPL plants (8)",
+      "partial": "2 of 3 plants covered = 5; 1 of 3 = 3; none = 0"
+    },
+    {
+      "qid": "Q10",
+      "topic": "Business continuity",
+      "question": "Do you have a documented business-continuity plan (alternate plant or contracted converter, >= 15 days raw-material buffer, multiple paper mills)?",
+      "mandatory": true,
+      "max_points": 8,
+      "partial_points": 4,
+      "full": "Documented BCP meeting all three elements",
+      "partial": "BCP partially meets elements (fails mandatory)"
+    },
+    {
+      "qid": "Q11",
+      "topic": "Moisture resistance",
+      "question": "Can you supply water-resistant coated board achieving Cobb(30 min) <= 40 g/m2?",
+      "mandatory": false,
+      "max_points": 6,
+      "partial_points": 3,
+      "full": "In-house WR coating, Cobb <= 40",
+      "partial": "Via outsourced coating"
+    },
+    {
+      "qid": "Q12",
+      "topic": "Printing capability",
+      "question": "Printing capability: flexo up to 4 colours and offset litho-lamination in-house?",
+      "mandatory": false,
+      "max_points": 6,
+      "partial_points": 3,
+      "full": "4C flexo and litho-lamination in-house",
+      "partial": "One of the two in-house (other via partner or not available)"
+    },
+    {
+      "qid": "Q13",
+      "topic": "Sustainability",
+      "question": "Sustainability practices: ISO 14001, effluent/waste management, recycled fibre sourcing, carbon reporting.",
+      "mandatory": false,
+      "max_points": 5,
+      "partial_points": 2,
+      "full": "ISO 14001 certified plus documented practices",
+      "partial": "Documented practices without certification"
+    },
+    {
+      "qid": "Q14",
+      "topic": "Hygiene / food safety",
+      "question": "Hygiene controls for food-contact-adjacent packaging (BRCGS Packaging / ISO 22000 / FSSC, pest control, GMP).",
+      "mandatory": false,
+      "max_points": 5,
+      "partial_points": 2,
+      "full": "BRCGS / ISO 22000 / FSSC certified",
+      "partial": "Pest control + GMP without certification"
+    }
+  ],
+  "qualification": {
+    "min_total_score": 70,
+    "rule": "Vendor qualifies only if total score >= 70/100 AND every mandatory question (Q01, Q04, Q05, Q06, Q10) is answered with full compliance. Unanswered questions score 0; an unanswered mandatory question fails qualification."
+  },
+  "mandatory_qids": [
+    "Q01",
+    "Q04",
+    "Q05",
+    "Q06",
+    "Q10"
+  ]
+}

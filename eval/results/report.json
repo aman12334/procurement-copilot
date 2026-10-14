@@ -1,0 +1,624 @@
+{
+  "generated_at": "2026-10-13T19:32:30.823Z",
+  "vendors": [
+    {
+      "key": "VND-1001",
+      "vendor_id": "VND-1001",
+      "source_type": "xlsx",
+      "model": "gemini-3-flash-preview",
+      "ms": 78515,
+      "coverage": {
+        "gt_quoted": 30,
+        "ours_quoted": 30,
+        "correct": 30,
+        "precision": 100,
+        "recall": 100
+      },
+      "raw_price_accuracy": 100,
+      "uom_accuracy": 100,
+      "currency_accuracy": 100,
+      "normalized_price_accuracy": 100,
+      "currency_conversion_accuracy": null,
+      "unit_conversion_accuracy": null,
+      "freight_accuracy": 100,
+      "moq_accuracy": 100,
+      "lead_time_accuracy": 100,
+      "questionnaire_accuracy": 100,
+      "technical": {
+        "ours": 89,
+        "gt": 89,
+        "ours_status": "QUALIFIED",
+        "gt_status": "QUALIFIED"
+      },
+      "line_review_flags": {
+        "ours": 2,
+        "gt": 1,
+        "true_positive": 1,
+        "precision": 50,
+        "recall": 100,
+        "false_review_rate": 3.3
+      },
+      "review_items": 3,
+      "misses": []
+    },
+    {
+      "key": "VND-1002",
+      "vendor_id": "VND-1002",
+      "source_type": "pdf",
+      "model": "gemini-3-flash-preview",
+      "ms": 60220,
+      "coverage": {
+        "gt_quoted": 27,
+        "ours_quoted": 27,
+        "correct": 27,
+        "precision": 100,
+        "recall": 100
+      },
+      "raw_price_accuracy": 100,
+      "uom_accuracy": 100,
+      "currency_accuracy": 100,
+      "normalized_price_accuracy": 100,
+      "currency_conversion_accuracy": null,
+      "unit_conversion_accuracy": 100,
+      "freight_accuracy": 100,
+      "moq_accuracy": 100,
+      "lead_time_accuracy": 100,
+      "questionnaire_accuracy": 100,
+      "technical": {
+        "ours": 81,
+        "gt": 81,
+        "ours_status": "QUALIFIED",
+        "gt_status": "QUALIFIED"
+      },
+      "line_review_flags": {
+        "ours": 1,
+        "gt": 1,
+        "true_positive": 1,
+        "precision": 100,
+        "recall": 100,
+        "false_review_rate": 0
+      },
+      "review_items": 5,
+      "misses": []
+    },
+    {
+      "key": "VND-1003",
+      "vendor_id": "VND-1003",
+      "source_type": "docx",
+      "model": "gemini-3-flash-preview",
+      "ms": 84871,
+      "coverage": {
+        "gt_quoted": 29,
+        "ours_quoted": 29,
+        "correct": 29,
+        "precision": 100,
+        "recall": 100
+      },
+      "raw_price_accuracy": 100,
+      "uom_accuracy": 100,
+      "currency_accuracy": 100,
+      "normalized_price_accuracy": 100,
+      "currency_conversion_accuracy": 100,
+      "unit_conversion_accuracy": null,
+      "freight_accuracy": 100,
+      "moq_accuracy": 100,
+      "lead_time_accuracy": 93.1,
+      "questionnaire_accuracy": 100,
+      "technical": {
+        "ours": 94,
+        "gt": 94,
+        "ours_status": "QUALIFIED",
+        "gt_status": "QUALIFIED"
+      },
+      "line_review_flags": {
+        "ours": 1,
+        "gt": 1,
+        "true_positive": 1,
+        "precision": 100,
+        "recall": 100,
+        "false_review_rate": 0
+      },
+      "review_items": 1,
+      "misses": [
+        "CP-015: lead 14 vs 28",
+        "CP-017: lead 14 vs 28"
+      ]
+    },
+    {
+      "key": "VND-1004",
+      "vendor_id": "VND-1004",
+      "source_type": "image",
+      "model": "gemini-3-flash-preview",
+      "ms": 56078,
+      "coverage": {
+        "gt_quoted": 28,
+        "ours_quoted": 28,
+        "correct": 28,
+        "precision": 100,
+        "recall": 100
+      },
+      "raw_price_accuracy": 100,
+      "uom_accuracy": 100,
+      "currency_accuracy": 100,
+      "normalized_price_accuracy": 100,
+      "currency_conversion_accuracy": null,
+      "unit_conversion_accuracy": 100,
+      "freight_accuracy": 100,
+      "moq_accuracy": 100,
+      "lead_time_accuracy": 100,
+      "questionnaire_accuracy": 85.7,
+      "technical": {
+        "ours": 46,
+        "gt": 44,
+        "ours_status": "NOT QUALIFIED",
+        "gt_status": "NOT QUALIFIED"
+      },
+      "line_review_flags": {
+        "ours": 2,
+        "gt": 2,
+        "true_positive": 2,
+        "precision": 100,
+        "recall": 100,
+        "false_review_rate": 0
+      },
+      "review_items": 5,
+      "misses": [
+        "Q11: none/0 vs unanswered/0",
+        "Q13: partial/2 vs unanswered/0"
+      ]
+    },
+    {
+      "key": "VND-1004__vendor_4_rate_card_angled",
+      "vendor_id": "VND-1004",
+      "source_type": "image",
+      "model": "gemini-3-flash-preview",
+      "ms": 54853,
+      "coverage": {
+        "gt_quoted": 28,
+        "ours_quoted": 28,
+        "correct": 28,
+        "precision": 100,
+        "recall": 100
+      },
+      "raw_price_accuracy": 100,
+      "uom_accuracy": 100,
+      "currency_accuracy": 100,
+      "normalized_price_accuracy": 100,
+      "currency_conversion_accuracy": null,
+      "unit_conversion_accuracy": 100,
+      "freight_accuracy": 100,
+      "moq_accuracy": 100,
+      "lead_time_accuracy": 100,
+      "questionnaire_accuracy": 85.7,
+      "technical": {
+        "ours": 46,
+        "gt": 44,
+        "ours_status": "NOT QUALIFIED",
+        "gt_status": "NOT QUALIFIED"
+      },
+      "line_review_flags": {
+        "ours": 2,
+        "gt": 2,
+        "true_positive": 2,
+        "precision": 100,
+        "recall": 100,
+        "false_review_rate": 0
+      },
+      "review_items": 5,
+      "misses": [
+        "Q09: partial/5 vs 1_of_3_plants_within_350km/3",
+        "Q11: none/0 vs unanswered/0"
+      ]
+    },
+    {
+      "key": "VND-1004__vendor_4_rate_card_glare",
+      "vendor_id": "VND-1004",
+      "source_type": "image",
+      "model": "gemini-3-flash-preview",
+      "ms": 84784,
+      "coverage": {
+        "gt_quoted": 28,
+        "ours_quoted": 28,
+        "correct": 28,
+        "precision": 100,
+        "recall": 100
+      },
+      "raw_price_accuracy": 100,
+      "uom_accuracy": 100,
+      "currency_accuracy": 100,
+      "normalized_price_accuracy": 100,
+      "currency_conversion_accuracy": null,
+      "unit_conversion_accuracy": 100,
+      "freight_accuracy": 100,
+      "moq_accuracy": 100,
+      "lead_time_accuracy": 100,
+      "questionnaire_accuracy": 85.7,
+      "technical": {
+        "ours": 47,
+        "gt": 44,
+        "ours_status": "NOT QUALIFIED",
+        "gt_status": "NOT QUALIFIED"
+      },
+      "line_review_flags": {
+        "ours": 2,
+        "gt": 2,
+        "true_positive": 2,
+        "precision": 100,
+        "recall": 100,
+        "false_review_rate": 0
+      },
+      "review_items": 5,
+      "misses": [
+        "Q08: full/6 vs partial/3",
+        "Q11: none/0 vs unanswered/0"
+      ]
+    },
+    {
+      "key": "VND-1004__vendor_4_rate_card_partial",
+      "vendor_id": "VND-1004",
+      "source_type": "image",
+      "model": "gemini-3-flash-preview",
+      "ms": 58635,
+      "coverage": {
+        "gt_quoted": 28,
+        "ours_quoted": 28,
+        "correct": 28,
+        "precision": 100,
+        "recall": 100
+      },
+      "raw_price_accuracy": 100,
+      "uom_accuracy": 100,
+      "currency_accuracy": 100,
+      "normalized_price_accuracy": 100,
+      "currency_conversion_accuracy": null,
+      "unit_conversion_accuracy": 100,
+      "freight_accuracy": 100,
+      "moq_accuracy": 100,
+      "lead_time_accuracy": 100,
+      "questionnaire_accuracy": 85.7,
+      "technical": {
+        "ours": 49,
+        "gt": 44,
+        "ours_status": "NOT QUALIFIED",
+        "gt_status": "NOT QUALIFIED"
+      },
+      "line_review_flags": {
+        "ours": 2,
+        "gt": 2,
+        "true_positive": 2,
+        "precision": 100,
+        "recall": 100,
+        "false_review_rate": 0
+      },
+      "review_items": 5,
+      "misses": [
+        "Q09: partial/8 vs 1_of_3_plants_within_350km/3",
+        "Q11: none/0 vs unanswered/0"
+      ]
+    },
+    {
+      "key": "VND-1005",
+      "vendor_id": "VND-1005",
+      "source_type": "email",
+      "model": "gemini-3-flash-preview",
+      "ms": 49647,
+      "coverage": {
+        "gt_quoted": 20,
+        "ours_quoted": 20,
+        "correct": 20,
+        "precision": 100,
+        "recall": 100
+      },
+      "raw_price_accuracy": 100,
+      "uom_accuracy": 100,
+      "currency_accuracy": 100,
+      "normalized_price_accuracy": 100,
+      "currency_conversion_accuracy": null,
+      "unit_conversion_accuracy": 100,
+      "freight_accuracy": 100,
+      "moq_accuracy": 66.7,
+      "lead_time_accuracy": 100,
+      "questionnaire_accuracy": 92.9,
+      "technical": {
+        "ours": 68,
+        "gt": 71,
+        "ours_status": "NOT QUALIFIED",
+        "gt_status": "QUALIFIED"
+      },
+      "line_review_flags": {
+        "ours": 3,
+        "gt": 3,
+        "true_positive": 3,
+        "precision": 100,
+        "recall": 100,
+        "false_review_rate": 0
+      },
+      "review_items": 8,
+      "misses": [
+        "CP-016: moq null vs 5000",
+        "CP-017: moq null vs 5000",
+        "Q12: none/0 vs partial/3"
+      ]
+    }
+  ],
+  "edge_cases": {
+    "total": 32,
+    "scored": 32,
+    "detected": 29,
+    "recall_pct": 90.6,
+    "hitl_edge_case_recall_pct": 91.7,
+    "list": [
+      {
+        "id": "EC-01",
+        "title": "Missing SKUs across vendors",
+        "vendor": null,
+        "hitl_expected": false,
+        "detected": true
+      },
+      {
+        "id": "EC-02",
+        "title": "Comments embedded in Excel cells",
+        "vendor": "VND-1001",
+        "hitl_expected": false,
+        "detected": true
+      },
+      {
+        "id": "EC-03",
+        "title": "Vendor quotes 27 of 30 lines",
+        "vendor": "VND-1002",
+        "hitl_expected": false,
+        "detected": true
+      },
+      {
+        "id": "EC-04",
+        "title": "USD-denominated quote",
+        "vendor": "VND-1003",
+        "hitl_expected": false,
+        "detected": true
+      },
+      {
+        "id": "EC-05",
+        "title": "Price per 100 pieces",
+        "vendor": "VND-1002",
+        "hitl_expected": false,
+        "detected": true
+      },
+      {
+        "id": "EC-06",
+        "title": "Rate card partitions/pads per 100 nos (asterisk footnote)",
+        "vendor": "VND-1004",
+        "hitl_expected": false,
+        "detected": true
+      },
+      {
+        "id": "EC-07",
+        "title": "'Per box' unit",
+        "vendor": "VND-1004",
+        "hitl_expected": false,
+        "detected": true
+      },
+      {
+        "id": "EC-08",
+        "title": "Freight condition buried in footnote",
+        "vendor": "VND-1002",
+        "hitl_expected": true,
+        "detected": true
+      },
+      {
+        "id": "EC-09",
+        "title": "Per-kg pricing",
+        "vendor": "VND-1005",
+        "hitl_expected": false,
+        "detected": true
+      },
+      {
+        "id": "EC-10",
+        "title": "MOQ constraints",
+        "vendor": null,
+        "hitl_expected": false,
+        "detected": true
+      },
+      {
+        "id": "EC-11",
+        "title": "MOQ described in prose, not table",
+        "vendor": "VND-1003",
+        "hitl_expected": false,
+        "detected": true
+      },
+      {
+        "id": "EC-12",
+        "title": "Lead-time condition in prose",
+        "vendor": "VND-1003",
+        "hitl_expected": false,
+        "detected": false
+      },
+      {
+        "id": "EC-13",
+        "title": "Ambiguous image-based price (handwritten correction)",
+        "vendor": "VND-1004",
+        "hitl_expected": true,
+        "detected": true
+      },
+      {
+        "id": "EC-14",
+        "title": "Possible price outlier",
+        "vendor": "VND-1001",
+        "hitl_expected": true,
+        "detected": true
+      },
+      {
+        "id": "EC-15",
+        "title": "Duplicated SKU with mismatched description and price",
+        "vendor": "VND-1002",
+        "hitl_expected": true,
+        "detected": true
+      },
+      {
+        "id": "EC-16",
+        "title": "Slightly mismatched SKU description",
+        "vendor": "VND-1003",
+        "hitl_expected": true,
+        "detected": true
+      },
+      {
+        "id": "EC-17",
+        "title": "Reference to last year's pricing",
+        "vendor": "VND-1005",
+        "hitl_expected": true,
+        "detected": true
+      },
+      {
+        "id": "EC-18",
+        "title": "Conflicting commercial term – table vs note",
+        "vendor": "VND-1003",
+        "hitl_expected": true,
+        "detected": false
+      },
+      {
+        "id": "EC-19",
+        "title": "Discount condition buried in note",
+        "vendor": "VND-1002",
+        "hitl_expected": true,
+        "detected": true
+      },
+      {
+        "id": "EC-20",
+        "title": "Hard-to-read row in image",
+        "vendor": "VND-1004",
+        "hitl_expected": false,
+        "detected": false
+      },
+      {
+        "id": "EC-21",
+        "title": "Quote not meeting mandatory spec (uncoated)",
+        "vendor": "VND-1004",
+        "hitl_expected": true,
+        "detected": true
+      },
+      {
+        "id": "EC-22",
+        "title": "Missing mandatory certification / failed questionnaire",
+        "vendor": "VND-1004",
+        "hitl_expected": true,
+        "detected": true
+      },
+      {
+        "id": "EC-23",
+        "title": "Strong pricing but poor technical qualification",
+        "vendor": "VND-1004",
+        "hitl_expected": true,
+        "detected": true
+      },
+      {
+        "id": "EC-24",
+        "title": "Different price-validity periods",
+        "vendor": null,
+        "hitl_expected": false,
+        "detected": true
+      },
+      {
+        "id": "EC-25",
+        "title": "Payment terms outside the main table",
+        "vendor": "VND-1002",
+        "hitl_expected": false,
+        "detected": true
+      },
+      {
+        "id": "EC-26",
+        "title": "Unclear condition",
+        "vendor": "VND-1005",
+        "hitl_expected": true,
+        "detected": true
+      },
+      {
+        "id": "EC-27",
+        "title": "Freight excluded",
+        "vendor": null,
+        "hitl_expected": false,
+        "detected": true
+      },
+      {
+        "id": "EC-28",
+        "title": "Renamed columns, reordered lines, freight in separate column",
+        "vendor": "VND-1001",
+        "hitl_expected": false,
+        "detected": true
+      },
+      {
+        "id": "EC-29",
+        "title": "Shorthand item references",
+        "vendor": "VND-1005",
+        "hitl_expected": false,
+        "detected": true
+      },
+      {
+        "id": "EC-30",
+        "title": "Unquantified tooling charges",
+        "vendor": null,
+        "hitl_expected": false,
+        "detected": true
+      },
+      {
+        "id": "EC-31",
+        "title": "Lines split across PDF pages",
+        "vendor": "VND-1002",
+        "hitl_expected": false,
+        "detected": true
+      },
+      {
+        "id": "EC-32",
+        "title": "Image quality variants",
+        "vendor": "VND-1004",
+        "hitl_expected": false,
+        "detected": true
+      }
+    ]
+  },
+  "exceptions": {
+    "line_flag_precision_pct": 88.9,
+    "line_flag_recall_pct": 100,
+    "false_review_rate_pct": 0.7
+  },
+  "hitl": {
+    "VND-1001": {
+      "open_before": 3,
+      "open_after": 0,
+      "corrections": 0,
+      "corrected_values_preserved": true,
+      "downstream_recomputed": true,
+      "finalized": true
+    },
+    "VND-1002": {
+      "open_before": 5,
+      "open_after": 0,
+      "corrections": 1,
+      "corrected_values_preserved": true,
+      "downstream_recomputed": true,
+      "finalized": true
+    },
+    "VND-1003": {
+      "open_before": 1,
+      "open_after": 0,
+      "corrections": 0,
+      "corrected_values_preserved": true,
+      "downstream_recomputed": true,
+      "finalized": true
+    },
+    "VND-1004": {
+      "open_before": 5,
+      "open_after": 0,
+      "corrections": 0,
+      "corrected_values_preserved": true,
+      "downstream_recomputed": true,
+      "finalized": true
+    },
+    "VND-1005": {
+      "open_before": 8,
+      "open_after": 0,
+      "corrections": 0,
+      "corrected_values_preserved": true,
+      "downstream_recomputed": true,
+      "finalized": true
+    }
+  }
+}

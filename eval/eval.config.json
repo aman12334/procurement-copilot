@@ -1,0 +1,40 @@
+{
+  "frozen_at": "2026-10-14T00:07:02.801Z",
+  "provider": "openai",
+  "model": "gpt-6-luna",
+  "prompt_versions": {
+    "rfx": "rfx-system.v2",
+    "bid_extraction": "bid-extraction.v3",
+    "analyst": "analyst.v3"
+  },
+  "dataset": {
+    "root": "stage1",
+    "folders": [
+      "stage1/buyer",
+      "stage1/vendors",
+      "stage1/images"
+    ],
+    "sha256": "931f9134404913664ba03c027df16662eb6e1ecc102b8505604d285922fda1f3"
+  },
+  "fx": {
+    "usd_inr": 88.5,
+    "source": "stage1/buyer/buyer_requirements.json event.evaluation_fx.USD_INR"
+  },
+  "normalization": {
+    "freight_loading_pct": 5,
+    "outlier_high_ratio": 1.5,
+    "outlier_low_ratio": 0.6
+  },
+  "rules": {
+    "qualification_min_score": 70,
+    "schema_retries": 1,
+    "max_api_attempts_503": 3,
+    "quota_exhaustion_retries": 0,
+    "model_switching": false,
+    "provider_fallback_in_evals": false,
+    "recommendation_consolidation_tolerance_pct": 1,
+    "recommendation_max_supplier_share_pct": 80,
+    "recommendation_block_unresolved_critical": true,
+    "recommendation_require_full_coverage": true
+  }
+}

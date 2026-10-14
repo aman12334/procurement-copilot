@@ -1,0 +1,44 @@
+{
+  "name": "procurement-platform",
+  "version": "0.2.0",
+  "private": true,
+  "description": "AI procurement prototype – Stage 2: RFx Creation Agent",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:live": "RFX_LIVE_TEST=1 vitest run tests/live.llm.test.ts tests/live.stage3.test.ts",
+    "eval:process": "vitest run --config vitest.eval.config.mts eval/process.eval.ts",
+    "eval": "vitest run --config vitest.eval.config.mts eval/score.eval.ts",
+    "eval:analyst": "vitest run --config vitest.eval.config.mts eval/analyst.eval.ts",
+    "eval:decision": "vitest run --config vitest.eval.config.mts eval/decision.eval.ts",
+    "eval:freeze": "vitest run --config vitest.eval.config.mts eval/freeze.eval.ts",
+    "env:check": "vitest run --config vitest.scripts.config.mts scripts/env-check.test.ts --silent=false",
+    "live:e2e": "vitest run --config vitest.eval.config.mts eval/live-e2e.eval.ts",
+    "llm:models": "vitest run --config vitest.scripts.config.mts scripts/llm-models.test.ts --silent=false"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.133.0",
+    "@google/genai": "^2.29.0",
+    "mammoth": "^1.13.0",
+    "next": "^16.4.0",
+    "openai": "^7.32.0",
+    "pdf-lib": "^1.17.1",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "server-only": "^0.0.1",
+    "sharp": "^0.35.5",
+    "unpdf": "^1.8.1",
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "typescript": "^5.9.3",
+    "vitest": "^5.0.4"
+  }
+}

@@ -1,0 +1,789 @@
+{
+  "rfx_id": "SCPL/PKG/RFQ/2026-27/014",
+  "qualification_rule": {
+    "min_total_score": 70,
+    "rule": "Vendor qualifies only if total score >= 70/100 AND every mandatory question (Q01, Q04, Q05, Q06, Q10) is answered with full compliance. Unanswered questions score 0; an unanswered mandatory question fails qualification."
+  },
+  "mandatory_qids": [
+    "Q01",
+    "Q04",
+    "Q05",
+    "Q06",
+    "Q10"
+  ],
+  "vendors": [
+    {
+      "vendor_id": "VND-1001",
+      "vendor_name": "Deccan Corrupack Industries Pvt. Ltd.",
+      "answers": [
+        {
+          "qid": "Q01",
+          "topic": "ISO 9001",
+          "mandatory": true,
+          "answer_level": "full",
+          "vendor_answer": "Yes. ISO 9001:2015, cert. no. QMS/IN/48812, valid to 14-Mar-2028; covers Hoskote and Hosur.",
+          "points": 10,
+          "max_points": 10,
+          "mandatory_compliant": true
+        },
+        {
+          "qid": "Q02",
+          "topic": "FSC certification",
+          "mandatory": false,
+          "answer_level": "full",
+          "vendor_answer": "Yes. FSC CoC FSC-C1xxxx (mixed credit), valid to 2029.",
+          "points": 6,
+          "max_points": 6,
+          "mandatory_compliant": null
+        },
+        {
+          "qid": "Q03",
+          "topic": "Recycled content",
+          "mandatory": false,
+          "answer_level": "full",
+          "vendor_answer": "Yes. 70-85% recycled on domestic grades, 50%+ on export grades; declaration with each lot.",
+          "points": 6,
+          "max_points": 6,
+          "mandatory_compliant": null
+        },
+        {
+          "qid": "Q04",
+          "topic": "Plant capacity",
+          "mandatory": true,
+          "answer_level": "full",
+          "vendor_answer": "36,000 MTPA installed across two plants; utilisation ~72%.",
+          "points": 10,
+          "max_points": 10,
+          "mandatory_compliant": true
+        },
+        {
+          "qid": "Q05",
+          "topic": "Quality inspection",
+          "mandatory": true,
+          "answer_level": "full",
+          "vendor_answer": "In-house NABL-traceable lab: GSM, BS, ECT, BCT, moisture, Cobb on every lot; COA with each delivery.",
+          "points": 10,
+          "max_points": 10,
+          "mandatory_compliant": true
+        },
+        {
+          "qid": "Q06",
+          "topic": "Traceability",
+          "mandatory": true,
+          "answer_level": "full",
+          "vendor_answer": "Yes. Lot code ink-jetted on every carton; traceable to reel numbers through ERP.",
+          "points": 8,
+          "max_points": 8,
+          "mandatory_compliant": true
+        },
+        {
+          "qid": "Q07",
+          "topic": "Lead time",
+          "mandatory": false,
+          "answer_level": "full",
+          "vendor_answer": "12 days for repeat items; 18 days for die-cut items.",
+          "points": 6,
+          "max_points": 6,
+          "mandatory_compliant": null
+        },
+        {
+          "qid": "Q08",
+          "topic": "Complaint resolution SLA",
+          "mandatory": false,
+          "answer_level": "full",
+          "vendor_answer": "Acknowledgement within 24 h; CAPA within 7 days.",
+          "points": 6,
+          "max_points": 6,
+          "mandatory_compliant": null
+        },
+        {
+          "qid": "Q09",
+          "topic": "Production locations",
+          "mandatory": false,
+          "answer_level": "1_of_3_plants_within_350km",
+          "vendor_answer": "Hoskote (approx. 15 km to SCPL BLR) and Hosur (approx. 70 km to SCPL BLR). Pune and Hyderabad served by road from Hoskote.",
+          "points": 3,
+          "max_points": 8,
+          "mandatory_compliant": null
+        },
+        {
+          "qid": "Q10",
+          "topic": "Business continuity",
+          "mandatory": true,
+          "answer_level": "full",
+          "vendor_answer": "Yes. Two plants act as mutual back-up, 20 days paper stock, contracts with 4 kraft mills.",
+          "points": 8,
+          "max_points": 8,
+          "mandatory_compliant": true
+        },
+        {
+          "qid": "Q11",
+          "topic": "Moisture resistance",
+          "mandatory": false,
+          "answer_level": "full",
+          "vendor_answer": "Yes. In-house aqueous WR coating; Cobb(30) 30-38 g/m2.",
+          "points": 6,
+          "max_points": 6,
+          "mandatory_compliant": null
+        },
+        {
+          "qid": "Q12",
+          "topic": "Printing capability",
+          "mandatory": false,
+          "answer_level": "partial",
+          "vendor_answer": "Flexo up to 4 colours in-house. Litho-lamination through partner (Prism Offset, Bengaluru).",
+          "points": 3,
+          "max_points": 6,
+          "mandatory_compliant": null
+        },
+        {
+          "qid": "Q13",
+          "topic": "Sustainability",
+          "mandatory": false,
+          "answer_level": "full",
+          "vendor_answer": "ISO 14001:2015; ETP, 100% trim recycling, annual GHG report.",
+          "points": 5,
+          "max_points": 5,
+          "mandatory_compliant": null
+        },
+        {
+          "qid": "Q14",
+          "topic": "Hygiene / food safety",
+          "mandatory": false,
+          "answer_level": "partial",
+          "vendor_answer": "Pest control by licensed agency and GMP; no BRCGS/ISO 22000 certification.",
+          "points": 2,
+          "max_points": 5,
+          "mandatory_compliant": null
+        }
+      ],
+      "total_score": 89,
+      "mandatory_failures": [],
+      "status": "QUALIFIED",
+      "missing_mandatory_certification": null,
+      "commercial_deviations": []
+    },
+    {
+      "vendor_id": "VND-1002",
+      "vendor_name": "Shree Ganesh Packwell Pvt. Ltd.",
+      "answers": [
+        {
+          "qid": "Q01",
+          "topic": "ISO 9001",
+          "mandatory": true,
+          "answer_level": "full",
+          "vendor_answer": "ISO 9001:2015 certified – cert. no. IN-QMS-77314, valid till 30-Jun-2027.",
+          "points": 10,
+          "max_points": 10,
+          "mandatory_compliant": true
+        },
+        {
+          "qid": "Q02",
+          "topic": "FSC certification",
+          "mandatory": false,
+          "answer_level": "full",
+          "vendor_answer": "FSC CoC certified.",
+          "points": 6,
+          "max_points": 6,
+          "mandatory_compliant": null
+        },
+        {
+          "qid": "Q03",
+          "topic": "Recycled content",
+          "mandatory": false,
+          "answer_level": "full",
+          "vendor_answer": "Recycled content as per SCPL requirement can be supplied; declaration provided.",
+          "points": 6,
+          "max_points": 6,
+          "mandatory_compliant": null
+        },
+        {
+          "qid": "Q04",
+          "topic": "Plant capacity",
+          "mandatory": true,
+          "answer_level": "full",
+          "vendor_answer": "14,000 MT per annum installed (2 corrugator lines); utilisation 65%.",
+          "points": 10,
+          "max_points": 10,
+          "mandatory_compliant": true
+        },
+        {
+          "qid": "Q05",
+          "topic": "Quality inspection",
+          "mandatory": true,
+          "answer_level": "full",
+          "vendor_answer": "Lab tests GSM, BS, ECT, BCT, moisture, Cobb per lot; COA with every invoice.",
+          "points": 10,
+          "max_points": 10,
+          "mandatory_compliant": true
+        },
+        {
+          "qid": "Q06",
+          "topic": "Traceability",
+          "mandatory": true,
+          "answer_level": "full",
+          "vendor_answer": "Batch code printed on each box; traceable to reel and shift.",
+          "points": 8,
+          "max_points": 8,
+          "mandatory_compliant": true
+        },
+        {
+          "qid": "Q07",
+          "topic": "Lead time",
+          "mandatory": false,
+          "answer_level": "partial",
+          "vendor_answer": "15 days from PO / artwork approval.",
+          "points": 3,
+          "max_points": 6,
+          "mandatory_compliant": null
+        },
+        {
+          "qid": "Q08",
+          "topic": "Complaint resolution SLA",
+          "mandatory": false,
+          "answer_level": "full",
+          "vendor_answer": "24 hours acknowledgement, CAPA within 7 working days.",
+          "points": 6,
+          "max_points": 6,
+          "mandatory_compliant": null
+        },
+        {
+          "qid": "Q09",
+          "topic": "Production locations",
+          "mandatory": false,
+          "answer_level": "1_of_3_plants_within_350km",
+          "vendor_answer": "Single plant at Chakan (approx. 8 km from SCPL Pune). Bengaluru and Hyderabad via transporter.",
+          "points": 3,
+          "max_points": 8,
+          "mandatory_compliant": null
+        },
+        {
+          "qid": "Q10",
+          "topic": "Business continuity",
+          "mandatory": true,
+          "answer_level": "full",
+          "vendor_answer": "Two independent corrugator lines; 18 days kraft stock; 3 approved mills; converter tie-up in Bhosari for overflow.",
+          "points": 8,
+          "max_points": 8,
+          "mandatory_compliant": true
+        },
+        {
+          "qid": "Q11",
+          "topic": "Moisture resistance",
+          "mandatory": false,
+          "answer_level": "full",
+          "vendor_answer": "WR coating in-house, Cobb below 40 g/m2.",
+          "points": 6,
+          "max_points": 6,
+          "mandatory_compliant": null
+        },
+        {
+          "qid": "Q12",
+          "topic": "Printing capability",
+          "mandatory": false,
+          "answer_level": "partial",
+          "vendor_answer": "Flexo printing up to 4 colours. Offset litho not available.",
+          "points": 3,
+          "max_points": 6,
+          "mandatory_compliant": null
+        },
+        {
+          "qid": "Q13",
+          "topic": "Sustainability",
+          "mandatory": false,
+          "answer_level": "partial",
+          "vendor_answer": "Waste paper recycling and rainwater harvesting; ISO 14001 not certified.",
+          "points": 2,
+          "max_points": 5,
+          "mandatory_compliant": null
+        },
+        {
+          "qid": "Q14",
+          "topic": "Hygiene / food safety",
+          "mandatory": false,
+          "answer_level": "none",
+          "vendor_answer": "Not certified.",
+          "points": 0,
+          "max_points": 5,
+          "mandatory_compliant": null
+        }
+      ],
+      "total_score": 81,
+      "mandatory_failures": [],
+      "status": "QUALIFIED",
+      "missing_mandatory_certification": null,
+      "commercial_deviations": [
+        "Payment 45 days below 60-day standard (acceptable)",
+        "Price validity 60 days < 90-day minimum",
+        "Freight not fully included – 5% evaluation loading applied"
+      ]
+    },
+    {
+      "vendor_id": "VND-1003",
+      "vendor_name": "Indus Fibreboard Solutions Ltd.",
+      "answers": [
+        {
+          "qid": "Q01",
+          "topic": "ISO 9001",
+          "mandatory": true,
+          "answer_level": "full",
+          "vendor_answer": "ISO 9001:2015 – all three plants, cert. no. TUV-IN-9001-23561, valid to 2028.",
+          "points": 10,
+          "max_points": 10,
+          "mandatory_compliant": true
+        },
+        {
+          "qid": "Q02",
+          "topic": "FSC certification",
+          "mandatory": false,
+          "answer_level": "full",
+          "vendor_answer": "FSC CoC (FSC-C1yyyyy) for all plants.",
+          "points": 6,
+          "max_points": 6,
+          "mandatory_compliant": null
+        },
+        {
+          "qid": "Q03",
+          "topic": "Recycled content",
+          "mandatory": false,
+          "answer_level": "partial",
+          "vendor_answer": "Domestic grades 70%+ recycled. High-BF export grades (BF 24-26) currently max 40-45% recycled due to virgin kraft requirement.",
+          "points": 3,
+          "max_points": 6,
+          "mandatory_compliant": null
+        },
+        {
+          "qid": "Q04",
+          "topic": "Plant capacity",
+          "mandatory": true,
+          "answer_level": "full",
+          "vendor_answer": "60,000 MTPA installed across three plants; utilisation 78%.",
+          "points": 10,
+          "max_points": 10,
+          "mandatory_compliant": true
+        },
+        {
+          "qid": "Q05",
+          "topic": "Quality inspection",
+          "mandatory": true,
+          "answer_level": "full",
+          "vendor_answer": "Fully equipped labs at each plant (GSM, BS, ECT, BCT, moisture, Cobb, rub test); COA per lot.",
+          "points": 10,
+          "max_points": 10,
+          "mandatory_compliant": true
+        },
+        {
+          "qid": "Q06",
+          "topic": "Traceability",
+          "mandatory": true,
+          "answer_level": "full",
+          "vendor_answer": "Unique lot code on each carton; reel-to-pallet traceability in SAP.",
+          "points": 8,
+          "max_points": 8,
+          "mandatory_compliant": true
+        },
+        {
+          "qid": "Q07",
+          "topic": "Lead time",
+          "mandatory": false,
+          "answer_level": "full",
+          "vendor_answer": "14 days from PO for repeat items.",
+          "points": 6,
+          "max_points": 6,
+          "mandatory_compliant": null
+        },
+        {
+          "qid": "Q08",
+          "topic": "Complaint resolution SLA",
+          "mandatory": false,
+          "answer_level": "partial",
+          "vendor_answer": "Acknowledgement within 24 hours; CAPA within 10 working days.",
+          "points": 3,
+          "max_points": 6,
+          "mandatory_compliant": null
+        },
+        {
+          "qid": "Q09",
+          "topic": "Production locations",
+          "mandatory": false,
+          "answer_level": "3_of_3_plants_within_350km",
+          "vendor_answer": "Patancheru (approx. 5 km to SCPL HYD), Ranjangaon (approx. 55 km to SCPL Pune), Hosur (approx. 70 km to SCPL BLR).",
+          "points": 8,
+          "max_points": 8,
+          "mandatory_compliant": null
+        },
+        {
+          "qid": "Q10",
+          "topic": "Business continuity",
+          "mandatory": true,
+          "answer_level": "full",
+          "vendor_answer": "Three-plant network with cross-qualified tooling, 21 days RM buffer, 6 mills.",
+          "points": 8,
+          "max_points": 8,
+          "mandatory_compliant": true
+        },
+        {
+          "qid": "Q11",
+          "topic": "Moisture resistance",
+          "mandatory": false,
+          "answer_level": "full",
+          "vendor_answer": "In-house WR and wax-alternative coatings; Cobb 25-35 g/m2.",
+          "points": 6,
+          "max_points": 6,
+          "mandatory_compliant": null
+        },
+        {
+          "qid": "Q12",
+          "topic": "Printing capability",
+          "mandatory": false,
+          "answer_level": "full",
+          "vendor_answer": "6-colour flexo and in-house litho-lamination line at Patancheru and Hosur.",
+          "points": 6,
+          "max_points": 6,
+          "mandatory_compliant": null
+        },
+        {
+          "qid": "Q13",
+          "topic": "Sustainability",
+          "mandatory": false,
+          "answer_level": "full",
+          "vendor_answer": "ISO 14001, ZLD at Patancheru, Scope 1-2 reporting.",
+          "points": 5,
+          "max_points": 5,
+          "mandatory_compliant": null
+        },
+        {
+          "qid": "Q14",
+          "topic": "Hygiene / food safety",
+          "mandatory": false,
+          "answer_level": "full",
+          "vendor_answer": "BRCGS Packaging Materials Grade AA (Patancheru, Hosur).",
+          "points": 5,
+          "max_points": 5,
+          "mandatory_compliant": null
+        }
+      ],
+      "total_score": 94,
+      "mandatory_failures": [],
+      "status": "QUALIFIED",
+      "missing_mandatory_certification": null,
+      "commercial_deviations": [
+        "Price validity 83 days < 90-day minimum"
+      ]
+    },
+    {
+      "vendor_id": "VND-1004",
+      "vendor_name": "Sri Vaigai Corrugators",
+      "answers": [
+        {
+          "qid": "Q01",
+          "topic": "ISO 9001",
+          "mandatory": true,
+          "answer_level": "none",
+          "vendor_answer": "ISO 9001: applied, audit scheduled Dec-2026.",
+          "points": 0,
+          "max_points": 10,
+          "mandatory_compliant": false
+        },
+        {
+          "qid": "Q02",
+          "topic": "FSC certification",
+          "mandatory": false,
+          "answer_level": "unanswered",
+          "vendor_answer": null,
+          "points": 0,
+          "max_points": 6,
+          "mandatory_compliant": null
+        },
+        {
+          "qid": "Q03",
+          "topic": "Recycled content",
+          "mandatory": false,
+          "answer_level": "full",
+          "vendor_answer": "100% recycled kraft available on all grades.",
+          "points": 6,
+          "max_points": 6,
+          "mandatory_compliant": null
+        },
+        {
+          "qid": "Q04",
+          "topic": "Plant capacity",
+          "mandatory": true,
+          "answer_level": "full",
+          "vendor_answer": "Capacity 6,500 MT / year.",
+          "points": 10,
+          "max_points": 10,
+          "mandatory_compliant": true
+        },
+        {
+          "qid": "Q05",
+          "topic": "Quality inspection",
+          "mandatory": true,
+          "answer_level": "partial",
+          "vendor_answer": "Bursting strength tester and GSM balance in-house; test report on request.",
+          "points": 5,
+          "max_points": 10,
+          "mandatory_compliant": false
+        },
+        {
+          "qid": "Q06",
+          "topic": "Traceability",
+          "mandatory": true,
+          "answer_level": "full",
+          "vendor_answer": "Lot no. & date printed on every box.",
+          "points": 8,
+          "max_points": 8,
+          "mandatory_compliant": true
+        },
+        {
+          "qid": "Q07",
+          "topic": "Lead time",
+          "mandatory": false,
+          "answer_level": "full",
+          "vendor_answer": "Delivery 7 days.",
+          "points": 6,
+          "max_points": 6,
+          "mandatory_compliant": null
+        },
+        {
+          "qid": "Q08",
+          "topic": "Complaint resolution SLA",
+          "mandatory": false,
+          "answer_level": "partial",
+          "vendor_answer": "Complaint: replacement within 7 days.",
+          "points": 3,
+          "max_points": 6,
+          "mandatory_compliant": null
+        },
+        {
+          "qid": "Q09",
+          "topic": "Production locations",
+          "mandatory": false,
+          "answer_level": "1_of_3_plants_within_350km",
+          "vendor_answer": "Plant at SIPCOT Hosur (approx. 70 km to SCPL BLR).",
+          "points": 3,
+          "max_points": 8,
+          "mandatory_compliant": null
+        },
+        {
+          "qid": "Q10",
+          "topic": "Business continuity",
+          "mandatory": true,
+          "answer_level": "unanswered",
+          "vendor_answer": null,
+          "points": 0,
+          "max_points": 8,
+          "mandatory_compliant": false
+        },
+        {
+          "qid": "Q11",
+          "topic": "Moisture resistance",
+          "mandatory": false,
+          "answer_level": "unanswered",
+          "vendor_answer": null,
+          "points": 0,
+          "max_points": 6,
+          "mandatory_compliant": null
+        },
+        {
+          "qid": "Q12",
+          "topic": "Printing capability",
+          "mandatory": false,
+          "answer_level": "partial",
+          "vendor_answer": "Flexo up to 2 colours in-house; 3/4 colour & litho through associate printer.",
+          "points": 3,
+          "max_points": 6,
+          "mandatory_compliant": null
+        },
+        {
+          "qid": "Q13",
+          "topic": "Sustainability",
+          "mandatory": false,
+          "answer_level": "unanswered",
+          "vendor_answer": null,
+          "points": 0,
+          "max_points": 5,
+          "mandatory_compliant": null
+        },
+        {
+          "qid": "Q14",
+          "topic": "Hygiene / food safety",
+          "mandatory": false,
+          "answer_level": "unanswered",
+          "vendor_answer": null,
+          "points": 0,
+          "max_points": 5,
+          "mandatory_compliant": null
+        }
+      ],
+      "total_score": 44,
+      "mandatory_failures": [
+        "Q01",
+        "Q05",
+        "Q10"
+      ],
+      "status": "NOT QUALIFIED",
+      "missing_mandatory_certification": "ISO 9001:2015",
+      "commercial_deviations": [
+        "Payment 15 days < 45-day minimum",
+        "Price validity 30 days < 90-day minimum",
+        "Freight not fully included – 5% evaluation loading applied"
+      ]
+    },
+    {
+      "vendor_id": "VND-1005",
+      "vendor_name": "Godavari Packaging Works",
+      "answers": [
+        {
+          "qid": "Q01",
+          "topic": "ISO 9001",
+          "mandatory": true,
+          "answer_level": "full",
+          "vendor_answer": "Yes, ISO 9001:2015, cert valid till Aug 2027 (copy attached).",
+          "points": 10,
+          "max_points": 10,
+          "mandatory_compliant": true
+        },
+        {
+          "qid": "Q02",
+          "topic": "FSC certification",
+          "mandatory": false,
+          "answer_level": "none",
+          "vendor_answer": "No FSC.",
+          "points": 0,
+          "max_points": 6,
+          "mandatory_compliant": null
+        },
+        {
+          "qid": "Q03",
+          "topic": "Recycled content",
+          "mandatory": false,
+          "answer_level": "full",
+          "vendor_answer": "Yes, 70%+ recycled on all our grades, declaration can be given.",
+          "points": 6,
+          "max_points": 6,
+          "mandatory_compliant": null
+        },
+        {
+          "qid": "Q04",
+          "topic": "Plant capacity",
+          "mandatory": true,
+          "answer_level": "full",
+          "vendor_answer": "9,000 MT/yr, running about 70%.",
+          "points": 10,
+          "max_points": 10,
+          "mandatory_compliant": true
+        },
+        {
+          "qid": "Q05",
+          "topic": "Quality inspection",
+          "mandatory": true,
+          "answer_level": "full",
+          "vendor_answer": "In-house lab – GSM, BS, ECT, BCT, moisture & Cobb every lot, COA sent with each vehicle.",
+          "points": 10,
+          "max_points": 10,
+          "mandatory_compliant": true
+        },
+        {
+          "qid": "Q06",
+          "topic": "Traceability",
+          "mandatory": true,
+          "answer_level": "full",
+          "vendor_answer": "Lot code stamped on every box.",
+          "points": 8,
+          "max_points": 8,
+          "mandatory_compliant": true
+        },
+        {
+          "qid": "Q07",
+          "topic": "Lead time",
+          "mandatory": false,
+          "answer_level": "full",
+          "vendor_answer": "10 days.",
+          "points": 6,
+          "max_points": 6,
+          "mandatory_compliant": null
+        },
+        {
+          "qid": "Q08",
+          "topic": "Complaint resolution SLA",
+          "mandatory": false,
+          "answer_level": "partial",
+          "vendor_answer": "We respond within 48 hrs, CAPA in 7 days.",
+          "points": 3,
+          "max_points": 6,
+          "mandatory_compliant": null
+        },
+        {
+          "qid": "Q09",
+          "topic": "Production locations",
+          "mandatory": false,
+          "answer_level": "1_of_3_plants_within_350km",
+          "vendor_answer": "Bollaram & Medchal, both within 40 km of your Patancheru plant.",
+          "points": 3,
+          "max_points": 8,
+          "mandatory_compliant": null
+        },
+        {
+          "qid": "Q10",
+          "topic": "Business continuity",
+          "mandatory": true,
+          "answer_level": "full",
+          "vendor_answer": "Yes – Medchal unit as backup, 20 days paper stock, buying from 3 mills.",
+          "points": 8,
+          "max_points": 8,
+          "mandatory_compliant": true
+        },
+        {
+          "qid": "Q11",
+          "topic": "Moisture resistance",
+          "mandatory": false,
+          "answer_level": "none",
+          "vendor_answer": "No water-resistant coating facility.",
+          "points": 0,
+          "max_points": 6,
+          "mandatory_compliant": null
+        },
+        {
+          "qid": "Q12",
+          "topic": "Printing capability",
+          "mandatory": false,
+          "answer_level": "partial",
+          "vendor_answer": "Flexo up to 2 colours only.",
+          "points": 3,
+          "max_points": 6,
+          "mandatory_compliant": null
+        },
+        {
+          "qid": "Q13",
+          "topic": "Sustainability",
+          "mandatory": false,
+          "answer_level": "partial",
+          "vendor_answer": "Waste recycling, no ISO 14001.",
+          "points": 2,
+          "max_points": 5,
+          "mandatory_compliant": null
+        },
+        {
+          "qid": "Q14",
+          "topic": "Hygiene / food safety",
+          "mandatory": false,
+          "answer_level": "partial",
+          "vendor_answer": "Pest control contract + GMP, no certification.",
+          "points": 2,
+          "max_points": 5,
+          "mandatory_compliant": null
+        }
+      ],
+      "total_score": 71,
+      "mandatory_failures": [],
+      "status": "QUALIFIED",
+      "missing_mandatory_certification": null,
+      "commercial_deviations": [
+        "Payment 30 days < 45-day minimum",
+        "Price validity 80 days < 90-day minimum",
+        "Freight not fully included – 5% evaluation loading applied"
+      ]
+    }
+  ]
+}

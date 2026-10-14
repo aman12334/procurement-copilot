@@ -1,0 +1,26 @@
+{
+  "ok": false,
+  "error": {
+    "code": "MODEL_UNAVAILABLE",
+    "message": "Gemini free-tier daily quota exhausted (20 requests/day for this model). It resets in about 4 h 54 min. Set GEMINI_MODEL in .env.local to another Flash model (each has its own quota) or enable billing on the Google AI project.",
+    "details": []
+  },
+  "trace": [
+    {
+      "at": "2026-10-13T19:06:09.718Z",
+      "step": "ingest",
+      "message": "Parsed Deccan_Corrupack_Quotation_SCPL_RFQ014.xlsx as xlsx (sheets 3, rows 71, cell_notes 2); 71 evidence chunks"
+    },
+    {
+      "at": "2026-10-13T19:06:09.718Z",
+      "step": "extract",
+      "message": "Sending 1 document(s) to gemini-3-flash-preview with 30 RFx lines and 14 questions (bid-extraction.v3)"
+    },
+    {
+      "at": "2026-10-13T19:06:10.499Z",
+      "step": "extract",
+      "message": "Extraction failed after 1 attempt(s): Gemini free-tier daily quota exhausted (20 requests/day for this model). It resets in about 4 h 54 min. Set GEMINI_MODEL in .env.local to another Flash model (each has its own quota) or enable billing on the Google AI project."
+    }
+  ],
+  "ms": 814
+}

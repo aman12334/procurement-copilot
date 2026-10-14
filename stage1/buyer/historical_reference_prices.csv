@@ -1,0 +1,31 @@
+line_id,item_description,delivery_plant,uom,fy2025_26_price_inr,price_basis,fy2025_26_volume,last_year_supplier,implied_rate_inr_per_kg,reference_weight_g
+CP-001,3-Ply RSC Shipper – Plain Brown,BLR,piece,7.73,"Weighted avg PO price, delivered (FOR plant), ex-GST",446400,VND-1001,46.0,168
+CP-002,3-Ply RSC Shipper – Plain Brown,PNQ,piece,11.82,"Weighted avg PO price, delivered (FOR plant), ex-GST",334800,VND-1002,46.0,257
+CP-003,3-Ply RSC Shipper – Plain Brown,HYD,piece,15.27,"Weighted avg PO price, delivered (FOR plant), ex-GST",223200,Mahalaxmi Box Industries (not invited – quality issues FY26),46.0,332
+CP-004,3-Ply RSC Shipper – 1 Colour Printed,PNQ,piece,8.74,"Weighted avg PO price, delivered (FOR plant), ex-GST",558000,Mahalaxmi Box Industries (not invited – quality issues FY26),52.0,168
+CP-005,3-Ply RSC Shipper – 2 Colour Printed,BLR,piece,6.45,"Weighted avg PO price, delivered (FOR plant), ex-GST",669600,VND-1001,52.0,124
+CP-006,3-Ply RSC Shipper – 2 Colour Printed,HYD,piece,11.70,"Weighted avg PO price, delivered (FOR plant), ex-GST",279000,Mahalaxmi Box Industries (not invited – quality issues FY26),52.0,225
+CP-007,5-Ply RSC Shipper – Plain Brown,BLR,piece,38.64,"Weighted avg PO price, delivered (FOR plant), ex-GST",195300,VND-1001,48.0,805
+CP-008,5-Ply RSC Shipper – Plain Brown,PNQ,piece,46.70,"Weighted avg PO price, delivered (FOR plant), ex-GST",139500,VND-1002,48.0,973
+CP-009,5-Ply RSC Shipper – Plain Brown,HYD,piece,31.30,"Weighted avg PO price, delivered (FOR plant), ex-GST",251100,Mahalaxmi Box Industries (not invited – quality issues FY26),48.0,652
+CP-010,5-Ply RSC Shipper – 2 Colour Printed,BLR,piece,34.51,"Weighted avg PO price, delivered (FOR plant), ex-GST",223200,VND-1001,54.0,639
+CP-011,5-Ply RSC Shipper – 3 Colour Printed,PNQ,piece,34.02,"Weighted avg PO price, delivered (FOR plant), ex-GST",167400,Mahalaxmi Box Industries (not invited – quality issues FY26),54.0,630
+CP-012,"5-Ply RSC – 2 Colour Printed, Moisture Resistant",HYD,piece,39.90,"Weighted avg PO price, delivered (FOR plant), ex-GST",111600,Mahalaxmi Box Industries (not invited – quality issues FY26),60.0,665
+CP-013,5-Ply HSC Box – Plain Brown,PNQ,piece,40.66,"Weighted avg PO price, delivered (FOR plant), ex-GST",55800,VND-1002,48.0,847
+CP-014,"5-Ply RSC – Heavy Duty BF22, Plain",BLR,piece,44.68,"Weighted avg PO price, delivered (FOR plant), ex-GST",93000,VND-1001,51.0,876
+CP-015,"Die-cut Crash-lock Gift Carton – 4C Offset, Litho-laminated",BLR,piece,15.01,"Weighted avg PO price, delivered (FOR plant), ex-GST",372000,Prism Litho Packs (not invited – exited category),105.0,143
+CP-016,Die-cut Tray with Lid – 2C Flexo,HYD,piece,12.10,"Weighted avg PO price, delivered (FOR plant), ex-GST",232500,VND-1005,64.0,189
+CP-017,Shelf-ready Display Tray with Tear-off Front – 2C Flexo,HYD,piece,10.37,"Weighted avg PO price, delivered (FOR plant), ex-GST",148800,VND-1005,64.0,162
+CP-018,"E-commerce Mailer Box – Die-cut, 2C Flexo",PNQ,piece,9.98,"Weighted avg PO price, delivered (FOR plant), ex-GST",279000,Mahalaxmi Box Industries (not invited – quality issues FY26),64.0,156
+CP-019,5-Ply RSC with Die-cut Hand Holes – 2C Printed,BLR,piece,40.24,"Weighted avg PO price, delivered (FOR plant), ex-GST",83700,VND-1001,57.0,706
+CP-020,"3-Ply Partition – 12 Cell (3 x 4), for CP-007",BLR,set,9.11,"Weighted avg PO price, delivered (FOR plant), ex-GST",195300,VND-1001,44.0,207
+CP-021,3-Ply Partition – 24 Cell (4 x 6),PNQ,set,11.31,"Weighted avg PO price, delivered (FOR plant), ex-GST",111600,VND-1002,44.0,257
+CP-022,"5-Ply Partition – 6 Cell (2 x 3) Heavy, for CP-009",HYD,set,9.06,"Weighted avg PO price, delivered (FOR plant), ex-GST",74400,Mahalaxmi Box Industries (not invited – quality issues FY26),44.0,206
+CP-023,3-Ply Layer Pad 440 x 340 mm,BLR,piece,2.35,"Weighted avg PO price, delivered (FOR plant), ex-GST",390600,VND-1001,42.0,56
+CP-024,5-Ply Layer Pad 590 x 390 mm,PNQ,piece,7.31,"Weighted avg PO price, delivered (FOR plant), ex-GST",139500,Mahalaxmi Box Industries (not invited – quality issues FY26),42.0,174
+CP-025,"Die-cut Fitment Insert – 3-Ply E-flute, for CP-016",HYD,piece,3.90,"Weighted avg PO price, delivered (FOR plant), ex-GST",232500,VND-1005,64.0,61
+CP-026,3-Ply Printed Sleeve – 1C Flexo,PNQ,piece,4.00,"Weighted avg PO price, delivered (FOR plant), ex-GST",186000,Mahalaxmi Box Industries (not invited – quality issues FY26),52.0,77
+CP-027,"7-Ply RSC – Plain, Heavy Duty BF22",PNQ,piece,103.58,"Weighted avg PO price, delivered (FOR plant), ex-GST",37200,Mahalaxmi Box Industries (not invited – quality issues FY26),52.0,1992
+CP-028,"5-Ply Export Carton – 2C, Shipping Marks, BF24",PNQ,piece,61.92,"Weighted avg PO price, delivered (FOR plant), ex-GST",74400,Mahalaxmi Box Industries (not invited – quality issues FY26),60.0,1032
+CP-029,"7-Ply Export Carton – Moisture Resistant, BF26",BLR,piece,160.00,"Weighted avg PO price, delivered (FOR plant), ex-GST",27900,Mahalaxmi Box Industries (not invited – quality issues FY26),64.0,2500
+CP-030,7-Ply Heavy-duty Export Carton – Pallet Fit,HYD,piece,339.70,"Weighted avg PO price, delivered (FOR plant), ex-GST",13950,Mahalaxmi Box Industries (not invited – quality issues FY26),66.0,5147

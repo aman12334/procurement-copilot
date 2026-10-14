@@ -1,0 +1,212 @@
+{
+  "buyer": {
+    "name": "Sahyadri Consumer Products Pvt. Ltd.",
+    "short_name": "SCPL",
+    "industry": "FMCG – foods, beverages, home & personal care",
+    "hq": "Baner, Pune, Maharashtra 411045",
+    "gstin": "27AAKCS4471M1ZQ",
+    "contact": {
+      "name": "Meera Raghunathan",
+      "title": "Category Manager – Packaging Materials",
+      "email": "meera.raghunathan@sahyadricp.example",
+      "phone": "+91 20 6712 4400"
+    }
+  },
+  "event": {
+    "rfx_id": "SCPL/PKG/RFQ/2026-27/014",
+    "title": "Annual Rate Contract – Corrugated Packaging (FY 2026-27 H2 to FY 2027-28 H1)",
+    "category": "Corrugated packaging (HSN 4819 10 / 4808 10)",
+    "issue_date": "2026-09-21",
+    "clarification_deadline": "2026-09-30",
+    "response_due_date": "2026-10-12",
+    "contract_period": {
+      "start": "2026-11-01",
+      "end": "2027-10-31",
+      "months": 12
+    },
+    "currency_of_evaluation": "INR",
+    "evaluation_fx": {
+      "USD_INR": 88.5,
+      "basis": "Fixed evaluation rate set in RFx (SCPL treasury rate on issue date). Applied to any non-INR quote for comparison only."
+    },
+    "normalization_basis": "INR per piece (or per set for partitions), ex-GST, delivered to the specified SCPL plant (FOR destination)",
+    "freight_loading_pct": 5.0
+  },
+  "plants": [
+    {
+      "code": "BLR",
+      "name": "Bengaluru Plant",
+      "address": "Plot 41-B, KIADB Hoskote Industrial Area, Bengaluru Rural, Karnataka 562114",
+      "state": "Karnataka"
+    },
+    {
+      "code": "PNQ",
+      "name": "Pune Plant",
+      "address": "Gat No. 318, Chakan MIDC Phase II, Pune, Maharashtra 410501",
+      "state": "Maharashtra"
+    },
+    {
+      "code": "HYD",
+      "name": "Hyderabad Plant",
+      "address": "Plot 22, IDA Patancheru, Sangareddy, Telangana 502319",
+      "state": "Telangana"
+    }
+  ],
+  "scope": {
+    "line_count": 30,
+    "lines_file": "buyer/rfx_master.csv",
+    "annual_volume_total_units": 6825000,
+    "annual_tonnage_reference_mt": 2212.7,
+    "annual_volume_by_plant_units": {
+      "BLR": 2900000,
+      "PNQ": 2240000,
+      "HYD": 1685000
+    },
+    "partial_bids": "Allowed. Vendors may quote a subset of lines; unquoted lines must be marked 'Not quoted'."
+  },
+  "requirements": [
+    {
+      "id": "BR-01",
+      "area": "Delivery",
+      "requirement": "Deliver to the plant specified per line (BLR / PNQ / HYD) as per weekly call-off schedule.",
+      "type": "mandatory"
+    },
+    {
+      "id": "BR-02",
+      "area": "Annual volume",
+      "requirement": "Annual quantities in rfx_master are estimates (+/-20%); no take-or-pay commitment.",
+      "type": "information"
+    },
+    {
+      "id": "BR-03",
+      "area": "Lead time",
+      "requirement": "Lead time from PO <= 14 days for repeat items; <= 21 days for first supply of new artwork / tooling.",
+      "type": "preferred"
+    },
+    {
+      "id": "BR-04",
+      "area": "Quality – board",
+      "requirement": "Meet or exceed the per-line board construction, BF, bursting strength and recycled-content minimums. Moisture content 7-9% at dispatch.",
+      "type": "mandatory"
+    },
+    {
+      "id": "BR-05",
+      "area": "Quality – inspection",
+      "requirement": "COA with every lot (GSM, BS, ECT/BCT, moisture; Cobb for coated lines). SCPL incoming AQL 2.5 (General II) on dimensions and print.",
+      "type": "mandatory"
+    },
+    {
+      "id": "BR-06",
+      "area": "Quality – moisture resistance",
+      "requirement": "Lines CP-012 and CP-029 require water-resistant coating meeting the Cobb value in rfx_master. Uncoated offers are non-compliant.",
+      "type": "mandatory"
+    },
+    {
+      "id": "BR-07",
+      "area": "Certification",
+      "requirement": "ISO 9001:2015 certification of supplying plant(s).",
+      "type": "mandatory"
+    },
+    {
+      "id": "BR-08",
+      "area": "Certification",
+      "requirement": "FSC Chain-of-Custody certification.",
+      "type": "preferred"
+    },
+    {
+      "id": "BR-09",
+      "area": "Certification",
+      "requirement": "BRCGS Packaging / ISO 22000 for lines used in food categories.",
+      "type": "preferred"
+    },
+    {
+      "id": "BR-10",
+      "area": "Freight",
+      "requirement": "Prices FOR SCPL delivery plant (freight included). Where freight is excluded or 'at actuals', SCPL applies a 5% evaluation loading on the unit price for comparison.",
+      "type": "preferred",
+      "evaluation_rule": {
+        "freight_loading_pct": 5.0
+      }
+    },
+    {
+      "id": "BR-11",
+      "area": "Taxes",
+      "requirement": "Quote exclusive of GST; state GST rate and HSN separately. Evaluation is ex-GST (input credit available).",
+      "type": "mandatory"
+    },
+    {
+      "id": "BR-12",
+      "area": "Currency",
+      "requirement": "Quote in INR. Non-INR quotes are accepted but converted at the fixed evaluation FX rate (1 USD = INR 88.50) for comparison; FX risk sits with the vendor in the contract.",
+      "type": "preferred"
+    },
+    {
+      "id": "BR-13",
+      "area": "Payment terms",
+      "requirement": "SCPL standard: 60 days from GRN. Minimum acceptable 45 days; shorter terms are a commercial deviation.",
+      "type": "preferred",
+      "standard_days": 60,
+      "minimum_days": 45
+    },
+    {
+      "id": "BR-14",
+      "area": "Price validity",
+      "requirement": "Prices firm for 180 days from quotation date. Minimum acceptable 90 days; shorter validity is a commercial deviation.",
+      "type": "preferred",
+      "standard_days": 180,
+      "minimum_days": 90
+    },
+    {
+      "id": "BR-15",
+      "area": "MOQ",
+      "requirement": "MOQ per line should not exceed one month's call-off quantity (annual / 12).",
+      "type": "preferred"
+    },
+    {
+      "id": "BR-16",
+      "area": "Tooling",
+      "requirement": "State one-time printing plate / cutting-die costs explicitly; tooling becomes SCPL property.",
+      "type": "mandatory"
+    },
+    {
+      "id": "BR-17",
+      "area": "Packaging quality",
+      "requirement": "Bundles of 25/50 strapped, palletised and stretch-wrapped; no warp > 5 mm; print registration +/- 1 mm; Pantone match per approved shade card.",
+      "type": "mandatory"
+    },
+    {
+      "id": "BR-18",
+      "area": "Service level",
+      "requirement": "OTIF >= 95% measured monthly; complaint acknowledgement within 24 h and CAPA within 7 days.",
+      "type": "preferred"
+    },
+    {
+      "id": "BR-19",
+      "area": "Technical qualification",
+      "requirement": "Score >= 70/100 on the technical questionnaire AND full compliance on all mandatory questions.",
+      "type": "mandatory"
+    },
+    {
+      "id": "BR-20",
+      "area": "Price escalation",
+      "requirement": "Any kraft-paper price variation clause must reference a published index (e.g., monthly kraft paper index) with a defined trigger and formula.",
+      "type": "preferred"
+    }
+  ],
+  "evaluation": {
+    "comparison_basis": "INR per piece (or per set for partitions), ex-GST, delivered to the specified SCPL plant (FOR destination)",
+    "landed_price_formula": "normalized_unit_price_inr + freight (quoted, or 5% loading where excluded)",
+    "unit_conversions": {
+      "per piece": 1,
+      "per box (carton itself)": 1,
+      "per set (partitions)": 1,
+      "per 100 nos": "divide by 100",
+      "per kg": "multiply by reference_weight_g / 1000 from rfx_master"
+    },
+    "weights": {
+      "technical": 40,
+      "commercial": 60
+    },
+    "award_strategy": "Line-wise or plant-wise award possible; maximum 3 vendors overall."
+  }
+}

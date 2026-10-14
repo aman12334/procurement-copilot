@@ -1,0 +1,4798 @@
+{
+  "schema_version": "bid.v1",
+  "vendor": {
+    "vendor_id": "VND-1004",
+    "vendor_name": "Sri Vaigai Corrugators",
+    "vendor_no": 4
+  },
+  "response_metadata": {
+    "source_type": "image",
+    "source_files": [
+      "vendor_4_rate_card_partial.png"
+    ],
+    "quote_reference": "RFQ 014",
+    "quote_date": "2026-10-07",
+    "processed_at": "2026-10-13T19:00:40.455Z",
+    "model": "gemini-3-flash-preview",
+    "fx": {
+      "usd_inr": 88.5,
+      "source": "stage1/buyer/buyer_requirements.json event.evaluation_fx.USD_INR"
+    }
+  },
+  "line_items": [
+    {
+      "rfx_line_id": "CP-001",
+      "rfx_sku": "CP-001",
+      "rfx_description": "3-Ply RSC Shipper – Plain Brown",
+      "delivery_plant": "BLR",
+      "annual_qty": 480000,
+      "vendor_item_code": "CP-001",
+      "vendor_description": "3-Ply RSC - Plain Brown",
+      "match_status": "exact",
+      "match_basis": "explicit_code",
+      "raw_price": 6.8,
+      "raw_price_text": "6.80",
+      "raw_currency": "INR",
+      "raw_uom": "Box (Rs.)",
+      "pieces_per_quoted_unit": 1,
+      "fx_rate_to_inr": 1,
+      "fx_source": null,
+      "normalized_unit_price_inr": 6.8,
+      "normalized_currency": "INR",
+      "normalized_uom": "piece",
+      "normalization_method": "Quoted per piece/box/set (factor 1)",
+      "freight": {
+        "included": false,
+        "basis": "extra_unspecified",
+        "amount": null,
+        "currency": "INR",
+        "notes": "Ex-factory Hosur. Freight extra.",
+        "evidence": [
+          {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "TERMS section line 1",
+            "page": null,
+            "source_text": "Ex-factory Hosur. Freight extra."
+          }
+        ]
+      },
+      "landed_unit_price_inr": null,
+      "evaluation_unit_price_inr": 7.14,
+      "evaluation_basis": "normalized + 5% freight loading (stage1/buyer/buyer_requirements.json BR-10)",
+      "historical_price_inr": 7.73,
+      "variance_vs_historical_pct": -7.6,
+      "moq": 1000,
+      "moq_exceeds_monthly_calloff": false,
+      "lead_time_days": 7,
+      "tax": {
+        "treatment": "GST extra.",
+        "evidence": [
+          {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "TERMS section line 2",
+            "page": null,
+            "source_text": "GST extra."
+          }
+        ]
+      },
+      "price_validity_until": "2026-11-06",
+      "remarks": null,
+      "spec_deviation": null,
+      "candidate_quotes": [
+        {
+          "quote_index": 0,
+          "raw_price": 6.8,
+          "raw_price_text": "6.80",
+          "normalized_unit_price_inr": 6.8,
+          "evidence": {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "rate card table row 1",
+            "page": null,
+            "source_text": "1 | CP-001 | 3-Ply RSC - Plain Brown | 300x200x150 | 3 | 6.80"
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "rate card table row 1",
+          "page": null,
+          "source_text": "1 | CP-001 | 3-Ply RSC - Plain Brown | 300x200x150 | 3 | 6.80"
+        }
+      ],
+      "review_status": "accepted",
+      "review_reasons": [],
+      "resolution": null,
+      "comparable": true
+    },
+    {
+      "rfx_line_id": "CP-002",
+      "rfx_sku": "CP-002",
+      "rfx_description": "3-Ply RSC Shipper – Plain Brown",
+      "delivery_plant": "PNQ",
+      "annual_qty": 360000,
+      "vendor_item_code": "CP-002",
+      "vendor_description": "3-Ply RSC - Plain Brown",
+      "match_status": "exact",
+      "match_basis": "explicit_code",
+      "raw_price": 10.8,
+      "raw_price_text": "10.80",
+      "raw_currency": "INR",
+      "raw_uom": "Box (Rs.)",
+      "pieces_per_quoted_unit": 1,
+      "fx_rate_to_inr": 1,
+      "fx_source": null,
+      "normalized_unit_price_inr": 10.8,
+      "normalized_currency": "INR",
+      "normalized_uom": "piece",
+      "normalization_method": "Quoted per piece/box/set (factor 1)",
+      "freight": {
+        "included": false,
+        "basis": "extra_unspecified",
+        "amount": null,
+        "currency": "INR",
+        "notes": "Ex-factory Hosur. Freight extra.",
+        "evidence": [
+          {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "TERMS section line 1",
+            "page": null,
+            "source_text": "Ex-factory Hosur. Freight extra."
+          }
+        ]
+      },
+      "landed_unit_price_inr": null,
+      "evaluation_unit_price_inr": 11.34,
+      "evaluation_basis": "normalized + 5% freight loading (stage1/buyer/buyer_requirements.json BR-10)",
+      "historical_price_inr": 11.82,
+      "variance_vs_historical_pct": -4.1,
+      "moq": 1000,
+      "moq_exceeds_monthly_calloff": false,
+      "lead_time_days": 7,
+      "tax": {
+        "treatment": "GST extra.",
+        "evidence": [
+          {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "TERMS section line 2",
+            "page": null,
+            "source_text": "GST extra."
+          }
+        ]
+      },
+      "price_validity_until": "2026-11-06",
+      "remarks": null,
+      "spec_deviation": null,
+      "candidate_quotes": [
+        {
+          "quote_index": 1,
+          "raw_price": 10.8,
+          "raw_price_text": "10.80",
+          "normalized_unit_price_inr": 10.8,
+          "evidence": {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "rate card table row 2",
+            "page": null,
+            "source_text": "2 | CP-002 | 3-Ply RSC - Plain Brown | 350x250x200 | 3 | 10.80"
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "rate card table row 2",
+          "page": null,
+          "source_text": "2 | CP-002 | 3-Ply RSC - Plain Brown | 350x250x200 | 3 | 10.80"
+        }
+      ],
+      "review_status": "accepted",
+      "review_reasons": [],
+      "resolution": null,
+      "comparable": true
+    },
+    {
+      "rfx_line_id": "CP-003",
+      "rfx_sku": "CP-003",
+      "rfx_description": "3-Ply RSC Shipper – Plain Brown",
+      "delivery_plant": "HYD",
+      "annual_qty": 240000,
+      "vendor_item_code": "CP-003",
+      "vendor_description": "3-Ply RSC - Plain Brown",
+      "match_status": "exact",
+      "match_basis": "explicit_code",
+      "raw_price": 13.4,
+      "raw_price_text": "13.40",
+      "raw_currency": "INR",
+      "raw_uom": "Box (Rs.)",
+      "pieces_per_quoted_unit": 1,
+      "fx_rate_to_inr": 1,
+      "fx_source": null,
+      "normalized_unit_price_inr": 13.4,
+      "normalized_currency": "INR",
+      "normalized_uom": "piece",
+      "normalization_method": "Quoted per piece/box/set (factor 1)",
+      "freight": {
+        "included": false,
+        "basis": "extra_unspecified",
+        "amount": null,
+        "currency": "INR",
+        "notes": "Ex-factory Hosur. Freight extra.",
+        "evidence": [
+          {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "TERMS section line 1",
+            "page": null,
+            "source_text": "Ex-factory Hosur. Freight extra."
+          }
+        ]
+      },
+      "landed_unit_price_inr": null,
+      "evaluation_unit_price_inr": 14.07,
+      "evaluation_basis": "normalized + 5% freight loading (stage1/buyer/buyer_requirements.json BR-10)",
+      "historical_price_inr": 15.27,
+      "variance_vs_historical_pct": -7.9,
+      "moq": 1000,
+      "moq_exceeds_monthly_calloff": false,
+      "lead_time_days": 7,
+      "tax": {
+        "treatment": "GST extra.",
+        "evidence": [
+          {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "TERMS section line 2",
+            "page": null,
+            "source_text": "GST extra."
+          }
+        ]
+      },
+      "price_validity_until": "2026-11-06",
+      "remarks": null,
+      "spec_deviation": null,
+      "candidate_quotes": [
+        {
+          "quote_index": 2,
+          "raw_price": 13.4,
+          "raw_price_text": "13.40",
+          "normalized_unit_price_inr": 13.4,
+          "evidence": {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "rate card table row 3",
+            "page": null,
+            "source_text": "3 | CP-003 | 3-Ply RSC - Plain Brown | 400x300x200 | 3 | 13.40"
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "rate card table row 3",
+          "page": null,
+          "source_text": "3 | CP-003 | 3-Ply RSC - Plain Brown | 400x300x200 | 3 | 13.40"
+        }
+      ],
+      "review_status": "accepted",
+      "review_reasons": [],
+      "resolution": null,
+      "comparable": true
+    },
+    {
+      "rfx_line_id": "CP-004",
+      "rfx_sku": "CP-004",
+      "rfx_description": "3-Ply RSC Shipper – 1 Colour Printed",
+      "delivery_plant": "PNQ",
+      "annual_qty": 600000,
+      "vendor_item_code": "CP-004",
+      "vendor_description": "3-Ply RSC - 1 Colour Printed",
+      "match_status": "exact",
+      "match_basis": "explicit_code",
+      "raw_price": 7.9,
+      "raw_price_text": "7.90",
+      "raw_currency": "INR",
+      "raw_uom": "Box (Rs.)",
+      "pieces_per_quoted_unit": 1,
+      "fx_rate_to_inr": 1,
+      "fx_source": null,
+      "normalized_unit_price_inr": 7.9,
+      "normalized_currency": "INR",
+      "normalized_uom": "piece",
+      "normalization_method": "Quoted per piece/box/set (factor 1)",
+      "freight": {
+        "included": false,
+        "basis": "extra_unspecified",
+        "amount": null,
+        "currency": "INR",
+        "notes": "Ex-factory Hosur. Freight extra.",
+        "evidence": [
+          {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "TERMS section line 1",
+            "page": null,
+            "source_text": "Ex-factory Hosur. Freight extra."
+          }
+        ]
+      },
+      "landed_unit_price_inr": null,
+      "evaluation_unit_price_inr": 8.3,
+      "evaluation_basis": "normalized + 5% freight loading (stage1/buyer/buyer_requirements.json BR-10)",
+      "historical_price_inr": 8.74,
+      "variance_vs_historical_pct": -5,
+      "moq": 1000,
+      "moq_exceeds_monthly_calloff": false,
+      "lead_time_days": 7,
+      "tax": {
+        "treatment": "GST extra.",
+        "evidence": [
+          {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "TERMS section line 2",
+            "page": null,
+            "source_text": "GST extra."
+          }
+        ]
+      },
+      "price_validity_until": "2026-11-06",
+      "remarks": null,
+      "spec_deviation": null,
+      "candidate_quotes": [
+        {
+          "quote_index": 3,
+          "raw_price": 7.9,
+          "raw_price_text": "7.90",
+          "normalized_unit_price_inr": 7.9,
+          "evidence": {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "rate card table row 4",
+            "page": null,
+            "source_text": "4 | CP-004 | 3-Ply RSC - 1 Colour Printed | 300x200x150 | 3 | 7.90"
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "rate card table row 4",
+          "page": null,
+          "source_text": "4 | CP-004 | 3-Ply RSC - 1 Colour Printed | 300x200x150 | 3 | 7.90"
+        }
+      ],
+      "review_status": "accepted",
+      "review_reasons": [],
+      "resolution": null,
+      "comparable": true
+    },
+    {
+      "rfx_line_id": "CP-005",
+      "rfx_sku": "CP-005",
+      "rfx_description": "3-Ply RSC Shipper – 2 Colour Printed",
+      "delivery_plant": "BLR",
+      "annual_qty": 720000,
+      "vendor_item_code": "CP-005",
+      "vendor_description": "3-Ply RSC - 2 Colour Printed",
+      "match_status": "exact",
+      "match_basis": "explicit_code",
+      "raw_price": 5.6,
+      "raw_price_text": "5.60",
+      "raw_currency": "INR",
+      "raw_uom": "Box (Rs.)",
+      "pieces_per_quoted_unit": 1,
+      "fx_rate_to_inr": 1,
+      "fx_source": null,
+      "normalized_unit_price_inr": 5.6,
+      "normalized_currency": "INR",
+      "normalized_uom": "piece",
+      "normalization_method": "Quoted per piece/box/set (factor 1)",
+      "freight": {
+        "included": false,
+        "basis": "extra_unspecified",
+        "amount": null,
+        "currency": "INR",
+        "notes": "Ex-factory Hosur. Freight extra.",
+        "evidence": [
+          {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "TERMS section line 1",
+            "page": null,
+            "source_text": "Ex-factory Hosur. Freight extra."
+          }
+        ]
+      },
+      "landed_unit_price_inr": null,
+      "evaluation_unit_price_inr": 5.88,
+      "evaluation_basis": "normalized + 5% freight loading (stage1/buyer/buyer_requirements.json BR-10)",
+      "historical_price_inr": 6.45,
+      "variance_vs_historical_pct": -8.8,
+      "moq": 1000,
+      "moq_exceeds_monthly_calloff": false,
+      "lead_time_days": 7,
+      "tax": {
+        "treatment": "GST extra.",
+        "evidence": [
+          {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "TERMS section line 2",
+            "page": null,
+            "source_text": "GST extra."
+          }
+        ]
+      },
+      "price_validity_until": "2026-11-06",
+      "remarks": null,
+      "spec_deviation": null,
+      "candidate_quotes": [
+        {
+          "quote_index": 4,
+          "raw_price": 5.6,
+          "raw_price_text": "5.60",
+          "normalized_unit_price_inr": 5.6,
+          "evidence": {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "rate card table row 5",
+            "page": null,
+            "source_text": "5 | CP-005 | 3-Ply RSC - 2 Colour Printed | 250x180x120 | 3 | 5.60"
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "rate card table row 5",
+          "page": null,
+          "source_text": "5 | CP-005 | 3-Ply RSC - 2 Colour Printed | 250x180x120 | 3 | 5.60"
+        }
+      ],
+      "review_status": "accepted",
+      "review_reasons": [],
+      "resolution": null,
+      "comparable": true
+    },
+    {
+      "rfx_line_id": "CP-006",
+      "rfx_sku": "CP-006",
+      "rfx_description": "3-Ply RSC Shipper – 2 Colour Printed",
+      "delivery_plant": "HYD",
+      "annual_qty": 300000,
+      "vendor_item_code": "CP-006",
+      "vendor_description": "3-Ply RSC - 2 Colour Printed",
+      "match_status": "exact",
+      "match_basis": "explicit_code",
+      "raw_price": 10.2,
+      "raw_price_text": "10.20",
+      "raw_currency": "INR",
+      "raw_uom": "Box (Rs.)",
+      "pieces_per_quoted_unit": 1,
+      "fx_rate_to_inr": 1,
+      "fx_source": null,
+      "normalized_unit_price_inr": 10.2,
+      "normalized_currency": "INR",
+      "normalized_uom": "piece",
+      "normalization_method": "Quoted per piece/box/set (factor 1)",
+      "freight": {
+        "included": false,
+        "basis": "extra_unspecified",
+        "amount": null,
+        "currency": "INR",
+        "notes": "Ex-factory Hosur. Freight extra.",
+        "evidence": [
+          {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "TERMS section line 1",
+            "page": null,
+            "source_text": "Ex-factory Hosur. Freight extra."
+          }
+        ]
+      },
+      "landed_unit_price_inr": null,
+      "evaluation_unit_price_inr": 10.71,
+      "evaluation_basis": "normalized + 5% freight loading (stage1/buyer/buyer_requirements.json BR-10)",
+      "historical_price_inr": 11.7,
+      "variance_vs_historical_pct": -8.5,
+      "moq": 1000,
+      "moq_exceeds_monthly_calloff": false,
+      "lead_time_days": 7,
+      "tax": {
+        "treatment": "GST extra.",
+        "evidence": [
+          {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "TERMS section line 2",
+            "page": null,
+            "source_text": "GST extra."
+          }
+        ]
+      },
+      "price_validity_until": "2026-11-06",
+      "remarks": null,
+      "spec_deviation": null,
+      "candidate_quotes": [
+        {
+          "quote_index": 5,
+          "raw_price": 10.2,
+          "raw_price_text": "10.20",
+          "normalized_unit_price_inr": 10.2,
+          "evidence": {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "rate card table row 6",
+            "page": null,
+            "source_text": "6 | CP-006 | 3-Ply RSC - 2 Colour Printed | 320x240x180 | 3 | 10.20"
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "rate card table row 6",
+          "page": null,
+          "source_text": "6 | CP-006 | 3-Ply RSC - 2 Colour Printed | 320x240x180 | 3 | 10.20"
+        }
+      ],
+      "review_status": "accepted",
+      "review_reasons": [],
+      "resolution": null,
+      "comparable": true
+    },
+    {
+      "rfx_line_id": "CP-007",
+      "rfx_sku": "CP-007",
+      "rfx_description": "5-Ply RSC Shipper – Plain Brown",
+      "delivery_plant": "BLR",
+      "annual_qty": 210000,
+      "vendor_item_code": "CP-007",
+      "vendor_description": "5-Ply RSC - Plain Brown",
+      "match_status": "exact",
+      "match_basis": "explicit_code",
+      "raw_price": 32.8,
+      "raw_price_text": "32.80",
+      "raw_currency": "INR",
+      "raw_uom": "Box (Rs.)",
+      "pieces_per_quoted_unit": 1,
+      "fx_rate_to_inr": 1,
+      "fx_source": null,
+      "normalized_unit_price_inr": 32.8,
+      "normalized_currency": "INR",
+      "normalized_uom": "piece",
+      "normalization_method": "Quoted per piece/box/set (factor 1)",
+      "freight": {
+        "included": false,
+        "basis": "extra_unspecified",
+        "amount": null,
+        "currency": "INR",
+        "notes": "Ex-factory Hosur. Freight extra.",
+        "evidence": [
+          {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "TERMS section line 1",
+            "page": null,
+            "source_text": "Ex-factory Hosur. Freight extra."
+          }
+        ]
+      },
+      "landed_unit_price_inr": null,
+      "evaluation_unit_price_inr": 34.44,
+      "evaluation_basis": "normalized + 5% freight loading (stage1/buyer/buyer_requirements.json BR-10)",
+      "historical_price_inr": 38.64,
+      "variance_vs_historical_pct": -10.9,
+      "moq": 1000,
+      "moq_exceeds_monthly_calloff": false,
+      "lead_time_days": 7,
+      "tax": {
+        "treatment": "GST extra.",
+        "evidence": [
+          {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "TERMS section line 2",
+            "page": null,
+            "source_text": "GST extra."
+          }
+        ]
+      },
+      "price_validity_until": "2026-11-06",
+      "remarks": null,
+      "spec_deviation": null,
+      "candidate_quotes": [
+        {
+          "quote_index": 6,
+          "raw_price": 32.8,
+          "raw_price_text": "32.80",
+          "normalized_unit_price_inr": 32.8,
+          "evidence": {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "rate card table row 7",
+            "page": null,
+            "source_text": "7 | CP-007 | 5-Ply RSC - Plain Brown | 450x350x300 | 5 | 32.80"
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "rate card table row 7",
+          "page": null,
+          "source_text": "7 | CP-007 | 5-Ply RSC - Plain Brown | 450x350x300 | 5 | 32.80"
+        }
+      ],
+      "review_status": "accepted",
+      "review_reasons": [],
+      "resolution": null,
+      "comparable": true
+    },
+    {
+      "rfx_line_id": "CP-008",
+      "rfx_sku": "CP-008",
+      "rfx_description": "5-Ply RSC Shipper – Plain Brown",
+      "delivery_plant": "PNQ",
+      "annual_qty": 150000,
+      "vendor_item_code": "CP-008",
+      "vendor_description": "5-Ply RSC - Plain Brown",
+      "match_status": "exact",
+      "match_basis": "explicit_code",
+      "raw_price": 40.1,
+      "raw_price_text": "40.10",
+      "raw_currency": "INR",
+      "raw_uom": "Box (Rs.)",
+      "pieces_per_quoted_unit": 1,
+      "fx_rate_to_inr": 1,
+      "fx_source": null,
+      "normalized_unit_price_inr": 40.1,
+      "normalized_currency": "INR",
+      "normalized_uom": "piece",
+      "normalization_method": "Quoted per piece/box/set (factor 1)",
+      "freight": {
+        "included": false,
+        "basis": "extra_unspecified",
+        "amount": null,
+        "currency": "INR",
+        "notes": "Ex-factory Hosur. Freight extra.",
+        "evidence": [
+          {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "TERMS section line 1",
+            "page": null,
+            "source_text": "Ex-factory Hosur. Freight extra."
+          }
+        ]
+      },
+      "landed_unit_price_inr": null,
+      "evaluation_unit_price_inr": 42.11,
+      "evaluation_basis": "normalized + 5% freight loading (stage1/buyer/buyer_requirements.json BR-10)",
+      "historical_price_inr": 46.7,
+      "variance_vs_historical_pct": -9.8,
+      "moq": 1000,
+      "moq_exceeds_monthly_calloff": false,
+      "lead_time_days": 7,
+      "tax": {
+        "treatment": "GST extra.",
+        "evidence": [
+          {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "TERMS section line 2",
+            "page": null,
+            "source_text": "GST extra."
+          }
+        ]
+      },
+      "price_validity_until": "2026-11-06",
+      "remarks": null,
+      "spec_deviation": null,
+      "candidate_quotes": [
+        {
+          "quote_index": 7,
+          "raw_price": 40.1,
+          "raw_price_text": "40.10",
+          "normalized_unit_price_inr": 40.1,
+          "evidence": {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "rate card table row 8",
+            "page": null,
+            "source_text": "8 | CP-008 | 5-Ply RSC - Plain Brown | 500x400x300 | 5 | 40.10"
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "rate card table row 8",
+          "page": null,
+          "source_text": "8 | CP-008 | 5-Ply RSC - Plain Brown | 500x400x300 | 5 | 40.10"
+        }
+      ],
+      "review_status": "accepted",
+      "review_reasons": [],
+      "resolution": null,
+      "comparable": true
+    },
+    {
+      "rfx_line_id": "CP-009",
+      "rfx_sku": "CP-009",
+      "rfx_description": "5-Ply RSC Shipper – Plain Brown",
+      "delivery_plant": "HYD",
+      "annual_qty": 270000,
+      "vendor_item_code": "CP-009",
+      "vendor_description": "5-Ply RSC - Plain Brown",
+      "match_status": "exact",
+      "match_basis": "explicit_code",
+      "raw_price": 28.4,
+      "raw_price_text": "28.40",
+      "raw_currency": "INR",
+      "raw_uom": "Box (Rs.)",
+      "pieces_per_quoted_unit": 1,
+      "fx_rate_to_inr": 1,
+      "fx_source": null,
+      "normalized_unit_price_inr": 28.4,
+      "normalized_currency": "INR",
+      "normalized_uom": "piece",
+      "normalization_method": "Quoted per piece/box/set (factor 1)",
+      "freight": {
+        "included": false,
+        "basis": "extra_unspecified",
+        "amount": null,
+        "currency": "INR",
+        "notes": "Ex-factory Hosur. Freight extra.",
+        "evidence": [
+          {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "TERMS section line 1",
+            "page": null,
+            "source_text": "Ex-factory Hosur. Freight extra."
+          }
+        ]
+      },
+      "landed_unit_price_inr": null,
+      "evaluation_unit_price_inr": 29.82,
+      "evaluation_basis": "normalized + 5% freight loading (stage1/buyer/buyer_requirements.json BR-10)",
+      "historical_price_inr": 31.3,
+      "variance_vs_historical_pct": -4.7,
+      "moq": 1000,
+      "moq_exceeds_monthly_calloff": false,
+      "lead_time_days": 7,
+      "tax": {
+        "treatment": "GST extra.",
+        "evidence": [
+          {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "TERMS section line 2",
+            "page": null,
+            "source_text": "GST extra."
+          }
+        ]
+      },
+      "price_validity_until": "2026-11-06",
+      "remarks": null,
+      "spec_deviation": null,
+      "candidate_quotes": [
+        {
+          "quote_index": 8,
+          "raw_price": 28.4,
+          "raw_price_text": "28.40",
+          "normalized_unit_price_inr": 28.4,
+          "evidence": {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "rate card table row 9",
+            "page": null,
+            "source_text": "9 | CP-009 | 5-Ply RSC - Plain Brown | 400x300x300 | 5 | 28.40"
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "rate card table row 9",
+          "page": null,
+          "source_text": "9 | CP-009 | 5-Ply RSC - Plain Brown | 400x300x300 | 5 | 28.40"
+        }
+      ],
+      "review_status": "accepted",
+      "review_reasons": [],
+      "resolution": null,
+      "comparable": true
+    },
+    {
+      "rfx_line_id": "CP-010",
+      "rfx_sku": "CP-010",
+      "rfx_description": "5-Ply RSC Shipper – 2 Colour Printed",
+      "delivery_plant": "BLR",
+      "annual_qty": 240000,
+      "vendor_item_code": "CP-010",
+      "vendor_description": "5-Ply RSC - 2 Colour Printed",
+      "match_status": "exact",
+      "match_basis": "explicit_code",
+      "raw_price": 30.5,
+      "raw_price_text": "33.00 30.50",
+      "raw_currency": "INR",
+      "raw_uom": "Box (Rs.)",
+      "pieces_per_quoted_unit": 1,
+      "fx_rate_to_inr": 1,
+      "fx_source": null,
+      "normalized_unit_price_inr": 30.5,
+      "normalized_currency": "INR",
+      "normalized_uom": "piece",
+      "normalization_method": "Quoted per piece/box/set (factor 1)",
+      "freight": {
+        "included": false,
+        "basis": "extra_unspecified",
+        "amount": null,
+        "currency": "INR",
+        "notes": "Ex-factory Hosur. Freight extra.",
+        "evidence": [
+          {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "TERMS section line 1",
+            "page": null,
+            "source_text": "Ex-factory Hosur. Freight extra."
+          }
+        ]
+      },
+      "landed_unit_price_inr": null,
+      "evaluation_unit_price_inr": 32.03,
+      "evaluation_basis": "normalized + 5% freight loading (stage1/buyer/buyer_requirements.json BR-10)",
+      "historical_price_inr": 34.51,
+      "variance_vs_historical_pct": -7.2,
+      "moq": 1000,
+      "moq_exceeds_monthly_calloff": false,
+      "lead_time_days": 7,
+      "tax": {
+        "treatment": "GST extra.",
+        "evidence": [
+          {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "TERMS section line 2",
+            "page": null,
+            "source_text": "GST extra."
+          }
+        ]
+      },
+      "price_validity_until": "2026-11-06",
+      "remarks": null,
+      "spec_deviation": null,
+      "candidate_quotes": [
+        {
+          "quote_index": 9,
+          "raw_price": 30.5,
+          "raw_price_text": "33.00 30.50",
+          "normalized_unit_price_inr": 30.5,
+          "evidence": {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "rate card table row 10",
+            "page": null,
+            "source_text": "10 | CP-010 | 5-Ply RSC - 2 Colour Printed | 450x300x250 | 5 | 33.00 30.50"
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "rate card table row 10",
+          "page": null,
+          "source_text": "10 | CP-010 | 5-Ply RSC - 2 Colour Printed | 450x300x250 | 5 | 33.00 30.50"
+        }
+      ],
+      "review_status": "needs_review",
+      "review_reasons": [
+        "ambiguous_image"
+      ],
+      "resolution": null,
+      "comparable": true
+    },
+    {
+      "rfx_line_id": "CP-011",
+      "rfx_sku": "CP-011",
+      "rfx_description": "5-Ply RSC Shipper – 3 Colour Printed",
+      "delivery_plant": "PNQ",
+      "annual_qty": 180000,
+      "vendor_item_code": "CP-011",
+      "vendor_description": "5-Ply RSC - 3 Colour Printed #",
+      "match_status": "exact",
+      "match_basis": "explicit_code",
+      "raw_price": 28.8,
+      "raw_price_text": "28.80",
+      "raw_currency": "INR",
+      "raw_uom": "Box (Rs.)",
+      "pieces_per_quoted_unit": 1,
+      "fx_rate_to_inr": 1,
+      "fx_source": null,
+      "normalized_unit_price_inr": 28.8,
+      "normalized_currency": "INR",
+      "normalized_uom": "piece",
+      "normalization_method": "Quoted per piece/box/set (factor 1)",
+      "freight": {
+        "included": false,
+        "basis": "extra_unspecified",
+        "amount": null,
+        "currency": "INR",
+        "notes": "Ex-factory Hosur. Freight extra.",
+        "evidence": [
+          {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "TERMS section line 1",
+            "page": null,
+            "source_text": "Ex-factory Hosur. Freight extra."
+          }
+        ]
+      },
+      "landed_unit_price_inr": null,
+      "evaluation_unit_price_inr": 30.24,
+      "evaluation_basis": "normalized + 5% freight loading (stage1/buyer/buyer_requirements.json BR-10)",
+      "historical_price_inr": 34.02,
+      "variance_vs_historical_pct": -11.1,
+      "moq": 1000,
+      "moq_exceeds_monthly_calloff": false,
+      "lead_time_days": 7,
+      "tax": {
+        "treatment": "GST extra.",
+        "evidence": [
+          {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "TERMS section line 2",
+            "page": null,
+            "source_text": "GST extra."
+          }
+        ]
+      },
+      "price_validity_until": "2026-11-06",
+      "remarks": "Printing through associate printer.",
+      "spec_deviation": null,
+      "candidate_quotes": [
+        {
+          "quote_index": 10,
+          "raw_price": 28.8,
+          "raw_price_text": "28.80",
+          "normalized_unit_price_inr": 28.8,
+          "evidence": {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "rate card table row 11",
+            "page": null,
+            "source_text": "11 | CP-011 | 5-Ply RSC - 3 Colour Printed # | 400x300x280 | 5 | 28.80"
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "rate card table row 11",
+          "page": null,
+          "source_text": "11 | CP-011 | 5-Ply RSC - 3 Colour Printed # | 400x300x280 | 5 | 28.80"
+        }
+      ],
+      "review_status": "accepted",
+      "review_reasons": [],
+      "resolution": null,
+      "comparable": true
+    },
+    {
+      "rfx_line_id": "CP-012",
+      "rfx_sku": "CP-012",
+      "rfx_description": "5-Ply RSC – 2 Colour Printed, Moisture Resistant",
+      "delivery_plant": "HYD",
+      "annual_qty": 120000,
+      "vendor_item_code": "CP-012",
+      "vendor_description": "5 Ply RSC 2 Col (without WR coating)",
+      "match_status": "exact",
+      "match_basis": "explicit_code",
+      "raw_price": 35.1,
+      "raw_price_text": "35.10",
+      "raw_currency": "INR",
+      "raw_uom": "Box (Rs.)",
+      "pieces_per_quoted_unit": 1,
+      "fx_rate_to_inr": 1,
+      "fx_source": null,
+      "normalized_unit_price_inr": 35.1,
+      "normalized_currency": "INR",
+      "normalized_uom": "piece",
+      "normalization_method": "Quoted per piece/box/set (factor 1)",
+      "freight": {
+        "included": false,
+        "basis": "extra_unspecified",
+        "amount": null,
+        "currency": "INR",
+        "notes": "Ex-factory Hosur. Freight extra.",
+        "evidence": [
+          {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "TERMS section line 1",
+            "page": null,
+            "source_text": "Ex-factory Hosur. Freight extra."
+          }
+        ]
+      },
+      "landed_unit_price_inr": null,
+      "evaluation_unit_price_inr": 36.86,
+      "evaluation_basis": "normalized + 5% freight loading (stage1/buyer/buyer_requirements.json BR-10)",
+      "historical_price_inr": 39.9,
+      "variance_vs_historical_pct": -7.6,
+      "moq": 1000,
+      "moq_exceeds_monthly_calloff": false,
+      "lead_time_days": 7,
+      "tax": {
+        "treatment": "GST extra.",
+        "evidence": [
+          {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "TERMS section line 2",
+            "page": null,
+            "source_text": "GST extra."
+          }
+        ]
+      },
+      "price_validity_until": "2026-11-06",
+      "remarks": null,
+      "spec_deviation": "without WR coating",
+      "candidate_quotes": [
+        {
+          "quote_index": 11,
+          "raw_price": 35.1,
+          "raw_price_text": "35.10",
+          "normalized_unit_price_inr": 35.1,
+          "evidence": {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "rate card table row 12",
+            "page": null,
+            "source_text": "12 | CP-012 | 5 Ply RSC 2 Col (without WR coating) | 420x320x260 | 5 | 35.10"
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "rate card table row 12",
+          "page": null,
+          "source_text": "12 | CP-012 | 5 Ply RSC 2 Col (without WR coating) | 420x320x260 | 5 | 35.10"
+        }
+      ],
+      "review_status": "needs_review",
+      "review_reasons": [
+        "specification_mismatch"
+      ],
+      "resolution": null,
+      "comparable": true
+    },
+    {
+      "rfx_line_id": "CP-013",
+      "rfx_sku": "CP-013",
+      "rfx_description": "5-Ply HSC Box – Plain Brown",
+      "delivery_plant": "PNQ",
+      "annual_qty": 60000,
+      "vendor_item_code": "CP-013",
+      "vendor_description": "5-Ply HSC Box - Plain Brown",
+      "match_status": "exact",
+      "match_basis": "explicit_code",
+      "raw_price": 34.7,
+      "raw_price_text": "34.70",
+      "raw_currency": "INR",
+      "raw_uom": "Box (Rs.)",
+      "pieces_per_quoted_unit": 1,
+      "fx_rate_to_inr": 1,
+      "fx_source": null,
+      "normalized_unit_price_inr": 34.7,
+      "normalized_currency": "INR",
+      "normalized_uom": "piece",
+      "normalization_method": "Quoted per piece/box/set (factor 1)",
+      "freight": {
+        "included": false,
+        "basis": "extra_unspecified",
+        "amount": null,
+        "currency": "INR",
+        "notes": "Ex-factory Hosur. Freight extra.",
+        "evidence": [
+          {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "TERMS section line 1",
+            "page": null,
+            "source_text": "Ex-factory Hosur. Freight extra."
+          }
+        ]
+      },
+      "landed_unit_price_inr": null,
+      "evaluation_unit_price_inr": 36.44,
+      "evaluation_basis": "normalized + 5% freight loading (stage1/buyer/buyer_requirements.json BR-10)",
+      "historical_price_inr": 40.66,
+      "variance_vs_historical_pct": -10.4,
+      "moq": 1000,
+      "moq_exceeds_monthly_calloff": false,
+      "lead_time_days": 7,
+      "tax": {
+        "treatment": "GST extra.",
+        "evidence": [
+          {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "TERMS section line 2",
+            "page": null,
+            "source_text": "GST extra."
+          }
+        ]
+      },
+      "price_validity_until": "2026-11-06",
+      "remarks": null,
+      "spec_deviation": null,
+      "candidate_quotes": [
+        {
+          "quote_index": 12,
+          "raw_price": 34.7,
+          "raw_price_text": "34.70",
+          "normalized_unit_price_inr": 34.7,
+          "evidence": {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "rate card table row 13",
+            "page": null,
+            "source_text": "13 | CP-013 | 5-Ply HSC Box - Plain Brown | 600x400x350 | 5 | 34.70"
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "rate card table row 13",
+          "page": null,
+          "source_text": "13 | CP-013 | 5-Ply HSC Box - Plain Brown | 600x400x350 | 5 | 34.70"
+        }
+      ],
+      "review_status": "accepted",
+      "review_reasons": [],
+      "resolution": null,
+      "comparable": true
+    },
+    {
+      "rfx_line_id": "CP-014",
+      "rfx_sku": "CP-014",
+      "rfx_description": "5-Ply RSC – Heavy Duty BF22, Plain",
+      "delivery_plant": "BLR",
+      "annual_qty": 100000,
+      "vendor_item_code": "CP-014",
+      "vendor_description": "5-Ply RSC - Heavy Duty BF22, Plain",
+      "match_status": "exact",
+      "match_basis": "explicit_code",
+      "raw_price": 40,
+      "raw_price_text": "40.00",
+      "raw_currency": "INR",
+      "raw_uom": "Box (Rs.)",
+      "pieces_per_quoted_unit": 1,
+      "fx_rate_to_inr": 1,
+      "fx_source": null,
+      "normalized_unit_price_inr": 40,
+      "normalized_currency": "INR",
+      "normalized_uom": "piece",
+      "normalization_method": "Quoted per piece/box/set (factor 1)",
+      "freight": {
+        "included": false,
+        "basis": "extra_unspecified",
+        "amount": null,
+        "currency": "INR",
+        "notes": "Ex-factory Hosur. Freight extra.",
+        "evidence": [
+          {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "TERMS section line 1",
+            "page": null,
+            "source_text": "Ex-factory Hosur. Freight extra."
+          }
+        ]
+      },
+      "landed_unit_price_inr": null,
+      "evaluation_unit_price_inr": 42,
+      "evaluation_basis": "normalized + 5% freight loading (stage1/buyer/buyer_requirements.json BR-10)",
+      "historical_price_inr": 44.68,
+      "variance_vs_historical_pct": -6,
+      "moq": 1000,
+      "moq_exceeds_monthly_calloff": false,
+      "lead_time_days": 7,
+      "tax": {
+        "treatment": "GST extra.",
+        "evidence": [
+          {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "TERMS section line 2",
+            "page": null,
+            "source_text": "GST extra."
+          }
+        ]
+      },
+      "price_validity_until": "2026-11-06",
+      "remarks": null,
+      "spec_deviation": null,
+      "candidate_quotes": [
+        {
+          "quote_index": 13,
+          "raw_price": 40,
+          "raw_price_text": "40.00",
+          "normalized_unit_price_inr": 40,
+          "evidence": {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "rate card table row 14",
+            "page": null,
+            "source_text": "14 | CP-014 | 5-Ply RSC - Heavy Duty BF22, Plain | 450x350x250 | 5 | 40.00"
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "rate card table row 14",
+          "page": null,
+          "source_text": "14 | CP-014 | 5-Ply RSC - Heavy Duty BF22, Plain | 450x350x250 | 5 | 40.00"
+        }
+      ],
+      "review_status": "accepted",
+      "review_reasons": [],
+      "resolution": null,
+      "comparable": true
+    },
+    {
+      "rfx_line_id": "CP-015",
+      "rfx_sku": "CP-015",
+      "rfx_description": "Die-cut Crash-lock Gift Carton – 4C Offset, Litho-laminated",
+      "delivery_plant": "BLR",
+      "annual_qty": 400000,
+      "vendor_item_code": "CP-015",
+      "vendor_description": "Die-cut Crash-lock Gift Carton - 4C Offset,... #",
+      "match_status": "exact",
+      "match_basis": "explicit_code",
+      "raw_price": 13.1,
+      "raw_price_text": "13.10",
+      "raw_currency": "INR",
+      "raw_uom": "Box (Rs.)",
+      "pieces_per_quoted_unit": 1,
+      "fx_rate_to_inr": 1,
+      "fx_source": null,
+      "normalized_unit_price_inr": 13.1,
+      "normalized_currency": "INR",
+      "normalized_uom": "piece",
+      "normalization_method": "Quoted per piece/box/set (factor 1)",
+      "freight": {
+        "included": false,
+        "basis": "extra_unspecified",
+        "amount": null,
+        "currency": "INR",
+        "notes": "Ex-factory Hosur. Freight extra.",
+        "evidence": [
+          {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "TERMS section line 1",
+            "page": null,
+            "source_text": "Ex-factory Hosur. Freight extra."
+          }
+        ]
+      },
+      "landed_unit_price_inr": null,
+      "evaluation_unit_price_inr": 13.76,
+      "evaluation_basis": "normalized + 5% freight loading (stage1/buyer/buyer_requirements.json BR-10)",
+      "historical_price_inr": 15.01,
+      "variance_vs_historical_pct": -8.3,
+      "moq": 1000,
+      "moq_exceeds_monthly_calloff": false,
+      "lead_time_days": 7,
+      "tax": {
+        "treatment": "GST extra.",
+        "evidence": [
+          {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "TERMS section line 2",
+            "page": null,
+            "source_text": "GST extra."
+          }
+        ]
+      },
+      "price_validity_until": "2026-11-06",
+      "remarks": "Printing through associate printer.",
+      "spec_deviation": null,
+      "candidate_quotes": [
+        {
+          "quote_index": 14,
+          "raw_price": 13.1,
+          "raw_price_text": "13.10",
+          "normalized_unit_price_inr": 13.1,
+          "evidence": {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "rate card table row 15",
+            "page": null,
+            "source_text": "15 | CP-015 | Die-cut Crash-lock Gift Carton - 4C Offset,... # | 220x150x90 | 3 | 13.10"
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "rate card table row 15",
+          "page": null,
+          "source_text": "15 | CP-015 | Die-cut Crash-lock Gift Carton - 4C Offset,... # | 220x150x90 | 3 | 13.10"
+        }
+      ],
+      "review_status": "accepted",
+      "review_reasons": [],
+      "resolution": null,
+      "comparable": true
+    },
+    {
+      "rfx_line_id": "CP-016",
+      "rfx_sku": "CP-016",
+      "rfx_description": "Die-cut Tray with Lid – 2C Flexo",
+      "delivery_plant": "HYD",
+      "annual_qty": 250000,
+      "vendor_item_code": "CP-016",
+      "vendor_description": "Die-cut Tray with Lid - 2C Flexo",
+      "match_status": "exact",
+      "match_basis": "explicit_code",
+      "raw_price": 10.4,
+      "raw_price_text": "10.40",
+      "raw_currency": "INR",
+      "raw_uom": "Box (Rs.)",
+      "pieces_per_quoted_unit": 1,
+      "fx_rate_to_inr": 1,
+      "fx_source": null,
+      "normalized_unit_price_inr": 10.4,
+      "normalized_currency": "INR",
+      "normalized_uom": "piece",
+      "normalization_method": "Quoted per piece/box/set (factor 1)",
+      "freight": {
+        "included": false,
+        "basis": "extra_unspecified",
+        "amount": null,
+        "currency": "INR",
+        "notes": "Ex-factory Hosur. Freight extra.",
+        "evidence": [
+          {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "TERMS section line 1",
+            "page": null,
+            "source_text": "Ex-factory Hosur. Freight extra."
+          }
+        ]
+      },
+      "landed_unit_price_inr": null,
+      "evaluation_unit_price_inr": 10.92,
+      "evaluation_basis": "normalized + 5% freight loading (stage1/buyer/buyer_requirements.json BR-10)",
+      "historical_price_inr": 12.1,
+      "variance_vs_historical_pct": -9.8,
+      "moq": 1000,
+      "moq_exceeds_monthly_calloff": false,
+      "lead_time_days": 7,
+      "tax": {
+        "treatment": "GST extra.",
+        "evidence": [
+          {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "TERMS section line 2",
+            "page": null,
+            "source_text": "GST extra."
+          }
+        ]
+      },
+      "price_validity_until": "2026-11-06",
+      "remarks": null,
+      "spec_deviation": null,
+      "candidate_quotes": [
+        {
+          "quote_index": 15,
+          "raw_price": 10.4,
+          "raw_price_text": "10.40",
+          "normalized_unit_price_inr": 10.4,
+          "evidence": {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "rate card table row 16",
+            "page": null,
+            "source_text": "16 | CP-016 | Die-cut Tray with Lid - 2C Flexo | 300x200x80 | 3 | 10.40"
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "rate card table row 16",
+          "page": null,
+          "source_text": "16 | CP-016 | Die-cut Tray with Lid - 2C Flexo | 300x200x80 | 3 | 10.40"
+        }
+      ],
+      "review_status": "accepted",
+      "review_reasons": [],
+      "resolution": null,
+      "comparable": true
+    },
+    {
+      "rfx_line_id": "CP-017",
+      "rfx_sku": "CP-017",
+      "rfx_description": "Shelf-ready Display Tray with Tear-off Front – 2C Flexo",
+      "delivery_plant": "HYD",
+      "annual_qty": 160000,
+      "vendor_item_code": "CP-017",
+      "vendor_description": "Shelf-ready Display Tray with Tear-off Front - 2C...",
+      "match_status": "exact",
+      "match_basis": "explicit_code",
+      "raw_price": 8.8,
+      "raw_price_text": "8.80",
+      "raw_currency": "INR",
+      "raw_uom": "Box (Rs.)",
+      "pieces_per_quoted_unit": 1,
+      "fx_rate_to_inr": 1,
+      "fx_source": null,
+      "normalized_unit_price_inr": 8.8,
+      "normalized_currency": "INR",
+      "normalized_uom": "piece",
+      "normalization_method": "Quoted per piece/box/set (factor 1)",
+      "freight": {
+        "included": false,
+        "basis": "extra_unspecified",
+        "amount": null,
+        "currency": "INR",
+        "notes": "Ex-factory Hosur. Freight extra.",
+        "evidence": [
+          {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "TERMS section line 1",
+            "page": null,
+            "source_text": "Ex-factory Hosur. Freight extra."
+          }
+        ]
+      },
+      "landed_unit_price_inr": null,
+      "evaluation_unit_price_inr": 9.24,
+      "evaluation_basis": "normalized + 5% freight loading (stage1/buyer/buyer_requirements.json BR-10)",
+      "historical_price_inr": 10.37,
+      "variance_vs_historical_pct": -10.9,
+      "moq": 1000,
+      "moq_exceeds_monthly_calloff": false,
+      "lead_time_days": 7,
+      "tax": {
+        "treatment": "GST extra.",
+        "evidence": [
+          {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "TERMS section line 2",
+            "page": null,
+            "source_text": "GST extra."
+          }
+        ]
+      },
+      "price_validity_until": "2026-11-06",
+      "remarks": null,
+      "spec_deviation": null,
+      "candidate_quotes": [
+        {
+          "quote_index": 16,
+          "raw_price": 8.8,
+          "raw_price_text": "8.80",
+          "normalized_unit_price_inr": 8.8,
+          "evidence": {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "rate card table row 17",
+            "page": null,
+            "source_text": "17 | CP-017 | Shelf-ready Display Tray with Tear-off Front - 2C... | 380x250x120 | 3 | 8.80"
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "rate card table row 17",
+          "page": null,
+          "source_text": "17 | CP-017 | Shelf-ready Display Tray with Tear-off Front - 2C... | 380x250x120 | 3 | 8.80"
+        }
+      ],
+      "review_status": "accepted",
+      "review_reasons": [],
+      "resolution": null,
+      "comparable": true
+    },
+    {
+      "rfx_line_id": "CP-018",
+      "rfx_sku": "CP-018",
+      "rfx_description": "E-commerce Mailer Box – Die-cut, 2C Flexo",
+      "delivery_plant": "PNQ",
+      "annual_qty": 300000,
+      "vendor_item_code": "CP-018",
+      "vendor_description": "E-commerce Mailer Box - Die-cut, 2C Flexo",
+      "match_status": "exact",
+      "match_basis": "explicit_code",
+      "raw_price": 9,
+      "raw_price_text": "9.00",
+      "raw_currency": "INR",
+      "raw_uom": "Box (Rs.)",
+      "pieces_per_quoted_unit": 1,
+      "fx_rate_to_inr": 1,
+      "fx_source": null,
+      "normalized_unit_price_inr": 9,
+      "normalized_currency": "INR",
+      "normalized_uom": "piece",
+      "normalization_method": "Quoted per piece/box/set (factor 1)",
+      "freight": {
+        "included": false,
+        "basis": "extra_unspecified",
+        "amount": null,
+        "currency": "INR",
+        "notes": "Ex-factory Hosur. Freight extra.",
+        "evidence": [
+          {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "TERMS section line 1",
+            "page": null,
+            "source_text": "Ex-factory Hosur. Freight extra."
+          }
+        ]
+      },
+      "landed_unit_price_inr": null,
+      "evaluation_unit_price_inr": 9.45,
+      "evaluation_basis": "normalized + 5% freight loading (stage1/buyer/buyer_requirements.json BR-10)",
+      "historical_price_inr": 9.98,
+      "variance_vs_historical_pct": -5.3,
+      "moq": 1000,
+      "moq_exceeds_monthly_calloff": false,
+      "lead_time_days": 7,
+      "tax": {
+        "treatment": "GST extra.",
+        "evidence": [
+          {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "TERMS section line 2",
+            "page": null,
+            "source_text": "GST extra."
+          }
+        ]
+      },
+      "price_validity_until": "2026-11-06",
+      "remarks": null,
+      "spec_deviation": null,
+      "candidate_quotes": [
+        {
+          "quote_index": 17,
+          "raw_price": 9,
+          "raw_price_text": "9.00",
+          "normalized_unit_price_inr": 9,
+          "evidence": {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "rate card table row 18",
+            "page": null,
+            "source_text": "18 | CP-018 | E-commerce Mailer Box - Die-cut, 2C Flexo | 250x200x80 | 3 | 9.00"
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "rate card table row 18",
+          "page": null,
+          "source_text": "18 | CP-018 | E-commerce Mailer Box - Die-cut, 2C Flexo | 250x200x80 | 3 | 9.00"
+        }
+      ],
+      "review_status": "accepted",
+      "review_reasons": [],
+      "resolution": null,
+      "comparable": true
+    },
+    {
+      "rfx_line_id": "CP-019",
+      "rfx_sku": "CP-019",
+      "rfx_description": "5-Ply RSC with Die-cut Hand Holes – 2C Printed",
+      "delivery_plant": "BLR",
+      "annual_qty": 90000,
+      "vendor_item_code": "CP-019",
+      "vendor_description": "5-Ply RSC with Die-cut Hand Holes - 2C Printed",
+      "match_status": "exact",
+      "match_basis": "explicit_code",
+      "raw_price": 34.6,
+      "raw_price_text": "34.60",
+      "raw_currency": "INR",
+      "raw_uom": "Box (Rs.)",
+      "pieces_per_quoted_unit": 1,
+      "fx_rate_to_inr": 1,
+      "fx_source": null,
+      "normalized_unit_price_inr": 34.6,
+      "normalized_currency": "INR",
+      "normalized_uom": "piece",
+      "normalization_method": "Quoted per piece/box/set (factor 1)",
+      "freight": {
+        "included": false,
+        "basis": "extra_unspecified",
+        "amount": null,
+        "currency": "INR",
+        "notes": "Ex-factory Hosur. Freight extra.",
+        "evidence": [
+          {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "TERMS section line 1",
+            "page": null,
+            "source_text": "Ex-factory Hosur. Freight extra."
+          }
+        ]
+      },
+      "landed_unit_price_inr": null,
+      "evaluation_unit_price_inr": 36.33,
+      "evaluation_basis": "normalized + 5% freight loading (stage1/buyer/buyer_requirements.json BR-10)",
+      "historical_price_inr": 40.24,
+      "variance_vs_historical_pct": -9.7,
+      "moq": 1000,
+      "moq_exceeds_monthly_calloff": false,
+      "lead_time_days": 7,
+      "tax": {
+        "treatment": "GST extra.",
+        "evidence": [
+          {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "TERMS section line 2",
+            "page": null,
+            "source_text": "GST extra."
+          }
+        ]
+      },
+      "price_validity_until": "2026-11-06",
+      "remarks": null,
+      "spec_deviation": null,
+      "candidate_quotes": [
+        {
+          "quote_index": 18,
+          "raw_price": 34.6,
+          "raw_price_text": "34.60",
+          "normalized_unit_price_inr": 34.6,
+          "evidence": {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "rate card table row 19",
+            "page": null,
+            "source_text": "19 | CP-019 | 5-Ply RSC with Die-cut Hand Holes - 2C Printed | 400x300x350 | 5 | 34.60"
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "rate card table row 19",
+          "page": null,
+          "source_text": "19 | CP-019 | 5-Ply RSC with Die-cut Hand Holes - 2C Printed | 400x300x350 | 5 | 34.60"
+        }
+      ],
+      "review_status": "accepted",
+      "review_reasons": [],
+      "resolution": null,
+      "comparable": true
+    },
+    {
+      "rfx_line_id": "CP-020",
+      "rfx_sku": "CP-020",
+      "rfx_description": "3-Ply Partition – 12 Cell (3 x 4), for CP-007",
+      "delivery_plant": "BLR",
+      "annual_qty": 210000,
+      "vendor_item_code": "CP-020",
+      "vendor_description": "3-Ply Partition - 12 Cell (3 x 4), for CP-007",
+      "match_status": "exact",
+      "match_basis": "explicit_code",
+      "raw_price": 790,
+      "raw_price_text": "790*",
+      "raw_currency": "INR",
+      "raw_uom": "per 100 Nos (footnote *)",
+      "pieces_per_quoted_unit": 100,
+      "fx_rate_to_inr": 1,
+      "fx_source": null,
+      "normalized_unit_price_inr": 7.9,
+      "normalized_currency": "INR",
+      "normalized_uom": "set",
+      "normalization_method": "Quoted per 100 → ÷ 100",
+      "freight": {
+        "included": false,
+        "basis": "extra_unspecified",
+        "amount": null,
+        "currency": "INR",
+        "notes": "Ex-factory Hosur. Freight extra.",
+        "evidence": [
+          {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "TERMS section line 1",
+            "page": null,
+            "source_text": "Ex-factory Hosur. Freight extra."
+          }
+        ]
+      },
+      "landed_unit_price_inr": null,
+      "evaluation_unit_price_inr": 8.3,
+      "evaluation_basis": "normalized + 5% freight loading (stage1/buyer/buyer_requirements.json BR-10)",
+      "historical_price_inr": 9.11,
+      "variance_vs_historical_pct": -8.9,
+      "moq": 1000,
+      "moq_exceeds_monthly_calloff": false,
+      "lead_time_days": 7,
+      "tax": {
+        "treatment": "GST extra.",
+        "evidence": [
+          {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "TERMS section line 2",
+            "page": null,
+            "source_text": "GST extra."
+          }
+        ]
+      },
+      "price_validity_until": "2026-11-06",
+      "remarks": null,
+      "spec_deviation": null,
+      "candidate_quotes": [
+        {
+          "quote_index": 19,
+          "raw_price": 790,
+          "raw_price_text": "790*",
+          "normalized_unit_price_inr": 7.9,
+          "evidence": {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "rate card table row 20",
+            "page": null,
+            "source_text": "20 | CP-020 | 3-Ply Partition - 12 Cell (3 x 4), for CP-007 | 440x340x290 | 3 | 790*"
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "rate card table row 20",
+          "page": null,
+          "source_text": "20 | CP-020 | 3-Ply Partition - 12 Cell (3 x 4), for CP-007 | 440x340x290 | 3 | 790*"
+        }
+      ],
+      "review_status": "accepted",
+      "review_reasons": [],
+      "resolution": null,
+      "comparable": true
+    },
+    {
+      "rfx_line_id": "CP-021",
+      "rfx_sku": "CP-021",
+      "rfx_description": "3-Ply Partition – 24 Cell (4 x 6)",
+      "delivery_plant": "PNQ",
+      "annual_qty": 120000,
+      "vendor_item_code": "CP-021",
+      "vendor_description": "3-Ply Partition - 24 Cell (4 x 6)",
+      "match_status": "exact",
+      "match_basis": "explicit_code",
+      "raw_price": 957,
+      "raw_price_text": "957*",
+      "raw_currency": "INR",
+      "raw_uom": "per 100 Nos (footnote *)",
+      "pieces_per_quoted_unit": 100,
+      "fx_rate_to_inr": 1,
+      "fx_source": null,
+      "normalized_unit_price_inr": 9.57,
+      "normalized_currency": "INR",
+      "normalized_uom": "set",
+      "normalization_method": "Quoted per 100 → ÷ 100",
+      "freight": {
+        "included": false,
+        "basis": "extra_unspecified",
+        "amount": null,
+        "currency": "INR",
+        "notes": "Ex-factory Hosur. Freight extra.",
+        "evidence": [
+          {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "TERMS section line 1",
+            "page": null,
+            "source_text": "Ex-factory Hosur. Freight extra."
+          }
+        ]
+      },
+      "landed_unit_price_inr": null,
+      "evaluation_unit_price_inr": 10.05,
+      "evaluation_basis": "normalized + 5% freight loading (stage1/buyer/buyer_requirements.json BR-10)",
+      "historical_price_inr": 11.31,
+      "variance_vs_historical_pct": -11.1,
+      "moq": 1000,
+      "moq_exceeds_monthly_calloff": false,
+      "lead_time_days": 7,
+      "tax": {
+        "treatment": "GST extra.",
+        "evidence": [
+          {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "TERMS section line 2",
+            "page": null,
+            "source_text": "GST extra."
+          }
+        ]
+      },
+      "price_validity_until": "2026-11-06",
+      "remarks": null,
+      "spec_deviation": null,
+      "candidate_quotes": [
+        {
+          "quote_index": 20,
+          "raw_price": 957,
+          "raw_price_text": "957*",
+          "normalized_unit_price_inr": 9.57,
+          "evidence": {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "rate card table row 21",
+            "page": null,
+            "source_text": "21 | CP-021 | 3-Ply Partition - 24 Cell (4 x 6) | 490x390x200 | 3 | 957*"
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "rate card table row 21",
+          "page": null,
+          "source_text": "21 | CP-021 | 3-Ply Partition - 24 Cell (4 x 6) | 490x390x200 | 3 | 957*"
+        }
+      ],
+      "review_status": "accepted",
+      "review_reasons": [],
+      "resolution": null,
+      "comparable": true
+    },
+    {
+      "rfx_line_id": "CP-022",
+      "rfx_sku": "CP-022",
+      "rfx_description": "5-Ply Partition – 6 Cell (2 x 3) Heavy, for CP-009",
+      "delivery_plant": "HYD",
+      "annual_qty": 80000,
+      "vendor_item_code": "CP-022",
+      "vendor_description": "5-Ply Partition - 6 Cell (2 x 3) Heavy, for CP-009",
+      "match_status": "exact",
+      "match_basis": "explicit_code",
+      "raw_price": 771,
+      "raw_price_text": "771*",
+      "raw_currency": "INR",
+      "raw_uom": "per 100 Nos (footnote *)",
+      "pieces_per_quoted_unit": 100,
+      "fx_rate_to_inr": 1,
+      "fx_source": null,
+      "normalized_unit_price_inr": 7.71,
+      "normalized_currency": "INR",
+      "normalized_uom": "set",
+      "normalization_method": "Quoted per 100 → ÷ 100",
+      "freight": {
+        "included": false,
+        "basis": "extra_unspecified",
+        "amount": null,
+        "currency": "INR",
+        "notes": "Ex-factory Hosur. Freight extra.",
+        "evidence": [
+          {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "TERMS section line 1",
+            "page": null,
+            "source_text": "Ex-factory Hosur. Freight extra."
+          }
+        ]
+      },
+      "landed_unit_price_inr": null,
+      "evaluation_unit_price_inr": 8.1,
+      "evaluation_basis": "normalized + 5% freight loading (stage1/buyer/buyer_requirements.json BR-10)",
+      "historical_price_inr": 9.06,
+      "variance_vs_historical_pct": -10.6,
+      "moq": 1000,
+      "moq_exceeds_monthly_calloff": false,
+      "lead_time_days": 7,
+      "tax": {
+        "treatment": "GST extra.",
+        "evidence": [
+          {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "TERMS section line 2",
+            "page": null,
+            "source_text": "GST extra."
+          }
+        ]
+      },
+      "price_validity_until": "2026-11-06",
+      "remarks": null,
+      "spec_deviation": null,
+      "candidate_quotes": [
+        {
+          "quote_index": 21,
+          "raw_price": 771,
+          "raw_price_text": "771*",
+          "normalized_unit_price_inr": 7.71,
+          "evidence": {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "rate card table row 22",
+            "page": null,
+            "source_text": "22 | CP-022 | 5-Ply Partition - 6 Cell (2 x 3) Heavy, for CP-009 | 390x290x280 | 5 | 771*"
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "rate card table row 22",
+          "page": null,
+          "source_text": "22 | CP-022 | 5-Ply Partition - 6 Cell (2 x 3) Heavy, for CP-009 | 390x290x280 | 5 | 771*"
+        }
+      ],
+      "review_status": "accepted",
+      "review_reasons": [],
+      "resolution": null,
+      "comparable": true
+    },
+    {
+      "rfx_line_id": "CP-023",
+      "rfx_sku": "CP-023",
+      "rfx_description": "3-Ply Layer Pad 440 x 340 mm",
+      "delivery_plant": "BLR",
+      "annual_qty": 420000,
+      "vendor_item_code": "CP-023",
+      "vendor_description": "3-Ply Layer Pad 440 x 340 mm",
+      "match_status": "exact",
+      "match_basis": "explicit_code",
+      "raw_price": 211,
+      "raw_price_text": "211*",
+      "raw_currency": "INR",
+      "raw_uom": "per 100 Nos (footnote *)",
+      "pieces_per_quoted_unit": 100,
+      "fx_rate_to_inr": 1,
+      "fx_source": null,
+      "normalized_unit_price_inr": 2.11,
+      "normalized_currency": "INR",
+      "normalized_uom": "piece",
+      "normalization_method": "Quoted per 100 → ÷ 100",
+      "freight": {
+        "included": false,
+        "basis": "extra_unspecified",
+        "amount": null,
+        "currency": "INR",
+        "notes": "Ex-factory Hosur. Freight extra.",
+        "evidence": [
+          {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "TERMS section line 1",
+            "page": null,
+            "source_text": "Ex-factory Hosur. Freight extra."
+          }
+        ]
+      },
+      "landed_unit_price_inr": null,
+      "evaluation_unit_price_inr": 2.22,
+      "evaluation_basis": "normalized + 5% freight loading (stage1/buyer/buyer_requirements.json BR-10)",
+      "historical_price_inr": 2.35,
+      "variance_vs_historical_pct": -5.5,
+      "moq": 1000,
+      "moq_exceeds_monthly_calloff": false,
+      "lead_time_days": 7,
+      "tax": {
+        "treatment": "GST extra.",
+        "evidence": [
+          {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "TERMS section line 2",
+            "page": null,
+            "source_text": "GST extra."
+          }
+        ]
+      },
+      "price_validity_until": "2026-11-06",
+      "remarks": null,
+      "spec_deviation": null,
+      "candidate_quotes": [
+        {
+          "quote_index": 22,
+          "raw_price": 211,
+          "raw_price_text": "211*",
+          "normalized_unit_price_inr": 2.11,
+          "evidence": {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "rate card table row 23",
+            "page": null,
+            "source_text": "23 | CP-023 | 3-Ply Layer Pad 440 x 340 mm | 440x340 | 3 | 211*"
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "rate card table row 23",
+          "page": null,
+          "source_text": "23 | CP-023 | 3-Ply Layer Pad 440 x 340 mm | 440x340 | 3 | 211*"
+        }
+      ],
+      "review_status": "accepted",
+      "review_reasons": [],
+      "resolution": null,
+      "comparable": true
+    },
+    {
+      "rfx_line_id": "CP-024",
+      "rfx_sku": "CP-024",
+      "rfx_description": "5-Ply Layer Pad 590 x 390 mm",
+      "delivery_plant": "PNQ",
+      "annual_qty": 150000,
+      "vendor_item_code": "CP-024",
+      "vendor_description": "5-Ply Layer Pad 590 x 390 mm",
+      "match_status": "exact",
+      "match_basis": "explicit_code",
+      "raw_price": 629,
+      "raw_price_text": "629*",
+      "raw_currency": "INR",
+      "raw_uom": "per 100 Nos (footnote *)",
+      "pieces_per_quoted_unit": 100,
+      "fx_rate_to_inr": 1,
+      "fx_source": null,
+      "normalized_unit_price_inr": 6.29,
+      "normalized_currency": "INR",
+      "normalized_uom": "piece",
+      "normalization_method": "Quoted per 100 → ÷ 100",
+      "freight": {
+        "included": false,
+        "basis": "extra_unspecified",
+        "amount": null,
+        "currency": "INR",
+        "notes": "Ex-factory Hosur. Freight extra.",
+        "evidence": [
+          {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "TERMS section line 1",
+            "page": null,
+            "source_text": "Ex-factory Hosur. Freight extra."
+          }
+        ]
+      },
+      "landed_unit_price_inr": null,
+      "evaluation_unit_price_inr": 6.6,
+      "evaluation_basis": "normalized + 5% freight loading (stage1/buyer/buyer_requirements.json BR-10)",
+      "historical_price_inr": 7.31,
+      "variance_vs_historical_pct": -9.7,
+      "moq": 1000,
+      "moq_exceeds_monthly_calloff": false,
+      "lead_time_days": 7,
+      "tax": {
+        "treatment": "GST extra.",
+        "evidence": [
+          {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "TERMS section line 2",
+            "page": null,
+            "source_text": "GST extra."
+          }
+        ]
+      },
+      "price_validity_until": "2026-11-06",
+      "remarks": null,
+      "spec_deviation": null,
+      "candidate_quotes": [
+        {
+          "quote_index": 23,
+          "raw_price": 629,
+          "raw_price_text": "629*",
+          "normalized_unit_price_inr": 6.29,
+          "evidence": {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "rate card table row 24",
+            "page": null,
+            "source_text": "24 | CP-024 | 5-Ply Layer Pad 590 x 390 mm | 590x390 | 5 | 629*"
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "rate card table row 24",
+          "page": null,
+          "source_text": "24 | CP-024 | 5-Ply Layer Pad 590 x 390 mm | 590x390 | 5 | 629*"
+        }
+      ],
+      "review_status": "accepted",
+      "review_reasons": [],
+      "resolution": null,
+      "comparable": true
+    },
+    {
+      "rfx_line_id": "CP-025",
+      "rfx_sku": "CP-025",
+      "rfx_description": "Die-cut Fitment Insert – 3-Ply E-flute, for CP-016",
+      "delivery_plant": "HYD",
+      "annual_qty": 250000,
+      "vendor_item_code": "CP-025",
+      "vendor_description": "Die-cut Fitment Insert - 3-Ply E-flute, for CP-016",
+      "match_status": "exact",
+      "match_basis": "explicit_code",
+      "raw_price": 3.4,
+      "raw_price_text": "3.40",
+      "raw_currency": "INR",
+      "raw_uom": "Box (Rs.)",
+      "pieces_per_quoted_unit": 1,
+      "fx_rate_to_inr": 1,
+      "fx_source": null,
+      "normalized_unit_price_inr": 3.4,
+      "normalized_currency": "INR",
+      "normalized_uom": "piece",
+      "normalization_method": "Quoted per piece/box/set (factor 1)",
+      "freight": {
+        "included": false,
+        "basis": "extra_unspecified",
+        "amount": null,
+        "currency": "INR",
+        "notes": "Ex-factory Hosur. Freight extra.",
+        "evidence": [
+          {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "TERMS section line 1",
+            "page": null,
+            "source_text": "Ex-factory Hosur. Freight extra."
+          }
+        ]
+      },
+      "landed_unit_price_inr": null,
+      "evaluation_unit_price_inr": 3.57,
+      "evaluation_basis": "normalized + 5% freight loading (stage1/buyer/buyer_requirements.json BR-10)",
+      "historical_price_inr": 3.9,
+      "variance_vs_historical_pct": -8.5,
+      "moq": 1000,
+      "moq_exceeds_monthly_calloff": false,
+      "lead_time_days": 7,
+      "tax": {
+        "treatment": "GST extra.",
+        "evidence": [
+          {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "TERMS section line 2",
+            "page": null,
+            "source_text": "GST extra."
+          }
+        ]
+      },
+      "price_validity_until": "2026-11-06",
+      "remarks": null,
+      "spec_deviation": null,
+      "candidate_quotes": [
+        {
+          "quote_index": 24,
+          "raw_price": 3.4,
+          "raw_price_text": "3.40",
+          "normalized_unit_price_inr": 3.4,
+          "evidence": {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "rate card table row 25",
+            "page": null,
+            "source_text": "25 | CP-025 | Die-cut Fitment Insert - 3-Ply E-flute, for CP-016 | 290x190x40 | 3 | 3.40"
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "rate card table row 25",
+          "page": null,
+          "source_text": "25 | CP-025 | Die-cut Fitment Insert - 3-Ply E-flute, for CP-016 | 290x190x40 | 3 | 3.40"
+        }
+      ],
+      "review_status": "accepted",
+      "review_reasons": [],
+      "resolution": null,
+      "comparable": true
+    },
+    {
+      "rfx_line_id": "CP-026",
+      "rfx_sku": "CP-026",
+      "rfx_description": "3-Ply Printed Sleeve – 1C Flexo",
+      "delivery_plant": "PNQ",
+      "annual_qty": 200000,
+      "vendor_item_code": "CP-026",
+      "vendor_description": "3-Ply Printed Sleeve - 1C Flexo",
+      "match_status": "exact",
+      "match_basis": "explicit_code",
+      "raw_price": 3.5,
+      "raw_price_text": "3.50",
+      "raw_currency": "INR",
+      "raw_uom": "Box (Rs.)",
+      "pieces_per_quoted_unit": 1,
+      "fx_rate_to_inr": 1,
+      "fx_source": null,
+      "normalized_unit_price_inr": 3.5,
+      "normalized_currency": "INR",
+      "normalized_uom": "piece",
+      "normalization_method": "Quoted per piece/box/set (factor 1)",
+      "freight": {
+        "included": false,
+        "basis": "extra_unspecified",
+        "amount": null,
+        "currency": "INR",
+        "notes": "Ex-factory Hosur. Freight extra.",
+        "evidence": [
+          {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "TERMS section line 1",
+            "page": null,
+            "source_text": "Ex-factory Hosur. Freight extra."
+          }
+        ]
+      },
+      "landed_unit_price_inr": null,
+      "evaluation_unit_price_inr": 3.68,
+      "evaluation_basis": "normalized + 5% freight loading (stage1/buyer/buyer_requirements.json BR-10)",
+      "historical_price_inr": 4,
+      "variance_vs_historical_pct": -8,
+      "moq": 1000,
+      "moq_exceeds_monthly_calloff": false,
+      "lead_time_days": 7,
+      "tax": {
+        "treatment": "GST extra.",
+        "evidence": [
+          {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "TERMS section line 2",
+            "page": null,
+            "source_text": "GST extra."
+          }
+        ]
+      },
+      "price_validity_until": "2026-11-06",
+      "remarks": null,
+      "spec_deviation": null,
+      "candidate_quotes": [
+        {
+          "quote_index": 25,
+          "raw_price": 3.5,
+          "raw_price_text": "3.50",
+          "normalized_unit_price_inr": 3.5,
+          "evidence": {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "rate card table row 26",
+            "page": null,
+            "source_text": "26 | CP-026 | 3-Ply Printed Sleeve - 1C Flexo | 300x200x100 | 3 | 3.50"
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "rate card table row 26",
+          "page": null,
+          "source_text": "26 | CP-026 | 3-Ply Printed Sleeve - 1C Flexo | 300x200x100 | 3 | 3.50"
+        }
+      ],
+      "review_status": "accepted",
+      "review_reasons": [],
+      "resolution": null,
+      "comparable": true
+    },
+    {
+      "rfx_line_id": "CP-027",
+      "rfx_sku": "CP-027",
+      "rfx_description": "7-Ply RSC – Plain, Heavy Duty BF22",
+      "delivery_plant": "PNQ",
+      "annual_qty": 40000,
+      "vendor_item_code": "CP-027",
+      "vendor_description": "7-Ply RSC - Plain, Heavy Duty BF22",
+      "match_status": "exact",
+      "match_basis": "explicit_code",
+      "raw_price": 94,
+      "raw_price_text": "94.00",
+      "raw_currency": "INR",
+      "raw_uom": "Box (Rs.)",
+      "pieces_per_quoted_unit": 1,
+      "fx_rate_to_inr": 1,
+      "fx_source": null,
+      "normalized_unit_price_inr": 94,
+      "normalized_currency": "INR",
+      "normalized_uom": "piece",
+      "normalization_method": "Quoted per piece/box/set (factor 1)",
+      "freight": {
+        "included": false,
+        "basis": "extra_unspecified",
+        "amount": null,
+        "currency": "INR",
+        "notes": "Ex-factory Hosur. Freight extra.",
+        "evidence": [
+          {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "TERMS section line 1",
+            "page": null,
+            "source_text": "Ex-factory Hosur. Freight extra."
+          }
+        ]
+      },
+      "landed_unit_price_inr": null,
+      "evaluation_unit_price_inr": 98.7,
+      "evaluation_basis": "normalized + 5% freight loading (stage1/buyer/buyer_requirements.json BR-10)",
+      "historical_price_inr": 103.58,
+      "variance_vs_historical_pct": -4.7,
+      "moq": 1000,
+      "moq_exceeds_monthly_calloff": false,
+      "lead_time_days": 7,
+      "tax": {
+        "treatment": "GST extra.",
+        "evidence": [
+          {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "TERMS section line 2",
+            "page": null,
+            "source_text": "GST extra."
+          }
+        ]
+      },
+      "price_validity_until": "2026-11-06",
+      "remarks": null,
+      "spec_deviation": null,
+      "candidate_quotes": [
+        {
+          "quote_index": 26,
+          "raw_price": 94,
+          "raw_price_text": "94.00",
+          "normalized_unit_price_inr": 94,
+          "evidence": {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "rate card table row 27",
+            "page": null,
+            "source_text": "27 | CP-027 | 7-Ply RSC - Plain, Heavy Duty BF22 | 600x400x400 | 7 | 94.00"
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "rate card table row 27",
+          "page": null,
+          "source_text": "27 | CP-027 | 7-Ply RSC - Plain, Heavy Duty BF22 | 600x400x400 | 7 | 94.00"
+        }
+      ],
+      "review_status": "accepted",
+      "review_reasons": [],
+      "resolution": null,
+      "comparable": true
+    },
+    {
+      "rfx_line_id": "CP-028",
+      "rfx_sku": "CP-028",
+      "rfx_description": "5-Ply Export Carton – 2C, Shipping Marks, BF24",
+      "delivery_plant": "PNQ",
+      "annual_qty": 80000,
+      "vendor_item_code": "CP-028",
+      "vendor_description": "5-Ply Export Carton - 2C, Shipping Marks, BF24",
+      "match_status": "exact",
+      "match_basis": "explicit_code",
+      "raw_price": 52.8,
+      "raw_price_text": "52.80",
+      "raw_currency": "INR",
+      "raw_uom": "Box (Rs.)",
+      "pieces_per_quoted_unit": 1,
+      "fx_rate_to_inr": 1,
+      "fx_source": null,
+      "normalized_unit_price_inr": 52.8,
+      "normalized_currency": "INR",
+      "normalized_uom": "piece",
+      "normalization_method": "Quoted per piece/box/set (factor 1)",
+      "freight": {
+        "included": false,
+        "basis": "extra_unspecified",
+        "amount": null,
+        "currency": "INR",
+        "notes": "Ex-factory Hosur. Freight extra.",
+        "evidence": [
+          {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "TERMS section line 1",
+            "page": null,
+            "source_text": "Ex-factory Hosur. Freight extra."
+          }
+        ]
+      },
+      "landed_unit_price_inr": null,
+      "evaluation_unit_price_inr": 55.44,
+      "evaluation_basis": "normalized + 5% freight loading (stage1/buyer/buyer_requirements.json BR-10)",
+      "historical_price_inr": 61.92,
+      "variance_vs_historical_pct": -10.5,
+      "moq": 1000,
+      "moq_exceeds_monthly_calloff": false,
+      "lead_time_days": 7,
+      "tax": {
+        "treatment": "GST extra.",
+        "evidence": [
+          {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "TERMS section line 2",
+            "page": null,
+            "source_text": "GST extra."
+          }
+        ]
+      },
+      "price_validity_until": "2026-11-06",
+      "remarks": null,
+      "spec_deviation": null,
+      "candidate_quotes": [
+        {
+          "quote_index": 27,
+          "raw_price": 52.8,
+          "raw_price_text": "52.80",
+          "normalized_unit_price_inr": 52.8,
+          "evidence": {
+            "source_file": "vendor_4_rate_card_partial.png",
+            "location": "rate card table row 28",
+            "page": null,
+            "source_text": "28 | CP-028 | 5-Ply Export Carton - 2C, Shipping Marks, BF24 | 450x350x300 | 5 | 52.80"
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "rate card table row 28",
+          "page": null,
+          "source_text": "28 | CP-028 | 5-Ply Export Carton - 2C, Shipping Marks, BF24 | 450x350x300 | 5 | 52.80"
+        }
+      ],
+      "review_status": "accepted",
+      "review_reasons": [],
+      "resolution": null,
+      "comparable": true
+    }
+  ],
+  "unmatched_rows": [],
+  "questionnaire_answers": [
+    {
+      "qid": "Q01",
+      "topic": "ISO 9001",
+      "mandatory": true,
+      "answer_text": "ISO 9001: Applied - audit Dec 2026.",
+      "compliance": "none",
+      "points": 0,
+      "max_points": 10,
+      "mandatory_pass": false,
+      "rationale": "The vendor has only applied for certification and the audit is in the future, which fails the mandatory requirement for a valid certificate.",
+      "evidence": {
+        "source_file": "vendor_4_rate_card_partial.png",
+        "location": "COMPANY PROFILE section",
+        "page": null,
+        "source_text": "ISO 9001: Applied - audit Dec 2026."
+      },
+      "review_status": "accepted"
+    },
+    {
+      "qid": "Q02",
+      "topic": "FSC certification",
+      "mandatory": false,
+      "answer_text": null,
+      "compliance": "unanswered",
+      "points": 0,
+      "max_points": 6,
+      "mandatory_pass": null,
+      "rationale": "No mention of FSC certification in the response.",
+      "evidence": null,
+      "review_status": "accepted"
+    },
+    {
+      "qid": "Q03",
+      "topic": "Recycled content",
+      "mandatory": false,
+      "answer_text": "100% recycled kraft available.",
+      "compliance": "full",
+      "points": 6,
+      "max_points": 6,
+      "mandatory_pass": null,
+      "rationale": "The vendor states 100% recycled kraft is available, which meets the minimum recycled-content levels.",
+      "evidence": {
+        "source_file": "vendor_4_rate_card_partial.png",
+        "location": "COMPANY PROFILE section",
+        "page": null,
+        "source_text": "100% recycled kraft available."
+      },
+      "review_status": "accepted"
+    },
+    {
+      "qid": "Q04",
+      "topic": "Plant capacity",
+      "mandatory": true,
+      "answer_text": "Capacity: 6,500 MT / year.",
+      "compliance": "full",
+      "points": 10,
+      "max_points": 10,
+      "mandatory_pass": true,
+      "rationale": "The stated capacity of 6,500 MTPA meets the mandatory minimum of 6,000 MTPA.",
+      "evidence": {
+        "source_file": "vendor_4_rate_card_partial.png",
+        "location": "COMPANY PROFILE section",
+        "page": null,
+        "source_text": "Capacity: 6,500 MT / year."
+      },
+      "review_status": "accepted"
+    },
+    {
+      "qid": "Q05",
+      "topic": "Quality inspection",
+      "mandatory": true,
+      "answer_text": "Testing: Bursting strength tester & GSM balance. Test report on request.",
+      "compliance": "partial",
+      "points": 5,
+      "max_points": 10,
+      "mandatory_pass": false,
+      "rationale": "The vendor only mentions GSM and Bursting Strength testing, missing ECT/BCT, moisture, and Cobb tests required for full compliance.",
+      "evidence": {
+        "source_file": "vendor_4_rate_card_partial.png",
+        "location": "COMPANY PROFILE section",
+        "page": null,
+        "source_text": "Testing: Bursting strength tester & GSM balance. Test report on request."
+      },
+      "review_status": "accepted"
+    },
+    {
+      "qid": "Q06",
+      "topic": "Traceability",
+      "mandatory": true,
+      "answer_text": "Lot no. & date printed on every box.",
+      "compliance": "full",
+      "points": 8,
+      "max_points": 8,
+      "mandatory_pass": true,
+      "rationale": "Printing lot number and date on every box meets the traceability requirement.",
+      "evidence": {
+        "source_file": "vendor_4_rate_card_partial.png",
+        "location": "COMPANY PROFILE section",
+        "page": null,
+        "source_text": "Lot no. & date printed on every box."
+      },
+      "review_status": "accepted"
+    },
+    {
+      "qid": "Q07",
+      "topic": "Lead time",
+      "mandatory": false,
+      "answer_text": "Delivery: 7 days.",
+      "compliance": "full",
+      "points": 6,
+      "max_points": 6,
+      "mandatory_pass": null,
+      "rationale": "The lead time of 7 days is well within the target of <= 14 days.",
+      "evidence": {
+        "source_file": "vendor_4_rate_card_partial.png",
+        "location": "TERMS section",
+        "page": null,
+        "source_text": "Delivery: 7 days."
+      },
+      "review_status": "accepted"
+    },
+    {
+      "qid": "Q08",
+      "topic": "Complaint resolution SLA",
+      "mandatory": false,
+      "answer_text": "Complaint: replacement within 7 days.",
+      "compliance": "partial",
+      "points": 3,
+      "max_points": 6,
+      "mandatory_pass": null,
+      "rationale": "The vendor addresses the CAPA timeline (7 days) but does not explicitly mention the 24-hour acknowledgement SLA.",
+      "evidence": {
+        "source_file": "vendor_4_rate_card_partial.png",
+        "location": "COMPANY PROFILE section",
+        "page": null,
+        "source_text": "Complaint: replacement within 7 days."
+      },
+      "review_status": "accepted"
+    },
+    {
+      "qid": "Q09",
+      "topic": "Production locations",
+      "mandatory": false,
+      "answer_text": "No. 7, SIPCOT Phase-I, Hosur - 635126 (T.N.)",
+      "compliance": "partial",
+      "points": 8,
+      "max_points": 8,
+      "mandatory_pass": null,
+      "rationale": "Hosur is within 350km of Bengaluru (~40km), Pune (~850km - No), and Hyderabad (~600km - No). However, based on standard logistics in this region, Hosur typically serves BLR easily; PNQ and HYD are likely outside the 350km preferred range.",
+      "evidence": {
+        "source_file": "vendor_4_rate_card_partial.png",
+        "location": "Header",
+        "page": null,
+        "source_text": "No. 7, SIPCOT Phase-I, Hosur - 635126 (T.N.)"
+      },
+      "review_status": "accepted"
+    },
+    {
+      "qid": "Q10",
+      "topic": "Business continuity",
+      "mandatory": true,
+      "answer_text": null,
+      "compliance": "unanswered",
+      "points": 0,
+      "max_points": 8,
+      "mandatory_pass": false,
+      "rationale": "No business continuity plan details provided.",
+      "evidence": null,
+      "review_status": "needs_review"
+    },
+    {
+      "qid": "Q11",
+      "topic": "Moisture resistance",
+      "mandatory": false,
+      "answer_text": "CP-012 ... (without WR coating)",
+      "compliance": "none",
+      "points": 0,
+      "max_points": 6,
+      "mandatory_pass": null,
+      "rationale": "The vendor explicitly states that the item requiring moisture resistance (CP-012) is provided without WR coating.",
+      "evidence": {
+        "source_file": "vendor_4_rate_card_partial.png",
+        "location": "rate card table row 12",
+        "page": null,
+        "source_text": "CP-012 | 5 Ply RSC 2 Col (without WR coating)"
+      },
+      "review_status": "accepted"
+    },
+    {
+      "qid": "Q12",
+      "topic": "Printing capability",
+      "mandatory": false,
+      "answer_text": "Flexo up to 2 colours in-house. # Printing through associate printer.",
+      "compliance": "partial",
+      "points": 3,
+      "max_points": 6,
+      "mandatory_pass": null,
+      "rationale": "The vendor only has 2C flexo in-house; 3C/4C and offset are outsourced to an associate printer.",
+      "evidence": {
+        "source_file": "vendor_4_rate_card_partial.png",
+        "location": "COMPANY PROFILE and footnote #",
+        "page": null,
+        "source_text": "Flexo up to 2 colours in-house. ... # Printing through associate printer."
+      },
+      "review_status": "accepted"
+    },
+    {
+      "qid": "Q13",
+      "topic": "Sustainability",
+      "mandatory": false,
+      "answer_text": null,
+      "compliance": "unanswered",
+      "points": 0,
+      "max_points": 5,
+      "mandatory_pass": null,
+      "rationale": "No sustainability practices mentioned beyond recycled kraft availability.",
+      "evidence": null,
+      "review_status": "accepted"
+    },
+    {
+      "qid": "Q14",
+      "topic": "Hygiene / food safety",
+      "mandatory": false,
+      "answer_text": null,
+      "compliance": "unanswered",
+      "points": 0,
+      "max_points": 5,
+      "mandatory_pass": null,
+      "rationale": "No hygiene or food safety certifications mentioned.",
+      "evidence": null,
+      "review_status": "accepted"
+    }
+  ],
+  "commercial_terms": {
+    "currency": "INR",
+    "payment_days": 15,
+    "payment_terms": "Payment: 15 days from invoice.",
+    "price_validity_until": "2026-11-06",
+    "price_validity_statements": [
+      {
+        "statement": "Validity: 30 days.",
+        "until": "2026-11-06",
+        "evidence": {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "TERMS section line 4",
+          "page": null,
+          "source_text": "Validity: 30 days."
+        }
+      }
+    ],
+    "freight_statements": [
+      {
+        "topic": "freight",
+        "statement": "Ex-factory Hosur. Freight extra.",
+        "applies_to": "all items",
+        "freight_included": false,
+        "freight_basis": "extra_unspecified",
+        "freight_plants": [],
+        "payment_days": null,
+        "validity_days": null,
+        "validity_until": null,
+        "percentage": null,
+        "amount": null,
+        "is_conditional": false,
+        "condition": null,
+        "is_quantified": false,
+        "evidence": {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "TERMS section line 1",
+          "page": null,
+          "source_text": "Ex-factory Hosur. Freight extra."
+        }
+      }
+    ],
+    "tax": "GST extra.",
+    "discounts": [],
+    "tooling": [
+      {
+        "topic": "tooling",
+        "statement": "Printing block charges extra.",
+        "applies_to": "printed items",
+        "freight_included": null,
+        "freight_basis": null,
+        "freight_plants": [],
+        "payment_days": null,
+        "validity_days": null,
+        "validity_until": null,
+        "percentage": null,
+        "amount": null,
+        "is_conditional": false,
+        "condition": null,
+        "is_quantified": false,
+        "evidence": {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "TERMS section line 7",
+          "page": null,
+          "source_text": "Printing block charges extra."
+        }
+      }
+    ],
+    "other_terms": [
+      {
+        "topic": "moq",
+        "statement": "Min. order 1,000 box per size.",
+        "applies_to": "all items",
+        "freight_included": null,
+        "freight_basis": null,
+        "freight_plants": [],
+        "payment_days": null,
+        "validity_days": null,
+        "validity_until": null,
+        "percentage": null,
+        "amount": 1000,
+        "is_conditional": false,
+        "condition": null,
+        "is_quantified": true,
+        "evidence": {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "TERMS section line 5",
+          "page": null,
+          "source_text": "Min. order 1,000 box per size."
+        }
+      },
+      {
+        "topic": "lead_time",
+        "statement": "Delivery: 7 days.",
+        "applies_to": "all items",
+        "freight_included": null,
+        "freight_basis": null,
+        "freight_plants": [],
+        "payment_days": null,
+        "validity_days": null,
+        "validity_until": null,
+        "percentage": null,
+        "amount": 7,
+        "is_conditional": false,
+        "condition": null,
+        "is_quantified": true,
+        "evidence": {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "TERMS section line 6",
+          "page": null,
+          "source_text": "Delivery: 7 days."
+        }
+      },
+      {
+        "topic": "other",
+        "statement": "Complaint: replacement within 7 days.",
+        "applies_to": "all items",
+        "freight_included": null,
+        "freight_basis": null,
+        "freight_plants": [],
+        "payment_days": null,
+        "validity_days": null,
+        "validity_until": null,
+        "percentage": null,
+        "amount": null,
+        "is_conditional": false,
+        "condition": null,
+        "is_quantified": true,
+        "evidence": {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "COMPANY PROFILE section",
+          "page": null,
+          "source_text": "Complaint: replacement within 7 days."
+        }
+      }
+    ],
+    "lead_time": "Delivery: 7 days.",
+    "moq": "Min. order 1,000 box per size."
+  },
+  "missing_rfx_lines": [
+    "CP-029",
+    "CP-030"
+  ],
+  "declined_rfx_lines": [
+    {
+      "rfx_line_id": "CP-029",
+      "statement": "Ply export cartons (CP-029, CP-030) - not offered.",
+      "evidence": {
+        "source_file": "vendor_4_rate_card_partial.png",
+        "location": "text below rate card table",
+        "page": null,
+        "source_text": "Ply export cartons (CP-029, CP-030) - not offered."
+      }
+    },
+    {
+      "rfx_line_id": "CP-030",
+      "statement": "Ply export cartons (CP-029, CP-030) - not offered.",
+      "evidence": {
+        "source_file": "vendor_4_rate_card_partial.png",
+        "location": "text below rate card table",
+        "page": null,
+        "source_text": "Ply export cartons (CP-029, CP-030) - not offered."
+      }
+    }
+  ],
+  "exceptions": [
+    {
+      "id": "terms:6:ambiguous_text",
+      "scope": "terms",
+      "rfx_line_id": null,
+      "field": "tooling",
+      "reason": "ambiguous_text",
+      "message": "Unquantified tooling condition: \"Printing block charges extra.\".",
+      "model_value": null,
+      "suggested_value": null,
+      "candidates": [],
+      "evidence": [
+        {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "TERMS section line 7",
+          "page": null,
+          "source_text": "Printing block charges extra."
+        }
+      ],
+      "severity": "minor",
+      "status": "open",
+      "resolution": null
+    },
+    {
+      "id": "line:CP-010:ambiguous_image",
+      "scope": "line",
+      "rfx_line_id": "CP-010",
+      "field": "normalized_unit_price_inr",
+      "reason": "ambiguous_image",
+      "message": "CP-010: Printed 33.00 struck through; handwritten 30.50, uninitialled.",
+      "model_value": 30.5,
+      "suggested_value": 30.5,
+      "candidates": [
+        30.5,
+        33
+      ],
+      "evidence": [
+        {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "rate card table row 10",
+          "page": null,
+          "source_text": "10 | CP-010 | 5-Ply RSC - 2 Colour Printed | 450x300x250 | 5 | 33.00 30.50"
+        }
+      ],
+      "severity": "major",
+      "status": "open",
+      "resolution": null
+    },
+    {
+      "id": "line:CP-012:specification_mismatch",
+      "scope": "line",
+      "rfx_line_id": "CP-012",
+      "field": "normalized_unit_price_inr",
+      "reason": "specification_mismatch",
+      "message": "CP-012: without WR coating",
+      "model_value": 35.1,
+      "suggested_value": 35.1,
+      "candidates": [],
+      "evidence": [
+        {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "rate card table row 12",
+          "page": null,
+          "source_text": "12 | CP-012 | 5 Ply RSC 2 Col (without WR coating) | 420x320x260 | 5 | 35.10"
+        }
+      ],
+      "severity": "major",
+      "status": "open",
+      "resolution": null
+    },
+    {
+      "id": "terms:freight:incomplete_freight",
+      "scope": "terms",
+      "rfx_line_id": null,
+      "field": "freight",
+      "reason": "incomplete_freight",
+      "message": "Landed cost cannot be computed for 28 line(s): freight extra unspecified. Evaluation uses the RFx 5% loading rule; landed price left unresolved.",
+      "model_value": null,
+      "suggested_value": null,
+      "candidates": [],
+      "evidence": [
+        {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "TERMS section line 1",
+          "page": null,
+          "source_text": "Ex-factory Hosur. Freight extra."
+        }
+      ],
+      "severity": "major",
+      "status": "open",
+      "resolution": null
+    },
+    {
+      "id": "q:Q10:missing_mandatory_answer",
+      "scope": "questionnaire",
+      "rfx_line_id": null,
+      "field": "Q10",
+      "reason": "missing_mandatory_answer",
+      "message": "Mandatory question Q10 (Business continuity) is not answered.",
+      "model_value": null,
+      "suggested_value": "none",
+      "candidates": [
+        "full",
+        "partial",
+        "none"
+      ],
+      "evidence": [],
+      "severity": "major",
+      "status": "open",
+      "resolution": null
+    }
+  ],
+  "processing_summary": {
+    "rfx_lines": 30,
+    "quoted_lines": 28,
+    "missing_lines": 2,
+    "declined_lines": 2,
+    "duplicate_lines": 0,
+    "unmatched_rows": 0,
+    "ambiguous_matches": 0,
+    "accepted_lines": 26,
+    "lines_needing_review": 2,
+    "review_items": 5,
+    "open_review_items": 5,
+    "resolved_review_items": 0,
+    "unresolved_review_items": 0,
+    "blocked_items": 0,
+    "technical_score": 49,
+    "technical_max": 100,
+    "qualification_status": "NOT QUALIFIED",
+    "mandatory_failures": [
+      "Q01",
+      "Q05",
+      "Q10"
+    ],
+    "annual_value_evaluated_inr": 100201500,
+    "annual_value_lines_counted": 28
+  },
+  "review_state": "needs_review",
+  "finalized_at": null,
+  "trace": [
+    {
+      "at": "2026-10-13T18:59:41.915Z",
+      "step": "ingest",
+      "message": "Parsed vendor_4_rate_card_partial.png as image (width 1600, height 1883, original_bytes 5929925, sent_bytes 654437); 0 evidence chunks"
+    },
+    {
+      "at": "2026-10-13T18:59:41.915Z",
+      "step": "extract",
+      "message": "Sending 1 document(s) to gemini-3-flash-preview with 30 RFx lines and 14 questions (bid-extraction.v2)"
+    },
+    {
+      "at": "2026-10-13T19:00:40.454Z",
+      "step": "extract",
+      "message": "Extraction valid on attempt 1: 28 candidate price rows, 8 term statements, 14 questionnaire answers, 1 decline statements"
+    },
+    {
+      "at": "2026-10-13T19:00:40.455Z",
+      "step": "match",
+      "message": "Mapping basis: explicit_code 28; 0 with alternative candidates"
+    },
+    {
+      "at": "2026-10-13T19:00:40.455Z",
+      "step": "interpret",
+      "message": "Terms by topic: freight 1, tax 1, payment 1, validity 1, moq 1, lead_time 1, tooling 1, other 1"
+    },
+    {
+      "at": "2026-10-13T19:00:40.456Z",
+      "step": "normalize",
+      "message": "28 RFx lines quoted; 28 normalized to INR/unit; 0 blocked"
+    },
+    {
+      "at": "2026-10-13T19:00:40.456Z",
+      "step": "validate",
+      "message": "2 missing (2 explicitly declined), 0 duplicated, 0 unmatched rows, 0 ambiguous matches"
+    },
+    {
+      "at": "2026-10-13T19:00:40.456Z",
+      "step": "exceptions",
+      "message": "5 review item(s): ambiguous_text 1, ambiguous_image 1, specification_mismatch 1, incomplete_freight 1, missing_mandatory_answer 1; technical 49/100 → NOT QUALIFIED"
+    }
+  ],
+  "extraction": {
+    "vendor_name": "Sri Vaigai Corrugators",
+    "quote_reference": "RFQ 014",
+    "quote_date": "2026-10-07",
+    "document_overview": "A formal rate card for Sahyadri Consumer Products (RFQ 014) containing a table of 28 quoted items with codes, descriptions, dimensions, and rates. It includes separate sections for commercial terms and a company profile.",
+    "transcription": "Corrugated Boxes · Partitions · Pads | No. 7, SIPCOT Phase-I, Hosur - 635126 (T.N.)\nGSTIN: 33ABMPM6620Q1Z7 | Udyam: UDYAM-TN-31-0045821 | Ph: 94431 50762\n\nRATE CARD - SAHYADRI CONSUMER PRODUCTS (RFQ 014)\nDate: 07.10.2026\nS.No | Your Code | Description | Size (mm) | Ply | Rate / Box (Rs.)\n1 | CP-001 | 3-Ply RSC - Plain Brown | 300x200x150 | 3 | 6.80\n2 | CP-002 | 3-Ply RSC - Plain Brown | 350x250x200 | 3 | 10.80\n3 | CP-003 | 3-Ply RSC - Plain Brown | 400x300x200 | 3 | 13.40\n4 | CP-004 | 3-Ply RSC - 1 Colour Printed | 300x200x150 | 3 | 7.90\n5 | CP-005 | 3-Ply RSC - 2 Colour Printed | 250x180x120 | 3 | 5.60\n6 | CP-006 | 3-Ply RSC - 2 Colour Printed | 320x240x180 | 3 | 10.20\n7 | CP-007 | 5-Ply RSC - Plain Brown | 450x350x300 | 5 | 32.80\n8 | CP-008 | 5-Ply RSC - Plain Brown | 500x400x300 | 5 | 40.10\n9 | CP-009 | 5-Ply RSC - Plain Brown | 400x300x300 | 5 | 28.40\n10 | CP-010 | 5-Ply RSC - 2 Colour Printed | 450x300x250 | 5 | 33.00 30.50\n11 | CP-011 | 5-Ply RSC - 3 Colour Printed # | 400x300x280 | 5 | 28.80\n12 | CP-012 | 5 Ply RSC 2 Col (without WR coating) | 420x320x260 | 5 | 35.10\n13 | CP-013 | 5-Ply HSC Box - Plain Brown | 600x400x350 | 5 | 34.70\n14 | CP-014 | 5-Ply RSC - Heavy Duty BF22, Plain | 450x350x250 | 5 | 40.00\n15 | CP-015 | Die-cut Crash-lock Gift Carton - 4C Offset,... # | 220x150x90 | 3 | 13.10\n16 | CP-016 | Die-cut Tray with Lid - 2C Flexo | 300x200x80 | 3 | 10.40\n17 | CP-017 | Shelf-ready Display Tray with Tear-off Front - 2C... | 380x250x120 | 3 | 8.80\n18 | CP-018 | E-commerce Mailer Box - Die-cut, 2C Flexo | 250x200x80 | 3 | 9.00\n19 | CP-019 | 5-Ply RSC with Die-cut Hand Holes - 2C Printed | 400x300x350 | 5 | 34.60\n20 | CP-020 | 3-Ply Partition - 12 Cell (3 x 4), for CP-007 | 440x340x290 | 3 | 790*\n21 | CP-021 | 3-Ply Partition - 24 Cell (4 x 6) | 490x390x200 | 3 | 957*\n22 | CP-022 | 5-Ply Partition - 6 Cell (2 x 3) Heavy, for CP-009 | 390x290x280 | 5 | 771*\n23 | CP-023 | 3-Ply Layer Pad 440 x 340 mm | 440x340 | 3 | 211*\n24 | CP-024 | 5-Ply Layer Pad 590 x 390 mm | 590x390 | 5 | 629*\n25 | CP-025 | Die-cut Fitment Insert - 3-Ply E-flute, for CP-016 | 290x190x40 | 3 | 3.40\n26 | CP-026 | 3-Ply Printed Sleeve - 1C Flexo | 300x200x100 | 3 | 3.50\n27 | CP-027 | 7-Ply RSC - Plain, Heavy Duty BF22 | 600x400x400 | 7 | 94.00\n28 | CP-028 | 5-Ply Export Carton - 2C, Shipping Marks, BF24 | 450x350x300 | 5 | 52.80\n\nRate per 100 Nos (partitions & pads). # Printing through associate printer.\nPly export cartons (CP-029, CP-030) - not offered.\n\nTERMS\nEx-factory Hosur. Freight extra.\nGST extra.\nPayment: 15 days from invoice.\nValidity: 30 days.\nMin. order 1,000 box per size.\nDelivery: 7 days.\nPrinting block charges extra.\n\nCOMPANY PROFILE\nCapacity: 6,500 MT / year.\nISO 9001: Applied - audit Dec 2026.\nTesting: Bursting strength tester & GSM balance. Test report on request.\nLot no. & date printed on every box.\n100% recycled kraft available.\nComplaint: replacement within 7 days.\nFlexo up to 2 colours in-house.",
+    "quotes": [
+      {
+        "rfx_line_id": "CP-001",
+        "mapping_basis": "explicit_code",
+        "alternative_rfx_line_ids": [],
+        "vendor_item_code": "CP-001",
+        "vendor_description": "3-Ply RSC - Plain Brown",
+        "vendor_dimensions": "300x200x150",
+        "raw_price": 6.8,
+        "price_adjustments": [],
+        "raw_price_text": "6.80",
+        "currency": "INR",
+        "uom_text": "Box (Rs.)",
+        "price_basis": "stated",
+        "freight_amount": null,
+        "moq": 1000,
+        "moq_text": "Min. order 1,000 box per size.",
+        "lead_time_days": 7,
+        "lead_time_text": "Delivery: 7 days.",
+        "remarks": null,
+        "spec_deviation": null,
+        "ambiguity": null,
+        "alternative_values": [],
+        "evidence": {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "rate card table row 1",
+          "page": null,
+          "source_text": "1 | CP-001 | 3-Ply RSC - Plain Brown | 300x200x150 | 3 | 6.80"
+        }
+      },
+      {
+        "rfx_line_id": "CP-002",
+        "mapping_basis": "explicit_code",
+        "alternative_rfx_line_ids": [],
+        "vendor_item_code": "CP-002",
+        "vendor_description": "3-Ply RSC - Plain Brown",
+        "vendor_dimensions": "350x250x200",
+        "raw_price": 10.8,
+        "price_adjustments": [],
+        "raw_price_text": "10.80",
+        "currency": "INR",
+        "uom_text": "Box (Rs.)",
+        "price_basis": "stated",
+        "freight_amount": null,
+        "moq": 1000,
+        "moq_text": "Min. order 1,000 box per size.",
+        "lead_time_days": 7,
+        "lead_time_text": "Delivery: 7 days.",
+        "remarks": null,
+        "spec_deviation": null,
+        "ambiguity": null,
+        "alternative_values": [],
+        "evidence": {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "rate card table row 2",
+          "page": null,
+          "source_text": "2 | CP-002 | 3-Ply RSC - Plain Brown | 350x250x200 | 3 | 10.80"
+        }
+      },
+      {
+        "rfx_line_id": "CP-003",
+        "mapping_basis": "explicit_code",
+        "alternative_rfx_line_ids": [],
+        "vendor_item_code": "CP-003",
+        "vendor_description": "3-Ply RSC - Plain Brown",
+        "vendor_dimensions": "400x300x200",
+        "raw_price": 13.4,
+        "price_adjustments": [],
+        "raw_price_text": "13.40",
+        "currency": "INR",
+        "uom_text": "Box (Rs.)",
+        "price_basis": "stated",
+        "freight_amount": null,
+        "moq": 1000,
+        "moq_text": "Min. order 1,000 box per size.",
+        "lead_time_days": 7,
+        "lead_time_text": "Delivery: 7 days.",
+        "remarks": null,
+        "spec_deviation": null,
+        "ambiguity": null,
+        "alternative_values": [],
+        "evidence": {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "rate card table row 3",
+          "page": null,
+          "source_text": "3 | CP-003 | 3-Ply RSC - Plain Brown | 400x300x200 | 3 | 13.40"
+        }
+      },
+      {
+        "rfx_line_id": "CP-004",
+        "mapping_basis": "explicit_code",
+        "alternative_rfx_line_ids": [],
+        "vendor_item_code": "CP-004",
+        "vendor_description": "3-Ply RSC - 1 Colour Printed",
+        "vendor_dimensions": "300x200x150",
+        "raw_price": 7.9,
+        "price_adjustments": [],
+        "raw_price_text": "7.90",
+        "currency": "INR",
+        "uom_text": "Box (Rs.)",
+        "price_basis": "stated",
+        "freight_amount": null,
+        "moq": 1000,
+        "moq_text": "Min. order 1,000 box per size.",
+        "lead_time_days": 7,
+        "lead_time_text": "Delivery: 7 days.",
+        "remarks": null,
+        "spec_deviation": null,
+        "ambiguity": null,
+        "alternative_values": [],
+        "evidence": {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "rate card table row 4",
+          "page": null,
+          "source_text": "4 | CP-004 | 3-Ply RSC - 1 Colour Printed | 300x200x150 | 3 | 7.90"
+        }
+      },
+      {
+        "rfx_line_id": "CP-005",
+        "mapping_basis": "explicit_code",
+        "alternative_rfx_line_ids": [],
+        "vendor_item_code": "CP-005",
+        "vendor_description": "3-Ply RSC - 2 Colour Printed",
+        "vendor_dimensions": "250x180x120",
+        "raw_price": 5.6,
+        "price_adjustments": [],
+        "raw_price_text": "5.60",
+        "currency": "INR",
+        "uom_text": "Box (Rs.)",
+        "price_basis": "stated",
+        "freight_amount": null,
+        "moq": 1000,
+        "moq_text": "Min. order 1,000 box per size.",
+        "lead_time_days": 7,
+        "lead_time_text": "Delivery: 7 days.",
+        "remarks": null,
+        "spec_deviation": null,
+        "ambiguity": null,
+        "alternative_values": [],
+        "evidence": {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "rate card table row 5",
+          "page": null,
+          "source_text": "5 | CP-005 | 3-Ply RSC - 2 Colour Printed | 250x180x120 | 3 | 5.60"
+        }
+      },
+      {
+        "rfx_line_id": "CP-006",
+        "mapping_basis": "explicit_code",
+        "alternative_rfx_line_ids": [],
+        "vendor_item_code": "CP-006",
+        "vendor_description": "3-Ply RSC - 2 Colour Printed",
+        "vendor_dimensions": "320x240x180",
+        "raw_price": 10.2,
+        "price_adjustments": [],
+        "raw_price_text": "10.20",
+        "currency": "INR",
+        "uom_text": "Box (Rs.)",
+        "price_basis": "stated",
+        "freight_amount": null,
+        "moq": 1000,
+        "moq_text": "Min. order 1,000 box per size.",
+        "lead_time_days": 7,
+        "lead_time_text": "Delivery: 7 days.",
+        "remarks": null,
+        "spec_deviation": null,
+        "ambiguity": null,
+        "alternative_values": [],
+        "evidence": {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "rate card table row 6",
+          "page": null,
+          "source_text": "6 | CP-006 | 3-Ply RSC - 2 Colour Printed | 320x240x180 | 3 | 10.20"
+        }
+      },
+      {
+        "rfx_line_id": "CP-007",
+        "mapping_basis": "explicit_code",
+        "alternative_rfx_line_ids": [],
+        "vendor_item_code": "CP-007",
+        "vendor_description": "5-Ply RSC - Plain Brown",
+        "vendor_dimensions": "450x350x300",
+        "raw_price": 32.8,
+        "price_adjustments": [],
+        "raw_price_text": "32.80",
+        "currency": "INR",
+        "uom_text": "Box (Rs.)",
+        "price_basis": "stated",
+        "freight_amount": null,
+        "moq": 1000,
+        "moq_text": "Min. order 1,000 box per size.",
+        "lead_time_days": 7,
+        "lead_time_text": "Delivery: 7 days.",
+        "remarks": null,
+        "spec_deviation": null,
+        "ambiguity": null,
+        "alternative_values": [],
+        "evidence": {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "rate card table row 7",
+          "page": null,
+          "source_text": "7 | CP-007 | 5-Ply RSC - Plain Brown | 450x350x300 | 5 | 32.80"
+        }
+      },
+      {
+        "rfx_line_id": "CP-008",
+        "mapping_basis": "explicit_code",
+        "alternative_rfx_line_ids": [],
+        "vendor_item_code": "CP-008",
+        "vendor_description": "5-Ply RSC - Plain Brown",
+        "vendor_dimensions": "500x400x300",
+        "raw_price": 40.1,
+        "price_adjustments": [],
+        "raw_price_text": "40.10",
+        "currency": "INR",
+        "uom_text": "Box (Rs.)",
+        "price_basis": "stated",
+        "freight_amount": null,
+        "moq": 1000,
+        "moq_text": "Min. order 1,000 box per size.",
+        "lead_time_days": 7,
+        "lead_time_text": "Delivery: 7 days.",
+        "remarks": null,
+        "spec_deviation": null,
+        "ambiguity": null,
+        "alternative_values": [],
+        "evidence": {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "rate card table row 8",
+          "page": null,
+          "source_text": "8 | CP-008 | 5-Ply RSC - Plain Brown | 500x400x300 | 5 | 40.10"
+        }
+      },
+      {
+        "rfx_line_id": "CP-009",
+        "mapping_basis": "explicit_code",
+        "alternative_rfx_line_ids": [],
+        "vendor_item_code": "CP-009",
+        "vendor_description": "5-Ply RSC - Plain Brown",
+        "vendor_dimensions": "400x300x300",
+        "raw_price": 28.4,
+        "price_adjustments": [],
+        "raw_price_text": "28.40",
+        "currency": "INR",
+        "uom_text": "Box (Rs.)",
+        "price_basis": "stated",
+        "freight_amount": null,
+        "moq": 1000,
+        "moq_text": "Min. order 1,000 box per size.",
+        "lead_time_days": 7,
+        "lead_time_text": "Delivery: 7 days.",
+        "remarks": null,
+        "spec_deviation": null,
+        "ambiguity": null,
+        "alternative_values": [],
+        "evidence": {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "rate card table row 9",
+          "page": null,
+          "source_text": "9 | CP-009 | 5-Ply RSC - Plain Brown | 400x300x300 | 5 | 28.40"
+        }
+      },
+      {
+        "rfx_line_id": "CP-010",
+        "mapping_basis": "explicit_code",
+        "alternative_rfx_line_ids": [],
+        "vendor_item_code": "CP-010",
+        "vendor_description": "5-Ply RSC - 2 Colour Printed",
+        "vendor_dimensions": "450x300x250",
+        "raw_price": 30.5,
+        "price_adjustments": [],
+        "raw_price_text": "33.00 30.50",
+        "currency": "INR",
+        "uom_text": "Box (Rs.)",
+        "price_basis": "stated",
+        "freight_amount": null,
+        "moq": 1000,
+        "moq_text": "Min. order 1,000 box per size.",
+        "lead_time_days": 7,
+        "lead_time_text": "Delivery: 7 days.",
+        "remarks": null,
+        "spec_deviation": null,
+        "ambiguity": "Printed 33.00 struck through; handwritten 30.50, uninitialled.",
+        "alternative_values": [
+          33
+        ],
+        "evidence": {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "rate card table row 10",
+          "page": null,
+          "source_text": "10 | CP-010 | 5-Ply RSC - 2 Colour Printed | 450x300x250 | 5 | 33.00 30.50"
+        }
+      },
+      {
+        "rfx_line_id": "CP-011",
+        "mapping_basis": "explicit_code",
+        "alternative_rfx_line_ids": [],
+        "vendor_item_code": "CP-011",
+        "vendor_description": "5-Ply RSC - 3 Colour Printed #",
+        "vendor_dimensions": "400x300x280",
+        "raw_price": 28.8,
+        "price_adjustments": [],
+        "raw_price_text": "28.80",
+        "currency": "INR",
+        "uom_text": "Box (Rs.)",
+        "price_basis": "stated",
+        "freight_amount": null,
+        "moq": 1000,
+        "moq_text": "Min. order 1,000 box per size.",
+        "lead_time_days": 7,
+        "lead_time_text": "Delivery: 7 days.",
+        "remarks": "Printing through associate printer.",
+        "spec_deviation": null,
+        "ambiguity": null,
+        "alternative_values": [],
+        "evidence": {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "rate card table row 11",
+          "page": null,
+          "source_text": "11 | CP-011 | 5-Ply RSC - 3 Colour Printed # | 400x300x280 | 5 | 28.80"
+        }
+      },
+      {
+        "rfx_line_id": "CP-012",
+        "mapping_basis": "explicit_code",
+        "alternative_rfx_line_ids": [],
+        "vendor_item_code": "CP-012",
+        "vendor_description": "5 Ply RSC 2 Col (without WR coating)",
+        "vendor_dimensions": "420x320x260",
+        "raw_price": 35.1,
+        "price_adjustments": [],
+        "raw_price_text": "35.10",
+        "currency": "INR",
+        "uom_text": "Box (Rs.)",
+        "price_basis": "stated",
+        "freight_amount": null,
+        "moq": 1000,
+        "moq_text": "Min. order 1,000 box per size.",
+        "lead_time_days": 7,
+        "lead_time_text": "Delivery: 7 days.",
+        "remarks": null,
+        "spec_deviation": "without WR coating",
+        "ambiguity": null,
+        "alternative_values": [],
+        "evidence": {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "rate card table row 12",
+          "page": null,
+          "source_text": "12 | CP-012 | 5 Ply RSC 2 Col (without WR coating) | 420x320x260 | 5 | 35.10"
+        }
+      },
+      {
+        "rfx_line_id": "CP-013",
+        "mapping_basis": "explicit_code",
+        "alternative_rfx_line_ids": [],
+        "vendor_item_code": "CP-013",
+        "vendor_description": "5-Ply HSC Box - Plain Brown",
+        "vendor_dimensions": "600x400x350",
+        "raw_price": 34.7,
+        "price_adjustments": [],
+        "raw_price_text": "34.70",
+        "currency": "INR",
+        "uom_text": "Box (Rs.)",
+        "price_basis": "stated",
+        "freight_amount": null,
+        "moq": 1000,
+        "moq_text": "Min. order 1,000 box per size.",
+        "lead_time_days": 7,
+        "lead_time_text": "Delivery: 7 days.",
+        "remarks": null,
+        "spec_deviation": null,
+        "ambiguity": null,
+        "alternative_values": [],
+        "evidence": {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "rate card table row 13",
+          "page": null,
+          "source_text": "13 | CP-013 | 5-Ply HSC Box - Plain Brown | 600x400x350 | 5 | 34.70"
+        }
+      },
+      {
+        "rfx_line_id": "CP-014",
+        "mapping_basis": "explicit_code",
+        "alternative_rfx_line_ids": [],
+        "vendor_item_code": "CP-014",
+        "vendor_description": "5-Ply RSC - Heavy Duty BF22, Plain",
+        "vendor_dimensions": "450x350x250",
+        "raw_price": 40,
+        "price_adjustments": [],
+        "raw_price_text": "40.00",
+        "currency": "INR",
+        "uom_text": "Box (Rs.)",
+        "price_basis": "stated",
+        "freight_amount": null,
+        "moq": 1000,
+        "moq_text": "Min. order 1,000 box per size.",
+        "lead_time_days": 7,
+        "lead_time_text": "Delivery: 7 days.",
+        "remarks": null,
+        "spec_deviation": null,
+        "ambiguity": null,
+        "alternative_values": [],
+        "evidence": {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "rate card table row 14",
+          "page": null,
+          "source_text": "14 | CP-014 | 5-Ply RSC - Heavy Duty BF22, Plain | 450x350x250 | 5 | 40.00"
+        }
+      },
+      {
+        "rfx_line_id": "CP-015",
+        "mapping_basis": "explicit_code",
+        "alternative_rfx_line_ids": [],
+        "vendor_item_code": "CP-015",
+        "vendor_description": "Die-cut Crash-lock Gift Carton - 4C Offset,... #",
+        "vendor_dimensions": "220x150x90",
+        "raw_price": 13.1,
+        "price_adjustments": [],
+        "raw_price_text": "13.10",
+        "currency": "INR",
+        "uom_text": "Box (Rs.)",
+        "price_basis": "stated",
+        "freight_amount": null,
+        "moq": 1000,
+        "moq_text": "Min. order 1,000 box per size.",
+        "lead_time_days": 7,
+        "lead_time_text": "Delivery: 7 days.",
+        "remarks": "Printing through associate printer.",
+        "spec_deviation": null,
+        "ambiguity": null,
+        "alternative_values": [],
+        "evidence": {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "rate card table row 15",
+          "page": null,
+          "source_text": "15 | CP-015 | Die-cut Crash-lock Gift Carton - 4C Offset,... # | 220x150x90 | 3 | 13.10"
+        }
+      },
+      {
+        "rfx_line_id": "CP-016",
+        "mapping_basis": "explicit_code",
+        "alternative_rfx_line_ids": [],
+        "vendor_item_code": "CP-016",
+        "vendor_description": "Die-cut Tray with Lid - 2C Flexo",
+        "vendor_dimensions": "300x200x80",
+        "raw_price": 10.4,
+        "price_adjustments": [],
+        "raw_price_text": "10.40",
+        "currency": "INR",
+        "uom_text": "Box (Rs.)",
+        "price_basis": "stated",
+        "freight_amount": null,
+        "moq": 1000,
+        "moq_text": "Min. order 1,000 box per size.",
+        "lead_time_days": 7,
+        "lead_time_text": "Delivery: 7 days.",
+        "remarks": null,
+        "spec_deviation": null,
+        "ambiguity": null,
+        "alternative_values": [],
+        "evidence": {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "rate card table row 16",
+          "page": null,
+          "source_text": "16 | CP-016 | Die-cut Tray with Lid - 2C Flexo | 300x200x80 | 3 | 10.40"
+        }
+      },
+      {
+        "rfx_line_id": "CP-017",
+        "mapping_basis": "explicit_code",
+        "alternative_rfx_line_ids": [],
+        "vendor_item_code": "CP-017",
+        "vendor_description": "Shelf-ready Display Tray with Tear-off Front - 2C...",
+        "vendor_dimensions": "380x250x120",
+        "raw_price": 8.8,
+        "price_adjustments": [],
+        "raw_price_text": "8.80",
+        "currency": "INR",
+        "uom_text": "Box (Rs.)",
+        "price_basis": "stated",
+        "freight_amount": null,
+        "moq": 1000,
+        "moq_text": "Min. order 1,000 box per size.",
+        "lead_time_days": 7,
+        "lead_time_text": "Delivery: 7 days.",
+        "remarks": null,
+        "spec_deviation": null,
+        "ambiguity": null,
+        "alternative_values": [],
+        "evidence": {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "rate card table row 17",
+          "page": null,
+          "source_text": "17 | CP-017 | Shelf-ready Display Tray with Tear-off Front - 2C... | 380x250x120 | 3 | 8.80"
+        }
+      },
+      {
+        "rfx_line_id": "CP-018",
+        "mapping_basis": "explicit_code",
+        "alternative_rfx_line_ids": [],
+        "vendor_item_code": "CP-018",
+        "vendor_description": "E-commerce Mailer Box - Die-cut, 2C Flexo",
+        "vendor_dimensions": "250x200x80",
+        "raw_price": 9,
+        "price_adjustments": [],
+        "raw_price_text": "9.00",
+        "currency": "INR",
+        "uom_text": "Box (Rs.)",
+        "price_basis": "stated",
+        "freight_amount": null,
+        "moq": 1000,
+        "moq_text": "Min. order 1,000 box per size.",
+        "lead_time_days": 7,
+        "lead_time_text": "Delivery: 7 days.",
+        "remarks": null,
+        "spec_deviation": null,
+        "ambiguity": null,
+        "alternative_values": [],
+        "evidence": {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "rate card table row 18",
+          "page": null,
+          "source_text": "18 | CP-018 | E-commerce Mailer Box - Die-cut, 2C Flexo | 250x200x80 | 3 | 9.00"
+        }
+      },
+      {
+        "rfx_line_id": "CP-019",
+        "mapping_basis": "explicit_code",
+        "alternative_rfx_line_ids": [],
+        "vendor_item_code": "CP-019",
+        "vendor_description": "5-Ply RSC with Die-cut Hand Holes - 2C Printed",
+        "vendor_dimensions": "400x300x350",
+        "raw_price": 34.6,
+        "price_adjustments": [],
+        "raw_price_text": "34.60",
+        "currency": "INR",
+        "uom_text": "Box (Rs.)",
+        "price_basis": "stated",
+        "freight_amount": null,
+        "moq": 1000,
+        "moq_text": "Min. order 1,000 box per size.",
+        "lead_time_days": 7,
+        "lead_time_text": "Delivery: 7 days.",
+        "remarks": null,
+        "spec_deviation": null,
+        "ambiguity": null,
+        "alternative_values": [],
+        "evidence": {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "rate card table row 19",
+          "page": null,
+          "source_text": "19 | CP-019 | 5-Ply RSC with Die-cut Hand Holes - 2C Printed | 400x300x350 | 5 | 34.60"
+        }
+      },
+      {
+        "rfx_line_id": "CP-020",
+        "mapping_basis": "explicit_code",
+        "alternative_rfx_line_ids": [],
+        "vendor_item_code": "CP-020",
+        "vendor_description": "3-Ply Partition - 12 Cell (3 x 4), for CP-007",
+        "vendor_dimensions": "440x340x290",
+        "raw_price": 790,
+        "price_adjustments": [],
+        "raw_price_text": "790*",
+        "currency": "INR",
+        "uom_text": "per 100 Nos (footnote *)",
+        "price_basis": "stated",
+        "freight_amount": null,
+        "moq": 1000,
+        "moq_text": "Min. order 1,000 box per size.",
+        "lead_time_days": 7,
+        "lead_time_text": "Delivery: 7 days.",
+        "remarks": null,
+        "spec_deviation": null,
+        "ambiguity": null,
+        "alternative_values": [],
+        "evidence": {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "rate card table row 20",
+          "page": null,
+          "source_text": "20 | CP-020 | 3-Ply Partition - 12 Cell (3 x 4), for CP-007 | 440x340x290 | 3 | 790*"
+        }
+      },
+      {
+        "rfx_line_id": "CP-021",
+        "mapping_basis": "explicit_code",
+        "alternative_rfx_line_ids": [],
+        "vendor_item_code": "CP-021",
+        "vendor_description": "3-Ply Partition - 24 Cell (4 x 6)",
+        "vendor_dimensions": "490x390x200",
+        "raw_price": 957,
+        "price_adjustments": [],
+        "raw_price_text": "957*",
+        "currency": "INR",
+        "uom_text": "per 100 Nos (footnote *)",
+        "price_basis": "stated",
+        "freight_amount": null,
+        "moq": 1000,
+        "moq_text": "Min. order 1,000 box per size.",
+        "lead_time_days": 7,
+        "lead_time_text": "Delivery: 7 days.",
+        "remarks": null,
+        "spec_deviation": null,
+        "ambiguity": null,
+        "alternative_values": [],
+        "evidence": {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "rate card table row 21",
+          "page": null,
+          "source_text": "21 | CP-021 | 3-Ply Partition - 24 Cell (4 x 6) | 490x390x200 | 3 | 957*"
+        }
+      },
+      {
+        "rfx_line_id": "CP-022",
+        "mapping_basis": "explicit_code",
+        "alternative_rfx_line_ids": [],
+        "vendor_item_code": "CP-022",
+        "vendor_description": "5-Ply Partition - 6 Cell (2 x 3) Heavy, for CP-009",
+        "vendor_dimensions": "390x290x280",
+        "raw_price": 771,
+        "price_adjustments": [],
+        "raw_price_text": "771*",
+        "currency": "INR",
+        "uom_text": "per 100 Nos (footnote *)",
+        "price_basis": "stated",
+        "freight_amount": null,
+        "moq": 1000,
+        "moq_text": "Min. order 1,000 box per size.",
+        "lead_time_days": 7,
+        "lead_time_text": "Delivery: 7 days.",
+        "remarks": null,
+        "spec_deviation": null,
+        "ambiguity": null,
+        "alternative_values": [],
+        "evidence": {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "rate card table row 22",
+          "page": null,
+          "source_text": "22 | CP-022 | 5-Ply Partition - 6 Cell (2 x 3) Heavy, for CP-009 | 390x290x280 | 5 | 771*"
+        }
+      },
+      {
+        "rfx_line_id": "CP-023",
+        "mapping_basis": "explicit_code",
+        "alternative_rfx_line_ids": [],
+        "vendor_item_code": "CP-023",
+        "vendor_description": "3-Ply Layer Pad 440 x 340 mm",
+        "vendor_dimensions": "440x340",
+        "raw_price": 211,
+        "price_adjustments": [],
+        "raw_price_text": "211*",
+        "currency": "INR",
+        "uom_text": "per 100 Nos (footnote *)",
+        "price_basis": "stated",
+        "freight_amount": null,
+        "moq": 1000,
+        "moq_text": "Min. order 1,000 box per size.",
+        "lead_time_days": 7,
+        "lead_time_text": "Delivery: 7 days.",
+        "remarks": null,
+        "spec_deviation": null,
+        "ambiguity": null,
+        "alternative_values": [],
+        "evidence": {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "rate card table row 23",
+          "page": null,
+          "source_text": "23 | CP-023 | 3-Ply Layer Pad 440 x 340 mm | 440x340 | 3 | 211*"
+        }
+      },
+      {
+        "rfx_line_id": "CP-024",
+        "mapping_basis": "explicit_code",
+        "alternative_rfx_line_ids": [],
+        "vendor_item_code": "CP-024",
+        "vendor_description": "5-Ply Layer Pad 590 x 390 mm",
+        "vendor_dimensions": "590x390",
+        "raw_price": 629,
+        "price_adjustments": [],
+        "raw_price_text": "629*",
+        "currency": "INR",
+        "uom_text": "per 100 Nos (footnote *)",
+        "price_basis": "stated",
+        "freight_amount": null,
+        "moq": 1000,
+        "moq_text": "Min. order 1,000 box per size.",
+        "lead_time_days": 7,
+        "lead_time_text": "Delivery: 7 days.",
+        "remarks": null,
+        "spec_deviation": null,
+        "ambiguity": null,
+        "alternative_values": [],
+        "evidence": {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "rate card table row 24",
+          "page": null,
+          "source_text": "24 | CP-024 | 5-Ply Layer Pad 590 x 390 mm | 590x390 | 5 | 629*"
+        }
+      },
+      {
+        "rfx_line_id": "CP-025",
+        "mapping_basis": "explicit_code",
+        "alternative_rfx_line_ids": [],
+        "vendor_item_code": "CP-025",
+        "vendor_description": "Die-cut Fitment Insert - 3-Ply E-flute, for CP-016",
+        "vendor_dimensions": "290x190x40",
+        "raw_price": 3.4,
+        "price_adjustments": [],
+        "raw_price_text": "3.40",
+        "currency": "INR",
+        "uom_text": "Box (Rs.)",
+        "price_basis": "stated",
+        "freight_amount": null,
+        "moq": 1000,
+        "moq_text": "Min. order 1,000 box per size.",
+        "lead_time_days": 7,
+        "lead_time_text": "Delivery: 7 days.",
+        "remarks": null,
+        "spec_deviation": null,
+        "ambiguity": null,
+        "alternative_values": [],
+        "evidence": {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "rate card table row 25",
+          "page": null,
+          "source_text": "25 | CP-025 | Die-cut Fitment Insert - 3-Ply E-flute, for CP-016 | 290x190x40 | 3 | 3.40"
+        }
+      },
+      {
+        "rfx_line_id": "CP-026",
+        "mapping_basis": "explicit_code",
+        "alternative_rfx_line_ids": [],
+        "vendor_item_code": "CP-026",
+        "vendor_description": "3-Ply Printed Sleeve - 1C Flexo",
+        "vendor_dimensions": "300x200x100",
+        "raw_price": 3.5,
+        "price_adjustments": [],
+        "raw_price_text": "3.50",
+        "currency": "INR",
+        "uom_text": "Box (Rs.)",
+        "price_basis": "stated",
+        "freight_amount": null,
+        "moq": 1000,
+        "moq_text": "Min. order 1,000 box per size.",
+        "lead_time_days": 7,
+        "lead_time_text": "Delivery: 7 days.",
+        "remarks": null,
+        "spec_deviation": null,
+        "ambiguity": null,
+        "alternative_values": [],
+        "evidence": {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "rate card table row 26",
+          "page": null,
+          "source_text": "26 | CP-026 | 3-Ply Printed Sleeve - 1C Flexo | 300x200x100 | 3 | 3.50"
+        }
+      },
+      {
+        "rfx_line_id": "CP-027",
+        "mapping_basis": "explicit_code",
+        "alternative_rfx_line_ids": [],
+        "vendor_item_code": "CP-027",
+        "vendor_description": "7-Ply RSC - Plain, Heavy Duty BF22",
+        "vendor_dimensions": "600x400x400",
+        "raw_price": 94,
+        "price_adjustments": [],
+        "raw_price_text": "94.00",
+        "currency": "INR",
+        "uom_text": "Box (Rs.)",
+        "price_basis": "stated",
+        "freight_amount": null,
+        "moq": 1000,
+        "moq_text": "Min. order 1,000 box per size.",
+        "lead_time_days": 7,
+        "lead_time_text": "Delivery: 7 days.",
+        "remarks": null,
+        "spec_deviation": null,
+        "ambiguity": null,
+        "alternative_values": [],
+        "evidence": {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "rate card table row 27",
+          "page": null,
+          "source_text": "27 | CP-027 | 7-Ply RSC - Plain, Heavy Duty BF22 | 600x400x400 | 7 | 94.00"
+        }
+      },
+      {
+        "rfx_line_id": "CP-028",
+        "mapping_basis": "explicit_code",
+        "alternative_rfx_line_ids": [],
+        "vendor_item_code": "CP-028",
+        "vendor_description": "5-Ply Export Carton - 2C, Shipping Marks, BF24",
+        "vendor_dimensions": "450x350x300",
+        "raw_price": 52.8,
+        "price_adjustments": [],
+        "raw_price_text": "52.80",
+        "currency": "INR",
+        "uom_text": "Box (Rs.)",
+        "price_basis": "stated",
+        "freight_amount": null,
+        "moq": 1000,
+        "moq_text": "Min. order 1,000 box per size.",
+        "lead_time_days": 7,
+        "lead_time_text": "Delivery: 7 days.",
+        "remarks": null,
+        "spec_deviation": null,
+        "ambiguity": null,
+        "alternative_values": [],
+        "evidence": {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "rate card table row 28",
+          "page": null,
+          "source_text": "28 | CP-028 | 5-Ply Export Carton - 2C, Shipping Marks, BF24 | 450x350x300 | 5 | 52.80"
+        }
+      }
+    ],
+    "declined_lines": [
+      {
+        "rfx_line_ids": [
+          "CP-029",
+          "CP-030"
+        ],
+        "statement": "Ply export cartons (CP-029, CP-030) - not offered.",
+        "evidence": {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "text below rate card table",
+          "page": null,
+          "source_text": "Ply export cartons (CP-029, CP-030) - not offered."
+        }
+      }
+    ],
+    "terms": [
+      {
+        "topic": "freight",
+        "statement": "Ex-factory Hosur. Freight extra.",
+        "applies_to": "all items",
+        "freight_included": false,
+        "freight_basis": "extra_unspecified",
+        "freight_plants": [],
+        "payment_days": null,
+        "validity_days": null,
+        "validity_until": null,
+        "percentage": null,
+        "amount": null,
+        "is_conditional": false,
+        "condition": null,
+        "is_quantified": false,
+        "evidence": {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "TERMS section line 1",
+          "page": null,
+          "source_text": "Ex-factory Hosur. Freight extra."
+        }
+      },
+      {
+        "topic": "tax",
+        "statement": "GST extra.",
+        "applies_to": "all items",
+        "freight_included": null,
+        "freight_basis": null,
+        "freight_plants": [],
+        "payment_days": null,
+        "validity_days": null,
+        "validity_until": null,
+        "percentage": null,
+        "amount": null,
+        "is_conditional": false,
+        "condition": null,
+        "is_quantified": true,
+        "evidence": {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "TERMS section line 2",
+          "page": null,
+          "source_text": "GST extra."
+        }
+      },
+      {
+        "topic": "payment",
+        "statement": "Payment: 15 days from invoice.",
+        "applies_to": "all items",
+        "freight_included": null,
+        "freight_basis": null,
+        "freight_plants": [],
+        "payment_days": 15,
+        "validity_days": null,
+        "validity_until": null,
+        "percentage": null,
+        "amount": null,
+        "is_conditional": false,
+        "condition": null,
+        "is_quantified": true,
+        "evidence": {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "TERMS section line 3",
+          "page": null,
+          "source_text": "Payment: 15 days from invoice."
+        }
+      },
+      {
+        "topic": "validity",
+        "statement": "Validity: 30 days.",
+        "applies_to": "all items",
+        "freight_included": null,
+        "freight_basis": null,
+        "freight_plants": [],
+        "payment_days": null,
+        "validity_days": 30,
+        "validity_until": null,
+        "percentage": null,
+        "amount": null,
+        "is_conditional": false,
+        "condition": null,
+        "is_quantified": true,
+        "evidence": {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "TERMS section line 4",
+          "page": null,
+          "source_text": "Validity: 30 days."
+        }
+      },
+      {
+        "topic": "moq",
+        "statement": "Min. order 1,000 box per size.",
+        "applies_to": "all items",
+        "freight_included": null,
+        "freight_basis": null,
+        "freight_plants": [],
+        "payment_days": null,
+        "validity_days": null,
+        "validity_until": null,
+        "percentage": null,
+        "amount": 1000,
+        "is_conditional": false,
+        "condition": null,
+        "is_quantified": true,
+        "evidence": {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "TERMS section line 5",
+          "page": null,
+          "source_text": "Min. order 1,000 box per size."
+        }
+      },
+      {
+        "topic": "lead_time",
+        "statement": "Delivery: 7 days.",
+        "applies_to": "all items",
+        "freight_included": null,
+        "freight_basis": null,
+        "freight_plants": [],
+        "payment_days": null,
+        "validity_days": null,
+        "validity_until": null,
+        "percentage": null,
+        "amount": 7,
+        "is_conditional": false,
+        "condition": null,
+        "is_quantified": true,
+        "evidence": {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "TERMS section line 6",
+          "page": null,
+          "source_text": "Delivery: 7 days."
+        }
+      },
+      {
+        "topic": "tooling",
+        "statement": "Printing block charges extra.",
+        "applies_to": "printed items",
+        "freight_included": null,
+        "freight_basis": null,
+        "freight_plants": [],
+        "payment_days": null,
+        "validity_days": null,
+        "validity_until": null,
+        "percentage": null,
+        "amount": null,
+        "is_conditional": false,
+        "condition": null,
+        "is_quantified": false,
+        "evidence": {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "TERMS section line 7",
+          "page": null,
+          "source_text": "Printing block charges extra."
+        }
+      },
+      {
+        "topic": "other",
+        "statement": "Complaint: replacement within 7 days.",
+        "applies_to": "all items",
+        "freight_included": null,
+        "freight_basis": null,
+        "freight_plants": [],
+        "payment_days": null,
+        "validity_days": null,
+        "validity_until": null,
+        "percentage": null,
+        "amount": null,
+        "is_conditional": false,
+        "condition": null,
+        "is_quantified": true,
+        "evidence": {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "COMPANY PROFILE section",
+          "page": null,
+          "source_text": "Complaint: replacement within 7 days."
+        }
+      }
+    ],
+    "questionnaire_answers": [
+      {
+        "qid": "Q01",
+        "answer_text": "ISO 9001: Applied - audit Dec 2026.",
+        "compliance": "none",
+        "plants_within_350km": null,
+        "rationale": "The vendor has only applied for certification and the audit is in the future, which fails the mandatory requirement for a valid certificate.",
+        "evidence": {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "COMPANY PROFILE section",
+          "page": null,
+          "source_text": "ISO 9001: Applied - audit Dec 2026."
+        }
+      },
+      {
+        "qid": "Q02",
+        "answer_text": null,
+        "compliance": "unanswered",
+        "plants_within_350km": null,
+        "rationale": "No mention of FSC certification in the response.",
+        "evidence": null
+      },
+      {
+        "qid": "Q03",
+        "answer_text": "100% recycled kraft available.",
+        "compliance": "full",
+        "plants_within_350km": null,
+        "rationale": "The vendor states 100% recycled kraft is available, which meets the minimum recycled-content levels.",
+        "evidence": {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "COMPANY PROFILE section",
+          "page": null,
+          "source_text": "100% recycled kraft available."
+        }
+      },
+      {
+        "qid": "Q04",
+        "answer_text": "Capacity: 6,500 MT / year.",
+        "compliance": "full",
+        "plants_within_350km": null,
+        "rationale": "The stated capacity of 6,500 MTPA meets the mandatory minimum of 6,000 MTPA.",
+        "evidence": {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "COMPANY PROFILE section",
+          "page": null,
+          "source_text": "Capacity: 6,500 MT / year."
+        }
+      },
+      {
+        "qid": "Q05",
+        "answer_text": "Testing: Bursting strength tester & GSM balance. Test report on request.",
+        "compliance": "partial",
+        "plants_within_350km": null,
+        "rationale": "The vendor only mentions GSM and Bursting Strength testing, missing ECT/BCT, moisture, and Cobb tests required for full compliance.",
+        "evidence": {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "COMPANY PROFILE section",
+          "page": null,
+          "source_text": "Testing: Bursting strength tester & GSM balance. Test report on request."
+        }
+      },
+      {
+        "qid": "Q06",
+        "answer_text": "Lot no. & date printed on every box.",
+        "compliance": "full",
+        "plants_within_350km": null,
+        "rationale": "Printing lot number and date on every box meets the traceability requirement.",
+        "evidence": {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "COMPANY PROFILE section",
+          "page": null,
+          "source_text": "Lot no. & date printed on every box."
+        }
+      },
+      {
+        "qid": "Q07",
+        "answer_text": "Delivery: 7 days.",
+        "compliance": "full",
+        "plants_within_350km": null,
+        "rationale": "The lead time of 7 days is well within the target of <= 14 days.",
+        "evidence": {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "TERMS section",
+          "page": null,
+          "source_text": "Delivery: 7 days."
+        }
+      },
+      {
+        "qid": "Q08",
+        "answer_text": "Complaint: replacement within 7 days.",
+        "compliance": "partial",
+        "plants_within_350km": null,
+        "rationale": "The vendor addresses the CAPA timeline (7 days) but does not explicitly mention the 24-hour acknowledgement SLA.",
+        "evidence": {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "COMPANY PROFILE section",
+          "page": null,
+          "source_text": "Complaint: replacement within 7 days."
+        }
+      },
+      {
+        "qid": "Q09",
+        "answer_text": "No. 7, SIPCOT Phase-I, Hosur - 635126 (T.N.)",
+        "compliance": "partial",
+        "plants_within_350km": 3,
+        "rationale": "Hosur is within 350km of Bengaluru (~40km), Pune (~850km - No), and Hyderabad (~600km - No). However, based on standard logistics in this region, Hosur typically serves BLR easily; PNQ and HYD are likely outside the 350km preferred range.",
+        "evidence": {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "Header",
+          "page": null,
+          "source_text": "No. 7, SIPCOT Phase-I, Hosur - 635126 (T.N.)"
+        }
+      },
+      {
+        "qid": "Q10",
+        "answer_text": null,
+        "compliance": "unanswered",
+        "plants_within_350km": null,
+        "rationale": "No business continuity plan details provided.",
+        "evidence": null
+      },
+      {
+        "qid": "Q11",
+        "answer_text": "CP-012 ... (without WR coating)",
+        "compliance": "none",
+        "plants_within_350km": null,
+        "rationale": "The vendor explicitly states that the item requiring moisture resistance (CP-012) is provided without WR coating.",
+        "evidence": {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "rate card table row 12",
+          "page": null,
+          "source_text": "CP-012 | 5 Ply RSC 2 Col (without WR coating)"
+        }
+      },
+      {
+        "qid": "Q12",
+        "answer_text": "Flexo up to 2 colours in-house. # Printing through associate printer.",
+        "compliance": "partial",
+        "plants_within_350km": null,
+        "rationale": "The vendor only has 2C flexo in-house; 3C/4C and offset are outsourced to an associate printer.",
+        "evidence": {
+          "source_file": "vendor_4_rate_card_partial.png",
+          "location": "COMPANY PROFILE and footnote #",
+          "page": null,
+          "source_text": "Flexo up to 2 colours in-house. ... # Printing through associate printer."
+        }
+      },
+      {
+        "qid": "Q13",
+        "answer_text": null,
+        "compliance": "unanswered",
+        "plants_within_350km": null,
+        "rationale": "No sustainability practices mentioned beyond recycled kraft availability.",
+        "evidence": null
+      },
+      {
+        "qid": "Q14",
+        "answer_text": null,
+        "compliance": "unanswered",
+        "plants_within_350km": null,
+        "rationale": "No hygiene or food safety certifications mentioned.",
+        "evidence": null
+      }
+    ]
+  },
+  "overrides": {},
+  "audit_log": [],
+  "chunks": [
+    {
+      "source_file": "vendor_4_rate_card_partial.png",
+      "location": "image transcription line 1",
+      "page": null,
+      "kind": "transcription",
+      "text": "Corrugated Boxes · Partitions · Pads | No. 7, SIPCOT Phase-I, Hosur - 635126 (T.N.)",
+      "vendor_id": "VND-1004",
+      "chunk_id": "VND-1004#1"
+    },
+    {
+      "source_file": "vendor_4_rate_card_partial.png",
+      "location": "image transcription line 2",
+      "page": null,
+      "kind": "transcription",
+      "text": "GSTIN: 33ABMPM6620Q1Z7 | Udyam: UDYAM-TN-31-0045821 | Ph: 94431 50762",
+      "vendor_id": "VND-1004",
+      "chunk_id": "VND-1004#2"
+    },
+    {
+      "source_file": "vendor_4_rate_card_partial.png",
+      "location": "image transcription line 3",
+      "page": null,
+      "kind": "transcription",
+      "text": "RATE CARD - SAHYADRI CONSUMER PRODUCTS (RFQ 014)",
+      "vendor_id": "VND-1004",
+      "chunk_id": "VND-1004#3"
+    },
+    {
+      "source_file": "vendor_4_rate_card_partial.png",
+      "location": "image transcription line 4",
+      "page": null,
+      "kind": "transcription",
+      "text": "Date: 07.10.2026",
+      "vendor_id": "VND-1004",
+      "chunk_id": "VND-1004#4"
+    },
+    {
+      "source_file": "vendor_4_rate_card_partial.png",
+      "location": "image transcription line 5",
+      "page": null,
+      "kind": "transcription",
+      "text": "S.No | Your Code | Description | Size (mm) | Ply | Rate / Box (Rs.)",
+      "vendor_id": "VND-1004",
+      "chunk_id": "VND-1004#5"
+    },
+    {
+      "source_file": "vendor_4_rate_card_partial.png",
+      "location": "image transcription line 6",
+      "page": null,
+      "kind": "transcription",
+      "text": "1 | CP-001 | 3-Ply RSC - Plain Brown | 300x200x150 | 3 | 6.80",
+      "vendor_id": "VND-1004",
+      "chunk_id": "VND-1004#6"
+    },
+    {
+      "source_file": "vendor_4_rate_card_partial.png",
+      "location": "image transcription line 7",
+      "page": null,
+      "kind": "transcription",
+      "text": "2 | CP-002 | 3-Ply RSC - Plain Brown | 350x250x200 | 3 | 10.80",
+      "vendor_id": "VND-1004",
+      "chunk_id": "VND-1004#7"
+    },
+    {
+      "source_file": "vendor_4_rate_card_partial.png",
+      "location": "image transcription line 8",
+      "page": null,
+      "kind": "transcription",
+      "text": "3 | CP-003 | 3-Ply RSC - Plain Brown | 400x300x200 | 3 | 13.40",
+      "vendor_id": "VND-1004",
+      "chunk_id": "VND-1004#8"
+    },
+    {
+      "source_file": "vendor_4_rate_card_partial.png",
+      "location": "image transcription line 9",
+      "page": null,
+      "kind": "transcription",
+      "text": "4 | CP-004 | 3-Ply RSC - 1 Colour Printed | 300x200x150 | 3 | 7.90",
+      "vendor_id": "VND-1004",
+      "chunk_id": "VND-1004#9"
+    },
+    {
+      "source_file": "vendor_4_rate_card_partial.png",
+      "location": "image transcription line 10",
+      "page": null,
+      "kind": "transcription",
+      "text": "5 | CP-005 | 3-Ply RSC - 2 Colour Printed | 250x180x120 | 3 | 5.60",
+      "vendor_id": "VND-1004",
+      "chunk_id": "VND-1004#10"
+    },
+    {
+      "source_file": "vendor_4_rate_card_partial.png",
+      "location": "image transcription line 11",
+      "page": null,
+      "kind": "transcription",
+      "text": "6 | CP-006 | 3-Ply RSC - 2 Colour Printed | 320x240x180 | 3 | 10.20",
+      "vendor_id": "VND-1004",
+      "chunk_id": "VND-1004#11"
+    },
+    {
+      "source_file": "vendor_4_rate_card_partial.png",
+      "location": "image transcription line 12",
+      "page": null,
+      "kind": "transcription",
+      "text": "7 | CP-007 | 5-Ply RSC - Plain Brown | 450x350x300 | 5 | 32.80",
+      "vendor_id": "VND-1004",
+      "chunk_id": "VND-1004#12"
+    },
+    {
+      "source_file": "vendor_4_rate_card_partial.png",
+      "location": "image transcription line 13",
+      "page": null,
+      "kind": "transcription",
+      "text": "8 | CP-008 | 5-Ply RSC - Plain Brown | 500x400x300 | 5 | 40.10",
+      "vendor_id": "VND-1004",
+      "chunk_id": "VND-1004#13"
+    },
+    {
+      "source_file": "vendor_4_rate_card_partial.png",
+      "location": "image transcription line 14",
+      "page": null,
+      "kind": "transcription",
+      "text": "9 | CP-009 | 5-Ply RSC - Plain Brown | 400x300x300 | 5 | 28.40",
+      "vendor_id": "VND-1004",
+      "chunk_id": "VND-1004#14"
+    },
+    {
+      "source_file": "vendor_4_rate_card_partial.png",
+      "location": "image transcription line 15",
+      "page": null,
+      "kind": "transcription",
+      "text": "10 | CP-010 | 5-Ply RSC - 2 Colour Printed | 450x300x250 | 5 | 33.00 30.50",
+      "vendor_id": "VND-1004",
+      "chunk_id": "VND-1004#15"
+    },
+    {
+      "source_file": "vendor_4_rate_card_partial.png",
+      "location": "image transcription line 16",
+      "page": null,
+      "kind": "transcription",
+      "text": "11 | CP-011 | 5-Ply RSC - 3 Colour Printed # | 400x300x280 | 5 | 28.80",
+      "vendor_id": "VND-1004",
+      "chunk_id": "VND-1004#16"
+    },
+    {
+      "source_file": "vendor_4_rate_card_partial.png",
+      "location": "image transcription line 17",
+      "page": null,
+      "kind": "transcription",
+      "text": "12 | CP-012 | 5 Ply RSC 2 Col (without WR coating) | 420x320x260 | 5 | 35.10",
+      "vendor_id": "VND-1004",
+      "chunk_id": "VND-1004#17"
+    },
+    {
+      "source_file": "vendor_4_rate_card_partial.png",
+      "location": "image transcription line 18",
+      "page": null,
+      "kind": "transcription",
+      "text": "13 | CP-013 | 5-Ply HSC Box - Plain Brown | 600x400x350 | 5 | 34.70",
+      "vendor_id": "VND-1004",
+      "chunk_id": "VND-1004#18"
+    },
+    {
+      "source_file": "vendor_4_rate_card_partial.png",
+      "location": "image transcription line 19",
+      "page": null,
+      "kind": "transcription",
+      "text": "14 | CP-014 | 5-Ply RSC - Heavy Duty BF22, Plain | 450x350x250 | 5 | 40.00",
+      "vendor_id": "VND-1004",
+      "chunk_id": "VND-1004#19"
+    },
+    {
+      "source_file": "vendor_4_rate_card_partial.png",
+      "location": "image transcription line 20",
+      "page": null,
+      "kind": "transcription",
+      "text": "15 | CP-015 | Die-cut Crash-lock Gift Carton - 4C Offset,... # | 220x150x90 | 3 | 13.10",
+      "vendor_id": "VND-1004",
+      "chunk_id": "VND-1004#20"
+    },
+    {
+      "source_file": "vendor_4_rate_card_partial.png",
+      "location": "image transcription line 21",
+      "page": null,
+      "kind": "transcription",
+      "text": "16 | CP-016 | Die-cut Tray with Lid - 2C Flexo | 300x200x80 | 3 | 10.40",
+      "vendor_id": "VND-1004",
+      "chunk_id": "VND-1004#21"
+    },
+    {
+      "source_file": "vendor_4_rate_card_partial.png",
+      "location": "image transcription line 22",
+      "page": null,
+      "kind": "transcription",
+      "text": "17 | CP-017 | Shelf-ready Display Tray with Tear-off Front - 2C... | 380x250x120 | 3 | 8.80",
+      "vendor_id": "VND-1004",
+      "chunk_id": "VND-1004#22"
+    },
+    {
+      "source_file": "vendor_4_rate_card_partial.png",
+      "location": "image transcription line 23",
+      "page": null,
+      "kind": "transcription",
+      "text": "18 | CP-018 | E-commerce Mailer Box - Die-cut, 2C Flexo | 250x200x80 | 3 | 9.00",
+      "vendor_id": "VND-1004",
+      "chunk_id": "VND-1004#23"
+    },
+    {
+      "source_file": "vendor_4_rate_card_partial.png",
+      "location": "image transcription line 24",
+      "page": null,
+      "kind": "transcription",
+      "text": "19 | CP-019 | 5-Ply RSC with Die-cut Hand Holes - 2C Printed | 400x300x350 | 5 | 34.60",
+      "vendor_id": "VND-1004",
+      "chunk_id": "VND-1004#24"
+    },
+    {
+      "source_file": "vendor_4_rate_card_partial.png",
+      "location": "image transcription line 25",
+      "page": null,
+      "kind": "transcription",
+      "text": "20 | CP-020 | 3-Ply Partition - 12 Cell (3 x 4), for CP-007 | 440x340x290 | 3 | 790*",
+      "vendor_id": "VND-1004",
+      "chunk_id": "VND-1004#25"
+    },
+    {
+      "source_file": "vendor_4_rate_card_partial.png",
+      "location": "image transcription line 26",
+      "page": null,
+      "kind": "transcription",
+      "text": "21 | CP-021 | 3-Ply Partition - 24 Cell (4 x 6) | 490x390x200 | 3 | 957*",
+      "vendor_id": "VND-1004",
+      "chunk_id": "VND-1004#26"
+    },
+    {
+      "source_file": "vendor_4_rate_card_partial.png",
+      "location": "image transcription line 27",
+      "page": null,
+      "kind": "transcription",
+      "text": "22 | CP-022 | 5-Ply Partition - 6 Cell (2 x 3) Heavy, for CP-009 | 390x290x280 | 5 | 771*",
+      "vendor_id": "VND-1004",
+      "chunk_id": "VND-1004#27"
+    },
+    {
+      "source_file": "vendor_4_rate_card_partial.png",
+      "location": "image transcription line 28",
+      "page": null,
+      "kind": "transcription",
+      "text": "23 | CP-023 | 3-Ply Layer Pad 440 x 340 mm | 440x340 | 3 | 211*",
+      "vendor_id": "VND-1004",
+      "chunk_id": "VND-1004#28"
+    },
+    {
+      "source_file": "vendor_4_rate_card_partial.png",
+      "location": "image transcription line 29",
+      "page": null,
+      "kind": "transcription",
+      "text": "24 | CP-024 | 5-Ply Layer Pad 590 x 390 mm | 590x390 | 5 | 629*",
+      "vendor_id": "VND-1004",
+      "chunk_id": "VND-1004#29"
+    },
+    {
+      "source_file": "vendor_4_rate_card_partial.png",
+      "location": "image transcription line 30",
+      "page": null,
+      "kind": "transcription",
+      "text": "25 | CP-025 | Die-cut Fitment Insert - 3-Ply E-flute, for CP-016 | 290x190x40 | 3 | 3.40",
+      "vendor_id": "VND-1004",
+      "chunk_id": "VND-1004#30"
+    },
+    {
+      "source_file": "vendor_4_rate_card_partial.png",
+      "location": "image transcription line 31",
+      "page": null,
+      "kind": "transcription",
+      "text": "26 | CP-026 | 3-Ply Printed Sleeve - 1C Flexo | 300x200x100 | 3 | 3.50",
+      "vendor_id": "VND-1004",
+      "chunk_id": "VND-1004#31"
+    },
+    {
+      "source_file": "vendor_4_rate_card_partial.png",
+      "location": "image transcription line 32",
+      "page": null,
+      "kind": "transcription",
+      "text": "27 | CP-027 | 7-Ply RSC - Plain, Heavy Duty BF22 | 600x400x400 | 7 | 94.00",
+      "vendor_id": "VND-1004",
+      "chunk_id": "VND-1004#32"
+    },
+    {
+      "source_file": "vendor_4_rate_card_partial.png",
+      "location": "image transcription line 33",
+      "page": null,
+      "kind": "transcription",
+      "text": "28 | CP-028 | 5-Ply Export Carton - 2C, Shipping Marks, BF24 | 450x350x300 | 5 | 52.80",
+      "vendor_id": "VND-1004",
+      "chunk_id": "VND-1004#33"
+    },
+    {
+      "source_file": "vendor_4_rate_card_partial.png",
+      "location": "image transcription line 34",
+      "page": null,
+      "kind": "transcription",
+      "text": "Rate per 100 Nos (partitions & pads). # Printing through associate printer.",
+      "vendor_id": "VND-1004",
+      "chunk_id": "VND-1004#34"
+    },
+    {
+      "source_file": "vendor_4_rate_card_partial.png",
+      "location": "image transcription line 35",
+      "page": null,
+      "kind": "transcription",
+      "text": "Ply export cartons (CP-029, CP-030) - not offered.",
+      "vendor_id": "VND-1004",
+      "chunk_id": "VND-1004#35"
+    },
+    {
+      "source_file": "vendor_4_rate_card_partial.png",
+      "location": "image transcription line 36",
+      "page": null,
+      "kind": "transcription",
+      "text": "TERMS",
+      "vendor_id": "VND-1004",
+      "chunk_id": "VND-1004#36"
+    },
+    {
+      "source_file": "vendor_4_rate_card_partial.png",
+      "location": "image transcription line 37",
+      "page": null,
+      "kind": "transcription",
+      "text": "Ex-factory Hosur. Freight extra.",
+      "vendor_id": "VND-1004",
+      "chunk_id": "VND-1004#37"
+    },
+    {
+      "source_file": "vendor_4_rate_card_partial.png",
+      "location": "image transcription line 38",
+      "page": null,
+      "kind": "transcription",
+      "text": "GST extra.",
+      "vendor_id": "VND-1004",
+      "chunk_id": "VND-1004#38"
+    },
+    {
+      "source_file": "vendor_4_rate_card_partial.png",
+      "location": "image transcription line 39",
+      "page": null,
+      "kind": "transcription",
+      "text": "Payment: 15 days from invoice.",
+      "vendor_id": "VND-1004",
+      "chunk_id": "VND-1004#39"
+    },
+    {
+      "source_file": "vendor_4_rate_card_partial.png",
+      "location": "image transcription line 40",
+      "page": null,
+      "kind": "transcription",
+      "text": "Validity: 30 days.",
+      "vendor_id": "VND-1004",
+      "chunk_id": "VND-1004#40"
+    },
+    {
+      "source_file": "vendor_4_rate_card_partial.png",
+      "location": "image transcription line 41",
+      "page": null,
+      "kind": "transcription",
+      "text": "Min. order 1,000 box per size.",
+      "vendor_id": "VND-1004",
+      "chunk_id": "VND-1004#41"
+    },
+    {
+      "source_file": "vendor_4_rate_card_partial.png",
+      "location": "image transcription line 42",
+      "page": null,
+      "kind": "transcription",
+      "text": "Delivery: 7 days.",
+      "vendor_id": "VND-1004",
+      "chunk_id": "VND-1004#42"
+    },
+    {
+      "source_file": "vendor_4_rate_card_partial.png",
+      "location": "image transcription line 43",
+      "page": null,
+      "kind": "transcription",
+      "text": "Printing block charges extra.",
+      "vendor_id": "VND-1004",
+      "chunk_id": "VND-1004#43"
+    },
+    {
+      "source_file": "vendor_4_rate_card_partial.png",
+      "location": "image transcription line 44",
+      "page": null,
+      "kind": "transcription",
+      "text": "COMPANY PROFILE",
+      "vendor_id": "VND-1004",
+      "chunk_id": "VND-1004#44"
+    },
+    {
+      "source_file": "vendor_4_rate_card_partial.png",
+      "location": "image transcription line 45",
+      "page": null,
+      "kind": "transcription",
+      "text": "Capacity: 6,500 MT / year.",
+      "vendor_id": "VND-1004",
+      "chunk_id": "VND-1004#45"
+    },
+    {
+      "source_file": "vendor_4_rate_card_partial.png",
+      "location": "image transcription line 46",
+      "page": null,
+      "kind": "transcription",
+      "text": "ISO 9001: Applied - audit Dec 2026.",
+      "vendor_id": "VND-1004",
+      "chunk_id": "VND-1004#46"
+    },
+    {
+      "source_file": "vendor_4_rate_card_partial.png",
+      "location": "image transcription line 47",
+      "page": null,
+      "kind": "transcription",
+      "text": "Testing: Bursting strength tester & GSM balance. Test report on request.",
+      "vendor_id": "VND-1004",
+      "chunk_id": "VND-1004#47"
+    },
+    {
+      "source_file": "vendor_4_rate_card_partial.png",
+      "location": "image transcription line 48",
+      "page": null,
+      "kind": "transcription",
+      "text": "Lot no. & date printed on every box.",
+      "vendor_id": "VND-1004",
+      "chunk_id": "VND-1004#48"
+    },
+    {
+      "source_file": "vendor_4_rate_card_partial.png",
+      "location": "image transcription line 49",
+      "page": null,
+      "kind": "transcription",
+      "text": "100% recycled kraft available.",
+      "vendor_id": "VND-1004",
+      "chunk_id": "VND-1004#49"
+    },
+    {
+      "source_file": "vendor_4_rate_card_partial.png",
+      "location": "image transcription line 50",
+      "page": null,
+      "kind": "transcription",
+      "text": "Complaint: replacement within 7 days.",
+      "vendor_id": "VND-1004",
+      "chunk_id": "VND-1004#50"
+    },
+    {
+      "source_file": "vendor_4_rate_card_partial.png",
+      "location": "image transcription line 51",
+      "page": null,
+      "kind": "transcription",
+      "text": "Flexo up to 2 colours in-house.",
+      "vendor_id": "VND-1004",
+      "chunk_id": "VND-1004#51"
+    },
+    {
+      "source_file": "vendor_4_rate_card_partial.png",
+      "location": "TERMS section line 1",
+      "page": null,
+      "kind": "term",
+      "text": "[freight] Ex-factory Hosur. Freight extra.",
+      "vendor_id": "VND-1004",
+      "chunk_id": "VND-1004#52"
+    },
+    {
+      "source_file": "vendor_4_rate_card_partial.png",
+      "location": "TERMS section line 2",
+      "page": null,
+      "kind": "term",
+      "text": "[tax] GST extra.",
+      "vendor_id": "VND-1004",
+      "chunk_id": "VND-1004#53"
+    },
+    {
+      "source_file": "vendor_4_rate_card_partial.png",
+      "location": "TERMS section line 3",
+      "page": null,
+      "kind": "term",
+      "text": "[payment] Payment: 15 days from invoice.",
+      "vendor_id": "VND-1004",
+      "chunk_id": "VND-1004#54"
+    },
+    {
+      "source_file": "vendor_4_rate_card_partial.png",
+      "location": "TERMS section line 4",
+      "page": null,
+      "kind": "term",
+      "text": "[validity] Validity: 30 days.",
+      "vendor_id": "VND-1004",
+      "chunk_id": "VND-1004#55"
+    },
+    {
+      "source_file": "vendor_4_rate_card_partial.png",
+      "location": "TERMS section line 5",
+      "page": null,
+      "kind": "term",
+      "text": "[moq] Min. order 1,000 box per size.",
+      "vendor_id": "VND-1004",
+      "chunk_id": "VND-1004#56"
+    },
+    {
+      "source_file": "vendor_4_rate_card_partial.png",
+      "location": "TERMS section line 6",
+      "page": null,
+      "kind": "term",
+      "text": "[lead_time] Delivery: 7 days.",
+      "vendor_id": "VND-1004",
+      "chunk_id": "VND-1004#57"
+    },
+    {
+      "source_file": "vendor_4_rate_card_partial.png",
+      "location": "TERMS section line 7",
+      "page": null,
+      "kind": "term",
+      "text": "[tooling] Printing block charges extra.",
+      "vendor_id": "VND-1004",
+      "chunk_id": "VND-1004#58"
+    },
+    {
+      "source_file": "vendor_4_rate_card_partial.png",
+      "location": "COMPANY PROFILE section",
+      "page": null,
+      "kind": "term",
+      "text": "[other] Complaint: replacement within 7 days.",
+      "vendor_id": "VND-1004",
+      "chunk_id": "VND-1004#59"
+    },
+    {
+      "source_file": "vendor_4_rate_card_partial.png",
+      "location": "COMPANY PROFILE section",
+      "page": null,
+      "kind": "questionnaire",
+      "text": "[Q01] ISO 9001: Applied - audit Dec 2026.",
+      "vendor_id": "VND-1004",
+      "chunk_id": "VND-1004#60"
+    },
+    {
+      "source_file": "vendor_4_rate_card_partial.png",
+      "location": "COMPANY PROFILE section",
+      "page": null,
+      "kind": "questionnaire",
+      "text": "[Q03] 100% recycled kraft available.",
+      "vendor_id": "VND-1004",
+      "chunk_id": "VND-1004#61"
+    },
+    {
+      "source_file": "vendor_4_rate_card_partial.png",
+      "location": "COMPANY PROFILE section",
+      "page": null,
+      "kind": "questionnaire",
+      "text": "[Q04] Capacity: 6,500 MT / year.",
+      "vendor_id": "VND-1004",
+      "chunk_id": "VND-1004#62"
+    },
+    {
+      "source_file": "vendor_4_rate_card_partial.png",
+      "location": "COMPANY PROFILE section",
+      "page": null,
+      "kind": "questionnaire",
+      "text": "[Q05] Testing: Bursting strength tester & GSM balance. Test report on request.",
+      "vendor_id": "VND-1004",
+      "chunk_id": "VND-1004#63"
+    },
+    {
+      "source_file": "vendor_4_rate_card_partial.png",
+      "location": "COMPANY PROFILE section",
+      "page": null,
+      "kind": "questionnaire",
+      "text": "[Q06] Lot no. & date printed on every box.",
+      "vendor_id": "VND-1004",
+      "chunk_id": "VND-1004#64"
+    },
+    {
+      "source_file": "vendor_4_rate_card_partial.png",
+      "location": "TERMS section",
+      "page": null,
+      "kind": "questionnaire",
+      "text": "[Q07] Delivery: 7 days.",
+      "vendor_id": "VND-1004",
+      "chunk_id": "VND-1004#65"
+    },
+    {
+      "source_file": "vendor_4_rate_card_partial.png",
+      "location": "COMPANY PROFILE section",
+      "page": null,
+      "kind": "questionnaire",
+      "text": "[Q08] Complaint: replacement within 7 days.",
+      "vendor_id": "VND-1004",
+      "chunk_id": "VND-1004#66"
+    },
+    {
+      "source_file": "vendor_4_rate_card_partial.png",
+      "location": "Header",
+      "page": null,
+      "kind": "questionnaire",
+      "text": "[Q09] No. 7, SIPCOT Phase-I, Hosur - 635126 (T.N.)",
+      "vendor_id": "VND-1004",
+      "chunk_id": "VND-1004#67"
+    },
+    {
+      "source_file": "vendor_4_rate_card_partial.png",
+      "location": "rate card table row 12",
+      "page": null,
+      "kind": "questionnaire",
+      "text": "[Q11] CP-012 ... (without WR coating)",
+      "vendor_id": "VND-1004",
+      "chunk_id": "VND-1004#68"
+    },
+    {
+      "source_file": "vendor_4_rate_card_partial.png",
+      "location": "COMPANY PROFILE and footnote #",
+      "page": null,
+      "kind": "questionnaire",
+      "text": "[Q12] Flexo up to 2 colours in-house. # Printing through associate printer.",
+      "vendor_id": "VND-1004",
+      "chunk_id": "VND-1004#69"
+    }
+  ],
+  "_eval": {
+    "ms": 58635,
+    "attempts": 1
+  }
+}

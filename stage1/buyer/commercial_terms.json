@@ -1,0 +1,110 @@
+{
+  "rfx_id": "SCPL/PKG/RFQ/2026-27/014",
+  "response_fields": [
+    {
+      "field": "line_id",
+      "description": "SCPL line ID from rfx_master",
+      "required": true
+    },
+    {
+      "field": "unit_price",
+      "description": "Basic price per quoted UoM, ex-GST",
+      "required": true
+    },
+    {
+      "field": "quoted_uom",
+      "description": "Preferred: per piece (per set for partitions). Other UoMs must be clearly stated.",
+      "required": true
+    },
+    {
+      "field": "currency",
+      "description": "INR preferred",
+      "required": true
+    },
+    {
+      "field": "moq",
+      "description": "Minimum order quantity per release, in pieces",
+      "required": true
+    },
+    {
+      "field": "freight",
+      "description": "Included (FOR plant) / amount per piece / excluded",
+      "required": true
+    },
+    {
+      "field": "taxes",
+      "description": "GST rate and HSN code (prices must be exclusive of GST)",
+      "required": true
+    },
+    {
+      "field": "lead_time_days",
+      "description": "Days from PO to delivery at plant",
+      "required": true
+    },
+    {
+      "field": "payment_terms",
+      "description": "Credit days and trigger (GRN / invoice)",
+      "required": true
+    },
+    {
+      "field": "price_validity",
+      "description": "Days or date until which price is firm",
+      "required": true
+    },
+    {
+      "field": "tooling_cost",
+      "description": "One-time plates / dies cost, if any",
+      "required": false
+    },
+    {
+      "field": "annual_rebate",
+      "description": "Volume rebate %, threshold and settlement",
+      "required": false
+    },
+    {
+      "field": "delivery_location",
+      "description": "SCPL plant code (BLR / PNQ / HYD)",
+      "required": true
+    },
+    {
+      "field": "remarks",
+      "description": "Deviations from specification or terms",
+      "required": false
+    }
+  ],
+  "buyer_standard_terms": {
+    "incoterm_equivalent": "FOR SCPL plant (delivered)",
+    "currency": "INR",
+    "payment": "60 days from GRN",
+    "price_validity_days": 180,
+    "taxes": "Exclusive of GST",
+    "lead_time_days": 14,
+    "moq_rule": "<= monthly call-off",
+    "evaluation_fx_usd_inr": 88.5,
+    "freight_loading_pct_if_excluded": 5.0
+  },
+  "deviation_rules": [
+    {
+      "term": "payment_days",
+      "acceptable_min": 45,
+      "below_min": "commercial deviation, flagged"
+    },
+    {
+      "term": "price_validity_days",
+      "acceptable_min": 90,
+      "below_min": "commercial deviation, flagged"
+    },
+    {
+      "term": "freight",
+      "if_excluded": "apply 5% loading for comparison"
+    },
+    {
+      "term": "conditional discounts/rebates",
+      "treatment": "excluded from normalized price; shown as scenario"
+    },
+    {
+      "term": "tooling",
+      "treatment": "one-time cost reported separately; not amortised into unit price"
+    }
+  ]
+}

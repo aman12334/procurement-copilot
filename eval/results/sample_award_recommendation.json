@@ -1,0 +1,1223 @@
+{
+  "document": "Award recommendation (decision support – not a purchase order or supplier award)",
+  "generated_at": "2026-10-13T19:32:30.585Z",
+  "rfx": {
+    "rfx_id": "SCPL/PKG/RFQ/2026-27/014",
+    "title": "Annual Rate Contract – Corrugated Packaging (FY 2026-27 H2 to FY 2027-28 H1)",
+    "buyer": "Sahyadri Consumer Products Pvt. Ltd.",
+    "lines": 30,
+    "contract_period": {
+      "start": "2026-11-01",
+      "end": "2027-10-31"
+    }
+  },
+  "evaluated_vendors": [
+    {
+      "vendor_id": "VND-1001",
+      "vendor": "Vendor 1 (Deccan Corrupack Industries Pvt. Ltd.)",
+      "bid_state": "finalized",
+      "technical_score": 89,
+      "qualification": "QUALIFIED",
+      "mandatory_failures": [],
+      "quoted_lines": 30,
+      "open_review_items": 0,
+      "unresolved_review_items": 0,
+      "payment_terms": "Payment: 60 days from date of GRN.",
+      "price_validity_until": "2027-04-06"
+    },
+    {
+      "vendor_id": "VND-1002",
+      "vendor": "Vendor 2 (Shree Ganesh Packwell Pvt. Ltd.)",
+      "bid_state": "finalized",
+      "technical_score": 81,
+      "qualification": "QUALIFIED",
+      "mandatory_failures": [],
+      "quoted_lines": 27,
+      "open_review_items": 0,
+      "unresolved_review_items": 0,
+      "payment_terms": "Payment: 45 days from date of invoice.",
+      "price_validity_until": "2026-12-09"
+    },
+    {
+      "vendor_id": "VND-1003",
+      "vendor": "Vendor 3 (Indus Fibreboard Solutions Ltd.)",
+      "bid_state": "finalized",
+      "technical_score": 94,
+      "qualification": "QUALIFIED",
+      "mandatory_failures": [],
+      "quoted_lines": 29,
+      "open_review_items": 0,
+      "unresolved_review_items": 0,
+      "payment_terms": "60 days from date of invoice",
+      "price_validity_until": "2026-12-31"
+    },
+    {
+      "vendor_id": "VND-1004",
+      "vendor": "Vendor 4 (Sri Vaigai Corrugators)",
+      "bid_state": "finalized",
+      "technical_score": 46,
+      "qualification": "NOT QUALIFIED",
+      "mandatory_failures": [
+        "Q01",
+        "Q05",
+        "Q10"
+      ],
+      "quoted_lines": 28,
+      "open_review_items": 0,
+      "unresolved_review_items": 0,
+      "payment_terms": "Payment: 15 days from invoice.",
+      "price_validity_until": "2026-11-06"
+    },
+    {
+      "vendor_id": "VND-1005",
+      "vendor": "Vendor 5 (Godavari Packaging Works)",
+      "bid_state": "finalized",
+      "technical_score": 68,
+      "qualification": "NOT QUALIFIED",
+      "mandatory_failures": [],
+      "quoted_lines": 20,
+      "open_review_items": 0,
+      "unresolved_review_items": 0,
+      "payment_terms": "Payment 30 days.",
+      "price_validity_until": "2026-12-31"
+    }
+  ],
+  "recommendation": {
+    "status": "recommended",
+    "scenario": {
+      "scenario_id": "SCN-003",
+      "name": "Lowest cost, max 2 suppliers",
+      "status": "complete",
+      "objective": "minimize_cost",
+      "constraints": [
+        "Technical qualification required (≥70 and all mandatory items)",
+        "At most 2 supplier(s)"
+      ],
+      "total_evaluated_cost_inr": 117694450,
+      "historical_cost_inr": 118850100,
+      "savings_vs_historical_inr": 1155650,
+      "savings_percent": 1,
+      "supplier_count": 2,
+      "suppliers": [
+        {
+          "vendor_id": "VND-1002",
+          "vendor": "Vendor 2 (Shree Ganesh Packwell Pvt. Ltd.)",
+          "lines": 24,
+          "lines_pct": 80,
+          "spend_inr": 84320100,
+          "spend_pct": 71.6,
+          "technical_score": 81
+        },
+        {
+          "vendor_id": "VND-1001",
+          "vendor": "Vendor 1 (Deccan Corrupack Industries Pvt. Ltd.)",
+          "lines": 6,
+          "lines_pct": 20,
+          "spend_inr": 33374350,
+          "spend_pct": 28.4,
+          "technical_score": 89
+        }
+      ],
+      "weighted_technical_score": 83.3,
+      "allocations": [
+        {
+          "rfx_line_id": "CP-001",
+          "description": "3-Ply RSC Shipper – Plain Brown",
+          "plant": "BLR",
+          "vendor": "Vendor 1 (Deccan Corrupack Industries Pvt. Ltd.)",
+          "unit_cost_inr": 7.78,
+          "annual_qty": 480000,
+          "annual_spend_inr": 3734400,
+          "freight_basis": "landed",
+          "next_best": "Vendor 2 (Shree Ganesh Packwell Pvt. Ltd.)",
+          "delta_vs_next_best_inr": 0.16,
+          "unresolved_issue": null
+        },
+        {
+          "rfx_line_id": "CP-002",
+          "description": "3-Ply RSC Shipper – Plain Brown",
+          "plant": "PNQ",
+          "vendor": "Vendor 2 (Shree Ganesh Packwell Pvt. Ltd.)",
+          "unit_cost_inr": 11.23,
+          "annual_qty": 360000,
+          "annual_spend_inr": 4042800,
+          "freight_basis": "landed",
+          "next_best": "Vendor 1 (Deccan Corrupack Industries Pvt. Ltd.)",
+          "delta_vs_next_best_inr": 0.88,
+          "unresolved_issue": null
+        },
+        {
+          "rfx_line_id": "CP-003",
+          "description": "3-Ply RSC Shipper – Plain Brown",
+          "plant": "HYD",
+          "vendor": "Vendor 2 (Shree Ganesh Packwell Pvt. Ltd.)",
+          "unit_cost_inr": 15.24,
+          "annual_qty": 240000,
+          "annual_spend_inr": 3657600,
+          "freight_basis": "rfx_loading",
+          "next_best": "Vendor 1 (Deccan Corrupack Industries Pvt. Ltd.)",
+          "delta_vs_next_best_inr": 0.81,
+          "unresolved_issue": null
+        },
+        {
+          "rfx_line_id": "CP-004",
+          "description": "3-Ply RSC Shipper – 1 Colour Printed",
+          "plant": "PNQ",
+          "vendor": "Vendor 2 (Shree Ganesh Packwell Pvt. Ltd.)",
+          "unit_cost_inr": 8.26,
+          "annual_qty": 600000,
+          "annual_spend_inr": 4956000,
+          "freight_basis": "landed",
+          "next_best": "Vendor 3 (Indus Fibreboard Solutions Ltd.)",
+          "delta_vs_next_best_inr": 1.12,
+          "unresolved_issue": null
+        },
+        {
+          "rfx_line_id": "CP-005",
+          "description": "3-Ply RSC Shipper – 2 Colour Printed",
+          "plant": "BLR",
+          "vendor": "Vendor 1 (Deccan Corrupack Industries Pvt. Ltd.)",
+          "unit_cost_inr": 6.53,
+          "annual_qty": 720000,
+          "annual_spend_inr": 4701600,
+          "freight_basis": "landed",
+          "next_best": "Vendor 2 (Shree Ganesh Packwell Pvt. Ltd.)",
+          "delta_vs_next_best_inr": 0.13,
+          "unresolved_issue": null
+        },
+        {
+          "rfx_line_id": "CP-006",
+          "description": "3-Ply RSC Shipper – 2 Colour Printed",
+          "plant": "HYD",
+          "vendor": "Vendor 2 (Shree Ganesh Packwell Pvt. Ltd.)",
+          "unit_cost_inr": 11.39,
+          "annual_qty": 300000,
+          "annual_spend_inr": 3417000,
+          "freight_basis": "rfx_loading",
+          "next_best": "Vendor 3 (Indus Fibreboard Solutions Ltd.)",
+          "delta_vs_next_best_inr": 0.79,
+          "unresolved_issue": null
+        },
+        {
+          "rfx_line_id": "CP-007",
+          "description": "5-Ply RSC Shipper – Plain Brown",
+          "plant": "BLR",
+          "vendor": "Vendor 1 (Deccan Corrupack Industries Pvt. Ltd.)",
+          "unit_cost_inr": 39.06,
+          "annual_qty": 210000,
+          "annual_spend_inr": 8202600,
+          "freight_basis": "landed",
+          "next_best": "Vendor 2 (Shree Ganesh Packwell Pvt. Ltd.)",
+          "delta_vs_next_best_inr": 0.98,
+          "unresolved_issue": null
+        },
+        {
+          "rfx_line_id": "CP-008",
+          "description": "5-Ply RSC Shipper – Plain Brown",
+          "plant": "PNQ",
+          "vendor": "Vendor 2 (Shree Ganesh Packwell Pvt. Ltd.)",
+          "unit_cost_inr": 44.86,
+          "annual_qty": 150000,
+          "annual_spend_inr": 6729000,
+          "freight_basis": "landed",
+          "next_best": "Vendor 1 (Deccan Corrupack Industries Pvt. Ltd.)",
+          "delta_vs_next_best_inr": 3.64,
+          "unresolved_issue": null
+        },
+        {
+          "rfx_line_id": "CP-009",
+          "description": "5-Ply RSC Shipper – Plain Brown",
+          "plant": "HYD",
+          "vendor": "Vendor 2 (Shree Ganesh Packwell Pvt. Ltd.)",
+          "unit_cost_inr": 30.93,
+          "annual_qty": 270000,
+          "annual_spend_inr": 8351100,
+          "freight_basis": "rfx_loading",
+          "next_best": "Vendor 1 (Deccan Corrupack Industries Pvt. Ltd.)",
+          "delta_vs_next_best_inr": 3.2,
+          "unresolved_issue": null
+        },
+        {
+          "rfx_line_id": "CP-010",
+          "description": "5-Ply RSC Shipper – 2 Colour Printed",
+          "plant": "BLR",
+          "vendor": "Vendor 2 (Shree Ganesh Packwell Pvt. Ltd.)",
+          "unit_cost_inr": 34.78,
+          "annual_qty": 240000,
+          "annual_spend_inr": 8347200,
+          "freight_basis": "rfx_loading",
+          "next_best": "Vendor 1 (Deccan Corrupack Industries Pvt. Ltd.)",
+          "delta_vs_next_best_inr": 1.32,
+          "unresolved_issue": null
+        },
+        {
+          "rfx_line_id": "CP-011",
+          "description": "5-Ply RSC Shipper – 3 Colour Printed",
+          "plant": "PNQ",
+          "vendor": "Vendor 2 (Shree Ganesh Packwell Pvt. Ltd.)",
+          "unit_cost_inr": 32.83,
+          "annual_qty": 180000,
+          "annual_spend_inr": 5909400,
+          "freight_basis": "landed",
+          "next_best": "Vendor 1 (Deccan Corrupack Industries Pvt. Ltd.)",
+          "delta_vs_next_best_inr": 3.63,
+          "unresolved_issue": null
+        },
+        {
+          "rfx_line_id": "CP-012",
+          "description": "5-Ply RSC – 2 Colour Printed, Moisture Resistant",
+          "plant": "HYD",
+          "vendor": "Vendor 2 (Shree Ganesh Packwell Pvt. Ltd.)",
+          "unit_cost_inr": 39.04,
+          "annual_qty": 120000,
+          "annual_spend_inr": 4684800,
+          "freight_basis": "rfx_loading",
+          "next_best": "Vendor 1 (Deccan Corrupack Industries Pvt. Ltd.)",
+          "delta_vs_next_best_inr": 2.27,
+          "unresolved_issue": null
+        },
+        {
+          "rfx_line_id": "CP-013",
+          "description": "5-Ply HSC Box – Plain Brown",
+          "plant": "PNQ",
+          "vendor": "Vendor 2 (Shree Ganesh Packwell Pvt. Ltd.)",
+          "unit_cost_inr": 37.47,
+          "annual_qty": 60000,
+          "annual_spend_inr": 2248200,
+          "freight_basis": "landed",
+          "next_best": "Vendor 1 (Deccan Corrupack Industries Pvt. Ltd.)",
+          "delta_vs_next_best_inr": 5.44,
+          "unresolved_issue": null
+        },
+        {
+          "rfx_line_id": "CP-014",
+          "description": "5-Ply RSC – Heavy Duty BF22, Plain",
+          "plant": "BLR",
+          "vendor": "Vendor 2 (Shree Ganesh Packwell Pvt. Ltd.)",
+          "unit_cost_inr": 42.97,
+          "annual_qty": 100000,
+          "annual_spend_inr": 4297000,
+          "freight_basis": "rfx_loading",
+          "next_best": "Vendor 3 (Indus Fibreboard Solutions Ltd.)",
+          "delta_vs_next_best_inr": 3.74,
+          "unresolved_issue": null
+        },
+        {
+          "rfx_line_id": "CP-015",
+          "description": "Die-cut Crash-lock Gift Carton – 4C Offset, Litho-laminated",
+          "plant": "BLR",
+          "vendor": "Vendor 1 (Deccan Corrupack Industries Pvt. Ltd.)",
+          "unit_cost_inr": 15.85,
+          "annual_qty": 400000,
+          "annual_spend_inr": 6340000,
+          "freight_basis": "landed",
+          "next_best": "Vendor 3 (Indus Fibreboard Solutions Ltd.)",
+          "delta_vs_next_best_inr": -0.05,
+          "unresolved_issue": null
+        },
+        {
+          "rfx_line_id": "CP-016",
+          "description": "Die-cut Tray with Lid – 2C Flexo",
+          "plant": "HYD",
+          "vendor": "Vendor 2 (Shree Ganesh Packwell Pvt. Ltd.)",
+          "unit_cost_inr": 12.47,
+          "annual_qty": 250000,
+          "annual_spend_inr": 3117500,
+          "freight_basis": "rfx_loading",
+          "next_best": "Vendor 1 (Deccan Corrupack Industries Pvt. Ltd.)",
+          "delta_vs_next_best_inr": 0.36,
+          "unresolved_issue": null
+        },
+        {
+          "rfx_line_id": "CP-017",
+          "description": "Shelf-ready Display Tray with Tear-off Front – 2C Flexo",
+          "plant": "HYD",
+          "vendor": "Vendor 2 (Shree Ganesh Packwell Pvt. Ltd.)",
+          "unit_cost_inr": 10.68,
+          "annual_qty": 160000,
+          "annual_spend_inr": 1708800,
+          "freight_basis": "rfx_loading",
+          "next_best": "Vendor 1 (Deccan Corrupack Industries Pvt. Ltd.)",
+          "delta_vs_next_best_inr": 0.33,
+          "unresolved_issue": null
+        },
+        {
+          "rfx_line_id": "CP-018",
+          "description": "E-commerce Mailer Box – Die-cut, 2C Flexo",
+          "plant": "PNQ",
+          "vendor": "Vendor 2 (Shree Ganesh Packwell Pvt. Ltd.)",
+          "unit_cost_inr": 9.47,
+          "annual_qty": 300000,
+          "annual_spend_inr": 2841000,
+          "freight_basis": "landed",
+          "next_best": "Vendor 3 (Indus Fibreboard Solutions Ltd.)",
+          "delta_vs_next_best_inr": 0.93,
+          "unresolved_issue": null
+        },
+        {
+          "rfx_line_id": "CP-019",
+          "description": "5-Ply RSC with Die-cut Hand Holes – 2C Printed",
+          "plant": "BLR",
+          "vendor": "Vendor 2 (Shree Ganesh Packwell Pvt. Ltd.)",
+          "unit_cost_inr": 39.27,
+          "annual_qty": 90000,
+          "annual_spend_inr": 3534300,
+          "freight_basis": "rfx_loading",
+          "next_best": "Vendor 1 (Deccan Corrupack Industries Pvt. Ltd.)",
+          "delta_vs_next_best_inr": 1.87,
+          "unresolved_issue": null
+        },
+        {
+          "rfx_line_id": "CP-020",
+          "description": "3-Ply Partition – 12 Cell (3 x 4), for CP-007",
+          "plant": "BLR",
+          "vendor": "Vendor 2 (Shree Ganesh Packwell Pvt. Ltd.)",
+          "unit_cost_inr": 9.1,
+          "annual_qty": 210000,
+          "annual_spend_inr": 1911000,
+          "freight_basis": "rfx_loading",
+          "next_best": "Vendor 1 (Deccan Corrupack Industries Pvt. Ltd.)",
+          "delta_vs_next_best_inr": 0.2,
+          "unresolved_issue": null
+        },
+        {
+          "rfx_line_id": "CP-021",
+          "description": "3-Ply Partition – 24 Cell (4 x 6)",
+          "plant": "PNQ",
+          "vendor": "Vendor 2 (Shree Ganesh Packwell Pvt. Ltd.)",
+          "unit_cost_inr": 10.62,
+          "annual_qty": 120000,
+          "annual_spend_inr": 1274400,
+          "freight_basis": "landed",
+          "next_best": "Vendor 1 (Deccan Corrupack Industries Pvt. Ltd.)",
+          "delta_vs_next_best_inr": 1.83,
+          "unresolved_issue": null
+        },
+        {
+          "rfx_line_id": "CP-022",
+          "description": "5-Ply Partition – 6 Cell (2 x 3) Heavy, for CP-009",
+          "plant": "HYD",
+          "vendor": "Vendor 2 (Shree Ganesh Packwell Pvt. Ltd.)",
+          "unit_cost_inr": 8.75,
+          "annual_qty": 80000,
+          "annual_spend_inr": 700000,
+          "freight_basis": "rfx_loading",
+          "next_best": "Vendor 3 (Indus Fibreboard Solutions Ltd.)",
+          "delta_vs_next_best_inr": 0.84,
+          "unresolved_issue": null
+        },
+        {
+          "rfx_line_id": "CP-023",
+          "description": "3-Ply Layer Pad 440 x 340 mm",
+          "plant": "BLR",
+          "vendor": "Vendor 2 (Shree Ganesh Packwell Pvt. Ltd.)",
+          "unit_cost_inr": 2.35,
+          "annual_qty": 420000,
+          "annual_spend_inr": 987000,
+          "freight_basis": "rfx_loading",
+          "next_best": "Vendor 1 (Deccan Corrupack Industries Pvt. Ltd.)",
+          "delta_vs_next_best_inr": 0.14,
+          "unresolved_issue": null
+        },
+        {
+          "rfx_line_id": "CP-024",
+          "description": "5-Ply Layer Pad 590 x 390 mm",
+          "plant": "PNQ",
+          "vendor": "Vendor 2 (Shree Ganesh Packwell Pvt. Ltd.)",
+          "unit_cost_inr": 7.07,
+          "annual_qty": 150000,
+          "annual_spend_inr": 1060500,
+          "freight_basis": "landed",
+          "next_best": "Vendor 3 (Indus Fibreboard Solutions Ltd.)",
+          "delta_vs_next_best_inr": 0.45,
+          "unresolved_issue": null
+        },
+        {
+          "rfx_line_id": "CP-025",
+          "description": "Die-cut Fitment Insert – 3-Ply E-flute, for CP-016",
+          "plant": "HYD",
+          "vendor": "Vendor 2 (Shree Ganesh Packwell Pvt. Ltd.)",
+          "unit_cost_inr": 3.83,
+          "annual_qty": 250000,
+          "annual_spend_inr": 957500,
+          "freight_basis": "rfx_loading",
+          "next_best": "Vendor 3 (Indus Fibreboard Solutions Ltd.)",
+          "delta_vs_next_best_inr": 0.29,
+          "unresolved_issue": null
+        },
+        {
+          "rfx_line_id": "CP-026",
+          "description": "3-Ply Printed Sleeve – 1C Flexo",
+          "plant": "PNQ",
+          "vendor": "Vendor 2 (Shree Ganesh Packwell Pvt. Ltd.)",
+          "unit_cost_inr": 3.86,
+          "annual_qty": 200000,
+          "annual_spend_inr": 772000,
+          "freight_basis": "landed",
+          "next_best": "Vendor 3 (Indus Fibreboard Solutions Ltd.)",
+          "delta_vs_next_best_inr": 0.35,
+          "unresolved_issue": null
+        },
+        {
+          "rfx_line_id": "CP-027",
+          "description": "7-Ply RSC – Plain, Heavy Duty BF22",
+          "plant": "PNQ",
+          "vendor": "Vendor 2 (Shree Ganesh Packwell Pvt. Ltd.)",
+          "unit_cost_inr": 100.2,
+          "annual_qty": 40000,
+          "annual_spend_inr": 4008000,
+          "freight_basis": "landed",
+          "next_best": "Vendor 3 (Indus Fibreboard Solutions Ltd.)",
+          "delta_vs_next_best_inr": 11.52,
+          "unresolved_issue": null
+        },
+        {
+          "rfx_line_id": "CP-028",
+          "description": "5-Ply Export Carton – 2C, Shipping Marks, BF24",
+          "plant": "PNQ",
+          "vendor": "Vendor 2 (Shree Ganesh Packwell Pvt. Ltd.)",
+          "unit_cost_inr": 60.1,
+          "annual_qty": 80000,
+          "annual_spend_inr": 4808000,
+          "freight_basis": "landed",
+          "next_best": "Vendor 1 (Deccan Corrupack Industries Pvt. Ltd.)",
+          "delta_vs_next_best_inr": 4.05,
+          "unresolved_issue": null
+        },
+        {
+          "rfx_line_id": "CP-029",
+          "description": "7-Ply Export Carton – Moisture Resistant, BF26",
+          "plant": "BLR",
+          "vendor": "Vendor 1 (Deccan Corrupack Industries Pvt. Ltd.)",
+          "unit_cost_inr": 170.19,
+          "annual_qty": 30000,
+          "annual_spend_inr": 5105700,
+          "freight_basis": "landed",
+          "next_best": "Vendor 3 (Indus Fibreboard Solutions Ltd.)",
+          "delta_vs_next_best_inr": 0.62,
+          "unresolved_issue": null
+        },
+        {
+          "rfx_line_id": "CP-030",
+          "description": "7-Ply Heavy-duty Export Carton – Pallet Fit",
+          "plant": "HYD",
+          "vendor": "Vendor 1 (Deccan Corrupack Industries Pvt. Ltd.)",
+          "unit_cost_inr": 352.67,
+          "annual_qty": 15000,
+          "annual_spend_inr": 5290050,
+          "freight_basis": "landed",
+          "next_best": "Vendor 3 (Indus Fibreboard Solutions Ltd.)",
+          "delta_vs_next_best_inr": 12.84,
+          "unresolved_issue": null
+        }
+      ],
+      "excluded_vendors": [
+        {
+          "vendor_id": "VND-1004",
+          "vendor": "Vendor 4 (Sri Vaigai Corrugators)",
+          "reasons": [
+            "failed technical qualification (score 46/100, threshold 70; mandatory failures Q01, Q05, Q10)"
+          ]
+        },
+        {
+          "vendor_id": "VND-1005",
+          "vendor": "Vendor 5 (Godavari Packaging Works)",
+          "reasons": [
+            "failed technical qualification (score 68/100, threshold 70)"
+          ]
+        }
+      ],
+      "risks": [
+        {
+          "severity": "low",
+          "code": "price_validity",
+          "message": "Vendor 2 (Shree Ganesh Packwell Pvt. Ltd.) prices valid until 2026-12-09, before contract end 2027-10-31 – re-pricing likely during the contract.",
+          "vendor_id": "VND-1002",
+          "rfx_line_ids": []
+        },
+        {
+          "severity": "low",
+          "code": "price_validity",
+          "message": "Vendor 1 (Deccan Corrupack Industries Pvt. Ltd.) prices valid until 2027-04-06, before contract end 2027-10-31 – re-pricing likely during the contract.",
+          "vendor_id": "VND-1001",
+          "rfx_line_ids": []
+        },
+        {
+          "severity": "low",
+          "code": "moq",
+          "message": "Vendor 1 (Deccan Corrupack Industries Pvt. Ltd.) MOQ exceeds monthly call-off on CP-029, CP-030.",
+          "vendor_id": "VND-1001",
+          "rfx_line_ids": [
+            "CP-029",
+            "CP-030"
+          ]
+        },
+        {
+          "severity": "medium",
+          "code": "freight_estimated",
+          "message": "Landed cost incomplete: 13 awarded line(s) (4,56,70,800 INR) use an estimated freight loading; vendors quoted freight extra / at actuals.",
+          "vendor_id": null,
+          "rfx_line_ids": [
+            "CP-003",
+            "CP-006",
+            "CP-009",
+            "CP-010",
+            "CP-012",
+            "CP-014",
+            "CP-016",
+            "CP-017",
+            "CP-019",
+            "CP-020",
+            "CP-022",
+            "CP-023",
+            "CP-025"
+          ]
+        }
+      ],
+      "assumptions": [
+        "Evaluated cost = landed price where freight is quoted or included; otherwise RFx evaluation loading of 5% (stage1/buyer/buyer_requirements.json BR-10).",
+        "USD quotes converted at 88.5 INR/USD (stage1/buyer/buyer_requirements.json event.evaluation_fx.USD_INR).",
+        "Conditional discounts and rebates are not applied; GST excluded; one-time tooling not amortised.",
+        "Historical benchmark = FY25-26 delivered price × annual quantity for the same awarded lines."
+      ],
+      "freight": {
+        "landed_lines": 17,
+        "loading_lines": 13,
+        "assumption_lines": 0,
+        "pre_freight_lines": 0,
+        "landed_cost_complete": false,
+        "note": "13 line(s) use estimated freight."
+      },
+      "unresolved_issues": []
+    },
+    "key_reasons": [
+      "Lowest cost, max 2 suppliers: total evaluated cost ₹11,76,94,450 across all 30 lines with 2 supplier(s) (Vendor 2 (Shree Ganesh Packwell Pvt. Ltd.) 71.6%, Vendor 1 (Deccan Corrupack Industries Pvt. Ltd.) 28.4%).",
+      "Saves ₹11,55,650 (1%) versus the FY25-26 historical benchmark of ₹11,88,50,100.",
+      "Only technically qualified vendors are awarded; spend-weighted technical score 83.3.",
+      "Excluded on qualification: Vendor 4 (Sri Vaigai Corrugators) – failed technical qualification (score 46/100, threshold 70; mandatory failures Q01, Q05, Q10) | Vendor 5 (Godavari Packaging Works) – failed technical qualification (score 68/100, threshold 70)."
+    ],
+    "trade_offs": [
+      "Alternative Quality-first (≤5% above cheapest, max 3 suppliers): ₹12,35,04,850 (+₹58,10,400, 4.9%), 3 supplier(s), technical score 91.6 vs 83.3.",
+      "Ignoring qualification would cost ₹11,05,33,650 (₹71,60,800 less) by awarding Vendor 4 (Sri Vaigai Corrugators) – not permitted because qualification is mandatory.",
+      "Split award: 2 suppliers to manage versus a single source."
+    ],
+    "decision_log": [
+      {
+        "rule": "R1 coverage",
+        "outcome": "6/6 scenarios cover all 30 lines; incomplete: none."
+      },
+      {
+        "rule": "R2 qualification",
+        "outcome": "6 complete scenarios award only technically qualified vendors (mandatory requirements enforced)."
+      },
+      {
+        "rule": "R3 lowest cost",
+        "outcome": "Lowest-cost qualified complete scenario: SCN-002 Cheapest qualified supplier per line at ₹11,76,74,450."
+      },
+      {
+        "rule": "R4 unresolved critical",
+        "outcome": "SCN-002 has no unresolved critical dependencies."
+      },
+      {
+        "rule": "R5 consolidation",
+        "outcome": "SCN-003 uses 2 supplier(s) instead of 3 for +0% (≤1%) – preferred."
+      },
+      {
+        "rule": "R6 concentration",
+        "outcome": "Largest supplier share 71.6% is within the 80% limit."
+      }
+    ],
+    "policy": {
+      "consolidation_tolerance_pct": 1,
+      "max_supplier_share_pct": 80,
+      "block_unresolved_critical": true,
+      "require_full_coverage": true
+    },
+    "alternative": {
+      "scenario_id": "SCN-005",
+      "name": "Quality-first (≤5% above cheapest, max 3 suppliers)",
+      "cost_delta_inr": 5810400
+    }
+  },
+  "buyer_decision": {
+    "status": "approved",
+    "selected_scenario": {
+      "scenario_id": "SCN-003",
+      "name": "Lowest cost, max 2 suppliers",
+      "status": "complete",
+      "objective": "minimize_cost",
+      "constraints": [
+        "Technical qualification required (≥70 and all mandatory items)",
+        "At most 2 supplier(s)"
+      ],
+      "total_evaluated_cost_inr": 117694450,
+      "historical_cost_inr": 118850100,
+      "savings_vs_historical_inr": 1155650,
+      "savings_percent": 1,
+      "supplier_count": 2,
+      "suppliers": [
+        {
+          "vendor_id": "VND-1002",
+          "vendor": "Vendor 2 (Shree Ganesh Packwell Pvt. Ltd.)",
+          "lines": 24,
+          "lines_pct": 80,
+          "spend_inr": 84320100,
+          "spend_pct": 71.6,
+          "technical_score": 81
+        },
+        {
+          "vendor_id": "VND-1001",
+          "vendor": "Vendor 1 (Deccan Corrupack Industries Pvt. Ltd.)",
+          "lines": 6,
+          "lines_pct": 20,
+          "spend_inr": 33374350,
+          "spend_pct": 28.4,
+          "technical_score": 89
+        }
+      ],
+      "weighted_technical_score": 83.3,
+      "allocations": [
+        {
+          "rfx_line_id": "CP-001",
+          "description": "3-Ply RSC Shipper – Plain Brown",
+          "plant": "BLR",
+          "vendor": "Vendor 1 (Deccan Corrupack Industries Pvt. Ltd.)",
+          "unit_cost_inr": 7.78,
+          "annual_qty": 480000,
+          "annual_spend_inr": 3734400,
+          "freight_basis": "landed",
+          "next_best": "Vendor 2 (Shree Ganesh Packwell Pvt. Ltd.)",
+          "delta_vs_next_best_inr": 0.16,
+          "unresolved_issue": null
+        },
+        {
+          "rfx_line_id": "CP-002",
+          "description": "3-Ply RSC Shipper – Plain Brown",
+          "plant": "PNQ",
+          "vendor": "Vendor 2 (Shree Ganesh Packwell Pvt. Ltd.)",
+          "unit_cost_inr": 11.23,
+          "annual_qty": 360000,
+          "annual_spend_inr": 4042800,
+          "freight_basis": "landed",
+          "next_best": "Vendor 1 (Deccan Corrupack Industries Pvt. Ltd.)",
+          "delta_vs_next_best_inr": 0.88,
+          "unresolved_issue": null
+        },
+        {
+          "rfx_line_id": "CP-003",
+          "description": "3-Ply RSC Shipper – Plain Brown",
+          "plant": "HYD",
+          "vendor": "Vendor 2 (Shree Ganesh Packwell Pvt. Ltd.)",
+          "unit_cost_inr": 15.24,
+          "annual_qty": 240000,
+          "annual_spend_inr": 3657600,
+          "freight_basis": "rfx_loading",
+          "next_best": "Vendor 1 (Deccan Corrupack Industries Pvt. Ltd.)",
+          "delta_vs_next_best_inr": 0.81,
+          "unresolved_issue": null
+        },
+        {
+          "rfx_line_id": "CP-004",
+          "description": "3-Ply RSC Shipper – 1 Colour Printed",
+          "plant": "PNQ",
+          "vendor": "Vendor 2 (Shree Ganesh Packwell Pvt. Ltd.)",
+          "unit_cost_inr": 8.26,
+          "annual_qty": 600000,
+          "annual_spend_inr": 4956000,
+          "freight_basis": "landed",
+          "next_best": "Vendor 3 (Indus Fibreboard Solutions Ltd.)",
+          "delta_vs_next_best_inr": 1.12,
+          "unresolved_issue": null
+        },
+        {
+          "rfx_line_id": "CP-005",
+          "description": "3-Ply RSC Shipper – 2 Colour Printed",
+          "plant": "BLR",
+          "vendor": "Vendor 1 (Deccan Corrupack Industries Pvt. Ltd.)",
+          "unit_cost_inr": 6.53,
+          "annual_qty": 720000,
+          "annual_spend_inr": 4701600,
+          "freight_basis": "landed",
+          "next_best": "Vendor 2 (Shree Ganesh Packwell Pvt. Ltd.)",
+          "delta_vs_next_best_inr": 0.13,
+          "unresolved_issue": null
+        },
+        {
+          "rfx_line_id": "CP-006",
+          "description": "3-Ply RSC Shipper – 2 Colour Printed",
+          "plant": "HYD",
+          "vendor": "Vendor 2 (Shree Ganesh Packwell Pvt. Ltd.)",
+          "unit_cost_inr": 11.39,
+          "annual_qty": 300000,
+          "annual_spend_inr": 3417000,
+          "freight_basis": "rfx_loading",
+          "next_best": "Vendor 3 (Indus Fibreboard Solutions Ltd.)",
+          "delta_vs_next_best_inr": 0.79,
+          "unresolved_issue": null
+        },
+        {
+          "rfx_line_id": "CP-007",
+          "description": "5-Ply RSC Shipper – Plain Brown",
+          "plant": "BLR",
+          "vendor": "Vendor 1 (Deccan Corrupack Industries Pvt. Ltd.)",
+          "unit_cost_inr": 39.06,
+          "annual_qty": 210000,
+          "annual_spend_inr": 8202600,
+          "freight_basis": "landed",
+          "next_best": "Vendor 2 (Shree Ganesh Packwell Pvt. Ltd.)",
+          "delta_vs_next_best_inr": 0.98,
+          "unresolved_issue": null
+        },
+        {
+          "rfx_line_id": "CP-008",
+          "description": "5-Ply RSC Shipper – Plain Brown",
+          "plant": "PNQ",
+          "vendor": "Vendor 2 (Shree Ganesh Packwell Pvt. Ltd.)",
+          "unit_cost_inr": 44.86,
+          "annual_qty": 150000,
+          "annual_spend_inr": 6729000,
+          "freight_basis": "landed",
+          "next_best": "Vendor 1 (Deccan Corrupack Industries Pvt. Ltd.)",
+          "delta_vs_next_best_inr": 3.64,
+          "unresolved_issue": null
+        },
+        {
+          "rfx_line_id": "CP-009",
+          "description": "5-Ply RSC Shipper – Plain Brown",
+          "plant": "HYD",
+          "vendor": "Vendor 2 (Shree Ganesh Packwell Pvt. Ltd.)",
+          "unit_cost_inr": 30.93,
+          "annual_qty": 270000,
+          "annual_spend_inr": 8351100,
+          "freight_basis": "rfx_loading",
+          "next_best": "Vendor 1 (Deccan Corrupack Industries Pvt. Ltd.)",
+          "delta_vs_next_best_inr": 3.2,
+          "unresolved_issue": null
+        },
+        {
+          "rfx_line_id": "CP-010",
+          "description": "5-Ply RSC Shipper – 2 Colour Printed",
+          "plant": "BLR",
+          "vendor": "Vendor 2 (Shree Ganesh Packwell Pvt. Ltd.)",
+          "unit_cost_inr": 34.78,
+          "annual_qty": 240000,
+          "annual_spend_inr": 8347200,
+          "freight_basis": "rfx_loading",
+          "next_best": "Vendor 1 (Deccan Corrupack Industries Pvt. Ltd.)",
+          "delta_vs_next_best_inr": 1.32,
+          "unresolved_issue": null
+        },
+        {
+          "rfx_line_id": "CP-011",
+          "description": "5-Ply RSC Shipper – 3 Colour Printed",
+          "plant": "PNQ",
+          "vendor": "Vendor 2 (Shree Ganesh Packwell Pvt. Ltd.)",
+          "unit_cost_inr": 32.83,
+          "annual_qty": 180000,
+          "annual_spend_inr": 5909400,
+          "freight_basis": "landed",
+          "next_best": "Vendor 1 (Deccan Corrupack Industries Pvt. Ltd.)",
+          "delta_vs_next_best_inr": 3.63,
+          "unresolved_issue": null
+        },
+        {
+          "rfx_line_id": "CP-012",
+          "description": "5-Ply RSC – 2 Colour Printed, Moisture Resistant",
+          "plant": "HYD",
+          "vendor": "Vendor 2 (Shree Ganesh Packwell Pvt. Ltd.)",
+          "unit_cost_inr": 39.04,
+          "annual_qty": 120000,
+          "annual_spend_inr": 4684800,
+          "freight_basis": "rfx_loading",
+          "next_best": "Vendor 1 (Deccan Corrupack Industries Pvt. Ltd.)",
+          "delta_vs_next_best_inr": 2.27,
+          "unresolved_issue": null
+        },
+        {
+          "rfx_line_id": "CP-013",
+          "description": "5-Ply HSC Box – Plain Brown",
+          "plant": "PNQ",
+          "vendor": "Vendor 2 (Shree Ganesh Packwell Pvt. Ltd.)",
+          "unit_cost_inr": 37.47,
+          "annual_qty": 60000,
+          "annual_spend_inr": 2248200,
+          "freight_basis": "landed",
+          "next_best": "Vendor 1 (Deccan Corrupack Industries Pvt. Ltd.)",
+          "delta_vs_next_best_inr": 5.44,
+          "unresolved_issue": null
+        },
+        {
+          "rfx_line_id": "CP-014",
+          "description": "5-Ply RSC – Heavy Duty BF22, Plain",
+          "plant": "BLR",
+          "vendor": "Vendor 2 (Shree Ganesh Packwell Pvt. Ltd.)",
+          "unit_cost_inr": 42.97,
+          "annual_qty": 100000,
+          "annual_spend_inr": 4297000,
+          "freight_basis": "rfx_loading",
+          "next_best": "Vendor 3 (Indus Fibreboard Solutions Ltd.)",
+          "delta_vs_next_best_inr": 3.74,
+          "unresolved_issue": null
+        },
+        {
+          "rfx_line_id": "CP-015",
+          "description": "Die-cut Crash-lock Gift Carton – 4C Offset, Litho-laminated",
+          "plant": "BLR",
+          "vendor": "Vendor 1 (Deccan Corrupack Industries Pvt. Ltd.)",
+          "unit_cost_inr": 15.85,
+          "annual_qty": 400000,
+          "annual_spend_inr": 6340000,
+          "freight_basis": "landed",
+          "next_best": "Vendor 3 (Indus Fibreboard Solutions Ltd.)",
+          "delta_vs_next_best_inr": -0.05,
+          "unresolved_issue": null
+        },
+        {
+          "rfx_line_id": "CP-016",
+          "description": "Die-cut Tray with Lid – 2C Flexo",
+          "plant": "HYD",
+          "vendor": "Vendor 2 (Shree Ganesh Packwell Pvt. Ltd.)",
+          "unit_cost_inr": 12.47,
+          "annual_qty": 250000,
+          "annual_spend_inr": 3117500,
+          "freight_basis": "rfx_loading",
+          "next_best": "Vendor 1 (Deccan Corrupack Industries Pvt. Ltd.)",
+          "delta_vs_next_best_inr": 0.36,
+          "unresolved_issue": null
+        },
+        {
+          "rfx_line_id": "CP-017",
+          "description": "Shelf-ready Display Tray with Tear-off Front – 2C Flexo",
+          "plant": "HYD",
+          "vendor": "Vendor 2 (Shree Ganesh Packwell Pvt. Ltd.)",
+          "unit_cost_inr": 10.68,
+          "annual_qty": 160000,
+          "annual_spend_inr": 1708800,
+          "freight_basis": "rfx_loading",
+          "next_best": "Vendor 1 (Deccan Corrupack Industries Pvt. Ltd.)",
+          "delta_vs_next_best_inr": 0.33,
+          "unresolved_issue": null
+        },
+        {
+          "rfx_line_id": "CP-018",
+          "description": "E-commerce Mailer Box – Die-cut, 2C Flexo",
+          "plant": "PNQ",
+          "vendor": "Vendor 2 (Shree Ganesh Packwell Pvt. Ltd.)",
+          "unit_cost_inr": 9.47,
+          "annual_qty": 300000,
+          "annual_spend_inr": 2841000,
+          "freight_basis": "landed",
+          "next_best": "Vendor 3 (Indus Fibreboard Solutions Ltd.)",
+          "delta_vs_next_best_inr": 0.93,
+          "unresolved_issue": null
+        },
+        {
+          "rfx_line_id": "CP-019",
+          "description": "5-Ply RSC with Die-cut Hand Holes – 2C Printed",
+          "plant": "BLR",
+          "vendor": "Vendor 2 (Shree Ganesh Packwell Pvt. Ltd.)",
+          "unit_cost_inr": 39.27,
+          "annual_qty": 90000,
+          "annual_spend_inr": 3534300,
+          "freight_basis": "rfx_loading",
+          "next_best": "Vendor 1 (Deccan Corrupack Industries Pvt. Ltd.)",
+          "delta_vs_next_best_inr": 1.87,
+          "unresolved_issue": null
+        },
+        {
+          "rfx_line_id": "CP-020",
+          "description": "3-Ply Partition – 12 Cell (3 x 4), for CP-007",
+          "plant": "BLR",
+          "vendor": "Vendor 2 (Shree Ganesh Packwell Pvt. Ltd.)",
+          "unit_cost_inr": 9.1,
+          "annual_qty": 210000,
+          "annual_spend_inr": 1911000,
+          "freight_basis": "rfx_loading",
+          "next_best": "Vendor 1 (Deccan Corrupack Industries Pvt. Ltd.)",
+          "delta_vs_next_best_inr": 0.2,
+          "unresolved_issue": null
+        },
+        {
+          "rfx_line_id": "CP-021",
+          "description": "3-Ply Partition – 24 Cell (4 x 6)",
+          "plant": "PNQ",
+          "vendor": "Vendor 2 (Shree Ganesh Packwell Pvt. Ltd.)",
+          "unit_cost_inr": 10.62,
+          "annual_qty": 120000,
+          "annual_spend_inr": 1274400,
+          "freight_basis": "landed",
+          "next_best": "Vendor 1 (Deccan Corrupack Industries Pvt. Ltd.)",
+          "delta_vs_next_best_inr": 1.83,
+          "unresolved_issue": null
+        },
+        {
+          "rfx_line_id": "CP-022",
+          "description": "5-Ply Partition – 6 Cell (2 x 3) Heavy, for CP-009",
+          "plant": "HYD",
+          "vendor": "Vendor 2 (Shree Ganesh Packwell Pvt. Ltd.)",
+          "unit_cost_inr": 8.75,
+          "annual_qty": 80000,
+          "annual_spend_inr": 700000,
+          "freight_basis": "rfx_loading",
+          "next_best": "Vendor 3 (Indus Fibreboard Solutions Ltd.)",
+          "delta_vs_next_best_inr": 0.84,
+          "unresolved_issue": null
+        },
+        {
+          "rfx_line_id": "CP-023",
+          "description": "3-Ply Layer Pad 440 x 340 mm",
+          "plant": "BLR",
+          "vendor": "Vendor 2 (Shree Ganesh Packwell Pvt. Ltd.)",
+          "unit_cost_inr": 2.35,
+          "annual_qty": 420000,
+          "annual_spend_inr": 987000,
+          "freight_basis": "rfx_loading",
+          "next_best": "Vendor 1 (Deccan Corrupack Industries Pvt. Ltd.)",
+          "delta_vs_next_best_inr": 0.14,
+          "unresolved_issue": null
+        },
+        {
+          "rfx_line_id": "CP-024",
+          "description": "5-Ply Layer Pad 590 x 390 mm",
+          "plant": "PNQ",
+          "vendor": "Vendor 2 (Shree Ganesh Packwell Pvt. Ltd.)",
+          "unit_cost_inr": 7.07,
+          "annual_qty": 150000,
+          "annual_spend_inr": 1060500,
+          "freight_basis": "landed",
+          "next_best": "Vendor 3 (Indus Fibreboard Solutions Ltd.)",
+          "delta_vs_next_best_inr": 0.45,
+          "unresolved_issue": null
+        },
+        {
+          "rfx_line_id": "CP-025",
+          "description": "Die-cut Fitment Insert – 3-Ply E-flute, for CP-016",
+          "plant": "HYD",
+          "vendor": "Vendor 2 (Shree Ganesh Packwell Pvt. Ltd.)",
+          "unit_cost_inr": 3.83,
+          "annual_qty": 250000,
+          "annual_spend_inr": 957500,
+          "freight_basis": "rfx_loading",
+          "next_best": "Vendor 3 (Indus Fibreboard Solutions Ltd.)",
+          "delta_vs_next_best_inr": 0.29,
+          "unresolved_issue": null
+        },
+        {
+          "rfx_line_id": "CP-026",
+          "description": "3-Ply Printed Sleeve – 1C Flexo",
+          "plant": "PNQ",
+          "vendor": "Vendor 2 (Shree Ganesh Packwell Pvt. Ltd.)",
+          "unit_cost_inr": 3.86,
+          "annual_qty": 200000,
+          "annual_spend_inr": 772000,
+          "freight_basis": "landed",
+          "next_best": "Vendor 3 (Indus Fibreboard Solutions Ltd.)",
+          "delta_vs_next_best_inr": 0.35,
+          "unresolved_issue": null
+        },
+        {
+          "rfx_line_id": "CP-027",
+          "description": "7-Ply RSC – Plain, Heavy Duty BF22",
+          "plant": "PNQ",
+          "vendor": "Vendor 2 (Shree Ganesh Packwell Pvt. Ltd.)",
+          "unit_cost_inr": 100.2,
+          "annual_qty": 40000,
+          "annual_spend_inr": 4008000,
+          "freight_basis": "landed",
+          "next_best": "Vendor 3 (Indus Fibreboard Solutions Ltd.)",
+          "delta_vs_next_best_inr": 11.52,
+          "unresolved_issue": null
+        },
+        {
+          "rfx_line_id": "CP-028",
+          "description": "5-Ply Export Carton – 2C, Shipping Marks, BF24",
+          "plant": "PNQ",
+          "vendor": "Vendor 2 (Shree Ganesh Packwell Pvt. Ltd.)",
+          "unit_cost_inr": 60.1,
+          "annual_qty": 80000,
+          "annual_spend_inr": 4808000,
+          "freight_basis": "landed",
+          "next_best": "Vendor 1 (Deccan Corrupack Industries Pvt. Ltd.)",
+          "delta_vs_next_best_inr": 4.05,
+          "unresolved_issue": null
+        },
+        {
+          "rfx_line_id": "CP-029",
+          "description": "7-Ply Export Carton – Moisture Resistant, BF26",
+          "plant": "BLR",
+          "vendor": "Vendor 1 (Deccan Corrupack Industries Pvt. Ltd.)",
+          "unit_cost_inr": 170.19,
+          "annual_qty": 30000,
+          "annual_spend_inr": 5105700,
+          "freight_basis": "landed",
+          "next_best": "Vendor 3 (Indus Fibreboard Solutions Ltd.)",
+          "delta_vs_next_best_inr": 0.62,
+          "unresolved_issue": null
+        },
+        {
+          "rfx_line_id": "CP-030",
+          "description": "7-Ply Heavy-duty Export Carton – Pallet Fit",
+          "plant": "HYD",
+          "vendor": "Vendor 1 (Deccan Corrupack Industries Pvt. Ltd.)",
+          "unit_cost_inr": 352.67,
+          "annual_qty": 15000,
+          "annual_spend_inr": 5290050,
+          "freight_basis": "landed",
+          "next_best": "Vendor 3 (Indus Fibreboard Solutions Ltd.)",
+          "delta_vs_next_best_inr": 12.84,
+          "unresolved_issue": null
+        }
+      ],
+      "excluded_vendors": [
+        {
+          "vendor_id": "VND-1004",
+          "vendor": "Vendor 4 (Sri Vaigai Corrugators)",
+          "reasons": [
+            "failed technical qualification (score 46/100, threshold 70; mandatory failures Q01, Q05, Q10)"
+          ]
+        },
+        {
+          "vendor_id": "VND-1005",
+          "vendor": "Vendor 5 (Godavari Packaging Works)",
+          "reasons": [
+            "failed technical qualification (score 68/100, threshold 70)"
+          ]
+        }
+      ],
+      "risks": [
+        {
+          "severity": "low",
+          "code": "price_validity",
+          "message": "Vendor 2 (Shree Ganesh Packwell Pvt. Ltd.) prices valid until 2026-12-09, before contract end 2027-10-31 – re-pricing likely during the contract.",
+          "vendor_id": "VND-1002",
+          "rfx_line_ids": []
+        },
+        {
+          "severity": "low",
+          "code": "price_validity",
+          "message": "Vendor 1 (Deccan Corrupack Industries Pvt. Ltd.) prices valid until 2027-04-06, before contract end 2027-10-31 – re-pricing likely during the contract.",
+          "vendor_id": "VND-1001",
+          "rfx_line_ids": []
+        },
+        {
+          "severity": "low",
+          "code": "moq",
+          "message": "Vendor 1 (Deccan Corrupack Industries Pvt. Ltd.) MOQ exceeds monthly call-off on CP-029, CP-030.",
+          "vendor_id": "VND-1001",
+          "rfx_line_ids": [
+            "CP-029",
+            "CP-030"
+          ]
+        },
+        {
+          "severity": "medium",
+          "code": "freight_estimated",
+          "message": "Landed cost incomplete: 13 awarded line(s) (4,56,70,800 INR) use an estimated freight loading; vendors quoted freight extra / at actuals.",
+          "vendor_id": null,
+          "rfx_line_ids": [
+            "CP-003",
+            "CP-006",
+            "CP-009",
+            "CP-010",
+            "CP-012",
+            "CP-014",
+            "CP-016",
+            "CP-017",
+            "CP-019",
+            "CP-020",
+            "CP-022",
+            "CP-023",
+            "CP-025"
+          ]
+        }
+      ],
+      "assumptions": [
+        "Evaluated cost = landed price where freight is quoted or included; otherwise RFx evaluation loading of 5% (stage1/buyer/buyer_requirements.json BR-10).",
+        "USD quotes converted at 88.5 INR/USD (stage1/buyer/buyer_requirements.json event.evaluation_fx.USD_INR).",
+        "Conditional discounts and rebates are not applied; GST excluded; one-time tooling not amortised.",
+        "Historical benchmark = FY25-26 delivered price × annual quantity for the same awarded lines."
+      ],
+      "freight": {
+        "landed_lines": 17,
+        "loading_lines": 13,
+        "assumption_lines": 0,
+        "pre_freight_lines": 0,
+        "landed_cost_complete": false,
+        "note": "13 line(s) use estimated freight."
+      },
+      "unresolved_issues": []
+    },
+    "preferred_scenario_id": null,
+    "decided_at": "2026-10-13T19:32:30.585Z"
+  },
+  "scenario_comparison": [
+    {
+      "scenario_id": "SCN-001",
+      "name": "Best single-source award",
+      "status": "complete",
+      "total_evaluated_cost_inr": 126041850,
+      "savings_percent": -6.1,
+      "suppliers": 1,
+      "weighted_technical_score": 89,
+      "largest_supplier_share_pct": 100
+    },
+    {
+      "scenario_id": "SCN-002",
+      "name": "Cheapest qualified supplier per line",
+      "status": "complete",
+      "total_evaluated_cost_inr": 117674450,
+      "savings_percent": 1,
+      "suppliers": 3,
+      "weighted_technical_score": 83.5,
+      "largest_supplier_share_pct": 71.7
+    },
+    {
+      "scenario_id": "SCN-003",
+      "name": "Lowest cost, max 2 suppliers",
+      "status": "complete",
+      "total_evaluated_cost_inr": 117694450,
+      "savings_percent": 1,
+      "suppliers": 2,
+      "weighted_technical_score": 83.3,
+      "largest_supplier_share_pct": 71.6
+    },
+    {
+      "scenario_id": "SCN-004",
+      "name": "Lowest cost, max 3 suppliers",
+      "status": "complete",
+      "total_evaluated_cost_inr": 117674450,
+      "savings_percent": 1,
+      "suppliers": 3,
+      "weighted_technical_score": 83.5,
+      "largest_supplier_share_pct": 71.7
+    },
+    {
+      "scenario_id": "SCN-005",
+      "name": "Quality-first (≤5% above cheapest, max 3 suppliers)",
+      "status": "complete",
+      "total_evaluated_cost_inr": 123504850,
+      "savings_percent": -3.9,
+      "suppliers": 3,
+      "weighted_technical_score": 91.6,
+      "largest_supplier_share_pct": 69.8
+    },
+    {
+      "scenario_id": "SCN-006",
+      "name": "Risk-adjusted (no unresolved critical issues, ≥50% coverage)",
+      "status": "complete",
+      "total_evaluated_cost_inr": 117674450,
+      "savings_percent": 1,
+      "suppliers": 3,
+      "weighted_technical_score": 83.5,
+      "largest_supplier_share_pct": 71.7
+    }
+  ],
+  "audit_trail": [
+    {
+      "at": "2026-10-13T19:32:30.585Z",
+      "type": "recommendation_approved",
+      "scenario_id": "SCN-003",
+      "detail": "eval sample export"
+    }
+  ]
+}

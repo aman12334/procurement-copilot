@@ -1,0 +1,3789 @@
+{
+  "schema_version": "bid.v1",
+  "vendor": {
+    "vendor_id": "VND-1005",
+    "vendor_name": "Godavari Packaging Works",
+    "vendor_no": 5
+  },
+  "response_metadata": {
+    "source_type": "email",
+    "source_files": [
+      "Godavari_Packaging_email_response.txt"
+    ],
+    "quote_reference": "RE: RFQ SCPL/PKG/RFQ/2026-27/014 - Corrugated boxes - our rates",
+    "quote_date": "2026-10-12",
+    "processed_at": "2026-10-13T18:54:22.023Z",
+    "model": "gemini-3-flash-preview",
+    "fx": {
+      "usd_inr": 88.5,
+      "source": "stage1/buyer/buyer_requirements.json event.evaluation_fx.USD_INR"
+    }
+  },
+  "line_items": [
+    {
+      "rfx_line_id": "CP-001",
+      "rfx_sku": "CP-001",
+      "rfx_description": "3-Ply RSC Shipper – Plain Brown",
+      "delivery_plant": "BLR",
+      "annual_qty": 480000,
+      "vendor_item_code": null,
+      "vendor_description": "3-ply plain brown boxes",
+      "match_status": "probable",
+      "match_basis": "group_statement",
+      "raw_price": 44,
+      "raw_price_text": "Rs 44/kg",
+      "raw_currency": "INR",
+      "raw_uom": "per kg",
+      "pieces_per_quoted_unit": null,
+      "fx_rate_to_inr": 1,
+      "fx_source": null,
+      "normalized_unit_price_inr": 7.39,
+      "normalized_currency": "INR",
+      "normalized_uom": "piece",
+      "normalization_method": "Rate per kg × RFx reference weight 168 g",
+      "freight": {
+        "included": false,
+        "basis": "extra_unspecified",
+        "amount": null,
+        "currency": "INR",
+        "notes": "Freight extra.",
+        "evidence": [
+          {
+            "source_file": "Godavari_Packaging_email_response.txt",
+            "location": "email line 23",
+            "page": null,
+            "source_text": "Freight extra."
+          }
+        ]
+      },
+      "landed_unit_price_inr": null,
+      "evaluation_unit_price_inr": 7.76,
+      "evaluation_basis": "normalized + 5% freight loading (stage1/buyer/buyer_requirements.json BR-10)",
+      "historical_price_inr": 7.73,
+      "variance_vs_historical_pct": 0.4,
+      "moq": null,
+      "moq_exceeds_monthly_calloff": null,
+      "lead_time_days": 10,
+      "tax": {
+        "treatment": "GST extra.",
+        "evidence": [
+          {
+            "source_file": "Godavari_Packaging_email_response.txt",
+            "location": "email line 11",
+            "page": null,
+            "source_text": "GST extra."
+          }
+        ]
+      },
+      "price_validity_until": "2026-12-31",
+      "remarks": null,
+      "spec_deviation": null,
+      "candidate_quotes": [
+        {
+          "quote_index": 0,
+          "raw_price": 44,
+          "raw_price_text": "Rs 44/kg",
+          "normalized_unit_price_inr": 7.39,
+          "evidence": {
+            "source_file": "Godavari_Packaging_email_response.txt",
+            "location": "email line 13",
+            "page": null,
+            "source_text": "3-ply plain brown boxes: Rs 44/kg"
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 13",
+          "page": null,
+          "source_text": "3-ply plain brown boxes: Rs 44/kg"
+        }
+      ],
+      "review_status": "accepted",
+      "review_reasons": [],
+      "resolution": null,
+      "comparable": true
+    },
+    {
+      "rfx_line_id": "CP-002",
+      "rfx_sku": "CP-002",
+      "rfx_description": "3-Ply RSC Shipper – Plain Brown",
+      "delivery_plant": "PNQ",
+      "annual_qty": 360000,
+      "vendor_item_code": null,
+      "vendor_description": "3-ply plain brown boxes",
+      "match_status": "probable",
+      "match_basis": "group_statement",
+      "raw_price": 44,
+      "raw_price_text": "Rs 44/kg",
+      "raw_currency": "INR",
+      "raw_uom": "per kg",
+      "pieces_per_quoted_unit": null,
+      "fx_rate_to_inr": 1,
+      "fx_source": null,
+      "normalized_unit_price_inr": 11.31,
+      "normalized_currency": "INR",
+      "normalized_uom": "piece",
+      "normalization_method": "Rate per kg × RFx reference weight 257 g",
+      "freight": {
+        "included": false,
+        "basis": "extra_unspecified",
+        "amount": null,
+        "currency": "INR",
+        "notes": "Freight extra.",
+        "evidence": [
+          {
+            "source_file": "Godavari_Packaging_email_response.txt",
+            "location": "email line 23",
+            "page": null,
+            "source_text": "Freight extra."
+          }
+        ]
+      },
+      "landed_unit_price_inr": null,
+      "evaluation_unit_price_inr": 11.88,
+      "evaluation_basis": "normalized + 5% freight loading (stage1/buyer/buyer_requirements.json BR-10)",
+      "historical_price_inr": 11.82,
+      "variance_vs_historical_pct": 0.5,
+      "moq": null,
+      "moq_exceeds_monthly_calloff": null,
+      "lead_time_days": 10,
+      "tax": {
+        "treatment": "GST extra.",
+        "evidence": [
+          {
+            "source_file": "Godavari_Packaging_email_response.txt",
+            "location": "email line 11",
+            "page": null,
+            "source_text": "GST extra."
+          }
+        ]
+      },
+      "price_validity_until": "2026-12-31",
+      "remarks": null,
+      "spec_deviation": null,
+      "candidate_quotes": [
+        {
+          "quote_index": 1,
+          "raw_price": 44,
+          "raw_price_text": "Rs 44/kg",
+          "normalized_unit_price_inr": 11.31,
+          "evidence": {
+            "source_file": "Godavari_Packaging_email_response.txt",
+            "location": "email line 13",
+            "page": null,
+            "source_text": "3-ply plain brown boxes: Rs 44/kg"
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 13",
+          "page": null,
+          "source_text": "3-ply plain brown boxes: Rs 44/kg"
+        }
+      ],
+      "review_status": "accepted",
+      "review_reasons": [],
+      "resolution": null,
+      "comparable": true
+    },
+    {
+      "rfx_line_id": "CP-003",
+      "rfx_sku": "CP-003",
+      "rfx_description": "3-Ply RSC Shipper – Plain Brown",
+      "delivery_plant": "HYD",
+      "annual_qty": 240000,
+      "vendor_item_code": null,
+      "vendor_description": "3-ply plain brown boxes",
+      "match_status": "probable",
+      "match_basis": "group_statement",
+      "raw_price": 44,
+      "raw_price_text": "Rs 44/kg",
+      "raw_currency": "INR",
+      "raw_uom": "per kg",
+      "pieces_per_quoted_unit": null,
+      "fx_rate_to_inr": 1,
+      "fx_source": null,
+      "normalized_unit_price_inr": 14.61,
+      "normalized_currency": "INR",
+      "normalized_uom": "piece",
+      "normalization_method": "Rate per kg × RFx reference weight 332 g",
+      "freight": {
+        "included": false,
+        "basis": "extra_unspecified",
+        "amount": null,
+        "currency": "INR",
+        "notes": "Freight extra.",
+        "evidence": [
+          {
+            "source_file": "Godavari_Packaging_email_response.txt",
+            "location": "email line 23",
+            "page": null,
+            "source_text": "Freight extra."
+          }
+        ]
+      },
+      "landed_unit_price_inr": null,
+      "evaluation_unit_price_inr": 15.34,
+      "evaluation_basis": "normalized + 5% freight loading (stage1/buyer/buyer_requirements.json BR-10)",
+      "historical_price_inr": 15.27,
+      "variance_vs_historical_pct": 0.5,
+      "moq": null,
+      "moq_exceeds_monthly_calloff": null,
+      "lead_time_days": 10,
+      "tax": {
+        "treatment": "GST extra.",
+        "evidence": [
+          {
+            "source_file": "Godavari_Packaging_email_response.txt",
+            "location": "email line 11",
+            "page": null,
+            "source_text": "GST extra."
+          }
+        ]
+      },
+      "price_validity_until": "2026-12-31",
+      "remarks": null,
+      "spec_deviation": null,
+      "candidate_quotes": [
+        {
+          "quote_index": 2,
+          "raw_price": 44,
+          "raw_price_text": "Rs 44/kg",
+          "normalized_unit_price_inr": 14.61,
+          "evidence": {
+            "source_file": "Godavari_Packaging_email_response.txt",
+            "location": "email line 13",
+            "page": null,
+            "source_text": "3-ply plain brown boxes: Rs 44/kg"
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 13",
+          "page": null,
+          "source_text": "3-ply plain brown boxes: Rs 44/kg"
+        }
+      ],
+      "review_status": "accepted",
+      "review_reasons": [],
+      "resolution": null,
+      "comparable": true
+    },
+    {
+      "rfx_line_id": "CP-004",
+      "rfx_sku": "CP-004",
+      "rfx_description": "3-Ply RSC Shipper – 1 Colour Printed",
+      "delivery_plant": "PNQ",
+      "annual_qty": 600000,
+      "vendor_item_code": null,
+      "vendor_description": "1 & 2 colour 3-ply boxes",
+      "match_status": "probable",
+      "match_basis": "group_statement",
+      "raw_price": 44,
+      "raw_price_text": "Rs 44/kg + Rs 5/kg",
+      "raw_currency": "INR",
+      "raw_uom": "per kg",
+      "pieces_per_quoted_unit": null,
+      "fx_rate_to_inr": 1,
+      "fx_source": null,
+      "normalized_unit_price_inr": 8.23,
+      "normalized_currency": "INR",
+      "normalized_uom": "piece",
+      "normalization_method": "Rate per kg (44 + 5 add-on) × RFx reference weight 168 g",
+      "freight": {
+        "included": false,
+        "basis": "extra_unspecified",
+        "amount": null,
+        "currency": "INR",
+        "notes": "Freight extra.",
+        "evidence": [
+          {
+            "source_file": "Godavari_Packaging_email_response.txt",
+            "location": "email line 23",
+            "page": null,
+            "source_text": "Freight extra."
+          }
+        ]
+      },
+      "landed_unit_price_inr": null,
+      "evaluation_unit_price_inr": 8.64,
+      "evaluation_basis": "normalized + 5% freight loading (stage1/buyer/buyer_requirements.json BR-10)",
+      "historical_price_inr": 8.74,
+      "variance_vs_historical_pct": -1.1,
+      "moq": 5000,
+      "moq_exceeds_monthly_calloff": false,
+      "lead_time_days": 10,
+      "tax": {
+        "treatment": "GST extra.",
+        "evidence": [
+          {
+            "source_file": "Godavari_Packaging_email_response.txt",
+            "location": "email line 11",
+            "page": null,
+            "source_text": "GST extra."
+          }
+        ]
+      },
+      "price_validity_until": "2026-12-31",
+      "remarks": null,
+      "spec_deviation": null,
+      "candidate_quotes": [
+        {
+          "quote_index": 8,
+          "raw_price": 44,
+          "raw_price_text": "Rs 44/kg + Rs 5/kg",
+          "normalized_unit_price_inr": 8.23,
+          "evidence": {
+            "source_file": "Godavari_Packaging_email_response.txt",
+            "location": "email line 15",
+            "page": null,
+            "source_text": "Printed ones Rs 5/kg extra over plain, up to 2 colours - so the 1 & 2 colour 3-ply boxes"
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 15",
+          "page": null,
+          "source_text": "Printed ones Rs 5/kg extra over plain, up to 2 colours - so the 1 & 2 colour 3-ply boxes"
+        }
+      ],
+      "review_status": "accepted",
+      "review_reasons": [],
+      "resolution": null,
+      "comparable": true
+    },
+    {
+      "rfx_line_id": "CP-005",
+      "rfx_sku": "CP-005",
+      "rfx_description": "3-Ply RSC Shipper – 2 Colour Printed",
+      "delivery_plant": "BLR",
+      "annual_qty": 720000,
+      "vendor_item_code": null,
+      "vendor_description": "1 & 2 colour 3-ply boxes",
+      "match_status": "probable",
+      "match_basis": "group_statement",
+      "raw_price": 44,
+      "raw_price_text": "Rs 44/kg + Rs 5/kg",
+      "raw_currency": "INR",
+      "raw_uom": "per kg",
+      "pieces_per_quoted_unit": null,
+      "fx_rate_to_inr": 1,
+      "fx_source": null,
+      "normalized_unit_price_inr": 6.08,
+      "normalized_currency": "INR",
+      "normalized_uom": "piece",
+      "normalization_method": "Rate per kg (44 + 5 add-on) × RFx reference weight 124 g",
+      "freight": {
+        "included": false,
+        "basis": "extra_unspecified",
+        "amount": null,
+        "currency": "INR",
+        "notes": "Freight extra.",
+        "evidence": [
+          {
+            "source_file": "Godavari_Packaging_email_response.txt",
+            "location": "email line 23",
+            "page": null,
+            "source_text": "Freight extra."
+          }
+        ]
+      },
+      "landed_unit_price_inr": null,
+      "evaluation_unit_price_inr": 6.38,
+      "evaluation_basis": "normalized + 5% freight loading (stage1/buyer/buyer_requirements.json BR-10)",
+      "historical_price_inr": 6.45,
+      "variance_vs_historical_pct": -1.1,
+      "moq": 5000,
+      "moq_exceeds_monthly_calloff": false,
+      "lead_time_days": 10,
+      "tax": {
+        "treatment": "GST extra.",
+        "evidence": [
+          {
+            "source_file": "Godavari_Packaging_email_response.txt",
+            "location": "email line 11",
+            "page": null,
+            "source_text": "GST extra."
+          }
+        ]
+      },
+      "price_validity_until": "2026-12-31",
+      "remarks": null,
+      "spec_deviation": null,
+      "candidate_quotes": [
+        {
+          "quote_index": 9,
+          "raw_price": 44,
+          "raw_price_text": "Rs 44/kg + Rs 5/kg",
+          "normalized_unit_price_inr": 6.08,
+          "evidence": {
+            "source_file": "Godavari_Packaging_email_response.txt",
+            "location": "email line 15",
+            "page": null,
+            "source_text": "Printed ones Rs 5/kg extra over plain, up to 2 colours - so the 1 & 2 colour 3-ply boxes"
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 15",
+          "page": null,
+          "source_text": "Printed ones Rs 5/kg extra over plain, up to 2 colours - so the 1 & 2 colour 3-ply boxes"
+        }
+      ],
+      "review_status": "accepted",
+      "review_reasons": [],
+      "resolution": null,
+      "comparable": true
+    },
+    {
+      "rfx_line_id": "CP-006",
+      "rfx_sku": "CP-006",
+      "rfx_description": "3-Ply RSC Shipper – 2 Colour Printed",
+      "delivery_plant": "HYD",
+      "annual_qty": 300000,
+      "vendor_item_code": null,
+      "vendor_description": "1 & 2 colour 3-ply boxes",
+      "match_status": "probable",
+      "match_basis": "group_statement",
+      "raw_price": 44,
+      "raw_price_text": "Rs 44/kg + Rs 5/kg",
+      "raw_currency": "INR",
+      "raw_uom": "per kg",
+      "pieces_per_quoted_unit": null,
+      "fx_rate_to_inr": 1,
+      "fx_source": null,
+      "normalized_unit_price_inr": 11.03,
+      "normalized_currency": "INR",
+      "normalized_uom": "piece",
+      "normalization_method": "Rate per kg (44 + 5 add-on) × RFx reference weight 225 g",
+      "freight": {
+        "included": false,
+        "basis": "extra_unspecified",
+        "amount": null,
+        "currency": "INR",
+        "notes": "Freight extra.",
+        "evidence": [
+          {
+            "source_file": "Godavari_Packaging_email_response.txt",
+            "location": "email line 23",
+            "page": null,
+            "source_text": "Freight extra."
+          }
+        ]
+      },
+      "landed_unit_price_inr": null,
+      "evaluation_unit_price_inr": 11.58,
+      "evaluation_basis": "normalized + 5% freight loading (stage1/buyer/buyer_requirements.json BR-10)",
+      "historical_price_inr": 11.7,
+      "variance_vs_historical_pct": -1,
+      "moq": 5000,
+      "moq_exceeds_monthly_calloff": false,
+      "lead_time_days": 10,
+      "tax": {
+        "treatment": "GST extra.",
+        "evidence": [
+          {
+            "source_file": "Godavari_Packaging_email_response.txt",
+            "location": "email line 11",
+            "page": null,
+            "source_text": "GST extra."
+          }
+        ]
+      },
+      "price_validity_until": "2026-12-31",
+      "remarks": null,
+      "spec_deviation": null,
+      "candidate_quotes": [
+        {
+          "quote_index": 10,
+          "raw_price": 44,
+          "raw_price_text": "Rs 44/kg + Rs 5/kg",
+          "normalized_unit_price_inr": 11.03,
+          "evidence": {
+            "source_file": "Godavari_Packaging_email_response.txt",
+            "location": "email line 15",
+            "page": null,
+            "source_text": "Printed ones Rs 5/kg extra over plain, up to 2 colours - so the 1 & 2 colour 3-ply boxes"
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 15",
+          "page": null,
+          "source_text": "Printed ones Rs 5/kg extra over plain, up to 2 colours - so the 1 & 2 colour 3-ply boxes"
+        }
+      ],
+      "review_status": "accepted",
+      "review_reasons": [],
+      "resolution": null,
+      "comparable": true
+    },
+    {
+      "rfx_line_id": "CP-007",
+      "rfx_sku": "CP-007",
+      "rfx_description": "5-Ply RSC Shipper – Plain Brown",
+      "delivery_plant": "BLR",
+      "annual_qty": 210000,
+      "vendor_item_code": null,
+      "vendor_description": "5-ply plain (RSC)",
+      "match_status": "probable",
+      "match_basis": "group_statement",
+      "raw_price": 46,
+      "raw_price_text": "Rs 46/kg",
+      "raw_currency": "INR",
+      "raw_uom": "per kg",
+      "pieces_per_quoted_unit": null,
+      "fx_rate_to_inr": 1,
+      "fx_source": null,
+      "normalized_unit_price_inr": 37.03,
+      "normalized_currency": "INR",
+      "normalized_uom": "piece",
+      "normalization_method": "Rate per kg × RFx reference weight 805 g",
+      "freight": {
+        "included": false,
+        "basis": "extra_unspecified",
+        "amount": null,
+        "currency": "INR",
+        "notes": "Freight extra.",
+        "evidence": [
+          {
+            "source_file": "Godavari_Packaging_email_response.txt",
+            "location": "email line 23",
+            "page": null,
+            "source_text": "Freight extra."
+          }
+        ]
+      },
+      "landed_unit_price_inr": null,
+      "evaluation_unit_price_inr": 38.88,
+      "evaluation_basis": "normalized + 5% freight loading (stage1/buyer/buyer_requirements.json BR-10)",
+      "historical_price_inr": 38.64,
+      "variance_vs_historical_pct": 0.6,
+      "moq": null,
+      "moq_exceeds_monthly_calloff": null,
+      "lead_time_days": 10,
+      "tax": {
+        "treatment": "GST extra.",
+        "evidence": [
+          {
+            "source_file": "Godavari_Packaging_email_response.txt",
+            "location": "email line 11",
+            "page": null,
+            "source_text": "GST extra."
+          }
+        ]
+      },
+      "price_validity_until": "2026-12-31",
+      "remarks": null,
+      "spec_deviation": null,
+      "candidate_quotes": [
+        {
+          "quote_index": 3,
+          "raw_price": 46,
+          "raw_price_text": "Rs 46/kg",
+          "normalized_unit_price_inr": 37.03,
+          "evidence": {
+            "source_file": "Godavari_Packaging_email_response.txt",
+            "location": "email line 14",
+            "page": null,
+            "source_text": "5-ply plain: Rs 46/kg (RSC and the big HSC box)."
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 14",
+          "page": null,
+          "source_text": "5-ply plain: Rs 46/kg (RSC and the big HSC box)."
+        }
+      ],
+      "review_status": "accepted",
+      "review_reasons": [],
+      "resolution": null,
+      "comparable": true
+    },
+    {
+      "rfx_line_id": "CP-008",
+      "rfx_sku": "CP-008",
+      "rfx_description": "5-Ply RSC Shipper – Plain Brown",
+      "delivery_plant": "PNQ",
+      "annual_qty": 150000,
+      "vendor_item_code": null,
+      "vendor_description": "5-ply plain (RSC)",
+      "match_status": "probable",
+      "match_basis": "group_statement",
+      "raw_price": 46,
+      "raw_price_text": "Rs 46/kg",
+      "raw_currency": "INR",
+      "raw_uom": "per kg",
+      "pieces_per_quoted_unit": null,
+      "fx_rate_to_inr": 1,
+      "fx_source": null,
+      "normalized_unit_price_inr": 44.76,
+      "normalized_currency": "INR",
+      "normalized_uom": "piece",
+      "normalization_method": "Rate per kg × RFx reference weight 973 g",
+      "freight": {
+        "included": false,
+        "basis": "extra_unspecified",
+        "amount": null,
+        "currency": "INR",
+        "notes": "Freight extra.",
+        "evidence": [
+          {
+            "source_file": "Godavari_Packaging_email_response.txt",
+            "location": "email line 23",
+            "page": null,
+            "source_text": "Freight extra."
+          }
+        ]
+      },
+      "landed_unit_price_inr": null,
+      "evaluation_unit_price_inr": 47,
+      "evaluation_basis": "normalized + 5% freight loading (stage1/buyer/buyer_requirements.json BR-10)",
+      "historical_price_inr": 46.7,
+      "variance_vs_historical_pct": 0.6,
+      "moq": null,
+      "moq_exceeds_monthly_calloff": null,
+      "lead_time_days": 10,
+      "tax": {
+        "treatment": "GST extra.",
+        "evidence": [
+          {
+            "source_file": "Godavari_Packaging_email_response.txt",
+            "location": "email line 11",
+            "page": null,
+            "source_text": "GST extra."
+          }
+        ]
+      },
+      "price_validity_until": "2026-12-31",
+      "remarks": null,
+      "spec_deviation": null,
+      "candidate_quotes": [
+        {
+          "quote_index": 4,
+          "raw_price": 46,
+          "raw_price_text": "Rs 46/kg",
+          "normalized_unit_price_inr": 44.76,
+          "evidence": {
+            "source_file": "Godavari_Packaging_email_response.txt",
+            "location": "email line 14",
+            "page": null,
+            "source_text": "5-ply plain: Rs 46/kg (RSC and the big HSC box)."
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 14",
+          "page": null,
+          "source_text": "5-ply plain: Rs 46/kg (RSC and the big HSC box)."
+        }
+      ],
+      "review_status": "accepted",
+      "review_reasons": [],
+      "resolution": null,
+      "comparable": true
+    },
+    {
+      "rfx_line_id": "CP-009",
+      "rfx_sku": "CP-009",
+      "rfx_description": "5-Ply RSC Shipper – Plain Brown",
+      "delivery_plant": "HYD",
+      "annual_qty": 270000,
+      "vendor_item_code": null,
+      "vendor_description": "5-ply plain (RSC)",
+      "match_status": "probable",
+      "match_basis": "group_statement",
+      "raw_price": 46,
+      "raw_price_text": "Rs 46/kg",
+      "raw_currency": "INR",
+      "raw_uom": "per kg",
+      "pieces_per_quoted_unit": null,
+      "fx_rate_to_inr": 1,
+      "fx_source": null,
+      "normalized_unit_price_inr": 29.99,
+      "normalized_currency": "INR",
+      "normalized_uom": "piece",
+      "normalization_method": "Rate per kg × RFx reference weight 652 g",
+      "freight": {
+        "included": false,
+        "basis": "extra_unspecified",
+        "amount": null,
+        "currency": "INR",
+        "notes": "Freight extra.",
+        "evidence": [
+          {
+            "source_file": "Godavari_Packaging_email_response.txt",
+            "location": "email line 23",
+            "page": null,
+            "source_text": "Freight extra."
+          }
+        ]
+      },
+      "landed_unit_price_inr": null,
+      "evaluation_unit_price_inr": 31.49,
+      "evaluation_basis": "normalized + 5% freight loading (stage1/buyer/buyer_requirements.json BR-10)",
+      "historical_price_inr": 31.3,
+      "variance_vs_historical_pct": 0.6,
+      "moq": null,
+      "moq_exceeds_monthly_calloff": null,
+      "lead_time_days": 10,
+      "tax": {
+        "treatment": "GST extra.",
+        "evidence": [
+          {
+            "source_file": "Godavari_Packaging_email_response.txt",
+            "location": "email line 11",
+            "page": null,
+            "source_text": "GST extra."
+          }
+        ]
+      },
+      "price_validity_until": "2026-12-31",
+      "remarks": null,
+      "spec_deviation": null,
+      "candidate_quotes": [
+        {
+          "quote_index": 5,
+          "raw_price": 46,
+          "raw_price_text": "Rs 46/kg",
+          "normalized_unit_price_inr": 29.99,
+          "evidence": {
+            "source_file": "Godavari_Packaging_email_response.txt",
+            "location": "email line 14",
+            "page": null,
+            "source_text": "5-ply plain: Rs 46/kg (RSC and the big HSC box)."
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 14",
+          "page": null,
+          "source_text": "5-ply plain: Rs 46/kg (RSC and the big HSC box)."
+        }
+      ],
+      "review_status": "accepted",
+      "review_reasons": [],
+      "resolution": null,
+      "comparable": true
+    },
+    {
+      "rfx_line_id": "CP-010",
+      "rfx_sku": "CP-010",
+      "rfx_description": "5-Ply RSC Shipper – 2 Colour Printed",
+      "delivery_plant": "BLR",
+      "annual_qty": 240000,
+      "vendor_item_code": null,
+      "vendor_description": "2 colour 5-ply shampoo box (CP-010)",
+      "match_status": "exact",
+      "match_basis": "explicit_code",
+      "raw_price": 46,
+      "raw_price_text": "Rs 46/kg + Rs 5/kg",
+      "raw_currency": "INR",
+      "raw_uom": "per kg",
+      "pieces_per_quoted_unit": null,
+      "fx_rate_to_inr": 1,
+      "fx_source": null,
+      "normalized_unit_price_inr": 32.59,
+      "normalized_currency": "INR",
+      "normalized_uom": "piece",
+      "normalization_method": "Rate per kg (46 + 5 add-on) × RFx reference weight 639 g",
+      "freight": {
+        "included": false,
+        "basis": "extra_unspecified",
+        "amount": null,
+        "currency": "INR",
+        "notes": "Freight extra.",
+        "evidence": [
+          {
+            "source_file": "Godavari_Packaging_email_response.txt",
+            "location": "email line 23",
+            "page": null,
+            "source_text": "Freight extra."
+          }
+        ]
+      },
+      "landed_unit_price_inr": null,
+      "evaluation_unit_price_inr": 34.22,
+      "evaluation_basis": "normalized + 5% freight loading (stage1/buyer/buyer_requirements.json BR-10)",
+      "historical_price_inr": 34.51,
+      "variance_vs_historical_pct": -0.8,
+      "moq": 5000,
+      "moq_exceeds_monthly_calloff": false,
+      "lead_time_days": 10,
+      "tax": {
+        "treatment": "GST extra.",
+        "evidence": [
+          {
+            "source_file": "Godavari_Packaging_email_response.txt",
+            "location": "email line 11",
+            "page": null,
+            "source_text": "GST extra."
+          }
+        ]
+      },
+      "price_validity_until": "2026-12-31",
+      "remarks": null,
+      "spec_deviation": null,
+      "candidate_quotes": [
+        {
+          "quote_index": 11,
+          "raw_price": 46,
+          "raw_price_text": "Rs 46/kg + Rs 5/kg",
+          "normalized_unit_price_inr": 32.59,
+          "evidence": {
+            "source_file": "Godavari_Packaging_email_response.txt",
+            "location": "email line 15",
+            "page": null,
+            "source_text": "Printed ones Rs 5/kg extra over plain, up to 2 colours - so the 1 & 2 colour 3-ply boxes and the 2 colour 5-ply shampoo box (CP-010)."
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 15",
+          "page": null,
+          "source_text": "Printed ones Rs 5/kg extra over plain, up to 2 colours - so the 1 & 2 colour 3-ply boxes and the 2 colour 5-ply shampoo box (CP-010)."
+        }
+      ],
+      "review_status": "accepted",
+      "review_reasons": [],
+      "resolution": null,
+      "comparable": true
+    },
+    {
+      "rfx_line_id": "CP-013",
+      "rfx_sku": "CP-013",
+      "rfx_description": "5-Ply HSC Box – Plain Brown",
+      "delivery_plant": "PNQ",
+      "annual_qty": 60000,
+      "vendor_item_code": null,
+      "vendor_description": "5-ply plain (big HSC box)",
+      "match_status": "probable",
+      "match_basis": "group_statement",
+      "raw_price": 46,
+      "raw_price_text": "Rs 46/kg",
+      "raw_currency": "INR",
+      "raw_uom": "per kg",
+      "pieces_per_quoted_unit": null,
+      "fx_rate_to_inr": 1,
+      "fx_source": null,
+      "normalized_unit_price_inr": 38.96,
+      "normalized_currency": "INR",
+      "normalized_uom": "piece",
+      "normalization_method": "Rate per kg × RFx reference weight 847 g",
+      "freight": {
+        "included": false,
+        "basis": "extra_unspecified",
+        "amount": null,
+        "currency": "INR",
+        "notes": "Freight extra.",
+        "evidence": [
+          {
+            "source_file": "Godavari_Packaging_email_response.txt",
+            "location": "email line 23",
+            "page": null,
+            "source_text": "Freight extra."
+          }
+        ]
+      },
+      "landed_unit_price_inr": null,
+      "evaluation_unit_price_inr": 40.91,
+      "evaluation_basis": "normalized + 5% freight loading (stage1/buyer/buyer_requirements.json BR-10)",
+      "historical_price_inr": 40.66,
+      "variance_vs_historical_pct": 0.6,
+      "moq": null,
+      "moq_exceeds_monthly_calloff": null,
+      "lead_time_days": 10,
+      "tax": {
+        "treatment": "GST extra.",
+        "evidence": [
+          {
+            "source_file": "Godavari_Packaging_email_response.txt",
+            "location": "email line 11",
+            "page": null,
+            "source_text": "GST extra."
+          }
+        ]
+      },
+      "price_validity_until": "2026-12-31",
+      "remarks": null,
+      "spec_deviation": null,
+      "candidate_quotes": [
+        {
+          "quote_index": 6,
+          "raw_price": 46,
+          "raw_price_text": "Rs 46/kg",
+          "normalized_unit_price_inr": 38.96,
+          "evidence": {
+            "source_file": "Godavari_Packaging_email_response.txt",
+            "location": "email line 14",
+            "page": null,
+            "source_text": "5-ply plain: Rs 46/kg (RSC and the big HSC box)."
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 14",
+          "page": null,
+          "source_text": "5-ply plain: Rs 46/kg (RSC and the big HSC box)."
+        }
+      ],
+      "review_status": "accepted",
+      "review_reasons": [],
+      "resolution": null,
+      "comparable": true
+    },
+    {
+      "rfx_line_id": "CP-014",
+      "rfx_sku": "CP-014",
+      "rfx_description": "5-Ply RSC – Heavy Duty BF22, Plain",
+      "delivery_plant": "BLR",
+      "annual_qty": 100000,
+      "vendor_item_code": null,
+      "vendor_description": "heavy duty BF22 jam box",
+      "match_status": "probable",
+      "match_basis": "description_match",
+      "raw_price": 46,
+      "raw_price_text": "Rs 46/kg + Rs 3/kg",
+      "raw_currency": "INR",
+      "raw_uom": "per kg",
+      "pieces_per_quoted_unit": null,
+      "fx_rate_to_inr": 1,
+      "fx_source": null,
+      "normalized_unit_price_inr": 42.92,
+      "normalized_currency": "INR",
+      "normalized_uom": "piece",
+      "normalization_method": "Rate per kg (46 + 3 add-on) × RFx reference weight 876 g",
+      "freight": {
+        "included": false,
+        "basis": "extra_unspecified",
+        "amount": null,
+        "currency": "INR",
+        "notes": "Freight extra.",
+        "evidence": [
+          {
+            "source_file": "Godavari_Packaging_email_response.txt",
+            "location": "email line 23",
+            "page": null,
+            "source_text": "Freight extra."
+          }
+        ]
+      },
+      "landed_unit_price_inr": null,
+      "evaluation_unit_price_inr": 45.07,
+      "evaluation_basis": "normalized + 5% freight loading (stage1/buyer/buyer_requirements.json BR-10)",
+      "historical_price_inr": 44.68,
+      "variance_vs_historical_pct": 0.9,
+      "moq": null,
+      "moq_exceeds_monthly_calloff": null,
+      "lead_time_days": 10,
+      "tax": {
+        "treatment": "GST extra.",
+        "evidence": [
+          {
+            "source_file": "Godavari_Packaging_email_response.txt",
+            "location": "email line 11",
+            "page": null,
+            "source_text": "GST extra."
+          }
+        ]
+      },
+      "price_validity_until": "2026-12-31",
+      "remarks": null,
+      "spec_deviation": null,
+      "candidate_quotes": [
+        {
+          "quote_index": 7,
+          "raw_price": 46,
+          "raw_price_text": "Rs 46/kg + Rs 3/kg",
+          "normalized_unit_price_inr": 42.92,
+          "evidence": {
+            "source_file": "Godavari_Packaging_email_response.txt",
+            "location": "email line 14",
+            "page": null,
+            "source_text": "5-ply plain: Rs 46/kg (RSC and the big HSC box). For the heavy duty BF22 jam box add Rs 3/kg."
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 14",
+          "page": null,
+          "source_text": "5-ply plain: Rs 46/kg (RSC and the big HSC box). For the heavy duty BF22 jam box add Rs 3/kg."
+        }
+      ],
+      "review_status": "accepted",
+      "review_reasons": [],
+      "resolution": null,
+      "comparable": true
+    },
+    {
+      "rfx_line_id": "CP-016",
+      "rfx_sku": "CP-016",
+      "rfx_description": "Die-cut Tray with Lid – 2C Flexo",
+      "delivery_plant": "HYD",
+      "annual_qty": 250000,
+      "vendor_item_code": null,
+      "vendor_description": "trays and inserts we are already supplying to your Hyderabad plant",
+      "match_status": "probable",
+      "match_basis": "reference",
+      "raw_price": null,
+      "raw_price_text": "same as last year's pricing",
+      "raw_currency": "INR",
+      "raw_uom": "piece",
+      "pieces_per_quoted_unit": 1,
+      "fx_rate_to_inr": 1,
+      "fx_source": null,
+      "normalized_unit_price_inr": 12.1,
+      "normalized_currency": "INR",
+      "normalized_uom": "piece",
+      "normalization_method": "Referenced previous price: FY25-26 PO price for CP-016 from historical_reference_prices.csv (vendor was last year's supplier)",
+      "freight": {
+        "included": false,
+        "basis": "extra_unspecified",
+        "amount": null,
+        "currency": "INR",
+        "notes": "Freight extra.",
+        "evidence": [
+          {
+            "source_file": "Godavari_Packaging_email_response.txt",
+            "location": "email line 23",
+            "page": null,
+            "source_text": "Freight extra."
+          }
+        ]
+      },
+      "landed_unit_price_inr": null,
+      "evaluation_unit_price_inr": 12.71,
+      "evaluation_basis": "normalized + 5% freight loading (stage1/buyer/buyer_requirements.json BR-10)",
+      "historical_price_inr": 12.1,
+      "variance_vs_historical_pct": 5,
+      "moq": null,
+      "moq_exceeds_monthly_calloff": null,
+      "lead_time_days": 10,
+      "tax": {
+        "treatment": "GST extra.",
+        "evidence": [
+          {
+            "source_file": "Godavari_Packaging_email_response.txt",
+            "location": "email line 11",
+            "page": null,
+            "source_text": "GST extra."
+          }
+        ]
+      },
+      "price_validity_until": "2026-12-31",
+      "remarks": null,
+      "spec_deviation": null,
+      "candidate_quotes": [
+        {
+          "quote_index": 17,
+          "raw_price": null,
+          "raw_price_text": "same as last year's pricing",
+          "normalized_unit_price_inr": 12.1,
+          "evidence": {
+            "source_file": "Godavari_Packaging_email_response.txt",
+            "location": "email line 18",
+            "page": null,
+            "source_text": "For the trays and inserts we are already supplying to your Hyderabad plant, remaining items same as last year's pricing."
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 18",
+          "page": null,
+          "source_text": "For the trays and inserts we are already supplying to your Hyderabad plant, remaining items same as last year's pricing."
+        }
+      ],
+      "review_status": "needs_review",
+      "review_reasons": [
+        "referenced_external_price",
+        "ambiguous_text"
+      ],
+      "resolution": null,
+      "comparable": true
+    },
+    {
+      "rfx_line_id": "CP-017",
+      "rfx_sku": "CP-017",
+      "rfx_description": "Shelf-ready Display Tray with Tear-off Front – 2C Flexo",
+      "delivery_plant": "HYD",
+      "annual_qty": 160000,
+      "vendor_item_code": null,
+      "vendor_description": "trays and inserts we are already supplying to your Hyderabad plant",
+      "match_status": "probable",
+      "match_basis": "reference",
+      "raw_price": null,
+      "raw_price_text": "same as last year's pricing",
+      "raw_currency": "INR",
+      "raw_uom": "piece",
+      "pieces_per_quoted_unit": 1,
+      "fx_rate_to_inr": 1,
+      "fx_source": null,
+      "normalized_unit_price_inr": 10.37,
+      "normalized_currency": "INR",
+      "normalized_uom": "piece",
+      "normalization_method": "Referenced previous price: FY25-26 PO price for CP-017 from historical_reference_prices.csv (vendor was last year's supplier)",
+      "freight": {
+        "included": false,
+        "basis": "extra_unspecified",
+        "amount": null,
+        "currency": "INR",
+        "notes": "Freight extra.",
+        "evidence": [
+          {
+            "source_file": "Godavari_Packaging_email_response.txt",
+            "location": "email line 23",
+            "page": null,
+            "source_text": "Freight extra."
+          }
+        ]
+      },
+      "landed_unit_price_inr": null,
+      "evaluation_unit_price_inr": 10.89,
+      "evaluation_basis": "normalized + 5% freight loading (stage1/buyer/buyer_requirements.json BR-10)",
+      "historical_price_inr": 10.37,
+      "variance_vs_historical_pct": 5,
+      "moq": null,
+      "moq_exceeds_monthly_calloff": null,
+      "lead_time_days": 10,
+      "tax": {
+        "treatment": "GST extra.",
+        "evidence": [
+          {
+            "source_file": "Godavari_Packaging_email_response.txt",
+            "location": "email line 11",
+            "page": null,
+            "source_text": "GST extra."
+          }
+        ]
+      },
+      "price_validity_until": "2026-12-31",
+      "remarks": null,
+      "spec_deviation": null,
+      "candidate_quotes": [
+        {
+          "quote_index": 18,
+          "raw_price": null,
+          "raw_price_text": "same as last year's pricing",
+          "normalized_unit_price_inr": 10.37,
+          "evidence": {
+            "source_file": "Godavari_Packaging_email_response.txt",
+            "location": "email line 18",
+            "page": null,
+            "source_text": "For the trays and inserts we are already supplying to your Hyderabad plant, remaining items same as last year's pricing."
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 18",
+          "page": null,
+          "source_text": "For the trays and inserts we are already supplying to your Hyderabad plant, remaining items same as last year's pricing."
+        }
+      ],
+      "review_status": "needs_review",
+      "review_reasons": [
+        "referenced_external_price",
+        "ambiguous_text"
+      ],
+      "resolution": null,
+      "comparable": true
+    },
+    {
+      "rfx_line_id": "CP-020",
+      "rfx_sku": "CP-020",
+      "rfx_description": "3-Ply Partition – 12 Cell (3 x 4), for CP-007",
+      "delivery_plant": "BLR",
+      "annual_qty": 210000,
+      "vendor_item_code": null,
+      "vendor_description": "Partitions and layer pads (CP-020 to CP-024)",
+      "match_status": "exact",
+      "match_basis": "explicit_code",
+      "raw_price": 41,
+      "raw_price_text": "Rs 41/kg",
+      "raw_currency": "INR",
+      "raw_uom": "per kg",
+      "pieces_per_quoted_unit": null,
+      "fx_rate_to_inr": 1,
+      "fx_source": null,
+      "normalized_unit_price_inr": 8.49,
+      "normalized_currency": "INR",
+      "normalized_uom": "set",
+      "normalization_method": "Rate per kg × RFx reference weight 207 g",
+      "freight": {
+        "included": false,
+        "basis": "extra_unspecified",
+        "amount": null,
+        "currency": "INR",
+        "notes": "Freight extra.",
+        "evidence": [
+          {
+            "source_file": "Godavari_Packaging_email_response.txt",
+            "location": "email line 23",
+            "page": null,
+            "source_text": "Freight extra."
+          }
+        ]
+      },
+      "landed_unit_price_inr": null,
+      "evaluation_unit_price_inr": 8.91,
+      "evaluation_basis": "normalized + 5% freight loading (stage1/buyer/buyer_requirements.json BR-10)",
+      "historical_price_inr": 9.11,
+      "variance_vs_historical_pct": -2.2,
+      "moq": null,
+      "moq_exceeds_monthly_calloff": null,
+      "lead_time_days": 10,
+      "tax": {
+        "treatment": "GST extra.",
+        "evidence": [
+          {
+            "source_file": "Godavari_Packaging_email_response.txt",
+            "location": "email line 11",
+            "page": null,
+            "source_text": "GST extra."
+          }
+        ]
+      },
+      "price_validity_until": "2026-12-31",
+      "remarks": null,
+      "spec_deviation": null,
+      "candidate_quotes": [
+        {
+          "quote_index": 12,
+          "raw_price": 41,
+          "raw_price_text": "Rs 41/kg",
+          "normalized_unit_price_inr": 8.49,
+          "evidence": {
+            "source_file": "Godavari_Packaging_email_response.txt",
+            "location": "email line 16",
+            "page": null,
+            "source_text": "Partitions and layer pads (CP-020 to CP-024): Rs 41/kg."
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 16",
+          "page": null,
+          "source_text": "Partitions and layer pads (CP-020 to CP-024): Rs 41/kg."
+        }
+      ],
+      "review_status": "accepted",
+      "review_reasons": [],
+      "resolution": null,
+      "comparable": true
+    },
+    {
+      "rfx_line_id": "CP-021",
+      "rfx_sku": "CP-021",
+      "rfx_description": "3-Ply Partition – 24 Cell (4 x 6)",
+      "delivery_plant": "PNQ",
+      "annual_qty": 120000,
+      "vendor_item_code": null,
+      "vendor_description": "Partitions and layer pads (CP-020 to CP-024)",
+      "match_status": "exact",
+      "match_basis": "explicit_code",
+      "raw_price": 41,
+      "raw_price_text": "Rs 41/kg",
+      "raw_currency": "INR",
+      "raw_uom": "per kg",
+      "pieces_per_quoted_unit": null,
+      "fx_rate_to_inr": 1,
+      "fx_source": null,
+      "normalized_unit_price_inr": 10.54,
+      "normalized_currency": "INR",
+      "normalized_uom": "set",
+      "normalization_method": "Rate per kg × RFx reference weight 257 g",
+      "freight": {
+        "included": false,
+        "basis": "extra_unspecified",
+        "amount": null,
+        "currency": "INR",
+        "notes": "Freight extra.",
+        "evidence": [
+          {
+            "source_file": "Godavari_Packaging_email_response.txt",
+            "location": "email line 23",
+            "page": null,
+            "source_text": "Freight extra."
+          }
+        ]
+      },
+      "landed_unit_price_inr": null,
+      "evaluation_unit_price_inr": 11.07,
+      "evaluation_basis": "normalized + 5% freight loading (stage1/buyer/buyer_requirements.json BR-10)",
+      "historical_price_inr": 11.31,
+      "variance_vs_historical_pct": -2.1,
+      "moq": null,
+      "moq_exceeds_monthly_calloff": null,
+      "lead_time_days": 10,
+      "tax": {
+        "treatment": "GST extra.",
+        "evidence": [
+          {
+            "source_file": "Godavari_Packaging_email_response.txt",
+            "location": "email line 11",
+            "page": null,
+            "source_text": "GST extra."
+          }
+        ]
+      },
+      "price_validity_until": "2026-12-31",
+      "remarks": null,
+      "spec_deviation": null,
+      "candidate_quotes": [
+        {
+          "quote_index": 13,
+          "raw_price": 41,
+          "raw_price_text": "Rs 41/kg",
+          "normalized_unit_price_inr": 10.54,
+          "evidence": {
+            "source_file": "Godavari_Packaging_email_response.txt",
+            "location": "email line 16",
+            "page": null,
+            "source_text": "Partitions and layer pads (CP-020 to CP-024): Rs 41/kg."
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 16",
+          "page": null,
+          "source_text": "Partitions and layer pads (CP-020 to CP-024): Rs 41/kg."
+        }
+      ],
+      "review_status": "accepted",
+      "review_reasons": [],
+      "resolution": null,
+      "comparable": true
+    },
+    {
+      "rfx_line_id": "CP-022",
+      "rfx_sku": "CP-022",
+      "rfx_description": "5-Ply Partition – 6 Cell (2 x 3) Heavy, for CP-009",
+      "delivery_plant": "HYD",
+      "annual_qty": 80000,
+      "vendor_item_code": null,
+      "vendor_description": "Partitions and layer pads (CP-020 to CP-024)",
+      "match_status": "exact",
+      "match_basis": "explicit_code",
+      "raw_price": 41,
+      "raw_price_text": "Rs 41/kg",
+      "raw_currency": "INR",
+      "raw_uom": "per kg",
+      "pieces_per_quoted_unit": null,
+      "fx_rate_to_inr": 1,
+      "fx_source": null,
+      "normalized_unit_price_inr": 8.45,
+      "normalized_currency": "INR",
+      "normalized_uom": "set",
+      "normalization_method": "Rate per kg × RFx reference weight 206 g",
+      "freight": {
+        "included": false,
+        "basis": "extra_unspecified",
+        "amount": null,
+        "currency": "INR",
+        "notes": "Freight extra.",
+        "evidence": [
+          {
+            "source_file": "Godavari_Packaging_email_response.txt",
+            "location": "email line 23",
+            "page": null,
+            "source_text": "Freight extra."
+          }
+        ]
+      },
+      "landed_unit_price_inr": null,
+      "evaluation_unit_price_inr": 8.87,
+      "evaluation_basis": "normalized + 5% freight loading (stage1/buyer/buyer_requirements.json BR-10)",
+      "historical_price_inr": 9.06,
+      "variance_vs_historical_pct": -2.1,
+      "moq": null,
+      "moq_exceeds_monthly_calloff": null,
+      "lead_time_days": 10,
+      "tax": {
+        "treatment": "GST extra.",
+        "evidence": [
+          {
+            "source_file": "Godavari_Packaging_email_response.txt",
+            "location": "email line 11",
+            "page": null,
+            "source_text": "GST extra."
+          }
+        ]
+      },
+      "price_validity_until": "2026-12-31",
+      "remarks": null,
+      "spec_deviation": null,
+      "candidate_quotes": [
+        {
+          "quote_index": 14,
+          "raw_price": 41,
+          "raw_price_text": "Rs 41/kg",
+          "normalized_unit_price_inr": 8.45,
+          "evidence": {
+            "source_file": "Godavari_Packaging_email_response.txt",
+            "location": "email line 16",
+            "page": null,
+            "source_text": "Partitions and layer pads (CP-020 to CP-024): Rs 41/kg."
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 16",
+          "page": null,
+          "source_text": "Partitions and layer pads (CP-020 to CP-024): Rs 41/kg."
+        }
+      ],
+      "review_status": "accepted",
+      "review_reasons": [],
+      "resolution": null,
+      "comparable": true
+    },
+    {
+      "rfx_line_id": "CP-023",
+      "rfx_sku": "CP-023",
+      "rfx_description": "3-Ply Layer Pad 440 x 340 mm",
+      "delivery_plant": "BLR",
+      "annual_qty": 420000,
+      "vendor_item_code": null,
+      "vendor_description": "Partitions and layer pads (CP-020 to CP-024)",
+      "match_status": "exact",
+      "match_basis": "explicit_code",
+      "raw_price": 41,
+      "raw_price_text": "Rs 41/kg",
+      "raw_currency": "INR",
+      "raw_uom": "per kg",
+      "pieces_per_quoted_unit": null,
+      "fx_rate_to_inr": 1,
+      "fx_source": null,
+      "normalized_unit_price_inr": 2.3,
+      "normalized_currency": "INR",
+      "normalized_uom": "piece",
+      "normalization_method": "Rate per kg × RFx reference weight 56 g",
+      "freight": {
+        "included": false,
+        "basis": "extra_unspecified",
+        "amount": null,
+        "currency": "INR",
+        "notes": "Freight extra.",
+        "evidence": [
+          {
+            "source_file": "Godavari_Packaging_email_response.txt",
+            "location": "email line 23",
+            "page": null,
+            "source_text": "Freight extra."
+          }
+        ]
+      },
+      "landed_unit_price_inr": null,
+      "evaluation_unit_price_inr": 2.42,
+      "evaluation_basis": "normalized + 5% freight loading (stage1/buyer/buyer_requirements.json BR-10)",
+      "historical_price_inr": 2.35,
+      "variance_vs_historical_pct": 3,
+      "moq": null,
+      "moq_exceeds_monthly_calloff": null,
+      "lead_time_days": 10,
+      "tax": {
+        "treatment": "GST extra.",
+        "evidence": [
+          {
+            "source_file": "Godavari_Packaging_email_response.txt",
+            "location": "email line 11",
+            "page": null,
+            "source_text": "GST extra."
+          }
+        ]
+      },
+      "price_validity_until": "2026-12-31",
+      "remarks": null,
+      "spec_deviation": null,
+      "candidate_quotes": [
+        {
+          "quote_index": 15,
+          "raw_price": 41,
+          "raw_price_text": "Rs 41/kg",
+          "normalized_unit_price_inr": 2.3,
+          "evidence": {
+            "source_file": "Godavari_Packaging_email_response.txt",
+            "location": "email line 16",
+            "page": null,
+            "source_text": "Partitions and layer pads (CP-020 to CP-024): Rs 41/kg."
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 16",
+          "page": null,
+          "source_text": "Partitions and layer pads (CP-020 to CP-024): Rs 41/kg."
+        }
+      ],
+      "review_status": "accepted",
+      "review_reasons": [],
+      "resolution": null,
+      "comparable": true
+    },
+    {
+      "rfx_line_id": "CP-024",
+      "rfx_sku": "CP-024",
+      "rfx_description": "5-Ply Layer Pad 590 x 390 mm",
+      "delivery_plant": "PNQ",
+      "annual_qty": 150000,
+      "vendor_item_code": null,
+      "vendor_description": "Partitions and layer pads (CP-020 to CP-024)",
+      "match_status": "exact",
+      "match_basis": "explicit_code",
+      "raw_price": 41,
+      "raw_price_text": "Rs 41/kg",
+      "raw_currency": "INR",
+      "raw_uom": "per kg",
+      "pieces_per_quoted_unit": null,
+      "fx_rate_to_inr": 1,
+      "fx_source": null,
+      "normalized_unit_price_inr": 7.13,
+      "normalized_currency": "INR",
+      "normalized_uom": "piece",
+      "normalization_method": "Rate per kg × RFx reference weight 174 g",
+      "freight": {
+        "included": false,
+        "basis": "extra_unspecified",
+        "amount": null,
+        "currency": "INR",
+        "notes": "Freight extra.",
+        "evidence": [
+          {
+            "source_file": "Godavari_Packaging_email_response.txt",
+            "location": "email line 23",
+            "page": null,
+            "source_text": "Freight extra."
+          }
+        ]
+      },
+      "landed_unit_price_inr": null,
+      "evaluation_unit_price_inr": 7.49,
+      "evaluation_basis": "normalized + 5% freight loading (stage1/buyer/buyer_requirements.json BR-10)",
+      "historical_price_inr": 7.31,
+      "variance_vs_historical_pct": 2.5,
+      "moq": null,
+      "moq_exceeds_monthly_calloff": null,
+      "lead_time_days": 10,
+      "tax": {
+        "treatment": "GST extra.",
+        "evidence": [
+          {
+            "source_file": "Godavari_Packaging_email_response.txt",
+            "location": "email line 11",
+            "page": null,
+            "source_text": "GST extra."
+          }
+        ]
+      },
+      "price_validity_until": "2026-12-31",
+      "remarks": null,
+      "spec_deviation": null,
+      "candidate_quotes": [
+        {
+          "quote_index": 16,
+          "raw_price": 41,
+          "raw_price_text": "Rs 41/kg",
+          "normalized_unit_price_inr": 7.13,
+          "evidence": {
+            "source_file": "Godavari_Packaging_email_response.txt",
+            "location": "email line 16",
+            "page": null,
+            "source_text": "Partitions and layer pads (CP-020 to CP-024): Rs 41/kg."
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 16",
+          "page": null,
+          "source_text": "Partitions and layer pads (CP-020 to CP-024): Rs 41/kg."
+        }
+      ],
+      "review_status": "accepted",
+      "review_reasons": [],
+      "resolution": null,
+      "comparable": true
+    },
+    {
+      "rfx_line_id": "CP-025",
+      "rfx_sku": "CP-025",
+      "rfx_description": "Die-cut Fitment Insert – 3-Ply E-flute, for CP-016",
+      "delivery_plant": "HYD",
+      "annual_qty": 250000,
+      "vendor_item_code": null,
+      "vendor_description": "trays and inserts we are already supplying to your Hyderabad plant",
+      "match_status": "probable",
+      "match_basis": "reference",
+      "raw_price": null,
+      "raw_price_text": "same as last year's pricing",
+      "raw_currency": "INR",
+      "raw_uom": "piece",
+      "pieces_per_quoted_unit": 1,
+      "fx_rate_to_inr": 1,
+      "fx_source": null,
+      "normalized_unit_price_inr": 3.9,
+      "normalized_currency": "INR",
+      "normalized_uom": "piece",
+      "normalization_method": "Referenced previous price: FY25-26 PO price for CP-025 from historical_reference_prices.csv (vendor was last year's supplier)",
+      "freight": {
+        "included": false,
+        "basis": "extra_unspecified",
+        "amount": null,
+        "currency": "INR",
+        "notes": "Freight extra.",
+        "evidence": [
+          {
+            "source_file": "Godavari_Packaging_email_response.txt",
+            "location": "email line 23",
+            "page": null,
+            "source_text": "Freight extra."
+          }
+        ]
+      },
+      "landed_unit_price_inr": null,
+      "evaluation_unit_price_inr": 4.1,
+      "evaluation_basis": "normalized + 5% freight loading (stage1/buyer/buyer_requirements.json BR-10)",
+      "historical_price_inr": 3.9,
+      "variance_vs_historical_pct": 5.1,
+      "moq": null,
+      "moq_exceeds_monthly_calloff": null,
+      "lead_time_days": 10,
+      "tax": {
+        "treatment": "GST extra.",
+        "evidence": [
+          {
+            "source_file": "Godavari_Packaging_email_response.txt",
+            "location": "email line 11",
+            "page": null,
+            "source_text": "GST extra."
+          }
+        ]
+      },
+      "price_validity_until": "2026-12-31",
+      "remarks": null,
+      "spec_deviation": null,
+      "candidate_quotes": [
+        {
+          "quote_index": 19,
+          "raw_price": null,
+          "raw_price_text": "same as last year's pricing",
+          "normalized_unit_price_inr": 3.9,
+          "evidence": {
+            "source_file": "Godavari_Packaging_email_response.txt",
+            "location": "email line 18",
+            "page": null,
+            "source_text": "For the trays and inserts we are already supplying to your Hyderabad plant, remaining items same as last year's pricing."
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 18",
+          "page": null,
+          "source_text": "For the trays and inserts we are already supplying to your Hyderabad plant, remaining items same as last year's pricing."
+        }
+      ],
+      "review_status": "needs_review",
+      "review_reasons": [
+        "referenced_external_price",
+        "ambiguous_text"
+      ],
+      "resolution": null,
+      "comparable": true
+    }
+  ],
+  "unmatched_rows": [],
+  "questionnaire_answers": [
+    {
+      "qid": "Q01",
+      "topic": "ISO 9001",
+      "mandatory": true,
+      "answer_text": "Yes, ISO 9001:2015, cert valid till Aug 2027 (copy attached).",
+      "compliance": "full",
+      "points": 10,
+      "max_points": 10,
+      "mandatory_pass": true,
+      "rationale": "The vendor is ISO 9001:2015 certified with a valid date provided.",
+      "evidence": {
+        "source_file": "Godavari_Packaging_email_response.txt",
+        "location": "email line 30",
+        "page": null,
+        "source_text": "1. Yes, ISO 9001:2015, cert valid till Aug 2027 (copy attached)."
+      },
+      "review_status": "accepted"
+    },
+    {
+      "qid": "Q02",
+      "topic": "FSC certification",
+      "mandatory": false,
+      "answer_text": "No FSC.",
+      "compliance": "none",
+      "points": 0,
+      "max_points": 6,
+      "mandatory_pass": null,
+      "rationale": "The vendor explicitly states they do not have FSC certification.",
+      "evidence": {
+        "source_file": "Godavari_Packaging_email_response.txt",
+        "location": "email line 31",
+        "page": null,
+        "source_text": "2. No FSC."
+      },
+      "review_status": "accepted"
+    },
+    {
+      "qid": "Q03",
+      "topic": "Recycled content",
+      "mandatory": false,
+      "answer_text": "Yes, 70%+ recycled on all our grades, declaration can be given.",
+      "compliance": "full",
+      "points": 6,
+      "max_points": 6,
+      "mandatory_pass": null,
+      "rationale": "Meets the 70% recycled content requirement for domestic grades and provides declarations.",
+      "evidence": {
+        "source_file": "Godavari_Packaging_email_response.txt",
+        "location": "email line 32",
+        "page": null,
+        "source_text": "3. Yes, 70%+ recycled on all our grades, declaration can be given."
+      },
+      "review_status": "accepted"
+    },
+    {
+      "qid": "Q04",
+      "topic": "Plant capacity",
+      "mandatory": true,
+      "answer_text": "9,000 MT/yr, running about 70%.",
+      "compliance": "full",
+      "points": 10,
+      "max_points": 10,
+      "mandatory_pass": true,
+      "rationale": "Installed capacity of 9,000 MTPA exceeds the 6,000 MTPA mandatory minimum.",
+      "evidence": {
+        "source_file": "Godavari_Packaging_email_response.txt",
+        "location": "email line 33",
+        "page": null,
+        "source_text": "4. 9,000 MT/yr, running about 70%."
+      },
+      "review_status": "accepted"
+    },
+    {
+      "qid": "Q05",
+      "topic": "Quality inspection",
+      "mandatory": true,
+      "answer_text": "In-house lab – GSM, BS, ECT, BCT, moisture & Cobb every lot, COA sent with each vehicle.",
+      "compliance": "full",
+      "points": 10,
+      "max_points": 10,
+      "mandatory_pass": true,
+      "rationale": "The vendor performs all required tests in-house and issues COAs per lot.",
+      "evidence": {
+        "source_file": "Godavari_Packaging_email_response.txt",
+        "location": "email line 34",
+        "page": null,
+        "source_text": "5. In-house lab – GSM, BS, ECT, BCT, moisture & Cobb every lot, COA sent with each vehicle."
+      },
+      "review_status": "accepted"
+    },
+    {
+      "qid": "Q06",
+      "topic": "Traceability",
+      "mandatory": true,
+      "answer_text": "Lot code stamped on every box.",
+      "compliance": "full",
+      "points": 8,
+      "max_points": 8,
+      "mandatory_pass": true,
+      "rationale": "Every box is marked with a lot code, meeting the mandatory traceability requirement.",
+      "evidence": {
+        "source_file": "Godavari_Packaging_email_response.txt",
+        "location": "email line 35",
+        "page": null,
+        "source_text": "6. Lot code stamped on every box."
+      },
+      "review_status": "accepted"
+    },
+    {
+      "qid": "Q07",
+      "topic": "Lead time",
+      "mandatory": false,
+      "answer_text": "Lead time 10 days.",
+      "compliance": "full",
+      "points": 6,
+      "max_points": 6,
+      "mandatory_pass": null,
+      "rationale": "Lead time of 10 days is within the target of <= 14 days.",
+      "evidence": {
+        "source_file": "Godavari_Packaging_email_response.txt",
+        "location": "email line 36",
+        "page": null,
+        "source_text": "7. Lead time 10 days."
+      },
+      "review_status": "accepted"
+    },
+    {
+      "qid": "Q08",
+      "topic": "Complaint resolution SLA",
+      "mandatory": false,
+      "answer_text": "We respond within 48 hrs, CAPA in 7 days.",
+      "compliance": "partial",
+      "points": 3,
+      "max_points": 6,
+      "mandatory_pass": null,
+      "rationale": "Acknowledgement within 48 hours is slower than the 24-hour target.",
+      "evidence": {
+        "source_file": "Godavari_Packaging_email_response.txt",
+        "location": "email line 37",
+        "page": null,
+        "source_text": "8. We respond within 48 hrs, CAPA in 7 days."
+      },
+      "review_status": "accepted"
+    },
+    {
+      "qid": "Q09",
+      "topic": "Production locations",
+      "mandatory": false,
+      "answer_text": "Bollaram & Medchal, both within 40 km of your Patancheru plant.",
+      "compliance": "partial",
+      "points": 3,
+      "max_points": 8,
+      "mandatory_pass": null,
+      "rationale": "The vendor only mentions proximity to the Hyderabad (Patancheru) plant, covering 1 of 3 buyer locations.",
+      "evidence": {
+        "source_file": "Godavari_Packaging_email_response.txt",
+        "location": "email line 38",
+        "page": null,
+        "source_text": "9. Bollaram & Medchal, both within 40 km of your Patancheru plant."
+      },
+      "review_status": "accepted"
+    },
+    {
+      "qid": "Q10",
+      "topic": "Business continuity",
+      "mandatory": true,
+      "answer_text": "Yes – Medchal unit as backup, 20 days paper stock, buying from 3 mills.",
+      "compliance": "full",
+      "points": 8,
+      "max_points": 8,
+      "mandatory_pass": true,
+      "rationale": "Meets all three BCP elements: alternate plant, >15 days buffer, and multiple mills.",
+      "evidence": {
+        "source_file": "Godavari_Packaging_email_response.txt",
+        "location": "email line 39",
+        "page": null,
+        "source_text": "10. Yes – Medchal unit as backup, 20 days paper stock, buying from 3 mills."
+      },
+      "review_status": "accepted"
+    },
+    {
+      "qid": "Q11",
+      "topic": "Moisture resistance",
+      "mandatory": false,
+      "answer_text": "No water-resistant coating facility.",
+      "compliance": "none",
+      "points": 0,
+      "max_points": 6,
+      "mandatory_pass": null,
+      "rationale": "The vendor explicitly states they lack water-resistant coating facilities.",
+      "evidence": {
+        "source_file": "Godavari_Packaging_email_response.txt",
+        "location": "email line 40",
+        "page": null,
+        "source_text": "11. No water-resistant coating facility."
+      },
+      "review_status": "accepted"
+    },
+    {
+      "qid": "Q12",
+      "topic": "Printing capability",
+      "mandatory": false,
+      "answer_text": "Flexo up to 2 colours only.",
+      "compliance": "none",
+      "points": 0,
+      "max_points": 6,
+      "mandatory_pass": null,
+      "rationale": "The vendor only offers 2C flexo and does not mention litho-lamination, failing the 4C flexo preference.",
+      "evidence": {
+        "source_file": "Godavari_Packaging_email_response.txt",
+        "location": "email line 41",
+        "page": null,
+        "source_text": "12. Flexo up to 2 colours only."
+      },
+      "review_status": "accepted"
+    },
+    {
+      "qid": "Q13",
+      "topic": "Sustainability",
+      "mandatory": false,
+      "answer_text": "Waste recycling, no ISO 14001.",
+      "compliance": "partial",
+      "points": 2,
+      "max_points": 5,
+      "mandatory_pass": null,
+      "rationale": "Has documented practices (waste recycling) but lacks ISO 14001 certification.",
+      "evidence": {
+        "source_file": "Godavari_Packaging_email_response.txt",
+        "location": "email line 42",
+        "page": null,
+        "source_text": "13. Waste recycling, no ISO 14001."
+      },
+      "review_status": "accepted"
+    },
+    {
+      "qid": "Q14",
+      "topic": "Hygiene / food safety",
+      "mandatory": false,
+      "answer_text": "Pest control contract + GMP, no certification.",
+      "compliance": "partial",
+      "points": 2,
+      "max_points": 5,
+      "mandatory_pass": null,
+      "rationale": "Has pest control and GMP but lacks food safety certification (ISO 22000/BRCGS).",
+      "evidence": {
+        "source_file": "Godavari_Packaging_email_response.txt",
+        "location": "email line 43",
+        "page": null,
+        "source_text": "14. Pest control contract + GMP, no certification."
+      },
+      "review_status": "accepted"
+    }
+  ],
+  "commercial_terms": {
+    "currency": "INR",
+    "payment_days": 30,
+    "payment_terms": "Payment 30 days.",
+    "price_validity_until": "2026-12-31",
+    "price_validity_statements": [
+      {
+        "statement": "Rates hold till December end.",
+        "until": "2026-12-31",
+        "evidence": {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 27",
+          "page": null,
+          "source_text": "Rates hold till December end."
+        }
+      }
+    ],
+    "freight_statements": [
+      {
+        "topic": "freight",
+        "statement": "Freight extra.",
+        "applies_to": "all items",
+        "freight_included": false,
+        "freight_basis": "extra_unspecified",
+        "freight_plants": [],
+        "payment_days": null,
+        "validity_days": null,
+        "validity_until": null,
+        "percentage": null,
+        "amount": null,
+        "is_conditional": false,
+        "condition": null,
+        "is_quantified": false,
+        "evidence": {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 23",
+          "page": null,
+          "source_text": "Freight extra."
+        }
+      }
+    ],
+    "tax": "GST extra.",
+    "discounts": [],
+    "tooling": [],
+    "other_terms": [
+      {
+        "topic": "moq",
+        "statement": "MOQ 5,000 for printed boxes. Below that small run charges will apply.",
+        "applies_to": "printed boxes",
+        "freight_included": null,
+        "freight_basis": null,
+        "freight_plants": [],
+        "payment_days": null,
+        "validity_days": null,
+        "validity_until": null,
+        "percentage": null,
+        "amount": 5000,
+        "is_conditional": true,
+        "condition": "for printed boxes",
+        "is_quantified": true,
+        "evidence": {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 24",
+          "page": null,
+          "source_text": "MOQ 5,000 for printed boxes. Below that small run charges will apply."
+        }
+      },
+      {
+        "topic": "lead_time",
+        "statement": "Delivery 10 days from PO.",
+        "applies_to": "all items",
+        "freight_included": null,
+        "freight_basis": null,
+        "freight_plants": [],
+        "payment_days": null,
+        "validity_days": null,
+        "validity_until": null,
+        "percentage": null,
+        "amount": null,
+        "is_conditional": false,
+        "condition": null,
+        "is_quantified": true,
+        "evidence": {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 26",
+          "page": null,
+          "source_text": "Delivery 10 days from PO."
+        }
+      },
+      {
+        "topic": "price_escalation",
+        "statement": "Rates are based on current kraft price, if kraft goes up more than 5% we will have to pass on.",
+        "applies_to": "all items",
+        "freight_included": null,
+        "freight_basis": null,
+        "freight_plants": [],
+        "payment_days": null,
+        "validity_days": null,
+        "validity_until": null,
+        "percentage": 5,
+        "amount": null,
+        "is_conditional": true,
+        "condition": "if kraft goes up more than 5%",
+        "is_quantified": true,
+        "evidence": {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 27",
+          "page": null,
+          "source_text": "Rates are based on current kraft price, if kraft goes up more than 5% we will have to pass on."
+        }
+      }
+    ],
+    "lead_time": "Delivery 10 days from PO.",
+    "moq": "MOQ 5,000 for printed boxes. Below that small run charges will apply."
+  },
+  "missing_rfx_lines": [
+    "CP-011",
+    "CP-012",
+    "CP-015",
+    "CP-018",
+    "CP-019",
+    "CP-026",
+    "CP-027",
+    "CP-028",
+    "CP-029",
+    "CP-030"
+  ],
+  "declined_rfx_lines": [
+    {
+      "rfx_line_id": "CP-011",
+      "statement": "The 3-colour box CP-011 we cannot do (2 colour max)",
+      "evidence": {
+        "source_file": "Godavari_Packaging_email_response.txt",
+        "location": "email line 20",
+        "page": null,
+        "source_text": "The 3-colour box CP-011 we cannot do (2 colour max)"
+      }
+    },
+    {
+      "rfx_line_id": "CP-012",
+      "statement": "the water resistant one CP-012 also we don't have coating facility",
+      "evidence": {
+        "source_file": "Godavari_Packaging_email_response.txt",
+        "location": "email line 20",
+        "page": null,
+        "source_text": "the water resistant one CP-012 also we don't have coating facility"
+      }
+    },
+    {
+      "rfx_line_id": "CP-015",
+      "statement": "Other die-cut items (gift box, mailer, hand-hole box), the sleeve, export and 7 ply items we are not quoting this time.",
+      "evidence": {
+        "source_file": "Godavari_Packaging_email_response.txt",
+        "location": "email line 20",
+        "page": null,
+        "source_text": "Other die-cut items (gift box, mailer, hand-hole box), the sleeve, export and 7 ply items we are not quoting this time."
+      }
+    },
+    {
+      "rfx_line_id": "CP-018",
+      "statement": "Other die-cut items (gift box, mailer, hand-hole box), the sleeve, export and 7 ply items we are not quoting this time.",
+      "evidence": {
+        "source_file": "Godavari_Packaging_email_response.txt",
+        "location": "email line 20",
+        "page": null,
+        "source_text": "Other die-cut items (gift box, mailer, hand-hole box), the sleeve, export and 7 ply items we are not quoting this time."
+      }
+    },
+    {
+      "rfx_line_id": "CP-019",
+      "statement": "Other die-cut items (gift box, mailer, hand-hole box), the sleeve, export and 7 ply items we are not quoting this time.",
+      "evidence": {
+        "source_file": "Godavari_Packaging_email_response.txt",
+        "location": "email line 20",
+        "page": null,
+        "source_text": "Other die-cut items (gift box, mailer, hand-hole box), the sleeve, export and 7 ply items we are not quoting this time."
+      }
+    },
+    {
+      "rfx_line_id": "CP-026",
+      "statement": "Other die-cut items (gift box, mailer, hand-hole box), the sleeve, export and 7 ply items we are not quoting this time.",
+      "evidence": {
+        "source_file": "Godavari_Packaging_email_response.txt",
+        "location": "email line 20",
+        "page": null,
+        "source_text": "Other die-cut items (gift box, mailer, hand-hole box), the sleeve, export and 7 ply items we are not quoting this time."
+      }
+    },
+    {
+      "rfx_line_id": "CP-027",
+      "statement": "Other die-cut items (gift box, mailer, hand-hole box), the sleeve, export and 7 ply items we are not quoting this time.",
+      "evidence": {
+        "source_file": "Godavari_Packaging_email_response.txt",
+        "location": "email line 20",
+        "page": null,
+        "source_text": "Other die-cut items (gift box, mailer, hand-hole box), the sleeve, export and 7 ply items we are not quoting this time."
+      }
+    },
+    {
+      "rfx_line_id": "CP-028",
+      "statement": "Other die-cut items (gift box, mailer, hand-hole box), the sleeve, export and 7 ply items we are not quoting this time.",
+      "evidence": {
+        "source_file": "Godavari_Packaging_email_response.txt",
+        "location": "email line 20",
+        "page": null,
+        "source_text": "Other die-cut items (gift box, mailer, hand-hole box), the sleeve, export and 7 ply items we are not quoting this time."
+      }
+    },
+    {
+      "rfx_line_id": "CP-029",
+      "statement": "Other die-cut items (gift box, mailer, hand-hole box), the sleeve, export and 7 ply items we are not quoting this time.",
+      "evidence": {
+        "source_file": "Godavari_Packaging_email_response.txt",
+        "location": "email line 20",
+        "page": null,
+        "source_text": "Other die-cut items (gift box, mailer, hand-hole box), the sleeve, export and 7 ply items we are not quoting this time."
+      }
+    },
+    {
+      "rfx_line_id": "CP-030",
+      "statement": "Other die-cut items (gift box, mailer, hand-hole box), the sleeve, export and 7 ply items we are not quoting this time.",
+      "evidence": {
+        "source_file": "Godavari_Packaging_email_response.txt",
+        "location": "email line 20",
+        "page": null,
+        "source_text": "Other die-cut items (gift box, mailer, hand-hole box), the sleeve, export and 7 ply items we are not quoting this time."
+      }
+    }
+  ],
+  "exceptions": [
+    {
+      "id": "terms:0:ambiguous_text",
+      "scope": "terms",
+      "rfx_line_id": null,
+      "field": "tax",
+      "reason": "ambiguous_text",
+      "message": "Unquantified tax condition: \"GST extra.\".",
+      "model_value": null,
+      "suggested_value": null,
+      "candidates": [],
+      "evidence": [
+        {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 11",
+          "page": null,
+          "source_text": "GST extra."
+        }
+      ],
+      "severity": "minor",
+      "status": "open",
+      "resolution": null
+    },
+    {
+      "id": "line:CP-016:referenced_external_price",
+      "scope": "line",
+      "rfx_line_id": "CP-016",
+      "field": "normalized_unit_price_inr",
+      "reason": "referenced_external_price",
+      "message": "CP-016 priced by reference (\"same as last year's pricing\"). Referenced previous price: FY25-26 PO price for CP-016 from historical_reference_prices.csv (vendor was last year's supplier).",
+      "model_value": 12.1,
+      "suggested_value": 12.1,
+      "candidates": [],
+      "evidence": [
+        {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 18",
+          "page": null,
+          "source_text": "For the trays and inserts we are already supplying to your Hyderabad plant, remaining items same as last year's pricing."
+        }
+      ],
+      "severity": "major",
+      "status": "open",
+      "resolution": null
+    },
+    {
+      "id": "line:CP-016:ambiguous_text",
+      "scope": "line",
+      "rfx_line_id": "CP-016",
+      "field": "normalized_unit_price_inr",
+      "reason": "ambiguous_text",
+      "message": "CP-016: Mapped by description of item type and plant location.",
+      "model_value": 12.1,
+      "suggested_value": 12.1,
+      "candidates": [
+        12.1
+      ],
+      "evidence": [
+        {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 18",
+          "page": null,
+          "source_text": "For the trays and inserts we are already supplying to your Hyderabad plant, remaining items same as last year's pricing."
+        }
+      ],
+      "severity": "major",
+      "status": "open",
+      "resolution": null
+    },
+    {
+      "id": "line:CP-017:referenced_external_price",
+      "scope": "line",
+      "rfx_line_id": "CP-017",
+      "field": "normalized_unit_price_inr",
+      "reason": "referenced_external_price",
+      "message": "CP-017 priced by reference (\"same as last year's pricing\"). Referenced previous price: FY25-26 PO price for CP-017 from historical_reference_prices.csv (vendor was last year's supplier).",
+      "model_value": 10.37,
+      "suggested_value": 10.37,
+      "candidates": [],
+      "evidence": [
+        {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 18",
+          "page": null,
+          "source_text": "For the trays and inserts we are already supplying to your Hyderabad plant, remaining items same as last year's pricing."
+        }
+      ],
+      "severity": "major",
+      "status": "open",
+      "resolution": null
+    },
+    {
+      "id": "line:CP-017:ambiguous_text",
+      "scope": "line",
+      "rfx_line_id": "CP-017",
+      "field": "normalized_unit_price_inr",
+      "reason": "ambiguous_text",
+      "message": "CP-017: Mapped by description of item type and plant location.",
+      "model_value": 10.37,
+      "suggested_value": 10.37,
+      "candidates": [
+        10.37
+      ],
+      "evidence": [
+        {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 18",
+          "page": null,
+          "source_text": "For the trays and inserts we are already supplying to your Hyderabad plant, remaining items same as last year's pricing."
+        }
+      ],
+      "severity": "major",
+      "status": "open",
+      "resolution": null
+    },
+    {
+      "id": "line:CP-025:referenced_external_price",
+      "scope": "line",
+      "rfx_line_id": "CP-025",
+      "field": "normalized_unit_price_inr",
+      "reason": "referenced_external_price",
+      "message": "CP-025 priced by reference (\"same as last year's pricing\"). Referenced previous price: FY25-26 PO price for CP-025 from historical_reference_prices.csv (vendor was last year's supplier).",
+      "model_value": 3.9,
+      "suggested_value": 3.9,
+      "candidates": [],
+      "evidence": [
+        {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 18",
+          "page": null,
+          "source_text": "For the trays and inserts we are already supplying to your Hyderabad plant, remaining items same as last year's pricing."
+        }
+      ],
+      "severity": "major",
+      "status": "open",
+      "resolution": null
+    },
+    {
+      "id": "line:CP-025:ambiguous_text",
+      "scope": "line",
+      "rfx_line_id": "CP-025",
+      "field": "normalized_unit_price_inr",
+      "reason": "ambiguous_text",
+      "message": "CP-025: Mapped by description of item type and plant location.",
+      "model_value": 3.9,
+      "suggested_value": 3.9,
+      "candidates": [
+        3.9
+      ],
+      "evidence": [
+        {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 18",
+          "page": null,
+          "source_text": "For the trays and inserts we are already supplying to your Hyderabad plant, remaining items same as last year's pricing."
+        }
+      ],
+      "severity": "major",
+      "status": "open",
+      "resolution": null
+    },
+    {
+      "id": "terms:freight:incomplete_freight",
+      "scope": "terms",
+      "rfx_line_id": null,
+      "field": "freight",
+      "reason": "incomplete_freight",
+      "message": "Landed cost cannot be computed for 20 line(s): freight extra unspecified. Evaluation uses the RFx 5% loading rule; landed price left unresolved.",
+      "model_value": null,
+      "suggested_value": null,
+      "candidates": [],
+      "evidence": [
+        {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 23",
+          "page": null,
+          "source_text": "Freight extra."
+        }
+      ],
+      "severity": "major",
+      "status": "open",
+      "resolution": null
+    }
+  ],
+  "processing_summary": {
+    "rfx_lines": 30,
+    "quoted_lines": 20,
+    "missing_lines": 10,
+    "declined_lines": 10,
+    "duplicate_lines": 0,
+    "unmatched_rows": 0,
+    "ambiguous_matches": 0,
+    "accepted_lines": 17,
+    "lines_needing_review": 3,
+    "review_items": 8,
+    "open_review_items": 8,
+    "resolved_review_items": 0,
+    "unresolved_review_items": 0,
+    "blocked_items": 0,
+    "technical_score": 68,
+    "technical_max": 100,
+    "qualification_status": "NOT QUALIFIED",
+    "mandatory_failures": [],
+    "annual_value_evaluated_inr": 75820200,
+    "annual_value_lines_counted": 20
+  },
+  "review_state": "needs_review",
+  "finalized_at": null,
+  "trace": [
+    {
+      "at": "2026-10-13T18:53:32.379Z",
+      "step": "ingest",
+      "message": "Parsed Godavari_Packaging_email_response.txt as email (lines 61, paragraphs 14); 14 evidence chunks"
+    },
+    {
+      "at": "2026-10-13T18:53:32.380Z",
+      "step": "extract",
+      "message": "Sending 1 document(s) to gemini-3-flash-preview with 30 RFx lines and 14 questions (bid-extraction.v1)"
+    },
+    {
+      "at": "2026-10-13T18:54:22.023Z",
+      "step": "extract",
+      "message": "Extraction valid on attempt 1: 20 candidate price rows, 7 term statements, 14 questionnaire answers, 3 decline statements"
+    },
+    {
+      "at": "2026-10-13T18:54:22.023Z",
+      "step": "match",
+      "message": "Mapping basis: group_statement 10, description_match 1, explicit_code 6, reference 3; 0 with alternative candidates"
+    },
+    {
+      "at": "2026-10-13T18:54:22.023Z",
+      "step": "interpret",
+      "message": "Terms by topic: tax 1, freight 1, moq 1, payment 1, lead_time 1, validity 1, price_escalation 1"
+    },
+    {
+      "at": "2026-10-13T18:54:22.025Z",
+      "step": "normalize",
+      "message": "20 RFx lines quoted; 20 normalized to INR/unit; 0 blocked"
+    },
+    {
+      "at": "2026-10-13T18:54:22.025Z",
+      "step": "validate",
+      "message": "10 missing (10 explicitly declined), 0 duplicated, 0 unmatched rows, 0 ambiguous matches"
+    },
+    {
+      "at": "2026-10-13T18:54:22.025Z",
+      "step": "exceptions",
+      "message": "8 review item(s): ambiguous_text 4, referenced_external_price 3, incomplete_freight 1; technical 68/100 → NOT QUALIFIED"
+    }
+  ],
+  "extraction": {
+    "vendor_name": "Godavari Packaging Works",
+    "quote_reference": "RE: RFQ SCPL/PKG/RFQ/2026-27/014 - Corrugated boxes - our rates",
+    "quote_date": "2026-10-12",
+    "document_overview": "An email response from Godavari Packaging Works providing per-kilogram rates for various corrugated packaging items, referencing previous pricing for others, and declining several specific lines. It includes a technical questionnaire response and standard commercial terms.",
+    "transcription": null,
+    "quotes": [
+      {
+        "rfx_line_id": "CP-001",
+        "mapping_basis": "group_statement",
+        "alternative_rfx_line_ids": [],
+        "vendor_item_code": null,
+        "vendor_description": "3-ply plain brown boxes",
+        "vendor_dimensions": null,
+        "raw_price": 44,
+        "price_adjustments": [],
+        "raw_price_text": "Rs 44/kg",
+        "currency": "INR",
+        "uom_text": "per kg",
+        "price_basis": "rate_per_kg",
+        "freight_amount": null,
+        "moq": null,
+        "moq_text": null,
+        "lead_time_days": 10,
+        "lead_time_text": "10 days from PO",
+        "remarks": null,
+        "spec_deviation": null,
+        "ambiguity": null,
+        "alternative_values": [],
+        "evidence": {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 13",
+          "page": null,
+          "source_text": "3-ply plain brown boxes: Rs 44/kg"
+        }
+      },
+      {
+        "rfx_line_id": "CP-002",
+        "mapping_basis": "group_statement",
+        "alternative_rfx_line_ids": [],
+        "vendor_item_code": null,
+        "vendor_description": "3-ply plain brown boxes",
+        "vendor_dimensions": null,
+        "raw_price": 44,
+        "price_adjustments": [],
+        "raw_price_text": "Rs 44/kg",
+        "currency": "INR",
+        "uom_text": "per kg",
+        "price_basis": "rate_per_kg",
+        "freight_amount": null,
+        "moq": null,
+        "moq_text": null,
+        "lead_time_days": 10,
+        "lead_time_text": "10 days from PO",
+        "remarks": null,
+        "spec_deviation": null,
+        "ambiguity": null,
+        "alternative_values": [],
+        "evidence": {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 13",
+          "page": null,
+          "source_text": "3-ply plain brown boxes: Rs 44/kg"
+        }
+      },
+      {
+        "rfx_line_id": "CP-003",
+        "mapping_basis": "group_statement",
+        "alternative_rfx_line_ids": [],
+        "vendor_item_code": null,
+        "vendor_description": "3-ply plain brown boxes",
+        "vendor_dimensions": null,
+        "raw_price": 44,
+        "price_adjustments": [],
+        "raw_price_text": "Rs 44/kg",
+        "currency": "INR",
+        "uom_text": "per kg",
+        "price_basis": "rate_per_kg",
+        "freight_amount": null,
+        "moq": null,
+        "moq_text": null,
+        "lead_time_days": 10,
+        "lead_time_text": "10 days from PO",
+        "remarks": null,
+        "spec_deviation": null,
+        "ambiguity": null,
+        "alternative_values": [],
+        "evidence": {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 13",
+          "page": null,
+          "source_text": "3-ply plain brown boxes: Rs 44/kg"
+        }
+      },
+      {
+        "rfx_line_id": "CP-007",
+        "mapping_basis": "group_statement",
+        "alternative_rfx_line_ids": [],
+        "vendor_item_code": null,
+        "vendor_description": "5-ply plain (RSC)",
+        "vendor_dimensions": null,
+        "raw_price": 46,
+        "price_adjustments": [],
+        "raw_price_text": "Rs 46/kg",
+        "currency": "INR",
+        "uom_text": "per kg",
+        "price_basis": "rate_per_kg",
+        "freight_amount": null,
+        "moq": null,
+        "moq_text": null,
+        "lead_time_days": 10,
+        "lead_time_text": "10 days from PO",
+        "remarks": null,
+        "spec_deviation": null,
+        "ambiguity": null,
+        "alternative_values": [],
+        "evidence": {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 14",
+          "page": null,
+          "source_text": "5-ply plain: Rs 46/kg (RSC and the big HSC box)."
+        }
+      },
+      {
+        "rfx_line_id": "CP-008",
+        "mapping_basis": "group_statement",
+        "alternative_rfx_line_ids": [],
+        "vendor_item_code": null,
+        "vendor_description": "5-ply plain (RSC)",
+        "vendor_dimensions": null,
+        "raw_price": 46,
+        "price_adjustments": [],
+        "raw_price_text": "Rs 46/kg",
+        "currency": "INR",
+        "uom_text": "per kg",
+        "price_basis": "rate_per_kg",
+        "freight_amount": null,
+        "moq": null,
+        "moq_text": null,
+        "lead_time_days": 10,
+        "lead_time_text": "10 days from PO",
+        "remarks": null,
+        "spec_deviation": null,
+        "ambiguity": null,
+        "alternative_values": [],
+        "evidence": {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 14",
+          "page": null,
+          "source_text": "5-ply plain: Rs 46/kg (RSC and the big HSC box)."
+        }
+      },
+      {
+        "rfx_line_id": "CP-009",
+        "mapping_basis": "group_statement",
+        "alternative_rfx_line_ids": [],
+        "vendor_item_code": null,
+        "vendor_description": "5-ply plain (RSC)",
+        "vendor_dimensions": null,
+        "raw_price": 46,
+        "price_adjustments": [],
+        "raw_price_text": "Rs 46/kg",
+        "currency": "INR",
+        "uom_text": "per kg",
+        "price_basis": "rate_per_kg",
+        "freight_amount": null,
+        "moq": null,
+        "moq_text": null,
+        "lead_time_days": 10,
+        "lead_time_text": "10 days from PO",
+        "remarks": null,
+        "spec_deviation": null,
+        "ambiguity": null,
+        "alternative_values": [],
+        "evidence": {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 14",
+          "page": null,
+          "source_text": "5-ply plain: Rs 46/kg (RSC and the big HSC box)."
+        }
+      },
+      {
+        "rfx_line_id": "CP-013",
+        "mapping_basis": "group_statement",
+        "alternative_rfx_line_ids": [],
+        "vendor_item_code": null,
+        "vendor_description": "5-ply plain (big HSC box)",
+        "vendor_dimensions": null,
+        "raw_price": 46,
+        "price_adjustments": [],
+        "raw_price_text": "Rs 46/kg",
+        "currency": "INR",
+        "uom_text": "per kg",
+        "price_basis": "rate_per_kg",
+        "freight_amount": null,
+        "moq": null,
+        "moq_text": null,
+        "lead_time_days": 10,
+        "lead_time_text": "10 days from PO",
+        "remarks": null,
+        "spec_deviation": null,
+        "ambiguity": null,
+        "alternative_values": [],
+        "evidence": {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 14",
+          "page": null,
+          "source_text": "5-ply plain: Rs 46/kg (RSC and the big HSC box)."
+        }
+      },
+      {
+        "rfx_line_id": "CP-014",
+        "mapping_basis": "description_match",
+        "alternative_rfx_line_ids": [],
+        "vendor_item_code": null,
+        "vendor_description": "heavy duty BF22 jam box",
+        "vendor_dimensions": null,
+        "raw_price": 46,
+        "price_adjustments": [
+          {
+            "description": "heavy duty BF22 jam box add",
+            "amount": 3
+          }
+        ],
+        "raw_price_text": "Rs 46/kg + Rs 3/kg",
+        "currency": "INR",
+        "uom_text": "per kg",
+        "price_basis": "rate_per_kg",
+        "freight_amount": null,
+        "moq": null,
+        "moq_text": null,
+        "lead_time_days": 10,
+        "lead_time_text": "10 days from PO",
+        "remarks": null,
+        "spec_deviation": null,
+        "ambiguity": null,
+        "alternative_values": [],
+        "evidence": {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 14",
+          "page": null,
+          "source_text": "5-ply plain: Rs 46/kg (RSC and the big HSC box). For the heavy duty BF22 jam box add Rs 3/kg."
+        }
+      },
+      {
+        "rfx_line_id": "CP-004",
+        "mapping_basis": "group_statement",
+        "alternative_rfx_line_ids": [],
+        "vendor_item_code": null,
+        "vendor_description": "1 & 2 colour 3-ply boxes",
+        "vendor_dimensions": null,
+        "raw_price": 44,
+        "price_adjustments": [
+          {
+            "description": "Printed ones Rs 5/kg extra over plain",
+            "amount": 5
+          }
+        ],
+        "raw_price_text": "Rs 44/kg + Rs 5/kg",
+        "currency": "INR",
+        "uom_text": "per kg",
+        "price_basis": "rate_per_kg",
+        "freight_amount": null,
+        "moq": 5000,
+        "moq_text": "MOQ 5,000 for printed boxes",
+        "lead_time_days": 10,
+        "lead_time_text": "10 days from PO",
+        "remarks": null,
+        "spec_deviation": null,
+        "ambiguity": null,
+        "alternative_values": [],
+        "evidence": {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 15",
+          "page": null,
+          "source_text": "Printed ones Rs 5/kg extra over plain, up to 2 colours - so the 1 & 2 colour 3-ply boxes"
+        }
+      },
+      {
+        "rfx_line_id": "CP-005",
+        "mapping_basis": "group_statement",
+        "alternative_rfx_line_ids": [],
+        "vendor_item_code": null,
+        "vendor_description": "1 & 2 colour 3-ply boxes",
+        "vendor_dimensions": null,
+        "raw_price": 44,
+        "price_adjustments": [
+          {
+            "description": "Printed ones Rs 5/kg extra over plain",
+            "amount": 5
+          }
+        ],
+        "raw_price_text": "Rs 44/kg + Rs 5/kg",
+        "currency": "INR",
+        "uom_text": "per kg",
+        "price_basis": "rate_per_kg",
+        "freight_amount": null,
+        "moq": 5000,
+        "moq_text": "MOQ 5,000 for printed boxes",
+        "lead_time_days": 10,
+        "lead_time_text": "10 days from PO",
+        "remarks": null,
+        "spec_deviation": null,
+        "ambiguity": null,
+        "alternative_values": [],
+        "evidence": {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 15",
+          "page": null,
+          "source_text": "Printed ones Rs 5/kg extra over plain, up to 2 colours - so the 1 & 2 colour 3-ply boxes"
+        }
+      },
+      {
+        "rfx_line_id": "CP-006",
+        "mapping_basis": "group_statement",
+        "alternative_rfx_line_ids": [],
+        "vendor_item_code": null,
+        "vendor_description": "1 & 2 colour 3-ply boxes",
+        "vendor_dimensions": null,
+        "raw_price": 44,
+        "price_adjustments": [
+          {
+            "description": "Printed ones Rs 5/kg extra over plain",
+            "amount": 5
+          }
+        ],
+        "raw_price_text": "Rs 44/kg + Rs 5/kg",
+        "currency": "INR",
+        "uom_text": "per kg",
+        "price_basis": "rate_per_kg",
+        "freight_amount": null,
+        "moq": 5000,
+        "moq_text": "MOQ 5,000 for printed boxes",
+        "lead_time_days": 10,
+        "lead_time_text": "10 days from PO",
+        "remarks": null,
+        "spec_deviation": null,
+        "ambiguity": null,
+        "alternative_values": [],
+        "evidence": {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 15",
+          "page": null,
+          "source_text": "Printed ones Rs 5/kg extra over plain, up to 2 colours - so the 1 & 2 colour 3-ply boxes"
+        }
+      },
+      {
+        "rfx_line_id": "CP-010",
+        "mapping_basis": "explicit_code",
+        "alternative_rfx_line_ids": [],
+        "vendor_item_code": null,
+        "vendor_description": "2 colour 5-ply shampoo box (CP-010)",
+        "vendor_dimensions": null,
+        "raw_price": 46,
+        "price_adjustments": [
+          {
+            "description": "Printed ones Rs 5/kg extra over plain",
+            "amount": 5
+          }
+        ],
+        "raw_price_text": "Rs 46/kg + Rs 5/kg",
+        "currency": "INR",
+        "uom_text": "per kg",
+        "price_basis": "rate_per_kg",
+        "freight_amount": null,
+        "moq": 5000,
+        "moq_text": "MOQ 5,000 for printed boxes",
+        "lead_time_days": 10,
+        "lead_time_text": "10 days from PO",
+        "remarks": null,
+        "spec_deviation": null,
+        "ambiguity": null,
+        "alternative_values": [],
+        "evidence": {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 15",
+          "page": null,
+          "source_text": "Printed ones Rs 5/kg extra over plain, up to 2 colours - so the 1 & 2 colour 3-ply boxes and the 2 colour 5-ply shampoo box (CP-010)."
+        }
+      },
+      {
+        "rfx_line_id": "CP-020",
+        "mapping_basis": "explicit_code",
+        "alternative_rfx_line_ids": [],
+        "vendor_item_code": null,
+        "vendor_description": "Partitions and layer pads (CP-020 to CP-024)",
+        "vendor_dimensions": null,
+        "raw_price": 41,
+        "price_adjustments": [],
+        "raw_price_text": "Rs 41/kg",
+        "currency": "INR",
+        "uom_text": "per kg",
+        "price_basis": "rate_per_kg",
+        "freight_amount": null,
+        "moq": null,
+        "moq_text": null,
+        "lead_time_days": 10,
+        "lead_time_text": "10 days from PO",
+        "remarks": null,
+        "spec_deviation": null,
+        "ambiguity": null,
+        "alternative_values": [],
+        "evidence": {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 16",
+          "page": null,
+          "source_text": "Partitions and layer pads (CP-020 to CP-024): Rs 41/kg."
+        }
+      },
+      {
+        "rfx_line_id": "CP-021",
+        "mapping_basis": "explicit_code",
+        "alternative_rfx_line_ids": [],
+        "vendor_item_code": null,
+        "vendor_description": "Partitions and layer pads (CP-020 to CP-024)",
+        "vendor_dimensions": null,
+        "raw_price": 41,
+        "price_adjustments": [],
+        "raw_price_text": "Rs 41/kg",
+        "currency": "INR",
+        "uom_text": "per kg",
+        "price_basis": "rate_per_kg",
+        "freight_amount": null,
+        "moq": null,
+        "moq_text": null,
+        "lead_time_days": 10,
+        "lead_time_text": "10 days from PO",
+        "remarks": null,
+        "spec_deviation": null,
+        "ambiguity": null,
+        "alternative_values": [],
+        "evidence": {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 16",
+          "page": null,
+          "source_text": "Partitions and layer pads (CP-020 to CP-024): Rs 41/kg."
+        }
+      },
+      {
+        "rfx_line_id": "CP-022",
+        "mapping_basis": "explicit_code",
+        "alternative_rfx_line_ids": [],
+        "vendor_item_code": null,
+        "vendor_description": "Partitions and layer pads (CP-020 to CP-024)",
+        "vendor_dimensions": null,
+        "raw_price": 41,
+        "price_adjustments": [],
+        "raw_price_text": "Rs 41/kg",
+        "currency": "INR",
+        "uom_text": "per kg",
+        "price_basis": "rate_per_kg",
+        "freight_amount": null,
+        "moq": null,
+        "moq_text": null,
+        "lead_time_days": 10,
+        "lead_time_text": "10 days from PO",
+        "remarks": null,
+        "spec_deviation": null,
+        "ambiguity": null,
+        "alternative_values": [],
+        "evidence": {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 16",
+          "page": null,
+          "source_text": "Partitions and layer pads (CP-020 to CP-024): Rs 41/kg."
+        }
+      },
+      {
+        "rfx_line_id": "CP-023",
+        "mapping_basis": "explicit_code",
+        "alternative_rfx_line_ids": [],
+        "vendor_item_code": null,
+        "vendor_description": "Partitions and layer pads (CP-020 to CP-024)",
+        "vendor_dimensions": null,
+        "raw_price": 41,
+        "price_adjustments": [],
+        "raw_price_text": "Rs 41/kg",
+        "currency": "INR",
+        "uom_text": "per kg",
+        "price_basis": "rate_per_kg",
+        "freight_amount": null,
+        "moq": null,
+        "moq_text": null,
+        "lead_time_days": 10,
+        "lead_time_text": "10 days from PO",
+        "remarks": null,
+        "spec_deviation": null,
+        "ambiguity": null,
+        "alternative_values": [],
+        "evidence": {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 16",
+          "page": null,
+          "source_text": "Partitions and layer pads (CP-020 to CP-024): Rs 41/kg."
+        }
+      },
+      {
+        "rfx_line_id": "CP-024",
+        "mapping_basis": "explicit_code",
+        "alternative_rfx_line_ids": [],
+        "vendor_item_code": null,
+        "vendor_description": "Partitions and layer pads (CP-020 to CP-024)",
+        "vendor_dimensions": null,
+        "raw_price": 41,
+        "price_adjustments": [],
+        "raw_price_text": "Rs 41/kg",
+        "currency": "INR",
+        "uom_text": "per kg",
+        "price_basis": "rate_per_kg",
+        "freight_amount": null,
+        "moq": null,
+        "moq_text": null,
+        "lead_time_days": 10,
+        "lead_time_text": "10 days from PO",
+        "remarks": null,
+        "spec_deviation": null,
+        "ambiguity": null,
+        "alternative_values": [],
+        "evidence": {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 16",
+          "page": null,
+          "source_text": "Partitions and layer pads (CP-020 to CP-024): Rs 41/kg."
+        }
+      },
+      {
+        "rfx_line_id": "CP-016",
+        "mapping_basis": "reference",
+        "alternative_rfx_line_ids": [],
+        "vendor_item_code": null,
+        "vendor_description": "trays and inserts we are already supplying to your Hyderabad plant",
+        "vendor_dimensions": null,
+        "raw_price": null,
+        "price_adjustments": [],
+        "raw_price_text": "same as last year's pricing",
+        "currency": "INR",
+        "uom_text": "piece",
+        "price_basis": "reference_previous_price",
+        "freight_amount": null,
+        "moq": null,
+        "moq_text": null,
+        "lead_time_days": 10,
+        "lead_time_text": "10 days from PO",
+        "remarks": null,
+        "spec_deviation": null,
+        "ambiguity": "Mapped by description of item type and plant location.",
+        "alternative_values": [],
+        "evidence": {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 18",
+          "page": null,
+          "source_text": "For the trays and inserts we are already supplying to your Hyderabad plant, remaining items same as last year's pricing."
+        }
+      },
+      {
+        "rfx_line_id": "CP-017",
+        "mapping_basis": "reference",
+        "alternative_rfx_line_ids": [],
+        "vendor_item_code": null,
+        "vendor_description": "trays and inserts we are already supplying to your Hyderabad plant",
+        "vendor_dimensions": null,
+        "raw_price": null,
+        "price_adjustments": [],
+        "raw_price_text": "same as last year's pricing",
+        "currency": "INR",
+        "uom_text": "piece",
+        "price_basis": "reference_previous_price",
+        "freight_amount": null,
+        "moq": null,
+        "moq_text": null,
+        "lead_time_days": 10,
+        "lead_time_text": "10 days from PO",
+        "remarks": null,
+        "spec_deviation": null,
+        "ambiguity": "Mapped by description of item type and plant location.",
+        "alternative_values": [],
+        "evidence": {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 18",
+          "page": null,
+          "source_text": "For the trays and inserts we are already supplying to your Hyderabad plant, remaining items same as last year's pricing."
+        }
+      },
+      {
+        "rfx_line_id": "CP-025",
+        "mapping_basis": "reference",
+        "alternative_rfx_line_ids": [],
+        "vendor_item_code": null,
+        "vendor_description": "trays and inserts we are already supplying to your Hyderabad plant",
+        "vendor_dimensions": null,
+        "raw_price": null,
+        "price_adjustments": [],
+        "raw_price_text": "same as last year's pricing",
+        "currency": "INR",
+        "uom_text": "piece",
+        "price_basis": "reference_previous_price",
+        "freight_amount": null,
+        "moq": null,
+        "moq_text": null,
+        "lead_time_days": 10,
+        "lead_time_text": "10 days from PO",
+        "remarks": null,
+        "spec_deviation": null,
+        "ambiguity": "Mapped by description of item type and plant location.",
+        "alternative_values": [],
+        "evidence": {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 18",
+          "page": null,
+          "source_text": "For the trays and inserts we are already supplying to your Hyderabad plant, remaining items same as last year's pricing."
+        }
+      }
+    ],
+    "declined_lines": [
+      {
+        "rfx_line_ids": [
+          "CP-011"
+        ],
+        "statement": "The 3-colour box CP-011 we cannot do (2 colour max)",
+        "evidence": {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 20",
+          "page": null,
+          "source_text": "The 3-colour box CP-011 we cannot do (2 colour max)"
+        }
+      },
+      {
+        "rfx_line_ids": [
+          "CP-012"
+        ],
+        "statement": "the water resistant one CP-012 also we don't have coating facility",
+        "evidence": {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 20",
+          "page": null,
+          "source_text": "the water resistant one CP-012 also we don't have coating facility"
+        }
+      },
+      {
+        "rfx_line_ids": [
+          "CP-015",
+          "CP-018",
+          "CP-019",
+          "CP-026",
+          "CP-027",
+          "CP-028",
+          "CP-029",
+          "CP-030"
+        ],
+        "statement": "Other die-cut items (gift box, mailer, hand-hole box), the sleeve, export and 7 ply items we are not quoting this time.",
+        "evidence": {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 20",
+          "page": null,
+          "source_text": "Other die-cut items (gift box, mailer, hand-hole box), the sleeve, export and 7 ply items we are not quoting this time."
+        }
+      }
+    ],
+    "terms": [
+      {
+        "topic": "tax",
+        "statement": "GST extra.",
+        "applies_to": "all items",
+        "freight_included": null,
+        "freight_basis": null,
+        "freight_plants": [],
+        "payment_days": null,
+        "validity_days": null,
+        "validity_until": null,
+        "percentage": null,
+        "amount": null,
+        "is_conditional": false,
+        "condition": null,
+        "is_quantified": false,
+        "evidence": {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 11",
+          "page": null,
+          "source_text": "GST extra."
+        }
+      },
+      {
+        "topic": "freight",
+        "statement": "Freight extra.",
+        "applies_to": "all items",
+        "freight_included": false,
+        "freight_basis": "extra_unspecified",
+        "freight_plants": [],
+        "payment_days": null,
+        "validity_days": null,
+        "validity_until": null,
+        "percentage": null,
+        "amount": null,
+        "is_conditional": false,
+        "condition": null,
+        "is_quantified": false,
+        "evidence": {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 23",
+          "page": null,
+          "source_text": "Freight extra."
+        }
+      },
+      {
+        "topic": "moq",
+        "statement": "MOQ 5,000 for printed boxes. Below that small run charges will apply.",
+        "applies_to": "printed boxes",
+        "freight_included": null,
+        "freight_basis": null,
+        "freight_plants": [],
+        "payment_days": null,
+        "validity_days": null,
+        "validity_until": null,
+        "percentage": null,
+        "amount": 5000,
+        "is_conditional": true,
+        "condition": "for printed boxes",
+        "is_quantified": true,
+        "evidence": {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 24",
+          "page": null,
+          "source_text": "MOQ 5,000 for printed boxes. Below that small run charges will apply."
+        }
+      },
+      {
+        "topic": "payment",
+        "statement": "Payment 30 days.",
+        "applies_to": "all items",
+        "freight_included": null,
+        "freight_basis": null,
+        "freight_plants": [],
+        "payment_days": 30,
+        "validity_days": null,
+        "validity_until": null,
+        "percentage": null,
+        "amount": null,
+        "is_conditional": false,
+        "condition": null,
+        "is_quantified": true,
+        "evidence": {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 25",
+          "page": null,
+          "source_text": "Payment 30 days."
+        }
+      },
+      {
+        "topic": "lead_time",
+        "statement": "Delivery 10 days from PO.",
+        "applies_to": "all items",
+        "freight_included": null,
+        "freight_basis": null,
+        "freight_plants": [],
+        "payment_days": null,
+        "validity_days": null,
+        "validity_until": null,
+        "percentage": null,
+        "amount": null,
+        "is_conditional": false,
+        "condition": null,
+        "is_quantified": true,
+        "evidence": {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 26",
+          "page": null,
+          "source_text": "Delivery 10 days from PO."
+        }
+      },
+      {
+        "topic": "validity",
+        "statement": "Rates hold till December end.",
+        "applies_to": "all items",
+        "freight_included": null,
+        "freight_basis": null,
+        "freight_plants": [],
+        "payment_days": null,
+        "validity_days": null,
+        "validity_until": "2026-12-31",
+        "percentage": null,
+        "amount": null,
+        "is_conditional": false,
+        "condition": null,
+        "is_quantified": true,
+        "evidence": {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 27",
+          "page": null,
+          "source_text": "Rates hold till December end."
+        }
+      },
+      {
+        "topic": "price_escalation",
+        "statement": "Rates are based on current kraft price, if kraft goes up more than 5% we will have to pass on.",
+        "applies_to": "all items",
+        "freight_included": null,
+        "freight_basis": null,
+        "freight_plants": [],
+        "payment_days": null,
+        "validity_days": null,
+        "validity_until": null,
+        "percentage": 5,
+        "amount": null,
+        "is_conditional": true,
+        "condition": "if kraft goes up more than 5%",
+        "is_quantified": true,
+        "evidence": {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 27",
+          "page": null,
+          "source_text": "Rates are based on current kraft price, if kraft goes up more than 5% we will have to pass on."
+        }
+      }
+    ],
+    "questionnaire_answers": [
+      {
+        "qid": "Q01",
+        "answer_text": "Yes, ISO 9001:2015, cert valid till Aug 2027 (copy attached).",
+        "compliance": "full",
+        "plants_within_350km": null,
+        "rationale": "The vendor is ISO 9001:2015 certified with a valid date provided.",
+        "evidence": {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 30",
+          "page": null,
+          "source_text": "1. Yes, ISO 9001:2015, cert valid till Aug 2027 (copy attached)."
+        }
+      },
+      {
+        "qid": "Q02",
+        "answer_text": "No FSC.",
+        "compliance": "none",
+        "plants_within_350km": null,
+        "rationale": "The vendor explicitly states they do not have FSC certification.",
+        "evidence": {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 31",
+          "page": null,
+          "source_text": "2. No FSC."
+        }
+      },
+      {
+        "qid": "Q03",
+        "answer_text": "Yes, 70%+ recycled on all our grades, declaration can be given.",
+        "compliance": "full",
+        "plants_within_350km": null,
+        "rationale": "Meets the 70% recycled content requirement for domestic grades and provides declarations.",
+        "evidence": {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 32",
+          "page": null,
+          "source_text": "3. Yes, 70%+ recycled on all our grades, declaration can be given."
+        }
+      },
+      {
+        "qid": "Q04",
+        "answer_text": "9,000 MT/yr, running about 70%.",
+        "compliance": "full",
+        "plants_within_350km": null,
+        "rationale": "Installed capacity of 9,000 MTPA exceeds the 6,000 MTPA mandatory minimum.",
+        "evidence": {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 33",
+          "page": null,
+          "source_text": "4. 9,000 MT/yr, running about 70%."
+        }
+      },
+      {
+        "qid": "Q05",
+        "answer_text": "In-house lab – GSM, BS, ECT, BCT, moisture & Cobb every lot, COA sent with each vehicle.",
+        "compliance": "full",
+        "plants_within_350km": null,
+        "rationale": "The vendor performs all required tests in-house and issues COAs per lot.",
+        "evidence": {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 34",
+          "page": null,
+          "source_text": "5. In-house lab – GSM, BS, ECT, BCT, moisture & Cobb every lot, COA sent with each vehicle."
+        }
+      },
+      {
+        "qid": "Q06",
+        "answer_text": "Lot code stamped on every box.",
+        "compliance": "full",
+        "plants_within_350km": null,
+        "rationale": "Every box is marked with a lot code, meeting the mandatory traceability requirement.",
+        "evidence": {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 35",
+          "page": null,
+          "source_text": "6. Lot code stamped on every box."
+        }
+      },
+      {
+        "qid": "Q07",
+        "answer_text": "Lead time 10 days.",
+        "compliance": "full",
+        "plants_within_350km": null,
+        "rationale": "Lead time of 10 days is within the target of <= 14 days.",
+        "evidence": {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 36",
+          "page": null,
+          "source_text": "7. Lead time 10 days."
+        }
+      },
+      {
+        "qid": "Q08",
+        "answer_text": "We respond within 48 hrs, CAPA in 7 days.",
+        "compliance": "partial",
+        "plants_within_350km": null,
+        "rationale": "Acknowledgement within 48 hours is slower than the 24-hour target.",
+        "evidence": {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 37",
+          "page": null,
+          "source_text": "8. We respond within 48 hrs, CAPA in 7 days."
+        }
+      },
+      {
+        "qid": "Q09",
+        "answer_text": "Bollaram & Medchal, both within 40 km of your Patancheru plant.",
+        "compliance": "partial",
+        "plants_within_350km": 1,
+        "rationale": "The vendor only mentions proximity to the Hyderabad (Patancheru) plant, covering 1 of 3 buyer locations.",
+        "evidence": {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 38",
+          "page": null,
+          "source_text": "9. Bollaram & Medchal, both within 40 km of your Patancheru plant."
+        }
+      },
+      {
+        "qid": "Q10",
+        "answer_text": "Yes – Medchal unit as backup, 20 days paper stock, buying from 3 mills.",
+        "compliance": "full",
+        "plants_within_350km": null,
+        "rationale": "Meets all three BCP elements: alternate plant, >15 days buffer, and multiple mills.",
+        "evidence": {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 39",
+          "page": null,
+          "source_text": "10. Yes – Medchal unit as backup, 20 days paper stock, buying from 3 mills."
+        }
+      },
+      {
+        "qid": "Q11",
+        "answer_text": "No water-resistant coating facility.",
+        "compliance": "none",
+        "plants_within_350km": null,
+        "rationale": "The vendor explicitly states they lack water-resistant coating facilities.",
+        "evidence": {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 40",
+          "page": null,
+          "source_text": "11. No water-resistant coating facility."
+        }
+      },
+      {
+        "qid": "Q12",
+        "answer_text": "Flexo up to 2 colours only.",
+        "compliance": "none",
+        "plants_within_350km": null,
+        "rationale": "The vendor only offers 2C flexo and does not mention litho-lamination, failing the 4C flexo preference.",
+        "evidence": {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 41",
+          "page": null,
+          "source_text": "12. Flexo up to 2 colours only."
+        }
+      },
+      {
+        "qid": "Q13",
+        "answer_text": "Waste recycling, no ISO 14001.",
+        "compliance": "partial",
+        "plants_within_350km": null,
+        "rationale": "Has documented practices (waste recycling) but lacks ISO 14001 certification.",
+        "evidence": {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 42",
+          "page": null,
+          "source_text": "13. Waste recycling, no ISO 14001."
+        }
+      },
+      {
+        "qid": "Q14",
+        "answer_text": "Pest control contract + GMP, no certification.",
+        "compliance": "partial",
+        "plants_within_350km": null,
+        "rationale": "Has pest control and GMP but lacks food safety certification (ISO 22000/BRCGS).",
+        "evidence": {
+          "source_file": "Godavari_Packaging_email_response.txt",
+          "location": "email line 43",
+          "page": null,
+          "source_text": "14. Pest control contract + GMP, no certification."
+        }
+      }
+    ]
+  },
+  "overrides": {},
+  "audit_log": [],
+  "chunks": [
+    {
+      "source_file": "Godavari_Packaging_email_response.txt",
+      "location": "email paragraph 1",
+      "page": null,
+      "kind": "document",
+      "text": "From: P. Srinivas Rao <srinivas@godavaripack.example> To: Meera Raghunathan <meera.raghunathan@sahyadricp.example> Cc: purchase.hyd@sahyadricp.example Date: Mon, 12 Oct 2026 18:47:12 +0530 Subject: RE: RFQ SCPL/PKG/RFQ/2026-27/014 - Corrugated boxes - our rates",
+      "vendor_id": "VND-1005",
+      "chunk_id": "VND-1005#1"
+    },
+    {
+      "source_file": "Godavari_Packaging_email_response.txt",
+      "location": "email paragraph 2",
+      "page": null,
+      "kind": "document",
+      "text": "Dear Madam,",
+      "vendor_id": "VND-1005",
+      "chunk_id": "VND-1005#2"
+    },
+    {
+      "source_file": "Godavari_Packaging_email_response.txt",
+      "location": "email paragraph 3",
+      "page": null,
+      "kind": "document",
+      "text": "Greetings from Godavari Packaging.",
+      "vendor_id": "VND-1005",
+      "chunk_id": "VND-1005#3"
+    },
+    {
+      "source_file": "Godavari_Packaging_email_response.txt",
+      "location": "email paragraph 4",
+      "page": null,
+      "kind": "document",
+      "text": "Thank you for the enquiry. Sorry for the delay, we were waiting for the revised kraft rates from the mill. Please find our rates below. All rates are per kg of box weight, GST extra.",
+      "vendor_id": "VND-1005",
+      "chunk_id": "VND-1005#4"
+    },
+    {
+      "source_file": "Godavari_Packaging_email_response.txt",
+      "location": "email paragraph 5",
+      "page": null,
+      "kind": "document",
+      "text": "- 3-ply plain brown boxes: Rs 44/kg - 5-ply plain: Rs 46/kg (RSC and the big HSC box). For the heavy duty BF22 jam box add Rs 3/kg. - Printed ones Rs 5/kg extra over plain, up to 2 colours - so the 1 & 2 colour 3-ply boxes and the 2 colour 5-ply shampoo box (CP-010). - Partitions and layer pads (CP-020 to CP-024): Rs 41/kg.",
+      "vendor_id": "VND-1005",
+      "chunk_id": "VND-1005#5"
+    },
+    {
+      "source_file": "Godavari_Packaging_email_response.txt",
+      "location": "email paragraph 6",
+      "page": null,
+      "kind": "document",
+      "text": "For the trays and inserts we are already supplying to your Hyderabad plant, remaining items same as last year's pricing.",
+      "vendor_id": "VND-1005",
+      "chunk_id": "VND-1005#6"
+    },
+    {
+      "source_file": "Godavari_Packaging_email_response.txt",
+      "location": "email paragraph 7",
+      "page": null,
+      "kind": "document",
+      "text": "The 3-colour box CP-011 we cannot do (2 colour max), and the water resistant one CP-012 also we don't have coating facility. Other die-cut items (gift box, mailer, hand-hole box), the sleeve, export and 7 ply items we are not quoting this time.",
+      "vendor_id": "VND-1005",
+      "chunk_id": "VND-1005#7"
+    },
+    {
+      "source_file": "Godavari_Packaging_email_response.txt",
+      "location": "email paragraph 8",
+      "page": null,
+      "kind": "document",
+      "text": "Terms: Freight extra. MOQ 5,000 for printed boxes. Below that small run charges will apply. Payment 30 days. Delivery 10 days from PO. Rates hold till December end. Rates are based on current kraft price, if kraft goes up more than 5% we will have to pass on.",
+      "vendor_id": "VND-1005",
+      "chunk_id": "VND-1005#8"
+    },
+    {
+      "source_file": "Godavari_Packaging_email_response.txt",
+      "location": "email paragraph 9",
+      "page": null,
+      "kind": "document",
+      "text": "Your technical questionnaire - our replies: 1. Yes, ISO 9001:2015, cert valid till Aug 2027 (copy attached). 2. No FSC. 3. Yes, 70%+ recycled on all our grades, declaration can be given. 4. 9,000 MT/yr, running about 70%. 5. In-house lab – GSM, BS, ECT, BCT, moisture & Cobb every lot, COA sent with each vehicle. 6. Lot code stamped on every box. 7. Lead time 10 days. 8. We respond within 48 hrs, CAPA in 7 days. 9. Bollaram & Medchal, both within 40 km of your Patancheru plant. 10. Yes – Medchal unit as backup, 20 days paper stock, buying from 3 mills. 11. No water-resistant coating facility. 12. Flexo up to 2 colours only. 13. Waste recycling, no ISO 14001. 14. Pest control contract + GMP, no certification.",
+      "vendor_id": "VND-1005",
+      "chunk_id": "VND-1005#9"
+    },
+    {
+      "source_file": "Godavari_Packaging_email_response.txt",
+      "location": "email paragraph 10",
+      "page": null,
+      "kind": "document",
+      "text": "We have been supplying your Hyderabad plant for 5 years without any major complaint and request you to consider us for the Hyderabad and other requirements.",
+      "vendor_id": "VND-1005",
+      "chunk_id": "VND-1005#10"
+    },
+    {
+      "source_file": "Godavari_Packaging_email_response.txt",
+      "location": "email paragraph 11",
+      "page": null,
+      "kind": "document",
+      "text": "Regards, P. Srinivas Rao Partner, Godavari Packaging Works Plot 118, IDA Bollaram, Sangareddy Dist., Telangana 502325 Mob: 98490 77312",
+      "vendor_id": "VND-1005",
+      "chunk_id": "VND-1005#11"
+    },
+    {
+      "source_file": "Godavari_Packaging_email_response.txt",
+      "location": "email paragraph 12",
+      "page": null,
+      "kind": "document",
+      "text": "Sent from my iPhone",
+      "vendor_id": "VND-1005",
+      "chunk_id": "VND-1005#12"
+    },
+    {
+      "source_file": "Godavari_Packaging_email_response.txt",
+      "location": "email paragraph 13",
+      "page": null,
+      "kind": "document",
+      "text": "-----Original Message----- From: Meera Raghunathan Sent: 21 September 2026 10:05 Subject: RFQ SCPL/PKG/RFQ/2026-27/014 - Corrugated boxes",
+      "vendor_id": "VND-1005",
+      "chunk_id": "VND-1005#13"
+    },
+    {
+      "source_file": "Godavari_Packaging_email_response.txt",
+      "location": "email paragraph 14",
+      "page": null,
+      "kind": "document",
+      "text": "Dear Supplier, please find attached our RFQ for corrugated packaging (30 line items) for our Bengaluru, Pune and Hyderabad plants. Kindly submit your quotation along with the technical questionnaire by 12 October 2026.",
+      "vendor_id": "VND-1005",
+      "chunk_id": "VND-1005#14"
+    },
+    {
+      "source_file": "Godavari_Packaging_email_response.txt",
+      "location": "email line 11",
+      "page": null,
+      "kind": "term",
+      "text": "[tax] GST extra.",
+      "vendor_id": "VND-1005",
+      "chunk_id": "VND-1005#15"
+    },
+    {
+      "source_file": "Godavari_Packaging_email_response.txt",
+      "location": "email line 23",
+      "page": null,
+      "kind": "term",
+      "text": "[freight] Freight extra.",
+      "vendor_id": "VND-1005",
+      "chunk_id": "VND-1005#16"
+    },
+    {
+      "source_file": "Godavari_Packaging_email_response.txt",
+      "location": "email line 24",
+      "page": null,
+      "kind": "term",
+      "text": "[moq] MOQ 5,000 for printed boxes. Below that small run charges will apply.",
+      "vendor_id": "VND-1005",
+      "chunk_id": "VND-1005#17"
+    },
+    {
+      "source_file": "Godavari_Packaging_email_response.txt",
+      "location": "email line 25",
+      "page": null,
+      "kind": "term",
+      "text": "[payment] Payment 30 days.",
+      "vendor_id": "VND-1005",
+      "chunk_id": "VND-1005#18"
+    },
+    {
+      "source_file": "Godavari_Packaging_email_response.txt",
+      "location": "email line 26",
+      "page": null,
+      "kind": "term",
+      "text": "[lead_time] Delivery 10 days from PO.",
+      "vendor_id": "VND-1005",
+      "chunk_id": "VND-1005#19"
+    },
+    {
+      "source_file": "Godavari_Packaging_email_response.txt",
+      "location": "email line 27",
+      "page": null,
+      "kind": "term",
+      "text": "[validity] Rates hold till December end.",
+      "vendor_id": "VND-1005",
+      "chunk_id": "VND-1005#20"
+    },
+    {
+      "source_file": "Godavari_Packaging_email_response.txt",
+      "location": "email line 27",
+      "page": null,
+      "kind": "term",
+      "text": "[price_escalation] Rates are based on current kraft price, if kraft goes up more than 5% we will have to pass on.",
+      "vendor_id": "VND-1005",
+      "chunk_id": "VND-1005#21"
+    },
+    {
+      "source_file": "Godavari_Packaging_email_response.txt",
+      "location": "email line 30",
+      "page": null,
+      "kind": "questionnaire",
+      "text": "[Q01] Yes, ISO 9001:2015, cert valid till Aug 2027 (copy attached).",
+      "vendor_id": "VND-1005",
+      "chunk_id": "VND-1005#22"
+    },
+    {
+      "source_file": "Godavari_Packaging_email_response.txt",
+      "location": "email line 31",
+      "page": null,
+      "kind": "questionnaire",
+      "text": "[Q02] No FSC.",
+      "vendor_id": "VND-1005",
+      "chunk_id": "VND-1005#23"
+    },
+    {
+      "source_file": "Godavari_Packaging_email_response.txt",
+      "location": "email line 32",
+      "page": null,
+      "kind": "questionnaire",
+      "text": "[Q03] Yes, 70%+ recycled on all our grades, declaration can be given.",
+      "vendor_id": "VND-1005",
+      "chunk_id": "VND-1005#24"
+    },
+    {
+      "source_file": "Godavari_Packaging_email_response.txt",
+      "location": "email line 33",
+      "page": null,
+      "kind": "questionnaire",
+      "text": "[Q04] 9,000 MT/yr, running about 70%.",
+      "vendor_id": "VND-1005",
+      "chunk_id": "VND-1005#25"
+    },
+    {
+      "source_file": "Godavari_Packaging_email_response.txt",
+      "location": "email line 34",
+      "page": null,
+      "kind": "questionnaire",
+      "text": "[Q05] In-house lab – GSM, BS, ECT, BCT, moisture & Cobb every lot, COA sent with each vehicle.",
+      "vendor_id": "VND-1005",
+      "chunk_id": "VND-1005#26"
+    },
+    {
+      "source_file": "Godavari_Packaging_email_response.txt",
+      "location": "email line 35",
+      "page": null,
+      "kind": "questionnaire",
+      "text": "[Q06] Lot code stamped on every box.",
+      "vendor_id": "VND-1005",
+      "chunk_id": "VND-1005#27"
+    },
+    {
+      "source_file": "Godavari_Packaging_email_response.txt",
+      "location": "email line 36",
+      "page": null,
+      "kind": "questionnaire",
+      "text": "[Q07] Lead time 10 days.",
+      "vendor_id": "VND-1005",
+      "chunk_id": "VND-1005#28"
+    },
+    {
+      "source_file": "Godavari_Packaging_email_response.txt",
+      "location": "email line 37",
+      "page": null,
+      "kind": "questionnaire",
+      "text": "[Q08] We respond within 48 hrs, CAPA in 7 days.",
+      "vendor_id": "VND-1005",
+      "chunk_id": "VND-1005#29"
+    },
+    {
+      "source_file": "Godavari_Packaging_email_response.txt",
+      "location": "email line 38",
+      "page": null,
+      "kind": "questionnaire",
+      "text": "[Q09] Bollaram & Medchal, both within 40 km of your Patancheru plant.",
+      "vendor_id": "VND-1005",
+      "chunk_id": "VND-1005#30"
+    },
+    {
+      "source_file": "Godavari_Packaging_email_response.txt",
+      "location": "email line 39",
+      "page": null,
+      "kind": "questionnaire",
+      "text": "[Q10] Yes – Medchal unit as backup, 20 days paper stock, buying from 3 mills.",
+      "vendor_id": "VND-1005",
+      "chunk_id": "VND-1005#31"
+    },
+    {
+      "source_file": "Godavari_Packaging_email_response.txt",
+      "location": "email line 40",
+      "page": null,
+      "kind": "questionnaire",
+      "text": "[Q11] No water-resistant coating facility.",
+      "vendor_id": "VND-1005",
+      "chunk_id": "VND-1005#32"
+    },
+    {
+      "source_file": "Godavari_Packaging_email_response.txt",
+      "location": "email line 41",
+      "page": null,
+      "kind": "questionnaire",
+      "text": "[Q12] Flexo up to 2 colours only.",
+      "vendor_id": "VND-1005",
+      "chunk_id": "VND-1005#33"
+    },
+    {
+      "source_file": "Godavari_Packaging_email_response.txt",
+      "location": "email line 42",
+      "page": null,
+      "kind": "questionnaire",
+      "text": "[Q13] Waste recycling, no ISO 14001.",
+      "vendor_id": "VND-1005",
+      "chunk_id": "VND-1005#34"
+    },
+    {
+      "source_file": "Godavari_Packaging_email_response.txt",
+      "location": "email line 43",
+      "page": null,
+      "kind": "questionnaire",
+      "text": "[Q14] Pest control contract + GMP, no certification.",
+      "vendor_id": "VND-1005",
+      "chunk_id": "VND-1005#35"
+    }
+  ],
+  "_eval": {
+    "ms": 49647,
+    "attempts": 1
+  }
+}

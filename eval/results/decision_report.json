@@ -1,0 +1,1339 @@
+{
+  "checks": [
+    {
+      "name": "Failed vendors never recommended",
+      "pass": true,
+      "detail": "recommended suppliers VND-1002, VND-1001; GT failed VND-1004"
+    },
+    {
+      "name": "Failed vendors excluded from every qualified scenario",
+      "pass": true,
+      "detail": "SCN-001..006"
+    },
+    {
+      "name": "Single source = cheapest qualified full-coverage vendor",
+      "pass": true,
+      "detail": "VND-1001 (full-coverage qualified: VND-1001)"
+    },
+    {
+      "name": "Cheapest qualified vendor (GT) holds the largest share of the per-line split",
+      "pass": true,
+      "detail": "largest VND-1002 71.7%; GT cheapest qualified VND-1002"
+    },
+    {
+      "name": "Max-2 uses ≤2 suppliers and covers all lines",
+      "pass": true,
+      "detail": "2 suppliers"
+    },
+    {
+      "name": "Max-3 uses ≤3 suppliers",
+      "pass": true,
+      "detail": "3"
+    },
+    {
+      "name": "Per-line ≤ max-3 ≤ max-2 ≤ single source (cost)",
+      "pass": true,
+      "detail": "117674450 ≤ 117674450 ≤ 117694450 ≤ 126041850"
+    },
+    {
+      "name": "Quality-first: within 5% and higher technical score; technically strongest vendor (GT) has the largest share",
+      "pass": true,
+      "detail": "cost 123504850 vs ceiling 123558173; tech 91.6; top VND-1003; GT strongest VND-1003"
+    },
+    {
+      "name": "Historical benchmark from the buyer's historical file",
+      "pass": true,
+      "detail": "118850100 vs 118850100"
+    },
+    {
+      "name": "Savings = historical − evaluated",
+      "pass": true,
+      "detail": "1155650"
+    },
+    {
+      "name": "Recommendation total equals scenario engine total",
+      "pass": true,
+      "detail": "Lowest cost, max 2 suppliers: total evaluated cost ₹11,76,94,450 across all 30 lines with 2 supplier(s) (Vendor 2 (Shree"
+    },
+    {
+      "name": "Alternative cost delta is exact",
+      "pass": true,
+      "detail": "5810400"
+    },
+    {
+      "name": "Concentration shares sum to 100% and lines to 30",
+      "pass": true,
+      "detail": "100%"
+    },
+    {
+      "name": "Missing freight is never fabricated (estimated & flagged)",
+      "pass": true,
+      "detail": "CP-003 rfx_loading"
+    },
+    {
+      "name": "Unresolved-critical exclusion when the constraint is active",
+      "pass": true,
+      "detail": "line:CP-011:duplicate_quote unresolved → V2 excluded: true"
+    },
+    {
+      "name": "Sensitivity: qualifying the cheapest failed vendor changes the recommendation",
+      "pass": true,
+      "detail": "Vendor 4 (Sri Vaigai Corrugators) becomes technically qualified: -7097200"
+    }
+  ],
+  "recommendation": {
+    "recommended_scenario_id": "SCN-003",
+    "recommended_name": "Lowest cost, max 2 suppliers",
+    "policy": {
+      "consolidation_tolerance_pct": 1,
+      "max_supplier_share_pct": 80,
+      "block_unresolved_critical": true,
+      "require_full_coverage": true
+    },
+    "decision_log": [
+      {
+        "rule": "R1 coverage",
+        "outcome": "6/6 scenarios cover all 30 lines; incomplete: none."
+      },
+      {
+        "rule": "R2 qualification",
+        "outcome": "6 complete scenarios award only technically qualified vendors (mandatory requirements enforced)."
+      },
+      {
+        "rule": "R3 lowest cost",
+        "outcome": "Lowest-cost qualified complete scenario: SCN-002 Cheapest qualified supplier per line at ₹11,76,74,450."
+      },
+      {
+        "rule": "R4 unresolved critical",
+        "outcome": "SCN-002 has no unresolved critical dependencies."
+      },
+      {
+        "rule": "R5 consolidation",
+        "outcome": "SCN-003 uses 2 supplier(s) instead of 3 for +0% (≤1%) – preferred."
+      },
+      {
+        "rule": "R6 concentration",
+        "outcome": "Largest supplier share 71.6% is within the 80% limit."
+      }
+    ],
+    "key_reasons": [
+      "Lowest cost, max 2 suppliers: total evaluated cost ₹11,76,94,450 across all 30 lines with 2 supplier(s) (Vendor 2 (Shree Ganesh Packwell Pvt. Ltd.) 71.6%, Vendor 1 (Deccan Corrupack Industries Pvt. Ltd.) 28.4%).",
+      "Saves ₹11,55,650 (1%) versus the FY25-26 historical benchmark of ₹11,88,50,100.",
+      "Only technically qualified vendors are awarded; spend-weighted technical score 83.3.",
+      "Excluded on qualification: Vendor 4 (Sri Vaigai Corrugators) – failed technical qualification (score 46/100, threshold 70; mandatory failures Q01, Q05, Q10) | Vendor 5 (Godavari Packaging Works) – failed technical qualification (score 68/100, threshold 70)."
+    ],
+    "trade_offs": [
+      "Alternative Quality-first (≤5% above cheapest, max 3 suppliers): ₹12,35,04,850 (+₹58,10,400, 4.9%), 3 supplier(s), technical score 91.6 vs 83.3.",
+      "Ignoring qualification would cost ₹11,05,33,650 (₹71,60,800 less) by awarding Vendor 4 (Sri Vaigai Corrugators) – not permitted because qualification is mandatory.",
+      "Split award: 2 suppliers to manage versus a single source."
+    ],
+    "risks": [
+      {
+        "severity": "low",
+        "code": "price_validity",
+        "message": "Vendor 2 (Shree Ganesh Packwell Pvt. Ltd.) prices valid until 2026-12-09, before contract end 2027-10-31 – re-pricing likely during the contract.",
+        "vendor_id": "VND-1002",
+        "rfx_line_ids": []
+      },
+      {
+        "severity": "low",
+        "code": "price_validity",
+        "message": "Vendor 1 (Deccan Corrupack Industries Pvt. Ltd.) prices valid until 2027-04-06, before contract end 2027-10-31 – re-pricing likely during the contract.",
+        "vendor_id": "VND-1001",
+        "rfx_line_ids": []
+      },
+      {
+        "severity": "low",
+        "code": "moq",
+        "message": "Vendor 1 (Deccan Corrupack Industries Pvt. Ltd.) MOQ exceeds monthly call-off on CP-029, CP-030.",
+        "vendor_id": "VND-1001",
+        "rfx_line_ids": [
+          "CP-029",
+          "CP-030"
+        ]
+      },
+      {
+        "severity": "medium",
+        "code": "freight_estimated",
+        "message": "Landed cost incomplete: 13 awarded line(s) (4,56,70,800 INR) use an estimated freight loading; vendors quoted freight extra / at actuals.",
+        "vendor_id": null,
+        "rfx_line_ids": [
+          "CP-003",
+          "CP-006",
+          "CP-009",
+          "CP-010",
+          "CP-012",
+          "CP-014",
+          "CP-016",
+          "CP-017",
+          "CP-019",
+          "CP-020",
+          "CP-022",
+          "CP-023",
+          "CP-025"
+        ]
+      }
+    ],
+    "unresolved_dependencies": [],
+    "alternative_scenario_id": "SCN-005",
+    "alternative_name": "Quality-first (≤5% above cheapest, max 3 suppliers)",
+    "cost_delta_to_alternative": 5810400,
+    "status": "recommended"
+  },
+  "scenarios": [
+    {
+      "scenario_id": "SCN-001",
+      "name": "Best single-source award",
+      "kind": "standard",
+      "objective": "minimize_cost",
+      "constraints": {
+        "objective": "minimize_cost",
+        "max_suppliers": 1,
+        "require_full_coverage": true,
+        "minimum_technical_score": null,
+        "require_qualified": true,
+        "require_mandatory_certifications": true,
+        "exclude_unresolved_critical": false,
+        "exclude_lines_under_review": false,
+        "min_line_coverage_pct": null,
+        "include_freight": true,
+        "freight_assumption_pct": null,
+        "cost_tolerance_pct": 0,
+        "allowed_vendors": [],
+        "excluded_vendors": [],
+        "treat_as_qualified": [],
+        "price_adjustments": [],
+        "fx_usd_inr": null,
+        "include_unfinalized": false
+      },
+      "requested": {
+        "name": null,
+        "base_scenario_id": null,
+        "objective": null,
+        "max_suppliers": 1,
+        "require_full_coverage": true,
+        "minimum_technical_score": null,
+        "require_qualified": null,
+        "require_mandatory_certifications": null,
+        "exclude_unresolved_critical": null,
+        "exclude_lines_under_review": null,
+        "min_line_coverage_pct": null,
+        "include_freight": null,
+        "freight_assumption_pct": null,
+        "cost_tolerance_pct": null,
+        "allowed_vendors": null,
+        "excluded_vendors": null,
+        "treat_as_qualified": null,
+        "price_adjustments": null,
+        "fx_usd_inr": null,
+        "include_unfinalized": null
+      },
+      "status": "complete",
+      "status_message": "All 30 lines awarded to 1 supplier(s).",
+      "currency": "INR",
+      "required_lines": 30,
+      "covered_lines": 30,
+      "uncovered_lines": [],
+      "total_evaluated_cost": 126041850,
+      "historical_cost": 118850100,
+      "savings_vs_historical": -7191750,
+      "savings_percent": -6.1,
+      "supplier_count": 1,
+      "suppliers": [
+        {
+          "vendor_id": "VND-1001",
+          "vendor": "Vendor 1 (Deccan Corrupack Industries Pvt. Ltd.)",
+          "lines": 30,
+          "lines_pct": 100,
+          "spend_inr": 126041850,
+          "spend_pct": 100,
+          "technical_score": 89
+        }
+      ],
+      "largest_supplier_exposure_pct": 100,
+      "weighted_technical_score": 89,
+      "eligible_vendors": [
+        "VND-1001",
+        "VND-1002",
+        "VND-1003"
+      ],
+      "excluded_vendors": [
+        {
+          "vendor_id": "VND-1004",
+          "vendor": "Vendor 4 (Sri Vaigai Corrugators)",
+          "reasons": [
+            "failed technical qualification (score 46/100, threshold 70; mandatory failures Q01, Q05, Q10)"
+          ]
+        },
+        {
+          "vendor_id": "VND-1005",
+          "vendor": "Vendor 5 (Godavari Packaging Works)",
+          "reasons": [
+            "failed technical qualification (score 68/100, threshold 70)"
+          ]
+        }
+      ],
+      "qualification_constraints": [
+        "Technical qualification required (≥70 and all mandatory items)",
+        "At most 1 supplier(s)",
+        "Awarded suppliers must cover every line"
+      ],
+      "assumptions": [
+        "Evaluated cost = landed price where freight is quoted or included; otherwise RFx evaluation loading of 5% (stage1/buyer/buyer_requirements.json BR-10).",
+        "USD quotes converted at 88.5 INR/USD (stage1/buyer/buyer_requirements.json event.evaluation_fx.USD_INR).",
+        "Conditional discounts and rebates are not applied; GST excluded; one-time tooling not amortised.",
+        "Historical benchmark = FY25-26 delivered price × annual quantity for the same awarded lines."
+      ],
+      "freight": {
+        "landed_lines": 30,
+        "loading_lines": 0,
+        "assumption_lines": 0,
+        "pre_freight_lines": 0,
+        "landed_cost_complete": true,
+        "note": "Landed cost complete."
+      },
+      "risks": [
+        {
+          "severity": "low",
+          "code": "price_validity",
+          "message": "Vendor 1 (Deccan Corrupack Industries Pvt. Ltd.) prices valid until 2027-04-06, before contract end 2027-10-31 – re-pricing likely during the contract.",
+          "vendor_id": "VND-1001",
+          "rfx_line_ids": []
+        },
+        {
+          "severity": "low",
+          "code": "moq",
+          "message": "Vendor 1 (Deccan Corrupack Industries Pvt. Ltd.) MOQ exceeds monthly call-off on CP-029, CP-030.",
+          "vendor_id": "VND-1001",
+          "rfx_line_ids": [
+            "CP-029",
+            "CP-030"
+          ]
+        },
+        {
+          "severity": "medium",
+          "code": "concentration",
+          "message": "Vendor 1 (Deccan Corrupack Industries Pvt. Ltd.) holds 100% of spend (single source – no supply back-up).",
+          "vendor_id": "VND-1001",
+          "rfx_line_ids": []
+        }
+      ],
+      "unresolved_dependencies": [],
+      "bids_used": [
+        {
+          "vendor_id": "VND-1001",
+          "review_state": "finalized"
+        },
+        {
+          "vendor_id": "VND-1002",
+          "review_state": "finalized"
+        },
+        {
+          "vendor_id": "VND-1003",
+          "review_state": "finalized"
+        },
+        {
+          "vendor_id": "VND-1004",
+          "review_state": "finalized"
+        },
+        {
+          "vendor_id": "VND-1005",
+          "review_state": "finalized"
+        }
+      ]
+    },
+    {
+      "scenario_id": "SCN-002",
+      "name": "Cheapest qualified supplier per line",
+      "kind": "standard",
+      "objective": "minimize_cost",
+      "constraints": {
+        "objective": "minimize_cost",
+        "max_suppliers": null,
+        "require_full_coverage": false,
+        "minimum_technical_score": null,
+        "require_qualified": true,
+        "require_mandatory_certifications": true,
+        "exclude_unresolved_critical": false,
+        "exclude_lines_under_review": false,
+        "min_line_coverage_pct": null,
+        "include_freight": true,
+        "freight_assumption_pct": null,
+        "cost_tolerance_pct": 0,
+        "allowed_vendors": [],
+        "excluded_vendors": [],
+        "treat_as_qualified": [],
+        "price_adjustments": [],
+        "fx_usd_inr": null,
+        "include_unfinalized": false
+      },
+      "requested": {
+        "name": null,
+        "base_scenario_id": null,
+        "objective": null,
+        "max_suppliers": null,
+        "require_full_coverage": null,
+        "minimum_technical_score": null,
+        "require_qualified": null,
+        "require_mandatory_certifications": null,
+        "exclude_unresolved_critical": null,
+        "exclude_lines_under_review": null,
+        "min_line_coverage_pct": null,
+        "include_freight": null,
+        "freight_assumption_pct": null,
+        "cost_tolerance_pct": null,
+        "allowed_vendors": null,
+        "excluded_vendors": null,
+        "treat_as_qualified": null,
+        "price_adjustments": null,
+        "fx_usd_inr": null,
+        "include_unfinalized": null
+      },
+      "status": "complete",
+      "status_message": "All 30 lines awarded to 3 supplier(s).",
+      "currency": "INR",
+      "required_lines": 30,
+      "covered_lines": 30,
+      "uncovered_lines": [],
+      "total_evaluated_cost": 117674450,
+      "historical_cost": 118850100,
+      "savings_vs_historical": 1175650,
+      "savings_percent": 1,
+      "supplier_count": 3,
+      "suppliers": [
+        {
+          "vendor_id": "VND-1002",
+          "vendor": "Vendor 2 (Shree Ganesh Packwell Pvt. Ltd.)",
+          "lines": 24,
+          "lines_pct": 80,
+          "spend_inr": 84320100,
+          "spend_pct": 71.7,
+          "technical_score": 81
+        },
+        {
+          "vendor_id": "VND-1001",
+          "vendor": "Vendor 1 (Deccan Corrupack Industries Pvt. Ltd.)",
+          "lines": 5,
+          "lines_pct": 16.7,
+          "spend_inr": 27034350,
+          "spend_pct": 23,
+          "technical_score": 89
+        },
+        {
+          "vendor_id": "VND-1003",
+          "vendor": "Vendor 3 (Indus Fibreboard Solutions Ltd.)",
+          "lines": 1,
+          "lines_pct": 3.3,
+          "spend_inr": 6320000,
+          "spend_pct": 5.4,
+          "technical_score": 94
+        }
+      ],
+      "largest_supplier_exposure_pct": 71.7,
+      "weighted_technical_score": 83.5,
+      "eligible_vendors": [
+        "VND-1001",
+        "VND-1002",
+        "VND-1003"
+      ],
+      "excluded_vendors": [
+        {
+          "vendor_id": "VND-1004",
+          "vendor": "Vendor 4 (Sri Vaigai Corrugators)",
+          "reasons": [
+            "failed technical qualification (score 46/100, threshold 70; mandatory failures Q01, Q05, Q10)"
+          ]
+        },
+        {
+          "vendor_id": "VND-1005",
+          "vendor": "Vendor 5 (Godavari Packaging Works)",
+          "reasons": [
+            "failed technical qualification (score 68/100, threshold 70)"
+          ]
+        }
+      ],
+      "qualification_constraints": [
+        "Technical qualification required (≥70 and all mandatory items)"
+      ],
+      "assumptions": [
+        "Evaluated cost = landed price where freight is quoted or included; otherwise RFx evaluation loading of 5% (stage1/buyer/buyer_requirements.json BR-10).",
+        "USD quotes converted at 88.5 INR/USD (stage1/buyer/buyer_requirements.json event.evaluation_fx.USD_INR).",
+        "Conditional discounts and rebates are not applied; GST excluded; one-time tooling not amortised.",
+        "Historical benchmark = FY25-26 delivered price × annual quantity for the same awarded lines."
+      ],
+      "freight": {
+        "landed_lines": 17,
+        "loading_lines": 13,
+        "assumption_lines": 0,
+        "pre_freight_lines": 0,
+        "landed_cost_complete": false,
+        "note": "13 line(s) use estimated freight."
+      },
+      "risks": [
+        {
+          "severity": "low",
+          "code": "price_validity",
+          "message": "Vendor 2 (Shree Ganesh Packwell Pvt. Ltd.) prices valid until 2026-12-09, before contract end 2027-10-31 – re-pricing likely during the contract.",
+          "vendor_id": "VND-1002",
+          "rfx_line_ids": []
+        },
+        {
+          "severity": "low",
+          "code": "price_validity",
+          "message": "Vendor 1 (Deccan Corrupack Industries Pvt. Ltd.) prices valid until 2027-04-06, before contract end 2027-10-31 – re-pricing likely during the contract.",
+          "vendor_id": "VND-1001",
+          "rfx_line_ids": []
+        },
+        {
+          "severity": "low",
+          "code": "moq",
+          "message": "Vendor 1 (Deccan Corrupack Industries Pvt. Ltd.) MOQ exceeds monthly call-off on CP-029, CP-030.",
+          "vendor_id": "VND-1001",
+          "rfx_line_ids": [
+            "CP-029",
+            "CP-030"
+          ]
+        },
+        {
+          "severity": "low",
+          "code": "price_validity",
+          "message": "Vendor 3 (Indus Fibreboard Solutions Ltd.) prices valid until 2026-12-31, before contract end 2027-10-31 – re-pricing likely during the contract.",
+          "vendor_id": "VND-1003",
+          "rfx_line_ids": []
+        },
+        {
+          "severity": "medium",
+          "code": "freight_estimated",
+          "message": "Landed cost incomplete: 13 awarded line(s) (4,56,70,800 INR) use an estimated freight loading; vendors quoted freight extra / at actuals.",
+          "vendor_id": null,
+          "rfx_line_ids": [
+            "CP-003",
+            "CP-006",
+            "CP-009",
+            "CP-010",
+            "CP-012",
+            "CP-014",
+            "CP-016",
+            "CP-017",
+            "CP-019",
+            "CP-020",
+            "CP-022",
+            "CP-023",
+            "CP-025"
+          ]
+        }
+      ],
+      "unresolved_dependencies": [],
+      "bids_used": [
+        {
+          "vendor_id": "VND-1001",
+          "review_state": "finalized"
+        },
+        {
+          "vendor_id": "VND-1002",
+          "review_state": "finalized"
+        },
+        {
+          "vendor_id": "VND-1003",
+          "review_state": "finalized"
+        },
+        {
+          "vendor_id": "VND-1004",
+          "review_state": "finalized"
+        },
+        {
+          "vendor_id": "VND-1005",
+          "review_state": "finalized"
+        }
+      ]
+    },
+    {
+      "scenario_id": "SCN-003",
+      "name": "Lowest cost, max 2 suppliers",
+      "kind": "standard",
+      "objective": "minimize_cost",
+      "constraints": {
+        "objective": "minimize_cost",
+        "max_suppliers": 2,
+        "require_full_coverage": false,
+        "minimum_technical_score": null,
+        "require_qualified": true,
+        "require_mandatory_certifications": true,
+        "exclude_unresolved_critical": false,
+        "exclude_lines_under_review": false,
+        "min_line_coverage_pct": null,
+        "include_freight": true,
+        "freight_assumption_pct": null,
+        "cost_tolerance_pct": 0,
+        "allowed_vendors": [],
+        "excluded_vendors": [],
+        "treat_as_qualified": [],
+        "price_adjustments": [],
+        "fx_usd_inr": null,
+        "include_unfinalized": false
+      },
+      "requested": {
+        "name": null,
+        "base_scenario_id": null,
+        "objective": null,
+        "max_suppliers": 2,
+        "require_full_coverage": null,
+        "minimum_technical_score": null,
+        "require_qualified": null,
+        "require_mandatory_certifications": null,
+        "exclude_unresolved_critical": null,
+        "exclude_lines_under_review": null,
+        "min_line_coverage_pct": null,
+        "include_freight": null,
+        "freight_assumption_pct": null,
+        "cost_tolerance_pct": null,
+        "allowed_vendors": null,
+        "excluded_vendors": null,
+        "treat_as_qualified": null,
+        "price_adjustments": null,
+        "fx_usd_inr": null,
+        "include_unfinalized": null
+      },
+      "status": "complete",
+      "status_message": "All 30 lines awarded to 2 supplier(s).",
+      "currency": "INR",
+      "required_lines": 30,
+      "covered_lines": 30,
+      "uncovered_lines": [],
+      "total_evaluated_cost": 117694450,
+      "historical_cost": 118850100,
+      "savings_vs_historical": 1155650,
+      "savings_percent": 1,
+      "supplier_count": 2,
+      "suppliers": [
+        {
+          "vendor_id": "VND-1002",
+          "vendor": "Vendor 2 (Shree Ganesh Packwell Pvt. Ltd.)",
+          "lines": 24,
+          "lines_pct": 80,
+          "spend_inr": 84320100,
+          "spend_pct": 71.6,
+          "technical_score": 81
+        },
+        {
+          "vendor_id": "VND-1001",
+          "vendor": "Vendor 1 (Deccan Corrupack Industries Pvt. Ltd.)",
+          "lines": 6,
+          "lines_pct": 20,
+          "spend_inr": 33374350,
+          "spend_pct": 28.4,
+          "technical_score": 89
+        }
+      ],
+      "largest_supplier_exposure_pct": 71.6,
+      "weighted_technical_score": 83.3,
+      "eligible_vendors": [
+        "VND-1001",
+        "VND-1002",
+        "VND-1003"
+      ],
+      "excluded_vendors": [
+        {
+          "vendor_id": "VND-1004",
+          "vendor": "Vendor 4 (Sri Vaigai Corrugators)",
+          "reasons": [
+            "failed technical qualification (score 46/100, threshold 70; mandatory failures Q01, Q05, Q10)"
+          ]
+        },
+        {
+          "vendor_id": "VND-1005",
+          "vendor": "Vendor 5 (Godavari Packaging Works)",
+          "reasons": [
+            "failed technical qualification (score 68/100, threshold 70)"
+          ]
+        }
+      ],
+      "qualification_constraints": [
+        "Technical qualification required (≥70 and all mandatory items)",
+        "At most 2 supplier(s)"
+      ],
+      "assumptions": [
+        "Evaluated cost = landed price where freight is quoted or included; otherwise RFx evaluation loading of 5% (stage1/buyer/buyer_requirements.json BR-10).",
+        "USD quotes converted at 88.5 INR/USD (stage1/buyer/buyer_requirements.json event.evaluation_fx.USD_INR).",
+        "Conditional discounts and rebates are not applied; GST excluded; one-time tooling not amortised.",
+        "Historical benchmark = FY25-26 delivered price × annual quantity for the same awarded lines."
+      ],
+      "freight": {
+        "landed_lines": 17,
+        "loading_lines": 13,
+        "assumption_lines": 0,
+        "pre_freight_lines": 0,
+        "landed_cost_complete": false,
+        "note": "13 line(s) use estimated freight."
+      },
+      "risks": [
+        {
+          "severity": "low",
+          "code": "price_validity",
+          "message": "Vendor 2 (Shree Ganesh Packwell Pvt. Ltd.) prices valid until 2026-12-09, before contract end 2027-10-31 – re-pricing likely during the contract.",
+          "vendor_id": "VND-1002",
+          "rfx_line_ids": []
+        },
+        {
+          "severity": "low",
+          "code": "price_validity",
+          "message": "Vendor 1 (Deccan Corrupack Industries Pvt. Ltd.) prices valid until 2027-04-06, before contract end 2027-10-31 – re-pricing likely during the contract.",
+          "vendor_id": "VND-1001",
+          "rfx_line_ids": []
+        },
+        {
+          "severity": "low",
+          "code": "moq",
+          "message": "Vendor 1 (Deccan Corrupack Industries Pvt. Ltd.) MOQ exceeds monthly call-off on CP-029, CP-030.",
+          "vendor_id": "VND-1001",
+          "rfx_line_ids": [
+            "CP-029",
+            "CP-030"
+          ]
+        },
+        {
+          "severity": "medium",
+          "code": "freight_estimated",
+          "message": "Landed cost incomplete: 13 awarded line(s) (4,56,70,800 INR) use an estimated freight loading; vendors quoted freight extra / at actuals.",
+          "vendor_id": null,
+          "rfx_line_ids": [
+            "CP-003",
+            "CP-006",
+            "CP-009",
+            "CP-010",
+            "CP-012",
+            "CP-014",
+            "CP-016",
+            "CP-017",
+            "CP-019",
+            "CP-020",
+            "CP-022",
+            "CP-023",
+            "CP-025"
+          ]
+        }
+      ],
+      "unresolved_dependencies": [],
+      "bids_used": [
+        {
+          "vendor_id": "VND-1001",
+          "review_state": "finalized"
+        },
+        {
+          "vendor_id": "VND-1002",
+          "review_state": "finalized"
+        },
+        {
+          "vendor_id": "VND-1003",
+          "review_state": "finalized"
+        },
+        {
+          "vendor_id": "VND-1004",
+          "review_state": "finalized"
+        },
+        {
+          "vendor_id": "VND-1005",
+          "review_state": "finalized"
+        }
+      ]
+    },
+    {
+      "scenario_id": "SCN-004",
+      "name": "Lowest cost, max 3 suppliers",
+      "kind": "standard",
+      "objective": "minimize_cost",
+      "constraints": {
+        "objective": "minimize_cost",
+        "max_suppliers": 3,
+        "require_full_coverage": false,
+        "minimum_technical_score": null,
+        "require_qualified": true,
+        "require_mandatory_certifications": true,
+        "exclude_unresolved_critical": false,
+        "exclude_lines_under_review": false,
+        "min_line_coverage_pct": null,
+        "include_freight": true,
+        "freight_assumption_pct": null,
+        "cost_tolerance_pct": 0,
+        "allowed_vendors": [],
+        "excluded_vendors": [],
+        "treat_as_qualified": [],
+        "price_adjustments": [],
+        "fx_usd_inr": null,
+        "include_unfinalized": false
+      },
+      "requested": {
+        "name": null,
+        "base_scenario_id": null,
+        "objective": null,
+        "max_suppliers": 3,
+        "require_full_coverage": null,
+        "minimum_technical_score": null,
+        "require_qualified": null,
+        "require_mandatory_certifications": null,
+        "exclude_unresolved_critical": null,
+        "exclude_lines_under_review": null,
+        "min_line_coverage_pct": null,
+        "include_freight": null,
+        "freight_assumption_pct": null,
+        "cost_tolerance_pct": null,
+        "allowed_vendors": null,
+        "excluded_vendors": null,
+        "treat_as_qualified": null,
+        "price_adjustments": null,
+        "fx_usd_inr": null,
+        "include_unfinalized": null
+      },
+      "status": "complete",
+      "status_message": "All 30 lines awarded to 3 supplier(s).",
+      "currency": "INR",
+      "required_lines": 30,
+      "covered_lines": 30,
+      "uncovered_lines": [],
+      "total_evaluated_cost": 117674450,
+      "historical_cost": 118850100,
+      "savings_vs_historical": 1175650,
+      "savings_percent": 1,
+      "supplier_count": 3,
+      "suppliers": [
+        {
+          "vendor_id": "VND-1002",
+          "vendor": "Vendor 2 (Shree Ganesh Packwell Pvt. Ltd.)",
+          "lines": 24,
+          "lines_pct": 80,
+          "spend_inr": 84320100,
+          "spend_pct": 71.7,
+          "technical_score": 81
+        },
+        {
+          "vendor_id": "VND-1001",
+          "vendor": "Vendor 1 (Deccan Corrupack Industries Pvt. Ltd.)",
+          "lines": 5,
+          "lines_pct": 16.7,
+          "spend_inr": 27034350,
+          "spend_pct": 23,
+          "technical_score": 89
+        },
+        {
+          "vendor_id": "VND-1003",
+          "vendor": "Vendor 3 (Indus Fibreboard Solutions Ltd.)",
+          "lines": 1,
+          "lines_pct": 3.3,
+          "spend_inr": 6320000,
+          "spend_pct": 5.4,
+          "technical_score": 94
+        }
+      ],
+      "largest_supplier_exposure_pct": 71.7,
+      "weighted_technical_score": 83.5,
+      "eligible_vendors": [
+        "VND-1001",
+        "VND-1002",
+        "VND-1003"
+      ],
+      "excluded_vendors": [
+        {
+          "vendor_id": "VND-1004",
+          "vendor": "Vendor 4 (Sri Vaigai Corrugators)",
+          "reasons": [
+            "failed technical qualification (score 46/100, threshold 70; mandatory failures Q01, Q05, Q10)"
+          ]
+        },
+        {
+          "vendor_id": "VND-1005",
+          "vendor": "Vendor 5 (Godavari Packaging Works)",
+          "reasons": [
+            "failed technical qualification (score 68/100, threshold 70)"
+          ]
+        }
+      ],
+      "qualification_constraints": [
+        "Technical qualification required (≥70 and all mandatory items)",
+        "At most 3 supplier(s)"
+      ],
+      "assumptions": [
+        "Evaluated cost = landed price where freight is quoted or included; otherwise RFx evaluation loading of 5% (stage1/buyer/buyer_requirements.json BR-10).",
+        "USD quotes converted at 88.5 INR/USD (stage1/buyer/buyer_requirements.json event.evaluation_fx.USD_INR).",
+        "Conditional discounts and rebates are not applied; GST excluded; one-time tooling not amortised.",
+        "Historical benchmark = FY25-26 delivered price × annual quantity for the same awarded lines."
+      ],
+      "freight": {
+        "landed_lines": 17,
+        "loading_lines": 13,
+        "assumption_lines": 0,
+        "pre_freight_lines": 0,
+        "landed_cost_complete": false,
+        "note": "13 line(s) use estimated freight."
+      },
+      "risks": [
+        {
+          "severity": "low",
+          "code": "price_validity",
+          "message": "Vendor 2 (Shree Ganesh Packwell Pvt. Ltd.) prices valid until 2026-12-09, before contract end 2027-10-31 – re-pricing likely during the contract.",
+          "vendor_id": "VND-1002",
+          "rfx_line_ids": []
+        },
+        {
+          "severity": "low",
+          "code": "price_validity",
+          "message": "Vendor 1 (Deccan Corrupack Industries Pvt. Ltd.) prices valid until 2027-04-06, before contract end 2027-10-31 – re-pricing likely during the contract.",
+          "vendor_id": "VND-1001",
+          "rfx_line_ids": []
+        },
+        {
+          "severity": "low",
+          "code": "moq",
+          "message": "Vendor 1 (Deccan Corrupack Industries Pvt. Ltd.) MOQ exceeds monthly call-off on CP-029, CP-030.",
+          "vendor_id": "VND-1001",
+          "rfx_line_ids": [
+            "CP-029",
+            "CP-030"
+          ]
+        },
+        {
+          "severity": "low",
+          "code": "price_validity",
+          "message": "Vendor 3 (Indus Fibreboard Solutions Ltd.) prices valid until 2026-12-31, before contract end 2027-10-31 – re-pricing likely during the contract.",
+          "vendor_id": "VND-1003",
+          "rfx_line_ids": []
+        },
+        {
+          "severity": "medium",
+          "code": "freight_estimated",
+          "message": "Landed cost incomplete: 13 awarded line(s) (4,56,70,800 INR) use an estimated freight loading; vendors quoted freight extra / at actuals.",
+          "vendor_id": null,
+          "rfx_line_ids": [
+            "CP-003",
+            "CP-006",
+            "CP-009",
+            "CP-010",
+            "CP-012",
+            "CP-014",
+            "CP-016",
+            "CP-017",
+            "CP-019",
+            "CP-020",
+            "CP-022",
+            "CP-023",
+            "CP-025"
+          ]
+        }
+      ],
+      "unresolved_dependencies": [],
+      "bids_used": [
+        {
+          "vendor_id": "VND-1001",
+          "review_state": "finalized"
+        },
+        {
+          "vendor_id": "VND-1002",
+          "review_state": "finalized"
+        },
+        {
+          "vendor_id": "VND-1003",
+          "review_state": "finalized"
+        },
+        {
+          "vendor_id": "VND-1004",
+          "review_state": "finalized"
+        },
+        {
+          "vendor_id": "VND-1005",
+          "review_state": "finalized"
+        }
+      ]
+    },
+    {
+      "scenario_id": "SCN-005",
+      "name": "Quality-first (≤5% above cheapest, max 3 suppliers)",
+      "kind": "standard",
+      "objective": "maximize_quality",
+      "constraints": {
+        "objective": "maximize_quality",
+        "max_suppliers": 3,
+        "require_full_coverage": false,
+        "minimum_technical_score": null,
+        "require_qualified": true,
+        "require_mandatory_certifications": true,
+        "exclude_unresolved_critical": false,
+        "exclude_lines_under_review": false,
+        "min_line_coverage_pct": null,
+        "include_freight": true,
+        "freight_assumption_pct": null,
+        "cost_tolerance_pct": 5,
+        "allowed_vendors": [],
+        "excluded_vendors": [],
+        "treat_as_qualified": [],
+        "price_adjustments": [],
+        "fx_usd_inr": null,
+        "include_unfinalized": false
+      },
+      "requested": {
+        "name": null,
+        "base_scenario_id": null,
+        "objective": "maximize_quality",
+        "max_suppliers": 3,
+        "require_full_coverage": null,
+        "minimum_technical_score": null,
+        "require_qualified": null,
+        "require_mandatory_certifications": null,
+        "exclude_unresolved_critical": null,
+        "exclude_lines_under_review": null,
+        "min_line_coverage_pct": null,
+        "include_freight": null,
+        "freight_assumption_pct": null,
+        "cost_tolerance_pct": 5,
+        "allowed_vendors": null,
+        "excluded_vendors": null,
+        "treat_as_qualified": null,
+        "price_adjustments": null,
+        "fx_usd_inr": null,
+        "include_unfinalized": null
+      },
+      "status": "complete",
+      "status_message": "Quality-first: highest spend-weighted technical score within 5% of the cheapest option with the same supplier limit (11,76,74,450 INR; ceiling 12,35,58,173 INR).",
+      "currency": "INR",
+      "required_lines": 30,
+      "covered_lines": 30,
+      "uncovered_lines": [],
+      "total_evaluated_cost": 123504850,
+      "historical_cost": 118850100,
+      "savings_vs_historical": -4654750,
+      "savings_percent": -3.9,
+      "supplier_count": 3,
+      "suppliers": [
+        {
+          "vendor_id": "VND-1003",
+          "vendor": "Vendor 3 (Indus Fibreboard Solutions Ltd.)",
+          "lines": 21,
+          "lines_pct": 70,
+          "spend_inr": 86165650,
+          "spend_pct": 69.8,
+          "technical_score": 94
+        },
+        {
+          "vendor_id": "VND-1001",
+          "vendor": "Vendor 1 (Deccan Corrupack Industries Pvt. Ltd.)",
+          "lines": 5,
+          "lines_pct": 16.7,
+          "spend_inr": 22951200,
+          "spend_pct": 18.6,
+          "technical_score": 89
+        },
+        {
+          "vendor_id": "VND-1002",
+          "vendor": "Vendor 2 (Shree Ganesh Packwell Pvt. Ltd.)",
+          "lines": 4,
+          "lines_pct": 13.3,
+          "spend_inr": 14388000,
+          "spend_pct": 11.6,
+          "technical_score": 81
+        }
+      ],
+      "largest_supplier_exposure_pct": 69.8,
+      "weighted_technical_score": 91.6,
+      "eligible_vendors": [
+        "VND-1001",
+        "VND-1002",
+        "VND-1003"
+      ],
+      "excluded_vendors": [
+        {
+          "vendor_id": "VND-1004",
+          "vendor": "Vendor 4 (Sri Vaigai Corrugators)",
+          "reasons": [
+            "failed technical qualification (score 46/100, threshold 70; mandatory failures Q01, Q05, Q10)"
+          ]
+        },
+        {
+          "vendor_id": "VND-1005",
+          "vendor": "Vendor 5 (Godavari Packaging Works)",
+          "reasons": [
+            "failed technical qualification (score 68/100, threshold 70)"
+          ]
+        }
+      ],
+      "qualification_constraints": [
+        "Technical qualification required (≥70 and all mandatory items)",
+        "At most 3 supplier(s)"
+      ],
+      "assumptions": [
+        "Evaluated cost = landed price where freight is quoted or included; otherwise RFx evaluation loading of 5% (stage1/buyer/buyer_requirements.json BR-10).",
+        "USD quotes converted at 88.5 INR/USD (stage1/buyer/buyer_requirements.json event.evaluation_fx.USD_INR).",
+        "Conditional discounts and rebates are not applied; GST excluded; one-time tooling not amortised.",
+        "Historical benchmark = FY25-26 delivered price × annual quantity for the same awarded lines."
+      ],
+      "freight": {
+        "landed_lines": 30,
+        "loading_lines": 0,
+        "assumption_lines": 0,
+        "pre_freight_lines": 0,
+        "landed_cost_complete": true,
+        "note": "Landed cost complete."
+      },
+      "risks": [
+        {
+          "severity": "low",
+          "code": "price_validity",
+          "message": "Vendor 3 (Indus Fibreboard Solutions Ltd.) prices valid until 2026-12-31, before contract end 2027-10-31 – re-pricing likely during the contract.",
+          "vendor_id": "VND-1003",
+          "rfx_line_ids": []
+        },
+        {
+          "severity": "low",
+          "code": "moq",
+          "message": "Vendor 3 (Indus Fibreboard Solutions Ltd.) MOQ exceeds monthly call-off on CP-029, CP-030.",
+          "vendor_id": "VND-1003",
+          "rfx_line_ids": [
+            "CP-029",
+            "CP-030"
+          ]
+        },
+        {
+          "severity": "low",
+          "code": "price_validity",
+          "message": "Vendor 1 (Deccan Corrupack Industries Pvt. Ltd.) prices valid until 2027-04-06, before contract end 2027-10-31 – re-pricing likely during the contract.",
+          "vendor_id": "VND-1001",
+          "rfx_line_ids": []
+        },
+        {
+          "severity": "low",
+          "code": "price_validity",
+          "message": "Vendor 2 (Shree Ganesh Packwell Pvt. Ltd.) prices valid until 2026-12-09, before contract end 2027-10-31 – re-pricing likely during the contract.",
+          "vendor_id": "VND-1002",
+          "rfx_line_ids": []
+        }
+      ],
+      "unresolved_dependencies": [],
+      "bids_used": [
+        {
+          "vendor_id": "VND-1001",
+          "review_state": "finalized"
+        },
+        {
+          "vendor_id": "VND-1002",
+          "review_state": "finalized"
+        },
+        {
+          "vendor_id": "VND-1003",
+          "review_state": "finalized"
+        },
+        {
+          "vendor_id": "VND-1004",
+          "review_state": "finalized"
+        },
+        {
+          "vendor_id": "VND-1005",
+          "review_state": "finalized"
+        }
+      ]
+    },
+    {
+      "scenario_id": "SCN-006",
+      "name": "Risk-adjusted (no unresolved critical issues, ≥50% coverage)",
+      "kind": "standard",
+      "objective": "minimize_cost",
+      "constraints": {
+        "objective": "minimize_cost",
+        "max_suppliers": null,
+        "require_full_coverage": false,
+        "minimum_technical_score": null,
+        "require_qualified": true,
+        "require_mandatory_certifications": true,
+        "exclude_unresolved_critical": true,
+        "exclude_lines_under_review": false,
+        "min_line_coverage_pct": 50,
+        "include_freight": true,
+        "freight_assumption_pct": null,
+        "cost_tolerance_pct": 0,
+        "allowed_vendors": [],
+        "excluded_vendors": [],
+        "treat_as_qualified": [],
+        "price_adjustments": [],
+        "fx_usd_inr": null,
+        "include_unfinalized": false
+      },
+      "requested": {
+        "name": null,
+        "base_scenario_id": null,
+        "objective": null,
+        "max_suppliers": null,
+        "require_full_coverage": null,
+        "minimum_technical_score": null,
+        "require_qualified": null,
+        "require_mandatory_certifications": null,
+        "exclude_unresolved_critical": true,
+        "exclude_lines_under_review": null,
+        "min_line_coverage_pct": 50,
+        "include_freight": null,
+        "freight_assumption_pct": null,
+        "cost_tolerance_pct": null,
+        "allowed_vendors": null,
+        "excluded_vendors": null,
+        "treat_as_qualified": null,
+        "price_adjustments": null,
+        "fx_usd_inr": null,
+        "include_unfinalized": null
+      },
+      "status": "complete",
+      "status_message": "All 30 lines awarded to 3 supplier(s).",
+      "currency": "INR",
+      "required_lines": 30,
+      "covered_lines": 30,
+      "uncovered_lines": [],
+      "total_evaluated_cost": 117674450,
+      "historical_cost": 118850100,
+      "savings_vs_historical": 1175650,
+      "savings_percent": 1,
+      "supplier_count": 3,
+      "suppliers": [
+        {
+          "vendor_id": "VND-1002",
+          "vendor": "Vendor 2 (Shree Ganesh Packwell Pvt. Ltd.)",
+          "lines": 24,
+          "lines_pct": 80,
+          "spend_inr": 84320100,
+          "spend_pct": 71.7,
+          "technical_score": 81
+        },
+        {
+          "vendor_id": "VND-1001",
+          "vendor": "Vendor 1 (Deccan Corrupack Industries Pvt. Ltd.)",
+          "lines": 5,
+          "lines_pct": 16.7,
+          "spend_inr": 27034350,
+          "spend_pct": 23,
+          "technical_score": 89
+        },
+        {
+          "vendor_id": "VND-1003",
+          "vendor": "Vendor 3 (Indus Fibreboard Solutions Ltd.)",
+          "lines": 1,
+          "lines_pct": 3.3,
+          "spend_inr": 6320000,
+          "spend_pct": 5.4,
+          "technical_score": 94
+        }
+      ],
+      "largest_supplier_exposure_pct": 71.7,
+      "weighted_technical_score": 83.5,
+      "eligible_vendors": [
+        "VND-1001",
+        "VND-1002",
+        "VND-1003"
+      ],
+      "excluded_vendors": [
+        {
+          "vendor_id": "VND-1004",
+          "vendor": "Vendor 4 (Sri Vaigai Corrugators)",
+          "reasons": [
+            "failed technical qualification (score 46/100, threshold 70; mandatory failures Q01, Q05, Q10)"
+          ]
+        },
+        {
+          "vendor_id": "VND-1005",
+          "vendor": "Vendor 5 (Godavari Packaging Works)",
+          "reasons": [
+            "failed technical qualification (score 68/100, threshold 70)"
+          ]
+        }
+      ],
+      "qualification_constraints": [
+        "Technical qualification required (≥70 and all mandatory items)",
+        "Vendors with unresolved critical review items excluded",
+        "Minimum vendor line coverage 50%"
+      ],
+      "assumptions": [
+        "Evaluated cost = landed price where freight is quoted or included; otherwise RFx evaluation loading of 5% (stage1/buyer/buyer_requirements.json BR-10).",
+        "USD quotes converted at 88.5 INR/USD (stage1/buyer/buyer_requirements.json event.evaluation_fx.USD_INR).",
+        "Conditional discounts and rebates are not applied; GST excluded; one-time tooling not amortised.",
+        "Historical benchmark = FY25-26 delivered price × annual quantity for the same awarded lines."
+      ],
+      "freight": {
+        "landed_lines": 17,
+        "loading_lines": 13,
+        "assumption_lines": 0,
+        "pre_freight_lines": 0,
+        "landed_cost_complete": false,
+        "note": "13 line(s) use estimated freight."
+      },
+      "risks": [
+        {
+          "severity": "low",
+          "code": "price_validity",
+          "message": "Vendor 2 (Shree Ganesh Packwell Pvt. Ltd.) prices valid until 2026-12-09, before contract end 2027-10-31 – re-pricing likely during the contract.",
+          "vendor_id": "VND-1002",
+          "rfx_line_ids": []
+        },
+        {
+          "severity": "low",
+          "code": "price_validity",
+          "message": "Vendor 1 (Deccan Corrupack Industries Pvt. Ltd.) prices valid until 2027-04-06, before contract end 2027-10-31 – re-pricing likely during the contract.",
+          "vendor_id": "VND-1001",
+          "rfx_line_ids": []
+        },
+        {
+          "severity": "low",
+          "code": "moq",
+          "message": "Vendor 1 (Deccan Corrupack Industries Pvt. Ltd.) MOQ exceeds monthly call-off on CP-029, CP-030.",
+          "vendor_id": "VND-1001",
+          "rfx_line_ids": [
+            "CP-029",
+            "CP-030"
+          ]
+        },
+        {
+          "severity": "low",
+          "code": "price_validity",
+          "message": "Vendor 3 (Indus Fibreboard Solutions Ltd.) prices valid until 2026-12-31, before contract end 2027-10-31 – re-pricing likely during the contract.",
+          "vendor_id": "VND-1003",
+          "rfx_line_ids": []
+        },
+        {
+          "severity": "medium",
+          "code": "freight_estimated",
+          "message": "Landed cost incomplete: 13 awarded line(s) (4,56,70,800 INR) use an estimated freight loading; vendors quoted freight extra / at actuals.",
+          "vendor_id": null,
+          "rfx_line_ids": [
+            "CP-003",
+            "CP-006",
+            "CP-009",
+            "CP-010",
+            "CP-012",
+            "CP-014",
+            "CP-016",
+            "CP-017",
+            "CP-019",
+            "CP-020",
+            "CP-022",
+            "CP-023",
+            "CP-025"
+          ]
+        }
+      ],
+      "unresolved_dependencies": [],
+      "bids_used": [
+        {
+          "vendor_id": "VND-1001",
+          "review_state": "finalized"
+        },
+        {
+          "vendor_id": "VND-1002",
+          "review_state": "finalized"
+        },
+        {
+          "vendor_id": "VND-1003",
+          "review_state": "finalized"
+        },
+        {
+          "vendor_id": "VND-1004",
+          "review_state": "finalized"
+        },
+        {
+          "vendor_id": "VND-1005",
+          "review_state": "finalized"
+        }
+      ]
+    }
+  ]
+}

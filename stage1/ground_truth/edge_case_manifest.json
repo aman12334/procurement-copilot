@@ -1,0 +1,843 @@
+{
+  "rfx_id": "SCPL/PKG/RFQ/2026-27/014",
+  "edge_case_count": 32,
+  "edge_cases": [
+    {
+      "edge_case_id": "EC-01",
+      "title": "Missing SKUs across vendors",
+      "category": "coverage",
+      "vendor_id": null,
+      "vendor_name": null,
+      "file": null,
+      "location": "Various",
+      "rfx_lines": null,
+      "raw_value": {
+        "VND-1002": [
+          "CP-015",
+          "CP-029",
+          "CP-030"
+        ],
+        "VND-1003": [
+          "CP-021"
+        ],
+        "VND-1004": [
+          "CP-029",
+          "CP-030"
+        ],
+        "VND-1005": [
+          "CP-011",
+          "CP-012",
+          "CP-015",
+          "CP-018",
+          "CP-019",
+          "CP-026",
+          "CP-027",
+          "CP-028",
+          "CP-029",
+          "CP-030"
+        ]
+      },
+      "correct_interpretation": "Lines absent from a response are 'not_quoted' – never imputed. V3 explains CP-021 in prose; V5 explicitly declines CP-011/CP-012 and is silent on others; V4 rate card note says export 7-ply not offered.",
+      "expected_normalized_value": null,
+      "expected_confidence": "high",
+      "hitl_triggered": false,
+      "reason": "Coverage gaps must be reported, not filled"
+    },
+    {
+      "edge_case_id": "EC-02",
+      "title": "Comments embedded in Excel cells",
+      "category": "parsing",
+      "vendor_id": "VND-1001",
+      "vendor_name": "Deccan Corrupack Industries Pvt. Ltd.",
+      "file": "vendors/vendor_1/Deccan_Corrupack_Quotation_SCPL_RFQ014.xlsx",
+      "location": "Sheet 'Quotation': rate cell of CP-018 is text; cell notes on CP-015 rate and CP-029 freight",
+      "rfx_lines": [
+        "CP-018",
+        "CP-015",
+        "CP-029"
+      ],
+      "raw_value": "10.18 (incl. tear strip)",
+      "correct_interpretation": "Numeric rate is the leading number; '(incl. tear strip)' is a scope remark. Cell note on CP-015 says litho via partner (rate inclusive). Cell note on CP-029 says freight assumes full-truck lots (no price impact).",
+      "expected_normalized_value": {
+        "CP-018": 10.18
+      },
+      "expected_confidence": "high",
+      "hitl_triggered": false,
+      "reason": "Text-in-number cell parsing"
+    },
+    {
+      "edge_case_id": "EC-03",
+      "title": "Vendor quotes 27 of 30 lines",
+      "category": "coverage",
+      "vendor_id": "VND-1002",
+      "vendor_name": "Shree Ganesh Packwell Pvt. Ltd.",
+      "file": "vendors/vendor_2/Shree_Ganesh_Packwell_Quotation_SGP-Q-2026-1187.pdf",
+      "location": "Pages 1-2 price table",
+      "rfx_lines": [
+        "CP-015",
+        "CP-029",
+        "CP-030"
+      ],
+      "raw_value": "27 unique line codes (28 rows incl. duplicate CP-011)",
+      "correct_interpretation": "Coverage 27/30; CP-015, CP-029, CP-030 not quoted (no litho; BF26 kraft unavailable – stated in note 8).",
+      "expected_normalized_value": null,
+      "expected_confidence": "high",
+      "hitl_triggered": false,
+      "reason": "Partial bid"
+    },
+    {
+      "edge_case_id": "EC-04",
+      "title": "USD-denominated quote",
+      "category": "currency",
+      "vendor_id": "VND-1003",
+      "vendor_name": "Indus Fibreboard Solutions Ltd.",
+      "file": "vendors/vendor_3/Indus_Fibreboard_Offer_SCPL_RFQ014.docx",
+      "location": "Section 2 'Export-grade cartons' prose",
+      "rfx_lines": [
+        "CP-028",
+        "CP-029",
+        "CP-030"
+      ],
+      "raw_value": {
+        "CP-028": "USD 0.74 per piece",
+        "CP-029": "USD 1.93 per piece",
+        "CP-030": "USD 4.13 per piece"
+      },
+      "correct_interpretation": "Convert at RFx evaluation FX 1 USD = INR 88.5; ignore vendor's indicative rate mentioned in text. Freight included.",
+      "expected_normalized_value": {
+        "CP-028": 65.49,
+        "CP-029": 170.81,
+        "CP-030": 365.51
+      },
+      "expected_confidence": "high",
+      "hitl_triggered": false,
+      "reason": "Currency normalization; FX exposure noted at vendor level"
+    },
+    {
+      "edge_case_id": "EC-05",
+      "title": "Price per 100 pieces",
+      "category": "unit",
+      "vendor_id": "VND-1002",
+      "vendor_name": "Shree Ganesh Packwell Pvt. Ltd.",
+      "file": "vendors/vendor_2/Shree_Ganesh_Packwell_Quotation_SGP-Q-2026-1187.pdf",
+      "location": "Price table, 'Per' column = '100 Nos'",
+      "rfx_lines": [
+        "CP-020",
+        "CP-023"
+      ],
+      "raw_value": {
+        "CP-020": "Rs 867.00 per 100 nos",
+        "CP-023": "Rs 224.00 per 100 nos"
+      },
+      "correct_interpretation": "Divide by 100 to get per-piece/set price.",
+      "expected_normalized_value": {
+        "CP-020": 8.67,
+        "CP-023": 2.24
+      },
+      "expected_confidence": "medium",
+      "hitl_triggered": false,
+      "reason": "Unit conversion; risk of 100x error"
+    },
+    {
+      "edge_case_id": "EC-06",
+      "title": "Rate card partitions/pads per 100 nos (asterisk footnote)",
+      "category": "unit",
+      "vendor_id": "VND-1004",
+      "vendor_name": "Sri Vaigai Corrugators",
+      "file": "images/vendor_4_rate_card_*.png (source print: vendors/vendor_4/Sri_Vaigai_Rate_Card_Oct2026.pdf)",
+      "location": "Rate card rows marked '*', footnote '* Rate per 100 Nos'",
+      "rfx_lines": [
+        "CP-020",
+        "CP-021",
+        "CP-022",
+        "CP-023",
+        "CP-024"
+      ],
+      "raw_value": {
+        "CP-020": "790*",
+        "CP-021": "957*",
+        "CP-022": "771*",
+        "CP-023": "211*",
+        "CP-024": "629*"
+      },
+      "correct_interpretation": "Asterisked values are per 100 nos; divide by 100.",
+      "expected_normalized_value": {
+        "CP-020": 7.9,
+        "CP-021": 9.57,
+        "CP-022": 7.71,
+        "CP-023": 2.11,
+        "CP-024": 6.29
+      },
+      "expected_confidence": "medium",
+      "hitl_triggered": false,
+      "reason": "Footnote-driven unit; only visible if footnote is read"
+    },
+    {
+      "edge_case_id": "EC-07",
+      "title": "'Per box' unit",
+      "category": "unit",
+      "vendor_id": "VND-1004",
+      "vendor_name": "Sri Vaigai Corrugators",
+      "file": "images/vendor_4_rate_card_*.png (source print: vendors/vendor_4/Sri_Vaigai_Rate_Card_Oct2026.pdf)",
+      "location": "Rate card column header 'Rate / Box (Rs.)'",
+      "rfx_lines": [
+        "CP-001",
+        "CP-002",
+        "CP-003",
+        "CP-004",
+        "CP-005",
+        "CP-006",
+        "CP-007",
+        "CP-008",
+        "CP-009",
+        "CP-010",
+        "CP-011",
+        "CP-012",
+        "CP-013",
+        "CP-014",
+        "CP-015",
+        "CP-016",
+        "CP-017",
+        "CP-018",
+        "CP-019",
+        "CP-025",
+        "CP-026",
+        "CP-027",
+        "CP-028"
+      ],
+      "raw_value": "Rate / Box",
+      "correct_interpretation": "A 'box' here is the carton itself – 1 box = 1 piece (conversion factor 1). Not a bundle.",
+      "expected_normalized_value": "same as quoted",
+      "expected_confidence": "medium",
+      "hitl_triggered": false,
+      "reason": "Unit semantics ('box' could be misread as bundle/outer)"
+    },
+    {
+      "edge_case_id": "EC-08",
+      "title": "Freight condition buried in footnote",
+      "category": "freight",
+      "vendor_id": "VND-1002",
+      "vendor_name": "Shree Ganesh Packwell Pvt. Ltd.",
+      "file": "vendors/vendor_2/Shree_Ganesh_Packwell_Quotation_SGP-Q-2026-1187.pdf",
+      "location": "Page 2 small-print note 1 (6.5 pt)",
+      "rfx_lines": [
+        "CP-001",
+        "CP-003",
+        "CP-005",
+        "CP-006",
+        "CP-007",
+        "CP-009",
+        "CP-010",
+        "CP-012",
+        "CP-014",
+        "CP-016",
+        "CP-017",
+        "CP-019",
+        "CP-020",
+        "CP-022",
+        "CP-023",
+        "CP-025"
+      ],
+      "raw_value": "Rates FOR Chakan. For supplies to Bengaluru & Hyderabad plants freight extra at actuals.",
+      "correct_interpretation": "PNQ lines: freight included. BLR/HYD lines: freight excluded -> 5% evaluation loading.",
+      "expected_normalized_value": {
+        "CP-001": 7.94,
+        "CP-003": 15.24,
+        "CP-005": 6.66,
+        "CP-006": 11.39,
+        "CP-007": 40.04,
+        "CP-009": 30.93,
+        "CP-010": 34.78,
+        "CP-012": 39.04,
+        "CP-014": 42.97,
+        "CP-016": 12.47,
+        "CP-017": 10.68,
+        "CP-019": 39.27,
+        "CP-020": 9.1,
+        "CP-022": 8.75,
+        "CP-023": 2.35,
+        "CP-025": 3.83
+      },
+      "expected_confidence": "medium",
+      "hitl_triggered": true,
+      "reason": "Footnote changes landed cost for 18 lines; must not be treated as fully delivered"
+    },
+    {
+      "edge_case_id": "EC-09",
+      "title": "Per-kg pricing",
+      "category": "unit",
+      "vendor_id": "VND-1005",
+      "vendor_name": "Godavari Packaging Works",
+      "file": "vendors/vendor_5/Godavari_Packaging_email_response.txt",
+      "location": "Email rate bullets",
+      "rfx_lines": [
+        "CP-001",
+        "CP-002",
+        "CP-003",
+        "CP-004",
+        "CP-005",
+        "CP-006",
+        "CP-007",
+        "CP-008",
+        "CP-009",
+        "CP-010",
+        "CP-013",
+        "CP-014",
+        "CP-020",
+        "CP-021",
+        "CP-022",
+        "CP-023",
+        "CP-024"
+      ],
+      "raw_value": {
+        "3-ply plain": "Rs 44/kg",
+        "5-ply plain": "Rs 46/kg",
+        "BF22 heavy-duty": "+Rs 3/kg",
+        "printed": "+Rs 5/kg",
+        "partitions & pads": "Rs 41/kg"
+      },
+      "correct_interpretation": "Per-piece = rate/kg x reference_weight_g/1000 from rfx_master.",
+      "expected_normalized_value": {
+        "CP-001": 7.39,
+        "CP-002": 11.31,
+        "CP-003": 14.61,
+        "CP-004": 8.23,
+        "CP-005": 6.08,
+        "CP-006": 11.03,
+        "CP-007": 37.03,
+        "CP-008": 44.76,
+        "CP-009": 29.99,
+        "CP-010": 32.59,
+        "CP-013": 38.96,
+        "CP-014": 42.92,
+        "CP-020": 8.49,
+        "CP-021": 10.54,
+        "CP-022": 8.45,
+        "CP-023": 2.3,
+        "CP-024": 7.13
+      },
+      "expected_confidence": "medium",
+      "hitl_triggered": false,
+      "reason": "Requires weight-based conversion; billing weight basis should be confirmed at vendor level"
+    },
+    {
+      "edge_case_id": "EC-10",
+      "title": "MOQ constraints",
+      "category": "moq",
+      "vendor_id": null,
+      "vendor_name": null,
+      "file": null,
+      "location": "V1 MOQ column; V3 table; V5 email",
+      "rfx_lines": [
+        "CP-029",
+        "CP-030",
+        "CP-029",
+        "CP-030"
+      ],
+      "raw_value": {
+        "exceeding_monthly_calloff": [
+          [
+            "VND-1001",
+            "CP-029",
+            5000
+          ],
+          [
+            "VND-1001",
+            "CP-030",
+            5000
+          ],
+          [
+            "VND-1003",
+            "CP-029",
+            3000
+          ],
+          [
+            "VND-1003",
+            "CP-030",
+            3000
+          ]
+        ],
+        "VND-1005": "MOQ 5,000 for printed boxes; small-run charges below that"
+      },
+      "correct_interpretation": "Flag MOQ > monthly call-off (BR-15). V1 & V3 MOQs on CP-029/CP-030 exceed monthly call-off. V5 MOQ applies to printed lines only.",
+      "expected_normalized_value": null,
+      "expected_confidence": "high",
+      "hitl_triggered": false,
+      "reason": "MOQ compliance check"
+    },
+    {
+      "edge_case_id": "EC-11",
+      "title": "MOQ described in prose, not table",
+      "category": "moq",
+      "vendor_id": "VND-1003",
+      "vendor_name": "Indus Fibreboard Solutions Ltd.",
+      "file": "vendors/vendor_3/Indus_Fibreboard_Offer_SCPL_RFQ014.docx",
+      "location": "Table 1 MOQ cell 'Refer note'; Section 3 paragraph",
+      "rfx_lines": [
+        "CP-015"
+      ],
+      "raw_value": "minimum production run of 25,000 pieces per artwork",
+      "correct_interpretation": "MOQ for CP-015 = 25,000 pcs (below monthly call-off 33,333 – compliant).",
+      "expected_normalized_value": {
+        "moq": 25000
+      },
+      "expected_confidence": "medium",
+      "hitl_triggered": false,
+      "reason": "Cross-reference resolution"
+    },
+    {
+      "edge_case_id": "EC-12",
+      "title": "Lead-time condition in prose",
+      "category": "lead_time",
+      "vendor_id": "VND-1003",
+      "vendor_name": "Indus Fibreboard Solutions Ltd.",
+      "file": "vendors/vendor_3/Indus_Fibreboard_Offer_SCPL_RFQ014.docx",
+      "location": "Section 3 paragraph on lead times",
+      "rfx_lines": [
+        "CP-015",
+        "CP-017"
+      ],
+      "raw_value": "first supply 28 days (new plates, dies, litho), repeat orders 14 days",
+      "correct_interpretation": "Lead time 28 days first supply / 14 days repeat for CP-015 & CP-017; 14 days for all other lines. First-supply 28 days exceeds BR-03 21-day target.",
+      "expected_normalized_value": {
+        "CP-015": 28,
+        "CP-017": 28,
+        "others": 14
+      },
+      "expected_confidence": "medium",
+      "hitl_triggered": false,
+      "reason": "Conditional lead time extraction"
+    },
+    {
+      "edge_case_id": "EC-13",
+      "title": "Ambiguous image-based price (handwritten correction)",
+      "category": "image",
+      "vendor_id": "VND-1004",
+      "vendor_name": "Sri Vaigai Corrugators",
+      "file": "images/vendor_4_rate_card_*.png (source print: vendors/vendor_4/Sri_Vaigai_Rate_Card_Oct2026.pdf)",
+      "location": "Rate card row CP-010; all image variants",
+      "rfx_lines": [
+        "CP-010"
+      ],
+      "raw_value": "Printed 33.00 struck through; handwritten '30.50' beside it (uninitialled)",
+      "correct_interpretation": "Most likely intended rate Rs 30.50/box; cannot be confirmed from document.",
+      "expected_normalized_value": 30.5,
+      "expected_confidence": "low",
+      "hitl_triggered": true,
+      "reason": "Handwritten override of printed value with no authorisation; digit legibility weak in angled/glare images"
+    },
+    {
+      "edge_case_id": "EC-14",
+      "title": "Possible price outlier",
+      "category": "outlier",
+      "vendor_id": "VND-1001",
+      "vendor_name": "Deccan Corrupack Industries Pvt. Ltd.",
+      "file": "vendors/vendor_1/Deccan_Corrupack_Quotation_SCPL_RFQ014.xlsx",
+      "location": "Sheet 'Quotation', row 37",
+      "rfx_lines": [
+        "CP-026"
+      ],
+      "raw_value": "9.60",
+      "correct_interpretation": "Value as typed is the extracted value, but it is 150.7% vs historical and ~2x other vendors.",
+      "expected_normalized_value": 9.6,
+      "expected_confidence": "high (extraction) / low (plausibility)",
+      "hitl_triggered": true,
+      "reason": "Statistical outlier – likely keying error"
+    },
+    {
+      "edge_case_id": "EC-15",
+      "title": "Duplicated SKU with mismatched description and price",
+      "category": "duplicate",
+      "vendor_id": "VND-1002",
+      "vendor_name": "Shree Ganesh Packwell Pvt. Ltd.",
+      "file": "vendors/vendor_2/Shree_Ganesh_Packwell_Quotation_SGP-Q-2026-1187.pdf",
+      "location": "Page 1 row + repeated at end of page 2",
+      "rfx_lines": [
+        "CP-011"
+      ],
+      "raw_value": {
+        "page_1": "CP-011 5-Ply RSC 3 Col Printed 400x300x280 – 32.33",
+        "page_2": "CP-011 5 Ply Printed Box 400x300x280 (3 clr) – 32.83"
+      },
+      "correct_interpretation": "Same SKU quoted twice; cannot tell which is valid. Conservative higher value used for evaluation.",
+      "expected_normalized_value": 32.83,
+      "expected_confidence": "low",
+      "hitl_triggered": true,
+      "reason": "Conflicting duplicate"
+    },
+    {
+      "edge_case_id": "EC-16",
+      "title": "Slightly mismatched SKU description",
+      "category": "matching",
+      "vendor_id": "VND-1003",
+      "vendor_name": "Indus Fibreboard Solutions Ltd.",
+      "file": "vendors/vendor_3/Indus_Fibreboard_Offer_SCPL_RFQ014.docx",
+      "location": "Table 1 row CP-014",
+      "rfx_lines": [
+        "CP-014"
+      ],
+      "raw_value": "CP-014 | 5 Ply Heavy Duty RSC (BF 22) | 450 x 350 x 300",
+      "correct_interpretation": "Map to CP-014 (code + BF22 match) but height 300 vs RFx 250 (300 is CP-007's height). Price taken as CP-014 pending confirmation.",
+      "expected_normalized_value": 46.71,
+      "expected_confidence": "medium",
+      "hitl_triggered": true,
+      "reason": "Possible wrong spec quoted"
+    },
+    {
+      "edge_case_id": "EC-17",
+      "title": "Reference to last year's pricing",
+      "category": "reference_pricing",
+      "vendor_id": "VND-1005",
+      "vendor_name": "Godavari Packaging Works",
+      "file": "vendors/vendor_5/Godavari_Packaging_email_response.txt",
+      "location": "Email paragraph on Hyderabad trays and inserts",
+      "rfx_lines": [
+        "CP-016",
+        "CP-017",
+        "CP-025"
+      ],
+      "raw_value": "For the trays and inserts we are already supplying to your Hyderabad plant, remaining items same as last year's pricing.",
+      "correct_interpretation": "Resolve to FY25-26 PO price (historical_reference_prices.csv, last_year_supplier = VND-1005). Email says freight extra, so 5% loading applied conservatively although last year's PO was delivered.",
+      "expected_normalized_value": {
+        "CP-016": {
+          "normalized": 12.1,
+          "landed": 12.71
+        },
+        "CP-017": {
+          "normalized": 10.37,
+          "landed": 10.89
+        },
+        "CP-025": {
+          "normalized": 3.9,
+          "landed": 4.1
+        }
+      },
+      "expected_confidence": "low",
+      "hitl_triggered": true,
+      "reason": "Price not stated in document; depends on external reference and unclear freight basis"
+    },
+    {
+      "edge_case_id": "EC-18",
+      "title": "Conflicting commercial term – table vs note",
+      "category": "conflict",
+      "vendor_id": "VND-1003",
+      "vendor_name": "Indus Fibreboard Solutions Ltd.",
+      "file": "vendors/vendor_3/Indus_Fibreboard_Offer_SCPL_RFQ014.docx",
+      "location": "Section 3 terms table vs closing paragraph",
+      "rfx_lines": null,
+      "raw_value": {
+        "table": "Price validity: 90 days from date of offer",
+        "note": "rates are valid until 31 December 2026"
+      },
+      "correct_interpretation": "Two different validity end dates (2027-01-07 vs 2026-12-31). Use the earlier date conservatively; confirm with vendor.",
+      "expected_normalized_value": {
+        "price_validity_until": "2026-12-31",
+        "price_validity_days": 83
+      },
+      "expected_confidence": "medium",
+      "hitl_triggered": true,
+      "reason": "Contradictory terms"
+    },
+    {
+      "edge_case_id": "EC-19",
+      "title": "Discount condition buried in note",
+      "category": "discount",
+      "vendor_id": "VND-1002",
+      "vendor_name": "Shree Ganesh Packwell Pvt. Ltd.",
+      "file": "vendors/vendor_2/Shree_Ganesh_Packwell_Quotation_SGP-Q-2026-1187.pdf",
+      "location": "Page 2 small-print note 2",
+      "rfx_lines": null,
+      "raw_value": "Special discount of 2% on basic value applicable where SCPL annual order value exceeds Rs. 1.50 Crore (excl. GST).",
+      "correct_interpretation": "Conditional discount – not applied to normalized prices; record as scenario (award value-dependent).",
+      "expected_normalized_value": {
+        "discount_pct": 2.0,
+        "threshold_inr": 15000000,
+        "applied_in_normalized": false
+      },
+      "expected_confidence": "medium",
+      "hitl_triggered": true,
+      "reason": "Commercial decision on conditional discount"
+    },
+    {
+      "edge_case_id": "EC-20",
+      "title": "Hard-to-read row in image",
+      "category": "image",
+      "vendor_id": "VND-1004",
+      "vendor_name": "Sri Vaigai Corrugators",
+      "file": "images/vendor_4_rate_card_*.png (source print: vendors/vendor_4/Sri_Vaigai_Rate_Card_Oct2026.pdf)",
+      "location": "vendor_4_rate_card_partial.png, row CP-022 smudged",
+      "rfx_lines": [
+        "CP-022"
+      ],
+      "raw_value": "771* (smudged in partial image)",
+      "correct_interpretation": "Legible in clear image; per-100 rate -> per set.",
+      "expected_normalized_value": 7.71,
+      "expected_confidence": "medium (low if only partial image used)",
+      "hitl_triggered": false,
+      "reason": "Vision confidence should drop for this row in the partial image; cross-check with other variants"
+    },
+    {
+      "edge_case_id": "EC-21",
+      "title": "Quote not meeting mandatory spec (uncoated)",
+      "category": "compliance",
+      "vendor_id": "VND-1004",
+      "vendor_name": "Sri Vaigai Corrugators",
+      "file": "images/vendor_4_rate_card_*.png (source print: vendors/vendor_4/Sri_Vaigai_Rate_Card_Oct2026.pdf)",
+      "location": "Rate card row CP-012, remark 'without WR coating'",
+      "rfx_lines": [
+        "CP-012"
+      ],
+      "raw_value": "35.1  (without WR coating)",
+      "correct_interpretation": "Price extracted but line is non-compliant with BR-06; exclude from like-for-like comparison.",
+      "expected_normalized_value": 35.1,
+      "expected_confidence": "high",
+      "hitl_triggered": true,
+      "reason": "Spec deviation"
+    },
+    {
+      "edge_case_id": "EC-22",
+      "title": "Missing mandatory certification / failed questionnaire",
+      "category": "qualification",
+      "vendor_id": "VND-1004",
+      "vendor_name": "Sri Vaigai Corrugators",
+      "file": "images/vendor_4_rate_card_*.png (source print: vendors/vendor_4/Sri_Vaigai_Rate_Card_Oct2026.pdf)",
+      "location": "Rate card 'Company profile' box",
+      "rfx_lines": null,
+      "raw_value": "ISO 9001: Applied – audit Dec 2026",
+      "correct_interpretation": "Q01 fails (mandatory). Also Q05 partial and Q10 unanswered. Score 44/100 < 70 -> NOT QUALIFIED.",
+      "expected_normalized_value": {
+        "total_score": 44,
+        "mandatory_failures": [
+          "Q01",
+          "Q05",
+          "Q10"
+        ],
+        "status": "NOT QUALIFIED"
+      },
+      "expected_confidence": "high",
+      "hitl_triggered": true,
+      "reason": "Disqualification must be surfaced regardless of price"
+    },
+    {
+      "edge_case_id": "EC-23",
+      "title": "Strong pricing but poor technical qualification",
+      "category": "qualification",
+      "vendor_id": "VND-1004",
+      "vendor_name": "Sri Vaigai Corrugators",
+      "file": "images/vendor_4_rate_card_*.png (source print: vendors/vendor_4/Sri_Vaigai_Rate_Card_Oct2026.pdf)",
+      "location": "Whole response",
+      "rfx_lines": null,
+      "raw_value": "Weighted landed variance vs historical -8.1%",
+      "correct_interpretation": "Lowest landed price on all baskets but NOT QUALIFIED; must not be recommended for award.",
+      "expected_normalized_value": null,
+      "expected_confidence": "high",
+      "hitl_triggered": true,
+      "reason": "Tests that recommendation logic respects qualification gates"
+    },
+    {
+      "edge_case_id": "EC-24",
+      "title": "Different price-validity periods",
+      "category": "terms",
+      "vendor_id": null,
+      "vendor_name": null,
+      "file": null,
+      "location": "Terms sections",
+      "rfx_lines": null,
+      "raw_value": {
+        "VND-1001": "180 days from date of quotation",
+        "VND-1002": "60 days from date of quotation",
+        "VND-1003": "Table: 90 days; closing paragraph: valid until 31 December 2026 (conflict)",
+        "VND-1004": "30 days",
+        "VND-1005": "Rates hold till December end"
+      },
+      "correct_interpretation": "Normalize to an end date.",
+      "expected_normalized_value": {
+        "VND-1001": {
+          "until": "2027-04-06",
+          "days": 180
+        },
+        "VND-1002": {
+          "until": "2026-12-09",
+          "days": 60
+        },
+        "VND-1003": {
+          "until": "2026-12-31",
+          "days": 83
+        },
+        "VND-1004": {
+          "until": "2026-11-06",
+          "days": 30
+        },
+        "VND-1005": {
+          "until": "2026-12-31",
+          "days": 80
+        }
+      },
+      "expected_confidence": "high",
+      "hitl_triggered": false,
+      "reason": "V2, V4, V5 below 90-day minimum (deviation); V3 conflicting (EC-18)"
+    },
+    {
+      "edge_case_id": "EC-25",
+      "title": "Payment terms outside the main table",
+      "category": "terms",
+      "vendor_id": "VND-1002",
+      "vendor_name": "Shree Ganesh Packwell Pvt. Ltd.",
+      "file": "vendors/vendor_2/Shree_Ganesh_Packwell_Quotation_SGP-Q-2026-1187.pdf",
+      "location": "Page 2 body paragraph below table",
+      "rfx_lines": null,
+      "raw_value": "Payment: 45 days from date of invoice.",
+      "correct_interpretation": "Payment terms = 45 days from invoice (acceptable minimum, below 60-day standard).",
+      "expected_normalized_value": {
+        "payment_days": 45
+      },
+      "expected_confidence": "high",
+      "hitl_triggered": false,
+      "reason": "Header-term extraction from prose"
+    },
+    {
+      "edge_case_id": "EC-26",
+      "title": "Unclear condition",
+      "category": "terms",
+      "vendor_id": "VND-1005",
+      "vendor_name": "Godavari Packaging Works",
+      "file": "vendors/vendor_5/Godavari_Packaging_email_response.txt",
+      "location": "Email body",
+      "rfx_lines": null,
+      "raw_value": [
+        "Small-run charges apply below 5,000 on printed boxes – amount not specified",
+        "Rates based on current kraft price; increases above 5% to be passed on (no index or mechanism defined)"
+      ],
+      "correct_interpretation": "Small-run surcharge amount unknown; escalation clause has no index (BR-20 deviation). Cannot be priced.",
+      "expected_normalized_value": null,
+      "expected_confidence": "low",
+      "hitl_triggered": true,
+      "reason": "Ambiguous commercial condition"
+    },
+    {
+      "edge_case_id": "EC-27",
+      "title": "Freight excluded",
+      "category": "freight",
+      "vendor_id": null,
+      "vendor_name": null,
+      "file": null,
+      "location": "V4 rate card footer; V5 email",
+      "rfx_lines": null,
+      "raw_value": {
+        "VND-1004": "Ex-factory Hosur. Freight extra.",
+        "VND-1005": "Freight extra."
+      },
+      "correct_interpretation": "Apply 5% evaluation loading (BR-10) to all lines.",
+      "expected_normalized_value": "landed = normalized x 1.05",
+      "expected_confidence": "high",
+      "hitl_triggered": false,
+      "reason": "Landed cost comparability"
+    },
+    {
+      "edge_case_id": "EC-28",
+      "title": "Renamed columns, reordered lines, freight in separate column",
+      "category": "parsing",
+      "vendor_id": "VND-1001",
+      "vendor_name": "Deccan Corrupack Industries Pvt. Ltd.",
+      "file": "vendors/vendor_1/Deccan_Corrupack_Quotation_SCPL_RFQ014.xlsx",
+      "location": "Sheet 'Quotation' header row 9",
+      "rfx_lines": null,
+      "raw_value": [
+        "Your Item Code",
+        "Basic Rate (Rs/Nos)",
+        "Freight (Rs/Nos)",
+        "rows grouped by plant BLR->HYD->PNQ"
+      ],
+      "correct_interpretation": "Map to RFx fields; landed = basic + freight column.",
+      "expected_normalized_value": null,
+      "expected_confidence": "high",
+      "hitl_triggered": false,
+      "reason": "Schema mapping"
+    },
+    {
+      "edge_case_id": "EC-29",
+      "title": "Shorthand item references",
+      "category": "matching",
+      "vendor_id": "VND-1005",
+      "vendor_name": "Godavari Packaging Works",
+      "file": "vendors/vendor_5/Godavari_Packaging_email_response.txt",
+      "location": "Email body",
+      "rfx_lines": null,
+      "raw_value": [
+        "3-ply plain brown boxes",
+        "5-ply plain (RSC and the big HSC box)",
+        "heavy duty BF22 jam box",
+        "Printed ones Rs 5/kg extra ... 1 & 2 colour 3-ply boxes",
+        "2 colour 5-ply shampoo box (CP-010)",
+        "trays and inserts we are already supplying to your Hyderabad plant",
+        "gift box, mailer, hand-hole box, the sleeve"
+      ],
+      "correct_interpretation": "Map shorthand to RFx lines by ply/print/category (see canonical_vendor_bids lines).",
+      "expected_normalized_value": null,
+      "expected_confidence": "medium",
+      "hitl_triggered": false,
+      "reason": "Requires category-level inference"
+    },
+    {
+      "edge_case_id": "EC-30",
+      "title": "Unquantified tooling charges",
+      "category": "terms",
+      "vendor_id": null,
+      "vendor_name": null,
+      "file": null,
+      "location": "V2 note 4; V4 footer",
+      "rfx_lines": null,
+      "raw_value": {
+        "VND-1002": "Cutting dies and printing plates at actuals, one time",
+        "VND-1004": "Printing block charges extra"
+      },
+      "correct_interpretation": "Tooling cost unknown – report as open item; V3 states INR 1,85,000; V1 absorbs tooling.",
+      "expected_normalized_value": {
+        "VND-1001": 0,
+        "VND-1003": 185000,
+        "VND-1002": null,
+        "VND-1004": null
+      },
+      "expected_confidence": "high",
+      "hitl_triggered": false,
+      "reason": "Total cost of ownership gap"
+    },
+    {
+      "edge_case_id": "EC-31",
+      "title": "Lines split across PDF pages",
+      "category": "parsing",
+      "vendor_id": "VND-1002",
+      "vendor_name": "Shree Ganesh Packwell Pvt. Ltd.",
+      "file": "vendors/vendor_2/Shree_Ganesh_Packwell_Quotation_SGP-Q-2026-1187.pdf",
+      "location": "Page 1 rows 1-14, page 2 rows 15-27 + duplicate",
+      "rfx_lines": null,
+      "raw_value": "Table continues on page 2 with repeated header",
+      "correct_interpretation": "Merge both pages into one table.",
+      "expected_normalized_value": null,
+      "expected_confidence": "high",
+      "hitl_triggered": false,
+      "reason": "Multi-page table extraction"
+    },
+    {
+      "edge_case_id": "EC-32",
+      "title": "Image quality variants",
+      "category": "image",
+      "vendor_id": "VND-1004",
+      "vendor_name": "Sri Vaigai Corrugators",
+      "file": "images/vendor_4_rate_card_*.png (source print: vendors/vendor_4/Sri_Vaigai_Rate_Card_Oct2026.pdf)",
+      "location": "images/",
+      "rfx_lines": null,
+      "raw_value": [
+        "vendor_4_rate_card_clear.png",
+        "vendor_4_rate_card_angled.png",
+        "vendor_4_rate_card_partial.png",
+        "vendor_4_rate_card_glare.png"
+      ],
+      "correct_interpretation": "Same content in all variants. clear = straight capture; angled = perspective + 1.6 deg rotation + uneven lighting; partial = letterhead cut off at top, left edge clipped (the '*' footnote marker and the '7' of '7 Ply' are lost, signature cut), CP-022 row blurred/smudged, slight tilt; glare = specular washout over the middle rows (CP-012 to CP-017 size/description columns). Extraction should be consistent across variants or confidence should drop.",
+      "expected_normalized_value": null,
+      "expected_confidence": "varies",
+      "hitl_triggered": false,
+      "reason": "Vision robustness"
+    }
+  ]
+}

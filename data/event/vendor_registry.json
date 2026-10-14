@@ -1,0 +1,17 @@
+{
+  "rfx_id": "SCPL/PKG/RFQ/2026-27/014",
+  "note": "Invited suppliers for the event and where their submitted responses are stored. Identity data only – no prices or evaluations.",
+  "vendors": [
+    { "vendor_id": "VND-1001", "vendor_no": 1, "vendor_name": "Deccan Corrupack Industries Pvt. Ltd.", "contact_email": "ramesh.gowda@deccancorrupack.example",
+      "response_files": ["stage1/vendors/vendor_1/Deccan_Corrupack_Quotation_SCPL_RFQ014.xlsx"] },
+    { "vendor_id": "VND-1002", "vendor_no": 2, "vendor_name": "Shree Ganesh Packwell Pvt. Ltd.", "contact_email": "sachin.k@ganeshpackwell.example",
+      "response_files": ["stage1/vendors/vendor_2/Shree_Ganesh_Packwell_Quotation_SGP-Q-2026-1187.pdf"] },
+    { "vendor_id": "VND-1003", "vendor_no": 3, "vendor_name": "Indus Fibreboard Solutions Ltd.", "contact_email": "ananya.reddy@indusfibreboard.example",
+      "response_files": ["stage1/vendors/vendor_3/Indus_Fibreboard_Offer_SCPL_RFQ014.docx"] },
+    { "vendor_id": "VND-1004", "vendor_no": 4, "vendor_name": "Sri Vaigai Corrugators", "contact_email": "srivaigaicorrugators@mail.example",
+      "response_files": ["stage1/images/vendor_4_rate_card_clear.png"],
+      "alternate_files": ["stage1/images/vendor_4_rate_card_angled.png", "stage1/images/vendor_4_rate_card_partial.png", "stage1/images/vendor_4_rate_card_glare.png"] },
+    { "vendor_id": "VND-1005", "vendor_no": 5, "vendor_name": "Godavari Packaging Works", "contact_email": "srinivas@godavaripack.example",
+      "response_files": ["stage1/vendors/vendor_5/Godavari_Packaging_email_response.txt"] }
+  ]
+}

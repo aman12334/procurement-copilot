@@ -1,0 +1,1417 @@
+{
+  "schema_version": "rfx.v1",
+  "rfx_id": "RFX-DRAFT-PKG",
+  "title": "Annual Rate Contract \u2013 Corrugated Packaging",
+  "category": "Corrugated packaging",
+  "buyer": {
+    "company": "Sahyadri Consumer Products",
+    "business_unit": null,
+    "locations": [
+      {
+        "code": "BLR",
+        "name": "Bengaluru Plant",
+        "address": null,
+        "state": "Karnataka"
+      },
+      {
+        "code": "PNQ",
+        "name": "Pune Plant",
+        "address": null,
+        "state": "Maharashtra"
+      },
+      {
+        "code": "HYD",
+        "name": "Hyderabad Plant",
+        "address": null,
+        "state": "Telangana"
+      }
+    ]
+  },
+  "scope": {
+    "description": "Corrugated packaging for three plants, 30 SKUs.",
+    "annual_volume": 6825000,
+    "annual_volume_uom": "units",
+    "line_count": 30,
+    "currency": "INR",
+    "contract_period": "12 months from 2026-12-01",
+    "partial_bids_allowed": true
+  },
+  "line_items": [
+    {
+      "line_id": "CP-001",
+      "sku": null,
+      "item_description": "3-Ply RSC Shipper \u2013 Plain Brown",
+      "category": "Corrugated packaging",
+      "style": "RSC",
+      "ply": 3,
+      "flute": "B",
+      "dimensions_text": "300 x 200 x 150",
+      "dimension_basis": "Internal dimensions (L x W x H), mm",
+      "board_construction": "150/BF18 \u2013 120(B)/BF16 \u2013 150/BF18",
+      "combined_board_gsm": 463.2,
+      "min_bursting_factor_outer_liner": 18,
+      "min_bursting_strength_kg_cm2": 6.4,
+      "recycled_content_min_pct": 70,
+      "printing": "Plain",
+      "coating": null,
+      "annual_qty": 480000,
+      "uom": "piece",
+      "delivery_plant": "BLR",
+      "end_use": "Biscuit shipper 24 x 75 g",
+      "notes": null,
+      "additional_specs": [
+        {
+          "name": "reference_weight_g",
+          "value": "168"
+        },
+        {
+          "name": "monthly_calloff_qty",
+          "value": "40000"
+        }
+      ],
+      "source": "explicit"
+    },
+    {
+      "line_id": "CP-002",
+      "sku": null,
+      "item_description": "3-Ply RSC Shipper \u2013 Plain Brown",
+      "category": "Corrugated packaging",
+      "style": "RSC",
+      "ply": 3,
+      "flute": "B",
+      "dimensions_text": "350 x 250 x 200",
+      "dimension_basis": "Internal dimensions (L x W x H), mm",
+      "board_construction": "150/BF18 \u2013 120(B)/BF16 \u2013 150/BF18",
+      "combined_board_gsm": 463.2,
+      "min_bursting_factor_outer_liner": 18,
+      "min_bursting_strength_kg_cm2": 6.4,
+      "recycled_content_min_pct": 70,
+      "printing": "Plain",
+      "coating": null,
+      "annual_qty": 360000,
+      "uom": "piece",
+      "delivery_plant": "PNQ",
+      "end_use": "Namkeen shipper 30 x 40 g",
+      "notes": null,
+      "additional_specs": [
+        {
+          "name": "reference_weight_g",
+          "value": "257"
+        },
+        {
+          "name": "monthly_calloff_qty",
+          "value": "30000"
+        }
+      ],
+      "source": "explicit"
+    },
+    {
+      "line_id": "CP-003",
+      "sku": null,
+      "item_description": "3-Ply RSC Shipper \u2013 Plain Brown",
+      "category": "Corrugated packaging",
+      "style": "RSC",
+      "ply": 3,
+      "flute": "B",
+      "dimensions_text": "400 x 300 x 200",
+      "dimension_basis": "Internal dimensions (L x W x H), mm",
+      "board_construction": "150/BF18 \u2013 120(B)/BF16 \u2013 150/BF18",
+      "combined_board_gsm": 463.2,
+      "min_bursting_factor_outer_liner": 18,
+      "min_bursting_strength_kg_cm2": 6.4,
+      "recycled_content_min_pct": 70,
+      "printing": "Plain",
+      "coating": null,
+      "annual_qty": 240000,
+      "uom": "piece",
+      "delivery_plant": "HYD",
+      "end_use": "Instant noodles shipper 48 x 70 g",
+      "notes": null,
+      "additional_specs": [
+        {
+          "name": "reference_weight_g",
+          "value": "332"
+        },
+        {
+          "name": "monthly_calloff_qty",
+          "value": "20000"
+        }
+      ],
+      "source": "explicit"
+    },
+    {
+      "line_id": "CP-004",
+      "sku": null,
+      "item_description": "3-Ply RSC Shipper \u2013 1 Colour Printed",
+      "category": "Corrugated packaging",
+      "style": "RSC",
+      "ply": 3,
+      "flute": "B",
+      "dimensions_text": "300 x 200 x 150",
+      "dimension_basis": "Internal dimensions (L x W x H), mm",
+      "board_construction": "150/BF18 \u2013 120(B)/BF16 \u2013 150/BF18",
+      "combined_board_gsm": 463.2,
+      "min_bursting_factor_outer_liner": 18,
+      "min_bursting_strength_kg_cm2": 6.4,
+      "recycled_content_min_pct": 70,
+      "printing": "1C flexo",
+      "coating": null,
+      "annual_qty": 600000,
+      "uom": "piece",
+      "delivery_plant": "PNQ",
+      "end_use": "Biscuit shipper 24 x 75 g (Pune)",
+      "notes": null,
+      "additional_specs": [
+        {
+          "name": "reference_weight_g",
+          "value": "168"
+        },
+        {
+          "name": "monthly_calloff_qty",
+          "value": "50000"
+        }
+      ],
+      "source": "explicit"
+    },
+    {
+      "line_id": "CP-005",
+      "sku": null,
+      "item_description": "3-Ply RSC Shipper \u2013 2 Colour Printed",
+      "category": "Corrugated packaging",
+      "style": "RSC",
+      "ply": 3,
+      "flute": "B",
+      "dimensions_text": "250 x 180 x 120",
+      "dimension_basis": "Internal dimensions (L x W x H), mm",
+      "board_construction": "150/BF18 \u2013 120(B)/BF16 \u2013 150/BF18",
+      "combined_board_gsm": 463.2,
+      "min_bursting_factor_outer_liner": 18,
+      "min_bursting_strength_kg_cm2": 6.4,
+      "recycled_content_min_pct": 70,
+      "printing": "2C flexo",
+      "coating": null,
+      "annual_qty": 720000,
+      "uom": "piece",
+      "delivery_plant": "BLR",
+      "end_use": "Tea carton shipper 12 x 250 g",
+      "notes": null,
+      "additional_specs": [
+        {
+          "name": "reference_weight_g",
+          "value": "124"
+        },
+        {
+          "name": "monthly_calloff_qty",
+          "value": "60000"
+        }
+      ],
+      "source": "explicit"
+    },
+    {
+      "line_id": "CP-006",
+      "sku": null,
+      "item_description": "3-Ply RSC Shipper \u2013 2 Colour Printed",
+      "category": "Corrugated packaging",
+      "style": "RSC",
+      "ply": 3,
+      "flute": "B",
+      "dimensions_text": "320 x 240 x 180",
+      "dimension_basis": "Internal dimensions (L x W x H), mm",
+      "board_construction": "150/BF18 \u2013 120(B)/BF16 \u2013 150/BF18",
+      "combined_board_gsm": 463.2,
+      "min_bursting_factor_outer_liner": 18,
+      "min_bursting_strength_kg_cm2": 6.4,
+      "recycled_content_min_pct": 70,
+      "printing": "2C flexo",
+      "coating": null,
+      "annual_qty": 300000,
+      "uom": "piece",
+      "delivery_plant": "HYD",
+      "end_use": "Spice pouch shipper",
+      "notes": null,
+      "additional_specs": [
+        {
+          "name": "reference_weight_g",
+          "value": "225"
+        },
+        {
+          "name": "monthly_calloff_qty",
+          "value": "25000"
+        }
+      ],
+      "source": "explicit"
+    },
+    {
+      "line_id": "CP-007",
+      "sku": null,
+      "item_description": "5-Ply RSC Shipper \u2013 Plain Brown",
+      "category": "Corrugated packaging",
+      "style": "RSC",
+      "ply": 5,
+      "flute": "BC",
+      "dimensions_text": "450 x 350 x 300",
+      "dimension_basis": "Internal dimensions (L x W x H), mm",
+      "board_construction": "150/BF20 \u2013 120(B)/BF16 \u2013 120/BF18 \u2013 120(C)/BF16 \u2013 150/BF20",
+      "combined_board_gsm": 757.2,
+      "min_bursting_factor_outer_liner": 20,
+      "min_bursting_strength_kg_cm2": 10.1,
+      "recycled_content_min_pct": 70,
+      "printing": "Plain",
+      "coating": null,
+      "annual_qty": 210000,
+      "uom": "piece",
+      "delivery_plant": "BLR",
+      "end_use": "Detergent 1 kg x 12 shipper",
+      "notes": null,
+      "additional_specs": [
+        {
+          "name": "reference_weight_g",
+          "value": "805"
+        },
+        {
+          "name": "monthly_calloff_qty",
+          "value": "17500"
+        }
+      ],
+      "source": "explicit"
+    },
+    {
+      "line_id": "CP-008",
+      "sku": null,
+      "item_description": "5-Ply RSC Shipper \u2013 Plain Brown",
+      "category": "Corrugated packaging",
+      "style": "RSC",
+      "ply": 5,
+      "flute": "BC",
+      "dimensions_text": "500 x 400 x 300",
+      "dimension_basis": "Internal dimensions (L x W x H), mm",
+      "board_construction": "150/BF20 \u2013 120(B)/BF16 \u2013 120/BF18 \u2013 120(C)/BF16 \u2013 150/BF20",
+      "combined_board_gsm": 757.2,
+      "min_bursting_factor_outer_liner": 20,
+      "min_bursting_strength_kg_cm2": 10.1,
+      "recycled_content_min_pct": 70,
+      "printing": "Plain",
+      "coating": null,
+      "annual_qty": 150000,
+      "uom": "piece",
+      "delivery_plant": "PNQ",
+      "end_use": "Detergent 2 kg x 6 shipper",
+      "notes": null,
+      "additional_specs": [
+        {
+          "name": "reference_weight_g",
+          "value": "973"
+        },
+        {
+          "name": "monthly_calloff_qty",
+          "value": "12500"
+        }
+      ],
+      "source": "explicit"
+    },
+    {
+      "line_id": "CP-009",
+      "sku": null,
+      "item_description": "5-Ply RSC Shipper \u2013 Plain Brown",
+      "category": "Corrugated packaging",
+      "style": "RSC",
+      "ply": 5,
+      "flute": "BC",
+      "dimensions_text": "400 x 300 x 300",
+      "dimension_basis": "Internal dimensions (L x W x H), mm",
+      "board_construction": "150/BF20 \u2013 120(B)/BF16 \u2013 120/BF18 \u2013 120(C)/BF16 \u2013 150/BF20",
+      "combined_board_gsm": 757.2,
+      "min_bursting_factor_outer_liner": 20,
+      "min_bursting_strength_kg_cm2": 10.1,
+      "recycled_content_min_pct": 70,
+      "printing": "Plain",
+      "coating": null,
+      "annual_qty": 270000,
+      "uom": "piece",
+      "delivery_plant": "HYD",
+      "end_use": "Glass jar (ketchup) shipper, used with CP-022",
+      "notes": null,
+      "additional_specs": [
+        {
+          "name": "reference_weight_g",
+          "value": "652"
+        },
+        {
+          "name": "monthly_calloff_qty",
+          "value": "22500"
+        }
+      ],
+      "source": "explicit"
+    },
+    {
+      "line_id": "CP-010",
+      "sku": null,
+      "item_description": "5-Ply RSC Shipper \u2013 2 Colour Printed",
+      "category": "Corrugated packaging",
+      "style": "RSC",
+      "ply": 5,
+      "flute": "BC",
+      "dimensions_text": "450 x 300 x 250",
+      "dimension_basis": "Internal dimensions (L x W x H), mm",
+      "board_construction": "150/BF20 \u2013 120(B)/BF16 \u2013 120/BF18 \u2013 120(C)/BF16 \u2013 150/BF20",
+      "combined_board_gsm": 757.2,
+      "min_bursting_factor_outer_liner": 20,
+      "min_bursting_strength_kg_cm2": 10.1,
+      "recycled_content_min_pct": 70,
+      "printing": "2C flexo",
+      "coating": null,
+      "annual_qty": 240000,
+      "uom": "piece",
+      "delivery_plant": "BLR",
+      "end_use": "Shampoo bottle shipper",
+      "notes": null,
+      "additional_specs": [
+        {
+          "name": "reference_weight_g",
+          "value": "639"
+        },
+        {
+          "name": "monthly_calloff_qty",
+          "value": "20000"
+        }
+      ],
+      "source": "explicit"
+    },
+    {
+      "line_id": "CP-011",
+      "sku": null,
+      "item_description": "5-Ply RSC Shipper \u2013 3 Colour Printed",
+      "category": "Corrugated packaging",
+      "style": "RSC",
+      "ply": 5,
+      "flute": "BC",
+      "dimensions_text": "400 x 300 x 280",
+      "dimension_basis": "Internal dimensions (L x W x H), mm",
+      "board_construction": "150/BF20 \u2013 120(B)/BF16 \u2013 120/BF18 \u2013 120(C)/BF16 \u2013 150/BF20",
+      "combined_board_gsm": 757.2,
+      "min_bursting_factor_outer_liner": 20,
+      "min_bursting_strength_kg_cm2": 10.1,
+      "recycled_content_min_pct": 70,
+      "printing": "3C flexo",
+      "coating": null,
+      "annual_qty": 180000,
+      "uom": "piece",
+      "delivery_plant": "PNQ",
+      "end_use": "Health drink jar shipper",
+      "notes": null,
+      "additional_specs": [
+        {
+          "name": "reference_weight_g",
+          "value": "630"
+        },
+        {
+          "name": "monthly_calloff_qty",
+          "value": "15000"
+        }
+      ],
+      "source": "explicit"
+    },
+    {
+      "line_id": "CP-012",
+      "sku": null,
+      "item_description": "5-Ply RSC \u2013 2 Colour Printed, Moisture Resistant",
+      "category": "Corrugated packaging",
+      "style": "RSC",
+      "ply": 5,
+      "flute": "BC",
+      "dimensions_text": "420 x 320 x 260",
+      "dimension_basis": "Internal dimensions (L x W x H), mm",
+      "board_construction": "150/BF20 \u2013 120(B)/BF16 \u2013 120/BF18 \u2013 120(C)/BF16 \u2013 150/BF20",
+      "combined_board_gsm": 757.2,
+      "min_bursting_factor_outer_liner": 20,
+      "min_bursting_strength_kg_cm2": 10.1,
+      "recycled_content_min_pct": 70,
+      "printing": "2C flexo",
+      "coating": "Aqueous water-resistant coating on outer liner, Cobb(30 min) <= 40 g/m2",
+      "annual_qty": 120000,
+      "uom": "piece",
+      "delivery_plant": "HYD",
+      "end_use": "Edible oil pouch shipper (humid / cold storage)",
+      "notes": null,
+      "additional_specs": [
+        {
+          "name": "reference_weight_g",
+          "value": "665"
+        },
+        {
+          "name": "monthly_calloff_qty",
+          "value": "10000"
+        }
+      ],
+      "source": "explicit"
+    },
+    {
+      "line_id": "CP-013",
+      "sku": null,
+      "item_description": "5-Ply HSC Box \u2013 Plain Brown",
+      "category": "Corrugated packaging",
+      "style": "HSC",
+      "ply": 5,
+      "flute": "BC",
+      "dimensions_text": "600 x 400 x 350",
+      "dimension_basis": "Internal dimensions (L x W x H), mm",
+      "board_construction": "150/BF20 \u2013 120(B)/BF16 \u2013 120/BF18 \u2013 120(C)/BF16 \u2013 150/BF20",
+      "combined_board_gsm": 757.2,
+      "min_bursting_factor_outer_liner": 20,
+      "min_bursting_strength_kg_cm2": 10.1,
+      "recycled_content_min_pct": 70,
+      "printing": "Plain",
+      "coating": null,
+      "annual_qty": 60000,
+      "uom": "piece",
+      "delivery_plant": "PNQ",
+      "end_use": "Bulk ingredient bag outer",
+      "notes": null,
+      "additional_specs": [
+        {
+          "name": "reference_weight_g",
+          "value": "847"
+        },
+        {
+          "name": "monthly_calloff_qty",
+          "value": "5000"
+        }
+      ],
+      "source": "explicit"
+    },
+    {
+      "line_id": "CP-014",
+      "sku": null,
+      "item_description": "5-Ply RSC \u2013 Heavy Duty BF22, Plain",
+      "category": "Corrugated packaging",
+      "style": "RSC",
+      "ply": 5,
+      "flute": "BC",
+      "dimensions_text": "450 x 350 x 250",
+      "dimension_basis": "Internal dimensions (L x W x H), mm",
+      "board_construction": "180/BF22 \u2013 140(B)/BF18 \u2013 140/BF20 \u2013 140(C)/BF18 \u2013 180/BF22",
+      "combined_board_gsm": 893.4,
+      "min_bursting_factor_outer_liner": 22,
+      "min_bursting_strength_kg_cm2": 13.2,
+      "recycled_content_min_pct": 70,
+      "printing": "Plain",
+      "coating": null,
+      "annual_qty": 100000,
+      "uom": "piece",
+      "delivery_plant": "BLR",
+      "end_use": "Glass jar (jam) shipper",
+      "notes": null,
+      "additional_specs": [
+        {
+          "name": "reference_weight_g",
+          "value": "876"
+        },
+        {
+          "name": "monthly_calloff_qty",
+          "value": "8333"
+        }
+      ],
+      "source": "explicit"
+    },
+    {
+      "line_id": "CP-015",
+      "sku": null,
+      "item_description": "Die-cut Crash-lock Gift Carton \u2013 4C Offset, Litho-laminated",
+      "category": "Corrugated packaging",
+      "style": "Die-cut crash-lock",
+      "ply": 3,
+      "flute": "E",
+      "dimensions_text": "220 x 150 x 90",
+      "dimension_basis": "Finished size, mm",
+      "board_construction": "300 duplex \u2013 120(E)/BF16 \u2013 150/BF18",
+      "combined_board_gsm": 602.4,
+      "min_bursting_factor_outer_liner": 18,
+      "min_bursting_strength_kg_cm2": 6.7,
+      "recycled_content_min_pct": 50,
+      "printing": "4C offset litho + gloss lamination",
+      "coating": null,
+      "annual_qty": 400000,
+      "uom": "piece",
+      "delivery_plant": "BLR",
+      "end_use": "Festive gift pack",
+      "notes": null,
+      "additional_specs": [
+        {
+          "name": "reference_weight_g",
+          "value": "143"
+        },
+        {
+          "name": "monthly_calloff_qty",
+          "value": "33333"
+        }
+      ],
+      "source": "explicit"
+    },
+    {
+      "line_id": "CP-016",
+      "sku": null,
+      "item_description": "Die-cut Tray with Lid \u2013 2C Flexo",
+      "category": "Corrugated packaging",
+      "style": "Die-cut tray + lid",
+      "ply": 3,
+      "flute": "E",
+      "dimensions_text": "300 x 200 x 80",
+      "dimension_basis": "Finished size, mm",
+      "board_construction": "180/BF20 \u2013 120(E)/BF16 \u2013 150/BF18",
+      "combined_board_gsm": 482.4,
+      "min_bursting_factor_outer_liner": 20,
+      "min_bursting_strength_kg_cm2": 7.3,
+      "recycled_content_min_pct": 70,
+      "printing": "2C flexo",
+      "coating": null,
+      "annual_qty": 250000,
+      "uom": "piece",
+      "delivery_plant": "HYD",
+      "end_use": "Confectionery tray",
+      "notes": null,
+      "additional_specs": [
+        {
+          "name": "reference_weight_g",
+          "value": "189"
+        },
+        {
+          "name": "monthly_calloff_qty",
+          "value": "20833"
+        }
+      ],
+      "source": "explicit"
+    },
+    {
+      "line_id": "CP-017",
+      "sku": null,
+      "item_description": "Shelf-ready Display Tray with Tear-off Front \u2013 2C Flexo",
+      "category": "Corrugated packaging",
+      "style": "Die-cut SRP tray",
+      "ply": 3,
+      "flute": "B",
+      "dimensions_text": "380 x 250 x 120",
+      "dimension_basis": "Finished size, mm",
+      "board_construction": "150/BF18 \u2013 120(B)/BF16 \u2013 150/BF18",
+      "combined_board_gsm": 463.2,
+      "min_bursting_factor_outer_liner": 18,
+      "min_bursting_strength_kg_cm2": 6.4,
+      "recycled_content_min_pct": 70,
+      "printing": "2C flexo",
+      "coating": null,
+      "annual_qty": 160000,
+      "uom": "piece",
+      "delivery_plant": "HYD",
+      "end_use": "Shelf-ready pack, modern trade",
+      "notes": null,
+      "additional_specs": [
+        {
+          "name": "reference_weight_g",
+          "value": "162"
+        },
+        {
+          "name": "monthly_calloff_qty",
+          "value": "13333"
+        }
+      ],
+      "source": "explicit"
+    },
+    {
+      "line_id": "CP-018",
+      "sku": null,
+      "item_description": "E-commerce Mailer Box \u2013 Die-cut, 2C Flexo",
+      "category": "Corrugated packaging",
+      "style": "Die-cut mailer",
+      "ply": 3,
+      "flute": "E",
+      "dimensions_text": "250 x 200 x 80",
+      "dimension_basis": "Finished size, mm",
+      "board_construction": "180/BF20 \u2013 120(E)/BF16 \u2013 150/BF18",
+      "combined_board_gsm": 482.4,
+      "min_bursting_factor_outer_liner": 20,
+      "min_bursting_strength_kg_cm2": 7.3,
+      "recycled_content_min_pct": 70,
+      "printing": "2C flexo",
+      "coating": null,
+      "annual_qty": 300000,
+      "uom": "piece",
+      "delivery_plant": "PNQ",
+      "end_use": "D2C e-commerce mailer",
+      "notes": null,
+      "additional_specs": [
+        {
+          "name": "reference_weight_g",
+          "value": "156"
+        },
+        {
+          "name": "monthly_calloff_qty",
+          "value": "25000"
+        }
+      ],
+      "source": "explicit"
+    },
+    {
+      "line_id": "CP-019",
+      "sku": null,
+      "item_description": "5-Ply RSC with Die-cut Hand Holes \u2013 2C Printed",
+      "category": "Corrugated packaging",
+      "style": "RSC + die-cut hand holes",
+      "ply": 5,
+      "flute": "BC",
+      "dimensions_text": "400 x 300 x 350",
+      "dimension_basis": "Internal dimensions (L x W x H), mm",
+      "board_construction": "150/BF20 \u2013 120(B)/BF16 \u2013 120/BF18 \u2013 120(C)/BF16 \u2013 150/BF20",
+      "combined_board_gsm": 757.2,
+      "min_bursting_factor_outer_liner": 20,
+      "min_bursting_strength_kg_cm2": 10.1,
+      "recycled_content_min_pct": 70,
+      "printing": "2C flexo",
+      "coating": null,
+      "annual_qty": 90000,
+      "uom": "piece",
+      "delivery_plant": "BLR",
+      "end_use": "Family-pack shipper",
+      "notes": null,
+      "additional_specs": [
+        {
+          "name": "reference_weight_g",
+          "value": "706"
+        },
+        {
+          "name": "monthly_calloff_qty",
+          "value": "7500"
+        }
+      ],
+      "source": "explicit"
+    },
+    {
+      "line_id": "CP-020",
+      "sku": null,
+      "item_description": "3-Ply Partition \u2013 12 Cell (3 x 4), for CP-007",
+      "category": "Corrugated packaging",
+      "style": "Partition set",
+      "ply": 3,
+      "flute": "B",
+      "dimensions_text": "440 x 340 x 290",
+      "dimension_basis": "Finished size, mm",
+      "board_construction": "120/BF16 \u2013 100(B)/BF14 \u2013 120/BF16",
+      "combined_board_gsm": 376,
+      "min_bursting_factor_outer_liner": 16,
+      "min_bursting_strength_kg_cm2": 4.5,
+      "recycled_content_min_pct": 70,
+      "printing": "Plain",
+      "coating": null,
+      "annual_qty": 210000,
+      "uom": "set",
+      "delivery_plant": "BLR",
+      "end_use": "Bottle separation in CP-007",
+      "notes": null,
+      "additional_specs": [
+        {
+          "name": "reference_weight_g",
+          "value": "207"
+        },
+        {
+          "name": "monthly_calloff_qty",
+          "value": "17500"
+        }
+      ],
+      "source": "explicit"
+    },
+    {
+      "line_id": "CP-021",
+      "sku": null,
+      "item_description": "3-Ply Partition \u2013 24 Cell (4 x 6)",
+      "category": "Corrugated packaging",
+      "style": "Partition set",
+      "ply": 3,
+      "flute": "B",
+      "dimensions_text": "490 x 390 x 200",
+      "dimension_basis": "Finished size, mm",
+      "board_construction": "120/BF16 \u2013 100(B)/BF14 \u2013 120/BF16",
+      "combined_board_gsm": 376,
+      "min_bursting_factor_outer_liner": 16,
+      "min_bursting_strength_kg_cm2": 4.5,
+      "recycled_content_min_pct": 70,
+      "printing": "Plain",
+      "coating": null,
+      "annual_qty": 120000,
+      "uom": "set",
+      "delivery_plant": "PNQ",
+      "end_use": "Small bottle separation",
+      "notes": null,
+      "additional_specs": [
+        {
+          "name": "reference_weight_g",
+          "value": "257"
+        },
+        {
+          "name": "monthly_calloff_qty",
+          "value": "10000"
+        }
+      ],
+      "source": "explicit"
+    },
+    {
+      "line_id": "CP-022",
+      "sku": null,
+      "item_description": "5-Ply Partition \u2013 6 Cell (2 x 3) Heavy, for CP-009",
+      "category": "Corrugated packaging",
+      "style": "Partition set",
+      "ply": 5,
+      "flute": "BC",
+      "dimensions_text": "390 x 290 x 280",
+      "dimension_basis": "Finished size, mm",
+      "board_construction": "150/BF20 \u2013 120(B)/BF16 \u2013 120/BF18 \u2013 120(C)/BF16 \u2013 150/BF20",
+      "combined_board_gsm": 757.2,
+      "min_bursting_factor_outer_liner": 20,
+      "min_bursting_strength_kg_cm2": 10.1,
+      "recycled_content_min_pct": 70,
+      "printing": "Plain",
+      "coating": null,
+      "annual_qty": 80000,
+      "uom": "set",
+      "delivery_plant": "HYD",
+      "end_use": "Glass jar separation in CP-009",
+      "notes": null,
+      "additional_specs": [
+        {
+          "name": "reference_weight_g",
+          "value": "206"
+        },
+        {
+          "name": "monthly_calloff_qty",
+          "value": "6667"
+        }
+      ],
+      "source": "explicit"
+    },
+    {
+      "line_id": "CP-023",
+      "sku": null,
+      "item_description": "3-Ply Layer Pad 440 x 340 mm",
+      "category": "Corrugated packaging",
+      "style": "Layer pad",
+      "ply": 3,
+      "flute": "B",
+      "dimensions_text": "440 x 340",
+      "dimension_basis": "Finished size, mm",
+      "board_construction": "120/BF16 \u2013 100(B)/BF14 \u2013 120/BF16",
+      "combined_board_gsm": 376,
+      "min_bursting_factor_outer_liner": 16,
+      "min_bursting_strength_kg_cm2": 4.5,
+      "recycled_content_min_pct": 70,
+      "printing": "Plain",
+      "coating": null,
+      "annual_qty": 420000,
+      "uom": "piece",
+      "delivery_plant": "BLR",
+      "end_use": "Layer separator",
+      "notes": null,
+      "additional_specs": [
+        {
+          "name": "reference_weight_g",
+          "value": "56"
+        },
+        {
+          "name": "monthly_calloff_qty",
+          "value": "35000"
+        }
+      ],
+      "source": "explicit"
+    },
+    {
+      "line_id": "CP-024",
+      "sku": null,
+      "item_description": "5-Ply Layer Pad 590 x 390 mm",
+      "category": "Corrugated packaging",
+      "style": "Layer pad",
+      "ply": 5,
+      "flute": "BC",
+      "dimensions_text": "590 x 390",
+      "dimension_basis": "Finished size, mm",
+      "board_construction": "150/BF20 \u2013 120(B)/BF16 \u2013 120/BF18 \u2013 120(C)/BF16 \u2013 150/BF20",
+      "combined_board_gsm": 757.2,
+      "min_bursting_factor_outer_liner": 20,
+      "min_bursting_strength_kg_cm2": 10.1,
+      "recycled_content_min_pct": 70,
+      "printing": "Plain",
+      "coating": null,
+      "annual_qty": 150000,
+      "uom": "piece",
+      "delivery_plant": "PNQ",
+      "end_use": "Pallet / layer separator",
+      "notes": null,
+      "additional_specs": [
+        {
+          "name": "reference_weight_g",
+          "value": "174"
+        },
+        {
+          "name": "monthly_calloff_qty",
+          "value": "12500"
+        }
+      ],
+      "source": "explicit"
+    },
+    {
+      "line_id": "CP-025",
+      "sku": null,
+      "item_description": "Die-cut Fitment Insert \u2013 3-Ply E-flute, for CP-016",
+      "category": "Corrugated packaging",
+      "style": "Die-cut insert",
+      "ply": 3,
+      "flute": "E",
+      "dimensions_text": "290 x 190 x 40",
+      "dimension_basis": "Finished size, mm",
+      "board_construction": "180/BF20 \u2013 120(E)/BF16 \u2013 150/BF18",
+      "combined_board_gsm": 482.4,
+      "min_bursting_factor_outer_liner": 20,
+      "min_bursting_strength_kg_cm2": 7.3,
+      "recycled_content_min_pct": 70,
+      "printing": "Plain",
+      "coating": null,
+      "annual_qty": 250000,
+      "uom": "piece",
+      "delivery_plant": "HYD",
+      "end_use": "Insert for confectionery tray",
+      "notes": null,
+      "additional_specs": [
+        {
+          "name": "reference_weight_g",
+          "value": "61"
+        },
+        {
+          "name": "monthly_calloff_qty",
+          "value": "20833"
+        }
+      ],
+      "source": "explicit"
+    },
+    {
+      "line_id": "CP-026",
+      "sku": null,
+      "item_description": "3-Ply Printed Sleeve \u2013 1C Flexo",
+      "category": "Corrugated packaging",
+      "style": "Sleeve",
+      "ply": 3,
+      "flute": "B",
+      "dimensions_text": "300 x 200 x 100",
+      "dimension_basis": "Finished size, mm",
+      "board_construction": "150/BF18 \u2013 120(B)/BF16 \u2013 150/BF18",
+      "combined_board_gsm": 463.2,
+      "min_bursting_factor_outer_liner": 18,
+      "min_bursting_strength_kg_cm2": 6.4,
+      "recycled_content_min_pct": 70,
+      "printing": "1C flexo",
+      "coating": null,
+      "annual_qty": 200000,
+      "uom": "piece",
+      "delivery_plant": "PNQ",
+      "end_use": "Promotional bundle sleeve",
+      "notes": null,
+      "additional_specs": [
+        {
+          "name": "reference_weight_g",
+          "value": "77"
+        },
+        {
+          "name": "monthly_calloff_qty",
+          "value": "16667"
+        }
+      ],
+      "source": "explicit"
+    },
+    {
+      "line_id": "CP-027",
+      "sku": null,
+      "item_description": "7-Ply RSC \u2013 Plain, Heavy Duty BF22",
+      "category": "Corrugated packaging",
+      "style": "RSC",
+      "ply": 7,
+      "flute": "BCB",
+      "dimensions_text": "600 x 400 x 400",
+      "dimension_basis": "Internal dimensions (L x W x H), mm",
+      "board_construction": "180/BF22 \u2013 140(B)/BF18 \u2013 140/BF20 \u2013 140(C)/BF18 \u2013 140/BF20 \u2013 140(B)/BF18 \u2013 180/BF22",
+      "combined_board_gsm": 1223.8,
+      "min_bursting_factor_outer_liner": 22,
+      "min_bursting_strength_kg_cm2": 17.3,
+      "recycled_content_min_pct": 70,
+      "printing": "Plain",
+      "coating": null,
+      "annual_qty": 40000,
+      "uom": "piece",
+      "delivery_plant": "PNQ",
+      "end_use": "Bulk inter-plant transfer",
+      "notes": null,
+      "additional_specs": [
+        {
+          "name": "reference_weight_g",
+          "value": "1992"
+        },
+        {
+          "name": "monthly_calloff_qty",
+          "value": "3333"
+        }
+      ],
+      "source": "explicit"
+    },
+    {
+      "line_id": "CP-028",
+      "sku": null,
+      "item_description": "5-Ply Export Carton \u2013 2C, Shipping Marks, BF24",
+      "category": "Corrugated packaging",
+      "style": "RSC export",
+      "ply": 5,
+      "flute": "BC",
+      "dimensions_text": "450 x 350 x 300",
+      "dimension_basis": "Internal dimensions (L x W x H), mm",
+      "board_construction": "200/BF24 \u2013 150(B)/BF20 \u2013 150/BF22 \u2013 150(C)/BF20 \u2013 200/BF24",
+      "combined_board_gsm": 971.5,
+      "min_bursting_factor_outer_liner": 24,
+      "min_bursting_strength_kg_cm2": 15.9,
+      "recycled_content_min_pct": 50,
+      "printing": "2C flexo + shipping marks",
+      "coating": null,
+      "annual_qty": 80000,
+      "uom": "piece",
+      "delivery_plant": "PNQ",
+      "end_use": "Export shipper (Middle East)",
+      "notes": null,
+      "additional_specs": [
+        {
+          "name": "reference_weight_g",
+          "value": "1032"
+        },
+        {
+          "name": "monthly_calloff_qty",
+          "value": "6667"
+        }
+      ],
+      "source": "explicit"
+    },
+    {
+      "line_id": "CP-029",
+      "sku": null,
+      "item_description": "7-Ply Export Carton \u2013 Moisture Resistant, BF26",
+      "category": "Corrugated packaging",
+      "style": "RSC export",
+      "ply": 7,
+      "flute": "BCB",
+      "dimensions_text": "600 x 400 x 450",
+      "dimension_basis": "Internal dimensions (L x W x H), mm",
+      "board_construction": "230/BF26 \u2013 150(B)/BF20 \u2013 180/BF24 \u2013 150(C)/BF20 \u2013 180/BF24 \u2013 150(B)/BF20 \u2013 230/BF26",
+      "combined_board_gsm": 1445.5,
+      "min_bursting_factor_outer_liner": 26,
+      "min_bursting_strength_kg_cm2": 25.1,
+      "recycled_content_min_pct": 50,
+      "printing": "1C flexo shipping marks",
+      "coating": "Water-resistant coating both liners, Cobb(30 min) <= 35 g/m2",
+      "annual_qty": 30000,
+      "uom": "piece",
+      "delivery_plant": "BLR",
+      "end_use": "Export shipper (sea freight, SE Asia)",
+      "notes": null,
+      "additional_specs": [
+        {
+          "name": "reference_weight_g",
+          "value": "2500"
+        },
+        {
+          "name": "monthly_calloff_qty",
+          "value": "2500"
+        }
+      ],
+      "source": "explicit"
+    },
+    {
+      "line_id": "CP-030",
+      "sku": null,
+      "item_description": "7-Ply Heavy-duty Export Carton \u2013 Pallet Fit",
+      "category": "Corrugated packaging",
+      "style": "RSC export",
+      "ply": 7,
+      "flute": "BCB",
+      "dimensions_text": "800 x 600 x 500",
+      "dimension_basis": "Internal dimensions (L x W x H), mm",
+      "board_construction": "250/BF26 \u2013 180(B)/BF22 \u2013 200/BF24 \u2013 180(C)/BF22 \u2013 200/BF24 \u2013 180(B)/BF22 \u2013 250/BF26",
+      "combined_board_gsm": 1650.6,
+      "min_bursting_factor_outer_liner": 26,
+      "min_bursting_strength_kg_cm2": 28.5,
+      "recycled_content_min_pct": 50,
+      "printing": "1C flexo shipping marks",
+      "coating": null,
+      "annual_qty": 15000,
+      "uom": "piece",
+      "delivery_plant": "HYD",
+      "end_use": "Export bulk carton, 4 per pallet (1200 x 800)",
+      "notes": null,
+      "additional_specs": [
+        {
+          "name": "reference_weight_g",
+          "value": "5147"
+        },
+        {
+          "name": "monthly_calloff_qty",
+          "value": "1250"
+        }
+      ],
+      "source": "explicit"
+    }
+  ],
+  "commercial_requirements": [
+    {
+      "field": "unit_price",
+      "description": "Price per piece ex-GST",
+      "required": true
+    },
+    {
+      "field": "freight",
+      "description": "Freight per piece to each plant, quoted separately",
+      "required": true
+    },
+    {
+      "field": "moq",
+      "description": "Minimum order quantity",
+      "required": true
+    }
+  ],
+  "technical_questionnaire": [
+    {
+      "qid": "Q01",
+      "topic": "ISO 9001",
+      "question": "Describe your iso 9001.",
+      "answer_type": "document_upload",
+      "mandatory": true,
+      "max_points": 12,
+      "scoring_rule": "Full points if fully compliant, half if partial, zero otherwise.",
+      "rationale": "Relevant to ISO 9001.",
+      "source": "explicit"
+    },
+    {
+      "qid": "Q02",
+      "topic": "FSC certification",
+      "question": "Describe your fsc certification.",
+      "answer_type": "text",
+      "mandatory": false,
+      "max_points": 8,
+      "scoring_rule": "Full points if fully compliant, half if partial, zero otherwise.",
+      "rationale": "Relevant to FSC certification.",
+      "source": "explicit"
+    },
+    {
+      "qid": "Q03",
+      "topic": "Recycled content",
+      "question": "Describe your recycled content.",
+      "answer_type": "text",
+      "mandatory": false,
+      "max_points": 8,
+      "scoring_rule": "Full points if fully compliant, half if partial, zero otherwise.",
+      "rationale": "Relevant to Recycled content.",
+      "source": "generated_assumption"
+    },
+    {
+      "qid": "Q04",
+      "topic": "Bursting strength testing",
+      "question": "Describe your bursting strength testing.",
+      "answer_type": "text",
+      "mandatory": true,
+      "max_points": 10,
+      "scoring_rule": "Full points if fully compliant, half if partial, zero otherwise.",
+      "rationale": "Relevant to Bursting strength testing.",
+      "source": "generated_assumption"
+    },
+    {
+      "qid": "Q05",
+      "topic": "Moisture resistance",
+      "question": "Describe your moisture resistance.",
+      "answer_type": "text",
+      "mandatory": false,
+      "max_points": 8,
+      "scoring_rule": "Full points if fully compliant, half if partial, zero otherwise.",
+      "rationale": "Relevant to Moisture resistance.",
+      "source": "generated_assumption"
+    },
+    {
+      "qid": "Q06",
+      "topic": "Traceability",
+      "question": "Describe your traceability.",
+      "answer_type": "text",
+      "mandatory": true,
+      "max_points": 10,
+      "scoring_rule": "Full points if fully compliant, half if partial, zero otherwise.",
+      "rationale": "Relevant to Traceability.",
+      "source": "generated_assumption"
+    },
+    {
+      "qid": "Q07",
+      "topic": "Production capacity",
+      "question": "Describe your production capacity.",
+      "answer_type": "text",
+      "mandatory": true,
+      "max_points": 10,
+      "scoring_rule": "Full points if fully compliant, half if partial, zero otherwise.",
+      "rationale": "Relevant to Production capacity.",
+      "source": "generated_assumption"
+    },
+    {
+      "qid": "Q08",
+      "topic": "Manufacturing locations",
+      "question": "Describe your manufacturing locations.",
+      "answer_type": "text",
+      "mandatory": false,
+      "max_points": 8,
+      "scoring_rule": "Full points if fully compliant, half if partial, zero otherwise.",
+      "rationale": "Relevant to Manufacturing locations.",
+      "source": "generated_assumption"
+    },
+    {
+      "qid": "Q09",
+      "topic": "Business continuity",
+      "question": "Describe your business continuity.",
+      "answer_type": "text",
+      "mandatory": false,
+      "max_points": 8,
+      "scoring_rule": "Full points if fully compliant, half if partial, zero otherwise.",
+      "rationale": "Relevant to Business continuity.",
+      "source": "generated_assumption"
+    },
+    {
+      "qid": "Q10",
+      "topic": "Complaint-resolution SLA",
+      "question": "Describe your complaint-resolution sla.",
+      "answer_type": "text",
+      "mandatory": false,
+      "max_points": 6,
+      "scoring_rule": "Full points if fully compliant, half if partial, zero otherwise.",
+      "rationale": "Relevant to Complaint-resolution SLA.",
+      "source": "generated_assumption"
+    },
+    {
+      "qid": "Q11",
+      "topic": "Printing capability",
+      "question": "Describe your printing capability.",
+      "answer_type": "text",
+      "mandatory": false,
+      "max_points": 6,
+      "scoring_rule": "Full points if fully compliant, half if partial, zero otherwise.",
+      "rationale": "Relevant to Printing capability.",
+      "source": "generated_assumption"
+    },
+    {
+      "qid": "Q12",
+      "topic": "Sustainability",
+      "question": "Describe your sustainability.",
+      "answer_type": "text",
+      "mandatory": false,
+      "max_points": 6,
+      "scoring_rule": "Full points if fully compliant, half if partial, zero otherwise.",
+      "rationale": "Relevant to Sustainability.",
+      "source": "generated_assumption"
+    }
+  ],
+  "qualification": {
+    "min_total_score": 70,
+    "rule": "Score >= 70 and full compliance on all mandatory questions."
+  },
+  "mandatory_requirements": [
+    {
+      "id": "BR-01",
+      "area": "Certification",
+      "requirement": "ISO 9001:2015 certification of supplying plants.",
+      "type": "mandatory",
+      "source": "explicit"
+    },
+    {
+      "id": "BR-02",
+      "area": "Lead time",
+      "requirement": "Lead time below 14 days from PO.",
+      "type": "mandatory",
+      "source": "explicit"
+    },
+    {
+      "id": "BR-03",
+      "area": "Freight",
+      "requirement": "Freight quoted separately per plant.",
+      "type": "mandatory",
+      "source": "explicit"
+    }
+  ],
+  "preferred_requirements": [
+    {
+      "id": "BR-04",
+      "area": "Certification",
+      "requirement": "FSC Chain-of-Custody certification.",
+      "type": "preferred",
+      "source": "explicit"
+    }
+  ],
+  "evaluation_criteria": [
+    {
+      "criterion_id": "EC-1",
+      "name": "Commercial competitiveness",
+      "description": "Landed price",
+      "weight": 45,
+      "source": "generated_assumption"
+    },
+    {
+      "criterion_id": "EC-2",
+      "name": "Technical quality",
+      "description": "Questionnaire score",
+      "weight": 25,
+      "source": "generated_assumption"
+    },
+    {
+      "criterion_id": "EC-3",
+      "name": "Delivery capability",
+      "description": "Lead time and proximity",
+      "weight": 20,
+      "source": "generated_assumption"
+    },
+    {
+      "criterion_id": "EC-4",
+      "name": "Sustainability",
+      "description": "FSC, recycled content",
+      "weight": 10,
+      "source": "generated_assumption"
+    }
+  ],
+  "commercial_terms": {
+    "currency": {
+      "value": "INR",
+      "source": "explicit",
+      "note": null
+    },
+    "price_basis": {
+      "value": "Ex-works price per piece with freight quoted separately",
+      "source": "explicit",
+      "note": null
+    },
+    "freight_treatment": {
+      "value": "Quoted separately per piece to each plant",
+      "source": "explicit",
+      "note": null
+    },
+    "taxes": {
+      "value": "Exclusive of GST",
+      "source": "explicit",
+      "note": null
+    },
+    "payment_terms": {
+      "value": "45 days from invoice",
+      "source": "generated_assumption",
+      "note": null
+    },
+    "price_validity": {
+      "value": "90 days",
+      "source": "generated_assumption",
+      "note": null
+    },
+    "moq_expectation": {
+      "value": "MOQ not to exceed one month's call-off",
+      "source": "generated_assumption",
+      "note": null
+    },
+    "tooling": {
+      "value": "State plate/die costs separately",
+      "source": "generated_assumption",
+      "note": null
+    },
+    "rebates_discounts": {
+      "value": "Volume rebates optional",
+      "source": "generated_assumption",
+      "note": null
+    },
+    "price_escalation": {
+      "value": "Index-linked kraft paper clause if any",
+      "source": "generated_assumption",
+      "note": null
+    }
+  },
+  "delivery_requirements": {
+    "lead_time_days": 14,
+    "lead_time": {
+      "value": "Below 14 days from PO",
+      "source": "explicit",
+      "note": null
+    },
+    "delivery_terms": {
+      "value": "Delivered to each plant",
+      "source": "inferred",
+      "note": null
+    },
+    "delivery_schedule": {
+      "value": null,
+      "source": "unresolved",
+      "note": null
+    },
+    "packaging_and_palletisation": {
+      "value": "Palletised and stretch-wrapped",
+      "source": "generated_assumption",
+      "note": null
+    },
+    "service_level": {
+      "value": "OTIF >= 95%",
+      "source": "generated_assumption",
+      "note": null
+    }
+  },
+  "response_deadline": "2026-10-30",
+  "assumptions": [
+    {
+      "id": "A-01",
+      "field": "commercial_terms.payment_terms",
+      "assumption": "45 days from invoice",
+      "rationale": "Common practice"
+    },
+    {
+      "id": "A-02",
+      "field": "commercial_terms.price_validity",
+      "assumption": "90 days",
+      "rationale": "Common practice"
+    },
+    {
+      "id": "A-03",
+      "field": "commercial_terms.moq_expectation",
+      "assumption": "<= monthly call-off",
+      "rationale": "Inventory"
+    },
+    {
+      "id": "A-04",
+      "field": "commercial_terms.tooling",
+      "assumption": "Separate",
+      "rationale": "TCO visibility"
+    },
+    {
+      "id": "A-05",
+      "field": "commercial_terms.rebates_discounts",
+      "assumption": "Optional",
+      "rationale": "Common"
+    },
+    {
+      "id": "A-06",
+      "field": "commercial_terms.price_escalation",
+      "assumption": "Index-linked",
+      "rationale": "Kraft volatility"
+    },
+    {
+      "id": "A-07",
+      "field": "delivery_requirements.packaging_and_palletisation",
+      "assumption": "Palletised",
+      "rationale": "Handling"
+    },
+    {
+      "id": "A-08",
+      "field": "delivery_requirements.service_level",
+      "assumption": "OTIF 95%",
+      "rationale": "Common"
+    }
+  ],
+  "unresolved_fields": [
+    {
+      "field": "delivery_requirements.delivery_schedule",
+      "reason": "Call-off frequency unknown",
+      "criticality": "medium",
+      "suggested_question": "Weekly or monthly call-offs?"
+    }
+  ]
+}
